@@ -11,11 +11,13 @@
    - 点击 "Import"
 
 2. **配置项目设置**
-   - **Framework Preset**: Next.js
+   - **Framework Preset**: Other (重要：不要选择 Next.js)
    - **Root Directory**: `./` (默认)
-   - **Build Command**: `npm run build` (自动检测)
-   - **Output Directory**: `out` (自动检测)
-   - **Install Command**: `npm install` (自动检测)
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `out`
+   - **Install Command**: `npm install`
+
+   **⚠️ 重要提示**: 必须选择 "Other" 而不是 "Next.js"，这样 Vercel 会将项目视为静态站点，避免 routes-manifest.json 错误。
 
 3. **环境变量**（如果需要）
    ```
@@ -150,22 +152,31 @@ Vercel 自动提供免费的 SSL 证书，支持 HTTPS。
 
 ### 常见问题
 
-1. **构建失败**
+1. **routes-manifest.json 错误**
+   ```
+   Error: The file "/vercel/path0/out/routes-manifest.json" couldn't be found
+   ```
+   **解决方案**：
+   - 确保 `vercel.json` 中没有指定 `"framework": "nextjs"`
+   - 让 Vercel 自动检测为静态站点
+   - 确认 `next.config.ts` 中有 `output: 'export'`
+
+2. **构建失败**
    ```bash
    # 本地测试构建
    npm run build
-   
+
    # 检查错误日志
    npm run lint
    ```
 
-2. **页面 404 错误**
+3. **页面 404 错误**
    - 检查路由配置
    - 确认文件路径正确
    - 验证 `trailingSlash` 设置
 
-3. **静态资源加载失败**
-   - 检查 `assetPrefix` 配置
+4. **静态资源加载失败**
+   - 检查 `images.unoptimized: true` 配置
    - 确认资源路径正确
 
 ### 调试命令
