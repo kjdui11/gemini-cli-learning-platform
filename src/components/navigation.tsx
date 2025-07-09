@@ -33,21 +33,22 @@ export default function Navigation() {
         ? "bg-white/85 backdrop-blur-lg shadow-xl border-b border-gray-200/60"
         : "bg-white/95 backdrop-blur-md shadow-md"
     )}>
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div className="flex lg:flex-1">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
+        <div className="flex lg:flex-none">
           <Link href="/" className="-m-1.5 p-1.5 group">
             <span className="sr-only">Gemini CLI 学习平台</span>
-            <div className="flex items-center space-x-3">
-              <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-blue-500 via-purple-600 to-indigo-700 flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
-                <span className="text-white font-bold text-lg">G</span>
+            <div className="flex items-center space-x-2">
+              <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-blue-500 via-purple-600 to-indigo-700 flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+                <span className="text-white font-bold text-base">G</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">Gemini CLI</span>
-                <span className="text-xs text-gray-500 -mt-1">学习平台</span>
+                <span className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300 whitespace-nowrap">Gemini CLI</span>
+                <span className="text-xs text-gray-500 -mt-1 whitespace-nowrap">学习平台</span>
               </div>
             </div>
           </Link>
         </div>
+        <div className="hidden lg:flex lg:flex-none lg:w-32"></div>
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -58,17 +59,19 @@ export default function Navigation() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-center lg:gap-x-12">
-          {navigation.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className="relative text-sm font-semibold leading-6 text-gray-700 hover:text-blue-600 transition-all duration-300 group px-3 py-2 rounded-lg hover:bg-blue-50/50"
-            >
-              {item.name}
-              <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
-            </Link>
-          ))}
+        <div className="hidden lg:flex lg:flex-1 lg:justify-center">
+          <div className="flex items-center gap-x-6">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="relative text-sm font-semibold leading-6 text-gray-700 hover:text-blue-600 transition-all duration-300 group px-3 py-2 rounded-lg hover:bg-blue-50/50 whitespace-nowrap"
+              >
+                {item.name}
+                <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
+              </Link>
+            ))}
+          </div>
         </div>
       </nav>
       
