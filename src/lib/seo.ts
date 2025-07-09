@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 export const siteConfig = {
   name: 'Gemini CLI 学习平台',
   description: '专为新手开发者打造的 Gemini CLI 学习平台，提供详细教程、常见问题解答、视频指南和最新产品动态，帮助您快速掌握这个强大的 AI 命令行工具。',
-  url: 'https://geminicli-learn.vercel.app',
+  url: 'https://gemini-cli-learning-platform.vercel.app',
   ogImage: '/og-image.png',
   keywords: [
     'Gemini CLI',
