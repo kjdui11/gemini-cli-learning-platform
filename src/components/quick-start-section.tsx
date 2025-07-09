@@ -87,29 +87,29 @@ export default function QuickStartSection() {
         </div>
 
         {/* Installation Steps */}
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div className="mx-auto mt-16 max-w-4xl">
+          <div className="space-y-12">
             {installSteps.map((step, index) => (
               <div key={step.step} className="relative">
                 <div className="flex items-center">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <span className="text-sm font-semibold text-white">{step.step}</span>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-600">
+                    <span className="text-lg font-semibold text-white">{step.step}</span>
                   </div>
-                  <h3 className="ml-4 text-lg font-semibold text-gray-900">{step.title}</h3>
+                  <h3 className="ml-6 text-xl font-semibold text-gray-900">{step.title}</h3>
                 </div>
-                <p className="mt-2 text-sm text-gray-600">{step.description}</p>
-                <div className="mt-4 relative">
-                  <div className="rounded-md bg-gray-900 px-4 py-3">
+                <p className="mt-4 ml-18 text-base text-gray-600">{step.description}</p>
+                <div className="mt-6 ml-18">
+                  <div className="rounded-lg bg-gray-900 px-6 py-4">
                     <div className="flex items-center justify-between">
-                      <code className="text-sm text-green-400 font-mono">{step.command}</code>
+                      <code className="text-base text-green-400 font-mono">{step.command}</code>
                       <button
                         onClick={() => copyToClipboard(step.command, index)}
-                        className="ml-2 text-gray-400 hover:text-white transition-colors"
+                        className="ml-4 text-gray-400 hover:text-white transition-colors"
                       >
                         {copiedIndex === index ? (
-                          <CheckIcon className="h-4 w-4" />
+                          <CheckIcon className="h-5 w-5" />
                         ) : (
-                          <ClipboardIcon className="h-4 w-4" />
+                          <ClipboardIcon className="h-5 w-5" />
                         )}
                       </button>
                     </div>
@@ -121,15 +121,17 @@ export default function QuickStartSection() {
         </div>
 
         {/* Usage Examples */}
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-          <h3 className="text-2xl font-bold tracking-tight text-gray-900 text-center mb-12">
-            使用示例
-          </h3>
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <div className="mx-auto mt-20 max-w-4xl">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl font-bold tracking-tight text-gray-900">
+              使用示例
+            </h3>
+          </div>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {usageExamples.map((example, index) => (
-              <div key={index} className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-gray-900/5">
-                <h4 className="text-base font-semibold text-gray-900 mb-3">{example.title}</h4>
-                <div className="rounded-md bg-gray-900 px-4 py-3">
+              <div key={index} className="rounded-xl bg-white p-6 shadow-sm ring-1 ring-gray-900/5">
+                <h4 className="text-lg font-semibold text-gray-900 mb-4">{example.title}</h4>
+                <div className="rounded-lg bg-gray-900 px-4 py-3">
                   <code className="text-sm text-green-400 font-mono">{example.command}</code>
                 </div>
               </div>
@@ -138,18 +140,18 @@ export default function QuickStartSection() {
         </div>
 
         {/* CTA */}
-        <div className="mx-auto mt-16 max-w-2xl text-center">
-          <div className="rounded-2xl bg-indigo-600 px-6 py-16 sm:px-16">
-            <h3 className="text-2xl font-bold tracking-tight text-white">
+        <div className="mx-auto mt-20 max-w-4xl text-center">
+          <div className="rounded-2xl bg-indigo-600 px-8 py-16 sm:px-16">
+            <h3 className="text-3xl font-bold tracking-tight text-white">
               准备开始了吗？
             </h3>
-            <p className="mt-4 text-lg leading-8 text-indigo-200">
+            <p className="mt-6 text-xl leading-8 text-indigo-200">
               立即开始您的 Gemini CLI 学习之旅，探索 AI 辅助开发的无限可能。
             </p>
-            <div className="mt-8 flex items-center justify-center gap-x-6">
+            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
               <a
                 href="/tutorials"
-                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
+                className="rounded-md bg-white px-6 py-3 text-base font-semibold text-indigo-600 shadow-sm hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
               >
                 查看详细教程
               </a>
@@ -157,7 +159,7 @@ export default function QuickStartSection() {
                 href="https://github.com/google-gemini/gemini-cli"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-semibold leading-6 text-white hover:text-indigo-200 transition-colors"
+                className="text-base font-semibold leading-6 text-white hover:text-indigo-200 transition-colors"
               >
                 访问 GitHub <span aria-hidden="true">→</span>
               </a>
