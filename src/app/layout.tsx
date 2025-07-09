@@ -24,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
-      <head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -37,10 +39,6 @@ export default function RootLayout({
             __html: JSON.stringify(organizationStructuredData),
           }}
         />
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
         <div className="min-h-screen flex flex-col">
           <Navigation />
           <main className="flex-1">
