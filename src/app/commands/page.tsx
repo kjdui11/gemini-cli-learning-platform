@@ -1,10 +1,9 @@
 import { Metadata } from 'next'
-import { 
+import {
   CommandLineIcon,
   DocumentTextIcon,
   CogIcon,
-  QuestionMarkCircleIcon,
-  ClipboardDocumentIcon
+  QuestionMarkCircleIcon
 } from '@heroicons/react/24/outline'
 
 export const metadata: Metadata = {

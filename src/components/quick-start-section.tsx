@@ -24,24 +24,25 @@ const installSteps = [
   },
 ]
 
-const usageExamples = [
-  {
-    title: '代码生成',
-    command: '> 写一个 React 组件来显示用户列表',
-  },
-  {
-    title: '代码解释',
-    command: '> 解释这个函数的作用和工作原理',
-  },
-  {
-    title: '问题调试',
-    command: '> 帮我找出这个错误的原因并提供解决方案',
-  },
-  {
-    title: '项目分析',
-    command: '> 分析这个项目的架构和主要组件',
-  },
-]
+// Usage examples - currently unused but kept for potential future use
+// const usageExamples = [
+//   {
+//     title: '代码生成',
+//     command: '> 写一个 React 组件来显示用户列表',
+//   },
+//   {
+//     title: '代码解释',
+//     command: '> 解释这个函数的作用和工作原理',
+//   },
+//   {
+//     title: '问题调试',
+//     command: '> 帮我找出这个错误的原因并提供解决方案',
+//   },
+//   {
+//     title: '项目分析',
+//     command: '> 分析这个项目的架构和主要组件',
+//   },
+// ]
 
 export default function QuickStartSection() {
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null)

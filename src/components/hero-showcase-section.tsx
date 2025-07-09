@@ -35,7 +35,7 @@ export default function HeroShowcaseSection() {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <span className="text-green-400">$</span>
-                  <span className="ml-2 text-white">gemini "帮我写一个 Python 函数来计算斐波那契数列"</span>
+                  <span className="ml-2 text-white">gemini &quot;帮我写一个 Python 函数来计算斐波那契数列&quot;</span>
                 </div>
                 <div className="text-gray-300">
                   <div className="mb-2">🤖 正在为您生成代码...</div>

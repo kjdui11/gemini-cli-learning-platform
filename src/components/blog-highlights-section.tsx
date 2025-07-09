@@ -18,26 +18,27 @@ const blogHighlights = [
   }
 ]
 
-const keyFeatures = [
-  {
-    title: '无与伦比的使用限制',
-    description: '个人 Google 账户免费获得每分钟 60 次模型请求和每天 1000 次请求的行业最大免费额度。',
-    stat: '60/分钟',
-    statLabel: '免费请求次数'
-  },
-  {
-    title: '强大的模型能力',
-    description: '基于 Gemini 2.5 Pro 模型，拥有 100 万 token 的大型上下文窗口，支持复杂的代码分析和生成。',
-    stat: '1M',
-    statLabel: 'Token 上下文'
-  },
-  {
-    title: '开放可扩展',
-    description: '支持 Model Context Protocol (MCP) 和自定义扩展，可以轻松集成到现有的开发工作流程中。',
-    stat: '100%',
-    statLabel: '开源代码'
-  }
-]
+// Key features data - currently unused but kept for potential future use
+// const keyFeatures = [
+//   {
+//     title: '无与伦比的使用限制',
+//     description: '个人 Google 账户免费获得每分钟 60 次模型请求和每天 1000 次请求的行业最大免费额度。',
+//     stat: '60/分钟',
+//     statLabel: '免费请求次数'
+//   },
+//   {
+//     title: '强大的模型能力',
+//     description: '基于 Gemini 2.5 Pro 模型，拥有 100 万 token 的大型上下文窗口，支持复杂的代码分析和生成。',
+//     stat: '1M',
+//     statLabel: 'Token 上下文'
+//   },
+//   {
+//     title: '开放可扩展',
+//     description: '支持 Model Context Protocol (MCP) 和自定义扩展，可以轻松集成到现有的开发工作流程中。',
+//     stat: '100%',
+//     statLabel: '开源代码'
+//   }
+// ]
 
 export default function BlogHighlightsSection() {
   return (

@@ -1,12 +1,9 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { 
+import {
   AcademicCapIcon,
   RocketLaunchIcon,
-  CodeBracketIcon,
-  CogIcon,
-  LightBulbIcon,
-  BookOpenIcon
+  CodeBracketIcon
 } from '@heroicons/react/24/outline'
 
 export const metadata: Metadata = {

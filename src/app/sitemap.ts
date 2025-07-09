@@ -1,16 +1,20 @@
 import { MetadataRoute } from 'next'
 import { siteConfig } from '@/lib/seo'
 
+// 添加静态导出配置
+export const dynamic = 'force-static'
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url
 
-  // Static pages
+  // Static pages - 更新为新的页面结构
   const staticPages = [
     '',
-    '/tutorials',
+    '/installation',
+    '/guides',
+    '/commands',
+    '/docs',
     '/faq',
-    '/videos',
-    '/news',
   ]
 
   const staticRoutes = staticPages.map((route) => ({

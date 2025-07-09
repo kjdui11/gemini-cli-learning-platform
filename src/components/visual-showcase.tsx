@@ -103,19 +103,19 @@ export default function VisualShowcase() {
               <div className="flex items-start gap-2">
                 <span className="text-green-400 mt-1">$</span>
                 <div className="flex-1">
-                  <div className="text-white">gemini "创建一个 React 组件来显示用户卡片"</div>
+                  <div className="text-white">gemini &quot;创建一个 React 组件来显示用户卡片&quot;</div>
                   <div className="mt-2 text-blue-300">🤖 正在生成 React 组件...</div>
                 </div>
               </div>
               
               <div className="bg-gray-800 rounded-lg p-4 ml-6">
                 <div className="text-gray-300">
-                  <div className="text-blue-300">// UserCard.jsx</div>
-                  <div className="text-white">import React from 'react';</div>
+                  <div className="text-blue-300">{`// UserCard.jsx`}</div>
+                  <div className="text-white">import React from &apos;react&apos;;</div>
                   <div className="text-white"></div>
                   <div className="text-white">const UserCard = (props) =&gt; &#123;</div>
                   <div className="text-white ml-4">return (</div>
-                  <div className="text-white ml-8">&lt;div className="user-card"&gt;</div>
+                  <div className="text-white ml-8">&lt;div className=&quot;user-card&quot;&gt;</div>
                   <div className="text-white ml-12">&lt;h3&gt;&#123;props.user.name&#125;&lt;/h3&gt;</div>
                   <div className="text-white ml-12">&lt;p&gt;&#123;props.user.email&#125;&lt;/p&gt;</div>
                   <div className="text-white ml-8">&lt;/div&gt;</div>

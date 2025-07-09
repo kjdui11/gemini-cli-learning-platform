@@ -1,6 +1,4 @@
 import {
-  CommandLineIcon,
-  CpuChipIcon,
   GlobeAltIcon,
   PuzzlePieceIcon,
   SparklesIcon,
@@ -73,7 +71,7 @@ export default function FeaturesSection() {
         {/* 功能卡片网格 */}
         <div className="mx-auto mt-20 max-w-6xl">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {features.map((feature, index) => (
+            {features.map((feature) => (
               <div
                 key={feature.name}
                 className="group relative overflow-hidden rounded-2xl bg-white/80 backdrop-blur-sm p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-200/50"

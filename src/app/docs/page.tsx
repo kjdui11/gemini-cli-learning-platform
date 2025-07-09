@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { 
-  BookOpenIcon,
+import {
   CodeBracketIcon,
   CogIcon,
   PuzzlePieceIcon,
