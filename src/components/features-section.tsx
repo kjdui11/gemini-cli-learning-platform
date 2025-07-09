@@ -44,33 +44,93 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">核心功能</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Gemini CLI 能为您做什么？
-          </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+    <div className="relative bg-gradient-to-br from-gray-50 via-white to-blue-50 py-20 sm:py-28">
+      {/* 背景装饰 */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-br from-blue-400/20 to-purple-400/20 blur-3xl"></div>
+        <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-gradient-to-br from-purple-400/20 to-pink-400/20 blur-3xl"></div>
+      </div>
+
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+        {/* 标题区域 */}
+        <div className="mx-auto max-w-3xl text-center">
+          <div className="inline-flex items-center rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-800 mb-6">
+            <span className="mr-2">🚀</span>
+            核心功能
+          </div>
+          <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+            Gemini CLI
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+              能为您做什么？
+            </span>
+          </h2>
+          <p className="mt-6 text-xl leading-8 text-gray-600 max-w-2xl mx-auto">
             从代码编写到任务自动化，Gemini CLI 为新手开发者提供全方位的 AI 辅助功能，
             让您在终端中体验前所未有的智能开发体验。
           </p>
         </div>
 
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-            {features.map((feature) => (
-              <div key={feature.name} className="relative pl-16">
-                <dt className="text-base font-semibold leading-7 text-gray-900">
-                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
+        {/* 功能卡片网格 */}
+        <div className="mx-auto mt-20 max-w-6xl">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {features.map((feature, index) => (
+              <div
+                key={feature.name}
+                className="group relative overflow-hidden rounded-2xl bg-white/80 backdrop-blur-sm p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-200/50"
+              >
+                {/* 卡片背景渐变 */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-purple-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                {/* 图标 */}
+                <div className="relative mb-6">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <feature.icon className="h-7 w-7 text-white" aria-hidden="true" />
                   </div>
-                  {feature.name}
-                </dt>
-                <dd className="mt-2 text-base leading-7 text-gray-600">{feature.description}</dd>
+                </div>
+
+                {/* 内容 */}
+                <div className="relative">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+                    {feature.name}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {feature.description}
+                  </p>
+                </div>
+
+                {/* 装饰性元素 */}
+                <div className="absolute top-4 right-4 h-2 w-2 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 opacity-60"></div>
               </div>
             ))}
-          </dl>
+          </div>
+        </div>
+
+        {/* 底部 CTA */}
+        <div className="mx-auto mt-20 max-w-2xl text-center">
+          <div className="rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 p-8 shadow-2xl">
+            <h3 className="text-2xl font-bold text-white mb-4">
+              准备体验 AI 驱动的开发流程？
+            </h3>
+            <p className="text-blue-100 mb-6">
+              立即开始使用 Gemini CLI，让 AI 成为您开发工作流程中的得力助手
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://github.com/google-gemini/gemini-cli"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-lg bg-white px-6 py-3 text-base font-semibold text-blue-600 shadow-sm hover:bg-gray-50 transition-colors duration-200"
+              >
+                开始使用
+              </a>
+              <a
+                href="/tutorials"
+                className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-6 py-3 text-base font-semibold text-white hover:bg-white/10 transition-colors duration-200"
+              >
+                查看教程
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

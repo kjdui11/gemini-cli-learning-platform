@@ -86,37 +86,7 @@ export default function IntegrationSection() {
           </div>
         </div>
 
-        {/* 使用场景 */}
-        <div className="mx-auto mt-16 max-w-4xl">
-          <div className="text-center">
-            <h3 className="text-xl font-semibold text-gray-900 mb-8">
-              适合不同开发场景
-            </h3>
-          </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
-            <div className="text-center">
-              <div className="mx-auto h-12 w-12 rounded-full bg-green-100 flex items-center justify-center mb-4">
-                <span className="text-green-600 font-semibold">快</span>
-              </div>
-              <h4 className="font-medium text-gray-900 mb-2">快速原型</h4>
-              <p className="text-sm text-gray-600">使用 Gemini CLI 快速生成代码片段和脚本</p>
-            </div>
-            <div className="text-center">
-              <div className="mx-auto h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
-                <span className="text-blue-600 font-semibold">深</span>
-              </div>
-              <h4 className="font-medium text-gray-900 mb-2">深度开发</h4>
-              <p className="text-sm text-gray-600">在 VS Code 中使用 Code Assist 进行复杂项目开发</p>
-            </div>
-            <div className="text-center">
-              <div className="mx-auto h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center mb-4">
-                <span className="text-purple-600 font-semibold">全</span>
-              </div>
-              <h4 className="font-medium text-gray-900 mb-2">全栈支持</h4>
-              <p className="text-sm text-gray-600">从前端到后端，从脚本到应用的全方位支持</p>
-            </div>
-          </div>
-        </div>
+
 
         {/* CTA */}
         <div className="mt-16 text-center">

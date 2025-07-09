@@ -103,21 +103,7 @@ export default function BlogHighlightsSection() {
           ))}
         </div>
 
-        {/* Key Features Stats */}
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-            {keyFeatures.map((feature, index) => (
-              <div key={index} className="flex flex-col items-center text-center">
-                <div className="rounded-full bg-indigo-600 px-6 py-4 text-white">
-                  <div className="text-2xl font-bold">{feature.stat}</div>
-                  <div className="text-sm opacity-90">{feature.statLabel}</div>
-                </div>
-                <h3 className="mt-6 text-lg font-semibold text-gray-900">{feature.title}</h3>
-                <p className="mt-2 text-sm text-gray-600 max-w-xs">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+
 
         {/* CTA to blog */}
         <div className="mx-auto mt-16 max-w-2xl text-center">

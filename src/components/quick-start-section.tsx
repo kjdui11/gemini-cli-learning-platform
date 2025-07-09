@@ -74,98 +74,56 @@ export default function QuickStartSection() {
   }
 
   return (
-    <div className="bg-gray-50 py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">快速开始</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+    <div className="bg-gray-50 py-16 sm:py-20">
+      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
+          <div className="inline-flex items-center rounded-full bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-800 mb-4">
+            <span className="mr-2">⚡</span>
+            快速开始
+          </div>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             三步开始使用 Gemini CLI
-          </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          </h2>
+          <p className="mt-4 text-lg text-gray-600">
             只需几分钟即可开始使用 Gemini CLI，无需复杂配置，立即体验 AI 辅助开发的强大功能。
           </p>
         </div>
 
         {/* Installation Steps */}
-        <div className="mx-auto mt-16 max-w-4xl">
-          <div className="space-y-12">
+        <div className="mx-auto mt-12 max-w-5xl">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             {installSteps.map((step, index) => (
-              <div key={step.step} className="relative">
-                <div className="flex items-center">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-600">
-                    <span className="text-lg font-semibold text-white">{step.step}</span>
+              <div key={step.step} className="relative bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <div className="flex items-center mb-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold text-lg">
+                    {step.step}
                   </div>
-                  <h3 className="ml-6 text-xl font-semibold text-gray-900">{step.title}</h3>
+                  <h3 className="ml-4 text-lg font-semibold text-gray-900">{step.title}</h3>
                 </div>
-                <p className="mt-4 ml-18 text-base text-gray-600">{step.description}</p>
-                <div className="mt-6 ml-18">
-                  <div className="rounded-lg bg-gray-900 px-6 py-4">
-                    <div className="flex items-center justify-between">
-                      <code className="text-base text-green-400 font-mono">{step.command}</code>
-                      <button
-                        onClick={() => copyToClipboard(step.command, index)}
-                        className="ml-4 text-gray-400 hover:text-white transition-colors"
-                      >
-                        {copiedIndex === index ? (
-                          <CheckIcon className="h-5 w-5" />
-                        ) : (
-                          <ClipboardIcon className="h-5 w-5" />
-                        )}
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Usage Examples */}
-        <div className="mx-auto mt-20 max-w-4xl">
-          <div className="text-center mb-12">
-            <h3 className="text-2xl font-bold tracking-tight text-gray-900">
-              使用示例
-            </h3>
-          </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {usageExamples.map((example, index) => (
-              <div key={index} className="rounded-xl bg-white p-6 shadow-sm ring-1 ring-gray-900/5">
-                <h4 className="text-lg font-semibold text-gray-900 mb-4">{example.title}</h4>
+                <p className="text-sm text-gray-600 mb-4">{step.description}</p>
                 <div className="rounded-lg bg-gray-900 px-4 py-3">
-                  <code className="text-sm text-green-400 font-mono">{example.command}</code>
+                  <div className="flex items-center justify-between">
+                    <code className="text-sm text-green-400 font-mono break-all">{step.command}</code>
+                    <button
+                      onClick={() => copyToClipboard(step.command, index)}
+                      className="ml-3 text-gray-400 hover:text-white transition-colors flex-shrink-0"
+                    >
+                      {copiedIndex === index ? (
+                        <CheckIcon className="h-4 w-4" />
+                      ) : (
+                        <ClipboardIcon className="h-4 w-4" />
+                      )}
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="mx-auto mt-20 max-w-4xl text-center">
-          <div className="rounded-2xl bg-indigo-600 px-8 py-16 sm:px-16">
-            <h3 className="text-3xl font-bold tracking-tight text-white">
-              准备开始了吗？
-            </h3>
-            <p className="mt-6 text-xl leading-8 text-indigo-200">
-              立即开始您的 Gemini CLI 学习之旅，探索 AI 辅助开发的无限可能。
-            </p>
-            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
-              <a
-                href="/tutorials"
-                className="rounded-md bg-white px-6 py-3 text-base font-semibold text-indigo-600 shadow-sm hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
-              >
-                查看详细教程
-              </a>
-              <a
-                href="https://github.com/google-gemini/gemini-cli"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-base font-semibold leading-6 text-white hover:text-indigo-200 transition-colors"
-              >
-                访问 GitHub <span aria-hidden="true">→</span>
-              </a>
-            </div>
-          </div>
-        </div>
+
+
+
       </div>
     </div>
   )
