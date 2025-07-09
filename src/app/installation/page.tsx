@@ -209,7 +209,7 @@ export default function InstallationPage() {
               {installationSteps.map((step, index) => (
                 <div key={step.id} className="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
                   <div className="flex items-start">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-lg">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-lg">
                       {index + 1}
                     </div>
                     <div className="ml-6 flex-1">
@@ -221,7 +221,7 @@ export default function InstallationPage() {
                       <div className="space-y-2 mb-4">
                         {step.steps.map((stepItem, stepIndex) => (
                           <div key={stepIndex} className="flex items-start text-sm text-gray-700">
-                            <span className="inline-block w-6 h-6 rounded-full bg-blue-100 text-blue-600 text-xs font-medium flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                            <span className="inline-flex w-6 h-6 rounded-full bg-blue-100 text-blue-600 text-xs font-medium items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                               {stepIndex + 1}
                             </span>
                             {stepItem}

@@ -96,7 +96,7 @@ export default function QuickStartSection() {
             {installSteps.map((step, index) => (
               <div key={step.step} className="relative bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
                 <div className="flex items-center mb-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold text-lg">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold text-lg">
                     {step.step}
                   </div>
                   <h3 className="ml-4 text-lg font-semibold text-gray-900">{step.title}</h3>
