@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { CheckIcon, ClipboardIcon } from '@heroicons/react/24/outline'
 
 const installSteps = [
@@ -45,10 +45,27 @@ const usageExamples = [
 
 export default function QuickStartSection() {
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null)
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   const copyToClipboard = async (text: string, index: number) => {
+    if (!isClient) return
+
     try {
-      await navigator.clipboard.writeText(text)
+      if (navigator.clipboard) {
+        await navigator.clipboard.writeText(text)
+      } else {
+        // 降级方案：使用传统的复制方法
+        const textArea = document.createElement('textarea')
+        textArea.value = text
+        document.body.appendChild(textArea)
+        textArea.select()
+        document.execCommand('copy')
+        document.body.removeChild(textArea)
+      }
       setCopiedIndex(index)
       setTimeout(() => setCopiedIndex(null), 2000)
     } catch (err) {
