@@ -4,31 +4,31 @@ const footerNavigation = {
   learning: {
     title: '学习资源',
     links: [
-      { name: 'Gemini CLI 入门教程', href: '/tutorials' },
-      { name: 'AI 编程最佳实践', href: '/tutorials/best-practices' },
+      { name: '安装与设置指南', href: '/installation' },
+      { name: '入门使用教程', href: '/guides' },
+      { name: '进阶使用技巧', href: '/guides/advanced' },
       { name: '常见问题解答', href: '/faq' },
-      { name: '视频教程合集', href: '/videos' },
-      { name: '实战案例分析', href: '/tutorials/examples' },
+      { name: '实战案例分析', href: '/guides/examples' },
     ],
   },
   tools: {
-    title: 'AI 开发工具',
+    title: '开发工具',
     links: [
       { name: 'Gemini CLI 下载', href: 'https://github.com/google-gemini/gemini-cli' },
+      { name: '命令参考手册', href: '/commands' },
+      { name: '开发者文档', href: '/docs' },
       { name: 'Google AI Studio', href: 'https://aistudio.google.com/' },
       { name: 'Gemini API 文档', href: 'https://ai.google.dev/gemini-api' },
-      { name: 'MCP 协议指南', href: '/tutorials/mcp' },
-      { name: 'CLI 命令参考', href: '/tutorials/commands' },
     ],
   },
   community: {
     title: '社区与支持',
     links: [
-      { name: '产品更新动态', href: '/news' },
+      { name: 'GitHub 项目主页', href: 'https://github.com/google-gemini/gemini-cli' },
       { name: 'GitHub 讨论区', href: 'https://github.com/google-gemini/gemini-cli/discussions' },
       { name: '问题反馈', href: 'https://github.com/google-gemini/gemini-cli/issues' },
-      { name: '开发者社区', href: '/community' },
-      { name: '贡献指南', href: '/contribute' },
+      { name: '安装问题排查', href: '/installation#troubleshooting' },
+      { name: '贡献指南', href: '/docs/contributing' },
     ],
   },
   company: {

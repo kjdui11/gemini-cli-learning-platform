@@ -7,10 +7,11 @@ import { cn } from '@/lib/utils'
 
 const navigation = [
   { name: '首页', href: '/' },
-  { name: '教程', href: '/tutorials' },
+  { name: '安装与设置', href: '/installation' },
+  { name: '使用指南', href: '/guides' },
+  { name: '命令参考', href: '/commands' },
+  { name: '开发者文档', href: '/docs' },
   { name: '常见问题', href: '/faq' },
-  { name: '视频教程', href: '/videos' },
-  { name: '产品动态', href: '/news' },
 ]
 
 export default function Navigation() {
