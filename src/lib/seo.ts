@@ -4,7 +4,7 @@ export const siteConfig = {
   name: 'Gemini CLI 学习平台',
   description: '专为新手开发者打造的 Gemini CLI 学习平台，提供详细教程、常见问题解答、视频指南和最新产品动态，帮助您快速掌握这个强大的 AI 命令行工具。',
   url: 'https://gemini-cli-learning-platform.vercel.app',
-  ogImage: '/og-image.png',
+  ogImage: '/next.svg', // 临时使用现有图片
   keywords: [
     'Gemini CLI',
     'AI 命令行工具',
@@ -120,7 +120,7 @@ export const structuredData = {
     url: siteConfig.url,
     logo: {
       '@type': 'ImageObject',
-      url: `${siteConfig.url}/logo.png`,
+      url: `${siteConfig.url}/next.svg`, // 临时使用现有图片
     },
   },
 }
@@ -130,7 +130,7 @@ export const organizationStructuredData = {
   '@type': 'Organization',
   name: siteConfig.name,
   url: siteConfig.url,
-  logo: `${siteConfig.url}/logo.png`,
+  logo: `${siteConfig.url}/next.svg`, // 临时使用现有图片
   description: siteConfig.description,
   sameAs: [
     'https://github.com/google-gemini/gemini-cli',
