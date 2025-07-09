@@ -6,6 +6,7 @@
 
 - **现代化设计**: 使用 Next.js 14 + Tailwind CSS 构建的响应式网站
 - **SEO 优化**: 完整的 SEO 配置，包括结构化数据和元标签
+- **分析跟踪**: 集成 Google Analytics 进行用户行为分析
 - **官方内容整合**: 整合 Google 官方博客内容和 GitHub 项目信息
 - **用户友好**: 简洁直观的界面设计，适合新手开发者
 - **移动端适配**: 完全响应式设计，支持各种设备
@@ -99,13 +100,37 @@ src/
 - 优化的 robots.txt
 - 语义化 HTML 结构
 
+## ⚙️ 环境变量配置
+
+复制 `.env.example` 为 `.env.local` 并配置以下变量：
+
+```bash
+# Google Analytics
+NEXT_PUBLIC_GA_ID=G-NEQETT0ENG
+```
+
+### Google Analytics 设置
+
+1. **开发环境**: GA 仅在生产环境中加载，开发时不会发送数据
+2. **事件跟踪**: 支持页面浏览、导航点击、外部链接等事件跟踪
+3. **隐私友好**: 遵循 GDPR 和隐私最佳实践
+
 ## 🚀 部署
 
 推荐使用 Vercel 部署：
 
 1. 将代码推送到 GitHub
 2. 在 Vercel 中导入项目
-3. 自动部署完成
+3. 在 Vercel 项目设置中添加环境变量：
+   - `NEXT_PUBLIC_GA_ID`: 你的 Google Analytics ID
+4. 自动部署完成
+
+### Vercel 环境变量设置
+
+在 Vercel Dashboard 中：
+1. 进入项目设置 → Environment Variables
+2. 添加 `NEXT_PUBLIC_GA_ID` = `G-NEQETT0ENG`
+3. 重新部署项目
 
 ## 📝 许可证
 
