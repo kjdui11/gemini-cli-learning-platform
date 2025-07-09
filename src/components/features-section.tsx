@@ -52,10 +52,6 @@ export default function FeaturesSection() {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         {/* 标题区域 */}
         <div className="mx-auto max-w-3xl text-center">
-          <div className="inline-flex items-center rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-800 mb-6">
-            <span className="mr-2">🚀</span>
-            核心功能
-          </div>
           <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
             Gemini CLI
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">

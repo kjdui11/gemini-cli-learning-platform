@@ -59,19 +59,17 @@ export default function Navigation() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-center">
-          <div className="flex items-center gap-x-6">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="relative text-sm font-semibold leading-6 text-gray-700 hover:text-blue-600 transition-all duration-300 group px-3 py-2 rounded-lg hover:bg-blue-50/50 whitespace-nowrap"
-              >
-                {item.name}
-                <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
-              </Link>
-            ))}
-          </div>
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-6">
+          {navigation.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className="relative text-sm font-semibold leading-6 text-gray-700 hover:text-blue-600 transition-all duration-300 group px-3 py-2 rounded-lg hover:bg-blue-50/50 whitespace-nowrap"
+            >
+              {item.name}
+              <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
+            </Link>
+          ))}
         </div>
       </nav>
       
