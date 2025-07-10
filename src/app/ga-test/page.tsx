@@ -100,6 +100,34 @@ export default function GATestPage() {
         <h1 className="text-3xl font-bold text-gray-900 mb-8">
           Google Analytics 诊断页面
         </h1>
+
+        {gaStatus.gaId === 'Not Set' && (
+          <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
+            <div className="flex items-center">
+              <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-3">
+                <span className="text-white text-sm">!</span>
+              </div>
+              <div>
+                <h3 className="text-red-800 font-semibold">需要配置Vercel环境变量</h3>
+                <p className="text-red-700 text-sm">GA代码已集成，但Vercel环境变量未设置。请按照下方说明配置。</p>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {gaStatus.gaId !== 'Not Set' && gaStatus.gtagLoaded && (
+          <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
+            <div className="flex items-center">
+              <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3">
+                <span className="text-white text-sm">✓</span>
+              </div>
+              <div>
+                <h3 className="text-green-800 font-semibold">Google Analytics 工作正常</h3>
+                <p className="text-green-700 text-sm">所有组件都已正确加载和配置。</p>
+              </div>
+            </div>
+          </div>
+        )}
         
         <div className="space-y-6">
           {/* 基本信息 */}
@@ -183,6 +211,30 @@ export default function GATestPage() {
               <div>页面加载时间: {new Date().toLocaleString()}</div>
             </div>
           </div>
+
+          {/* Vercel配置说明 */}
+          {gaStatus.gaId === 'Not Set' && (
+            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+              <h2 className="text-xl font-semibold text-gray-900 mb-4">🔧 Vercel环境变量配置</h2>
+              <p className="text-yellow-800 mb-4">
+                检测到环境变量未设置。请按以下步骤配置：
+              </p>
+              <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+                <li>访问 <a href="https://vercel.com/dashboard" target="_blank" className="text-blue-600 hover:underline">Vercel Dashboard</a></li>
+                <li>选择项目 &quot;gemini-cli-learning-platform&quot;</li>
+                <li>进入 Settings → Environment Variables</li>
+                <li>点击 &quot;Add New&quot; 添加：
+                  <div className="bg-white p-3 mt-2 rounded border font-mono text-xs">
+                    <div>Name: <strong>NEXT_PUBLIC_GA_ID</strong></div>
+                    <div>Value: <strong>G-NEQETT0ENG</strong></div>
+                  </div>
+                </li>
+                <li>确保选择所有环境（Production, Preview, Development）</li>
+                <li>保存后重新部署项目</li>
+                <li>等待部署完成后刷新此页面验证</li>
+              </ol>
+            </div>
+          )}
 
           {/* 检查步骤 */}
           <div className="bg-white rounded-lg p-6 shadow-sm border">

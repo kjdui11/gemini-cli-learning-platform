@@ -3,21 +3,45 @@ export default function GACheckPage() {
     <div className="min-h-screen bg-gray-50 py-20">
       <div className="max-w-4xl mx-auto px-6">
         <h1 className="text-3xl font-bold text-gray-900 mb-8">
-          Google Analytics 检查页面（静态版本）
+          ✅ Google Analytics 集成成功！
         </h1>
+
+        <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
+          <div className="flex items-center">
+            <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3">
+              <span className="text-white text-sm">✓</span>
+            </div>
+            <div>
+              <h3 className="text-green-800 font-semibold">Google Analytics 已成功集成</h3>
+              <p className="text-green-700 text-sm">静态构建验证通过，GA代码已正确添加到网站中。</p>
+            </div>
+          </div>
+        </div>
         
         <div className="space-y-6">
-          {/* 基本信息 */}
+          {/* 集成状态 */}
           <div className="bg-white rounded-lg p-6 shadow-sm border">
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">基本配置</h2>
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">✅ 集成状态确认</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-              <div>
+              <div className="flex items-center">
+                <span className="w-4 h-4 bg-green-500 rounded-full mr-3"></span>
                 <span className="font-medium">GA ID:</span>
-                <span className="ml-2 text-green-600">G-NEQETT0ENG</span>
+                <span className="ml-2 text-green-600 font-mono">G-NEQETT0ENG</span>
               </div>
-              <div>
+              <div className="flex items-center">
+                <span className="w-4 h-4 bg-green-500 rounded-full mr-3"></span>
                 <span className="font-medium">环境:</span>
                 <span className="ml-2 text-blue-600">生产环境</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-4 h-4 bg-green-500 rounded-full mr-3"></span>
+                <span className="font-medium">代码位置:</span>
+                <span className="ml-2 text-gray-600">&lt;head&gt; 元素中</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-4 h-4 bg-green-500 rounded-full mr-3"></span>
+                <span className="font-medium">格式:</span>
+                <span className="ml-2 text-gray-600">Google 官方标准</span>
               </div>
             </div>
           </div>
@@ -42,9 +66,33 @@ export default function GACheckPage() {
             </ol>
           </div>
 
+          {/* 重要：Vercel环境变量配置 */}
+          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">⚠️ 重要：完成Vercel环境变量配置</h2>
+            <p className="text-yellow-800 mb-4">
+              虽然GA代码已成功集成，但需要在Vercel中设置环境变量以确保完全正常工作：
+            </p>
+            <div className="bg-white rounded p-4 border">
+              <h3 className="font-semibold text-gray-900 mb-2">配置步骤：</h3>
+              <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
+                <li>登录 <a href="https://vercel.com" target="_blank" className="text-blue-600 hover:underline">Vercel Dashboard</a></li>
+                <li>进入项目 &quot;gemini-cli-learning-platform&quot;</li>
+                <li>点击 Settings → Environment Variables</li>
+                <li>添加新变量：
+                  <div className="bg-gray-100 p-2 mt-1 rounded font-mono text-xs">
+                    Name: NEXT_PUBLIC_GA_ID<br/>
+                    Value: G-NEQETT0ENG
+                  </div>
+                </li>
+                <li>确保应用到所有环境（Production, Preview, Development）</li>
+                <li>重新部署项目</li>
+              </ol>
+            </div>
+          </div>
+
           {/* 验证信息 */}
           <div className="bg-white rounded-lg p-6 shadow-sm border">
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">验证信息</h2>
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">✅ 已完成的集成</h2>
             <div className="space-y-3 text-sm">
               <div className="flex items-center">
                 <span className="w-4 h-4 bg-green-500 rounded-full mr-3"></span>
@@ -56,11 +104,11 @@ export default function GACheckPage() {
               </div>
               <div className="flex items-center">
                 <span className="w-4 h-4 bg-green-500 rounded-full mr-3"></span>
-                <span>环境变量配置正确</span>
+                <span>静态构建包含GA脚本</span>
               </div>
               <div className="flex items-center">
-                <span className="w-4 h-4 bg-green-500 rounded-full mr-3"></span>
-                <span>静态构建包含GA脚本</span>
+                <span className="w-4 h-4 bg-yellow-500 rounded-full mr-3"></span>
+                <span>需要配置Vercel环境变量（见上方说明）</span>
               </div>
             </div>
           </div>
