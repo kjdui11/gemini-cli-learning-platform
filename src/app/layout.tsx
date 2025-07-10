@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
-import GoogleAnalytics from "@/components/google-analytics";
 import { generateMetadata as generateSEOMetadata, structuredData, organizationStructuredData } from "@/lib/seo";
 
 const geistSans = Geist({
@@ -26,7 +25,25 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <head>
-        <GoogleAnalytics />
+        {/* Google tag (gtag.js) - 按照官方要求添加 */}
+        {process.env.NODE_ENV === 'production' && process.env.NEXT_PUBLIC_GA_ID && (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+            />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+                `,
+              }}
+            />
+          </>
+        )}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
