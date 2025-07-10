@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="zh-CN">
       <head>
         {/* Google tag (gtag.js) - 按照官方要求添加 */}
-        {process.env.NODE_ENV === 'production' && process.env.NEXT_PUBLIC_GA_ID && (
+        {process.env.NEXT_PUBLIC_GA_ID && (
           <>
             <script
               async
