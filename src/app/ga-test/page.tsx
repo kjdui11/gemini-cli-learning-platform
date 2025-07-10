@@ -2,6 +2,9 @@
 
 import { useEffect, useState } from 'react'
 
+// 添加调试信息
+console.log('GA Test Page Loading...')
+
 interface ScriptInfo {
   type: string
   src?: string
