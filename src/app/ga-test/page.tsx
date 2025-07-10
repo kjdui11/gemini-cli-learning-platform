@@ -2,8 +2,25 @@
 
 import { useEffect, useState } from 'react'
 
+interface ScriptInfo {
+  type: string
+  src?: string
+  content?: string
+  async?: boolean
+  index: number
+}
+
+interface GAStatus {
+  gaId: string
+  nodeEnv: string
+  gtagLoaded: boolean
+  dataLayerExists: boolean
+  scriptsFound: ScriptInfo[]
+  errors: string[]
+}
+
 export default function GATestPage() {
-  const [gaStatus, setGAStatus] = useState({
+  const [gaStatus, setGAStatus] = useState<GAStatus>({
     gaId: '',
     nodeEnv: '',
     gtagLoaded: false,
@@ -18,13 +35,13 @@ export default function GATestPage() {
     const nodeEnv = process.env.NODE_ENV || 'Unknown'
     
     // 检查gtag是否加载
-    const gtagLoaded = typeof window !== 'undefined' && typeof (window as any).gtag === 'function'
-    
+    const gtagLoaded = typeof window !== 'undefined' && typeof (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag === 'function'
+
     // 检查dataLayer是否存在
-    const dataLayerExists = typeof window !== 'undefined' && Array.isArray((window as any).dataLayer)
+    const dataLayerExists = typeof window !== 'undefined' && Array.isArray((window as unknown as { dataLayer?: unknown[] }).dataLayer)
     
     // 检查页面中的GA脚本
-    const scripts = []
+    const scripts: ScriptInfo[] = []
     if (typeof window !== 'undefined') {
       const allScripts = document.querySelectorAll('script')
       allScripts.forEach((script, index) => {
@@ -57,9 +74,10 @@ export default function GATestPage() {
   }, [])
 
   const testGAEvent = () => {
-    if (typeof window !== 'undefined' && (window as any).gtag) {
+    const windowWithGtag = window as unknown as { gtag?: (...args: unknown[]) => void }
+    if (typeof window !== 'undefined' && windowWithGtag.gtag) {
       try {
-        (window as any).gtag('event', 'test_event', {
+        windowWithGtag.gtag('event', 'test_event', {
           event_category: 'test',
           event_label: 'manual_test',
           value: 1
@@ -171,7 +189,7 @@ export default function GATestPage() {
               <li>检查页面源码中是否包含GA脚本</li>
               <li>打开浏览器开发者工具 → Network标签页</li>
               <li>刷新页面，查看是否有对googletagmanager.com的请求</li>
-              <li>点击"发送测试事件"按钮</li>
+              <li>点击&quot;发送测试事件&quot;按钮</li>
               <li>查看是否有对google-analytics.com的请求</li>
               <li>在GA实时报告中查看数据</li>
             </ol>
