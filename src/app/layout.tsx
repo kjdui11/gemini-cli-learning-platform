@@ -26,24 +26,22 @@ export default function RootLayout({
     <html lang="zh-CN">
       <head>
         {/* Google tag (gtag.js) - 按照官方要求添加 */}
-        {process.env.NEXT_PUBLIC_GA_ID && (
-          <>
-            <script
-              async
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
-            />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
-                `,
-              }}
-            />
-          </>
-        )}
+        <>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-NEQETT0ENG"
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-NEQETT0ENG');
+              `,
+            }}
+          />
+        </>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
