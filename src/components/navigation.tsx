@@ -4,18 +4,21 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { cn } from '@/lib/utils'
-
-const navigation = [
-  { name: '安装与设置', href: '/installation' },
-  { name: '使用指南', href: '/guides' },
-  { name: '命令参考', href: '/commands' },
-  { name: '开发者文档', href: '/docs' },
-  { name: '常见问题', href: '/faq' },
-]
+import LanguageSwitcher from '@/components/LanguageSwitcher'
+import { useTranslation } from '@/hooks/useTranslation'
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const { t, currentLocale } = useTranslation()
+
+  const navigation = [
+    { name: t('navigation.installation'), href: currentLocale === 'en' ? '/installation' : `/${currentLocale}/installation` },
+    { name: t('navigation.guides'), href: currentLocale === 'en' ? '/guides' : `/${currentLocale}/guides` },
+    { name: t('navigation.commands'), href: currentLocale === 'en' ? '/commands' : `/${currentLocale}/commands` },
+    { name: t('navigation.docs'), href: currentLocale === 'en' ? '/docs' : `/${currentLocale}/docs` },
+    { name: t('navigation.faq'), href: currentLocale === 'en' ? '/faq' : `/${currentLocale}/faq` },
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,15 +38,15 @@ export default function Navigation() {
     )}>
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-none">
-          <Link href="/" className="-m-1.5 p-1.5 group">
-            <span className="sr-only">Gemini CLI 学习平台</span>
+          <Link href={currentLocale === 'en' ? '/' : `/${currentLocale}/`} className="-m-1.5 p-1.5 group">
+            <span className="sr-only">{t('navigation.logo.alt')}</span>
             <div className="flex items-center space-x-2">
               <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-blue-500 via-purple-600 to-indigo-700 flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
                 <span className="text-white font-bold text-base">G</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300 whitespace-nowrap">Gemini CLI</span>
-                <span className="text-xs text-gray-500 -mt-1 whitespace-nowrap">学习平台</span>
+                <span className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300 whitespace-nowrap">{t('navigation.logo.title')}</span>
+                <span className="text-xs text-gray-500 -mt-1 whitespace-nowrap">{t('navigation.logo.subtitle')}</span>
               </div>
             </div>
           </Link>
@@ -55,11 +58,11 @@ export default function Navigation() {
             className="-m-2.5 inline-flex items-center justify-center rounded-lg p-2.5 text-gray-700 hover:text-blue-600 hover:bg-blue-50/50 transition-all duration-300"
             onClick={() => setMobileMenuOpen(true)}
           >
-            <span className="sr-only">打开主菜单</span>
+            <span className="sr-only">{t('navigation.toggleMenu')}</span>
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-6">
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-6 lg:items-center">
           {navigation.map((item) => (
             <Link
               key={item.name}
@@ -70,6 +73,7 @@ export default function Navigation() {
               <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
             </Link>
           ))}
+          <LanguageSwitcher className="ml-4" />
         </div>
       </nav>
       
@@ -81,15 +85,15 @@ export default function Navigation() {
         <div className="fixed inset-0 bg-black/20 backdrop-blur-sm" onClick={() => setMobileMenuOpen(false)} />
         <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white/95 backdrop-blur-lg px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 sm:shadow-2xl">
           <div className="flex items-center justify-between">
-            <Link href="/" className="-m-1.5 p-1.5 group">
-              <span className="sr-only">Gemini CLI 学习平台</span>
+            <Link href={currentLocale === 'en' ? '/' : `/${currentLocale}/`} className="-m-1.5 p-1.5 group">
+              <span className="sr-only">{t('navigation.logo.alt')}</span>
               <div className="flex items-center space-x-3">
                 <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-blue-500 via-purple-600 to-indigo-700 flex items-center justify-center shadow-lg">
                   <span className="text-white font-bold text-lg">G</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-xl font-bold text-gray-900">Gemini CLI</span>
-                  <span className="text-xs text-gray-500 -mt-1">学习平台</span>
+                  <span className="text-xl font-bold text-gray-900">{t('navigation.logo.title')}</span>
+                  <span className="text-xs text-gray-500 -mt-1">{t('navigation.logo.subtitle')}</span>
                 </div>
               </div>
             </Link>
@@ -98,7 +102,7 @@ export default function Navigation() {
               className="-m-2.5 rounded-lg p-2.5 text-gray-700 hover:text-red-600 hover:bg-red-50/50 transition-all duration-300"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <span className="sr-only">关闭菜单</span>
+              <span className="sr-only">{t('navigation.toggleMenu')}</span>
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
@@ -117,6 +121,9 @@ export default function Navigation() {
                     <span className="text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">→</span>
                   </Link>
                 ))}
+              </div>
+              <div className="py-6">
+                <LanguageSwitcher className="w-full" />
               </div>
             </div>
           </div>

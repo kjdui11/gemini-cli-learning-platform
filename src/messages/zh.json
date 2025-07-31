@@ -1,0 +1,2837 @@
+{
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "cancel": "取消",
+    "confirm": "确认",
+    "save": "保存",
+    "edit": "编辑",
+    "delete": "删除",
+    "search": "搜索",
+    "filter": "筛选",
+    "sort": "排序",
+    "next": "下一步",
+    "previous": "上一步",
+    "home": "首页",
+    "back": "返回",
+    "close": "关闭",
+    "open": "打开",
+    "copy": "复制",
+    "share": "分享",
+    "download": "下载",
+    "upload": "上传",
+    "language": "语言",
+    "theme": "主题",
+    "settings": "设置"
+  },
+  "navigation": {
+    "installation": "安装与设置",
+    "guides": "使用指南",
+    "faq": "常见问题解答",
+    "commands": "命令参考",
+    "docs": "开发者文档",
+    "toggleMenu": "切换菜单",
+    "logo": {
+      "title": "Gemini CLI",
+      "subtitle": "学习平台",
+      "alt": "Gemini CLI 学习平台"
+    }
+  },
+  "hero": {
+    "title": {
+      "part1": "掌握",
+      "part2": "开启 AI 开发新时代"
+    },
+    "subtitle": "掌握强大的 AI 命令行界面",
+    "description": "专为新手开发者打造的 Gemini CLI 学习平台。通过详细教程、实战案例和视频指南，快速掌握 Google 最新的开源 AI 命令行工具，让 AI 成为您开发工作流程中的得力助手。",
+    "getStarted": "开始使用",
+    "learnMore": "了解更多",
+    "watchDemo": "观看演示",
+    "githubStars": "GitHub 星标",
+    "freeToUse": "免费使用",
+    "openSource": "开源项目",
+    "activeUsers": "活跃用户",
+    "badge": {
+      "text": "Google 官方开源 AI 命令行工具",
+      "link": "查看源码"
+    },
+    "video": {
+      "fallback": "您的浏览器不支持视频播放。"
+    }
+  },
+  "features": {
+    "title": "能为您做什么？",
+    "subtitle": "从代码编写到任务自动化，Gemini CLI 为新手开发者提供全方位的 AI 辅助功能，让您在终端中体验前所未有的智能开发体验。",
+    "codeGeneration": {
+      "name": "代码理解与生成",
+      "description": "使用自然语言编写代码、调试问题和优化工作流程。支持多种编程语言，提供智能代码建议和错误修复。"
+    },
+    "fileOperations": {
+      "name": "文件操作与管理",
+      "description": "直接在终端中操作文件，批量处理、重命名、搜索和编辑文件内容，让文件管理变得更加智能高效。"
+    },
+    "googleSearch": {
+      "name": "Google 搜索集成",
+      "description": "内置 Google 搜索工具，获取实时网页内容和最新信息，为您的开发工作提供准确的外部上下文。"
+    },
+    "extensible": {
+      "name": "可扩展架构",
+      "description": "支持 Model Context Protocol (MCP) 和内置扩展系统，轻松集成到现有工作流程，自定义功能满足特定需求。"
+    },
+    "automation": {
+      "name": "任务自动化",
+      "description": "通过脚本调用 Gemini CLI，实现任务自动化和工作流程集成，提高开发效率和生产力。"
+    },
+    "openSource": {
+      "name": "开源透明",
+      "description": "完全开源 (Apache 2.0)，代码透明可审查，全球开发者社区共同贡献，确保安全性和可信度。"
+    },
+    "cta": {
+      "title": "准备体验 AI 驱动的开发流程？",
+      "description": "立即开始使用 Gemini CLI，让 AI 成为您开发工作流程中的得力助手",
+      "getStarted": "开始使用",
+      "viewTutorials": "查看教程"
+    }
+  },
+  "installation": {
+    "hero": {
+      "title": "安装与设置",
+      "description": "几分钟内开始使用 Gemini CLI。按照我们的分步指南在您的系统上安装和配置工具。"
+    },
+    "requirements": {
+      "title": "系统要求",
+      "description": "Gemini CLI 支持主流操作系统，确保您的系统满足以下要求"
+    },
+    "platforms": {
+      "windows": {
+        "name": "Windows",
+        "requirements": {
+          "os": "Windows 10 或更高版本",
+          "shell": "PowerShell 5.1 或更高版本",
+          "node": "Node.js 20+ (推荐使用 nvm-windows)"
+        },
+        "notes": "建议使用 Windows Terminal 获得更好的体验"
+      },
+      "macos": {
+        "name": "macOS",
+        "requirements": {
+          "os": "macOS 10.15 或更高版本",
+          "terminal": "Terminal 或 iTerm2",
+          "node": "Node.js 20+ (推荐使用 nvm)"
+        },
+        "notes": "可以使用 Homebrew 安装 Node.js: brew install node"
+      },
+      "linux": {
+        "name": "Linux",
+        "requirements": {
+          "distro": "Ubuntu 18.04+ / CentOS 7+ / 其他主流发行版",
+          "shell": "Bash 4.0 或更高版本",
+          "node": "Node.js 20+ (推荐使用 nvm)"
+        },
+        "notes": "确保系统已安装 curl 和 git"
+      }
+    },
+    "steps": {
+      "title": "安装步骤",
+      "description": "按照以下步骤完成 Gemini CLI 的安装和配置",
+      "requirements": {
+        "title": "系统要求",
+        "description": "安装前请确保您的系统满足最低要求",
+        "items": {
+          "node": "Node.js 18.0.0 或更高版本",
+          "npm": "npm 8.0.0 或更高版本（或 yarn/pnpm）",
+          "git": "Git 版本控制工具",
+          "apiKey": "Google AI Studio API 密钥"
+        }
+      },
+      "install": {
+        "title": "安装 Gemini CLI",
+        "description": "使用您首选的包管理器全局安装 CLI 工具",
+        "commands": {
+          "npm": "npm install -g @google/gemini-cli",
+          "verify": "gemini --version"
+        }
+      },
+      "config": {
+        "title": "配置设置",
+        "description": "设置您的 API 密钥并为您的工作流程配置工具",
+        "items": {
+          "apiKey": "设置您的 Google AI Studio API 密钥",
+          "settings": "配置默认设置和首选项",
+          "verify": "使用简单命令测试配置"
+        }
+      },
+      "firstRun": {
+        "title": "首次运行",
+        "description": "验证您的安装并运行您的第一个命令",
+        "commands": {
+          "help": "gemini --help",
+          "version": "gemini --version",
+          "test": "gemini 'Hello, world!'"
+        }
+      }
+    },
+    "troubleshooting": {
+      "title": "故障排除",
+      "description": "遇到安装问题？这里有常见问题的解决方案",
+      "nodeVersion": {
+        "issue": "Node.js 版本兼容性问题",
+        "solution": "使用 nvm 更新到 Node.js 18.0.0 或更高版本，或从 nodejs.org 下载"
+      },
+      "permissions": {
+        "issue": "安装期间权限被拒绝",
+        "solution": "使用 sudo 进行全局安装或配置 npm 使用不同的目录"
+      },
+      "apiKey": {
+        "issue": "API 密钥无法识别",
+        "solution": "验证您的 API 密钥是否正确，并在 Google AI Studio 中具有必要的权限"
+      },
+      "network": {
+        "issue": "网络连接问题",
+        "solution": "检查您的互联网连接和防火墙设置。如果需要，请考虑使用代理"
+      }
+    },
+    "nextSteps": {
+      "title": "下一步做什么？",
+      "description": "现在您已经安装了 Gemini CLI，请探索我们的指南和文档以充分利用该工具。",
+      "guides": "查看指南",
+      "commands": "命令参考"
+    }
+  },
+  "guides": {
+    "title": "使用指南",
+    "subtitle": "全面的教程和示例",
+    "gettingStarted": "快速开始",
+    "basicCommands": "基础命令",
+    "advancedConfig": "高级配置",
+    "integration": "集成指南",
+    "fileOperations": "文件操作",
+    "codeRefactoring": "代码重构",
+    "codeReview": "代码审查",
+    "documentation": "文档编写",
+    "mcpProtocol": "MCP 协议"
+  },
+  "faq": {
+    "title": "常见问题解答",
+    "subtitle": "查找常见问题的答案",
+    "searchPlaceholder": "搜索常见问题...",
+    "noResults": "未找到结果",
+    "categories": {
+      "general": "常规",
+      "installation": "安装",
+      "usage": "使用",
+      "troubleshooting": "故障排除",
+      "advanced": "高级"
+    }
+  },
+  "commands": {
+    "title": "命令参考",
+    "subtitle": "所有 Gemini CLI 命令的完整参考",
+    "searchPlaceholder": "搜索命令...",
+    "categories": {
+      "basic": "基础命令",
+      "advanced": "高级命令",
+      "configuration": "配置",
+      "utilities": "实用工具"
+    }
+  },
+  "docs": {
+    "title": "开发者文档",
+    "subtitle": "面向开发者的技术文档",
+    "categories": {
+      "development": "开发基础",
+      "configuration": "配置和协议",
+      "extensions": "扩展开发",
+      "contributing": "贡献指南"
+    },
+    "developmentSetup": "开发环境设置",
+    "projectStructure": "项目结构",
+    "buildAndTest": "构建和测试",
+    "coreApi": "核心 API",
+    "pluginApi": "插件 API",
+    "configApi": "配置 API",
+    "mcpIntroduction": "MCP 协议介绍",
+    "mcpServer": "MCP 服务器",
+    "mcpClient": "MCP 客户端",
+    "extensionArchitecture": "扩展架构",
+    "firstExtension": "创建第一个扩展",
+    "extensionPublishing": "扩展发布指南",
+    "contributingGuide": "贡献流程",
+    "codingStandards": "代码规范",
+    "pullRequestGuide": "提交 PR 指南"
+  },
+  "about": {
+    "title": "关于我们的平台",
+    "subtitle": "我们致力于通过全面的学习资源和社区驱动的内容，让全世界的开发者都能使用AI驱动的开发工具。",
+    "mission": {
+      "title": "我们的使命",
+      "description": "通过为Google的Gemini CLI提供全面、易懂和实用的学习资源，让AI驱动的开发变得民主化。我们相信每个开发者都应该有机会在日常工作流程中利用人工智能的力量。",
+      "excellence": "教育卓越",
+      "excellenceDesc": "我们创建高质量的教程、指南和文档，让各个技能水平的开发者都能理解复杂的AI概念。",
+      "community": "社区专注",
+      "communityDesc": "我们的平台依靠社区贡献蓬勃发展，促进AI开发爱好者之间的协作和知识分享。",
+      "practical": "实践学习",
+      "practicalDesc": "我们强调动手实践的真实世界示例，开发者可以立即应用到他们的项目和工作流程中。",
+      "global": "全球可访问性",
+      "globalDesc": "通过支持多种语言和包容性设计，我们确保我们的资源能够覆盖全世界的开发者。"
+    },
+    "values": {
+      "title": "我们的价值观",
+      "subtitle": "指导我们所做一切的原则",
+      "education": {
+        "name": "教育优先",
+        "description": "我们相信通过全面、易懂的教育内容让AI开发变得可访问。"
+      },
+      "communityDriven": {
+        "name": "社区驱动",
+        "description": "我们的平台依靠社区贡献、反馈和协作学习体验而蓬勃发展。"
+      },
+      "openSource": {
+        "name": "开源精神",
+        "description": "我们支持和推广开源开发、透明度和知识分享。"
+      },
+      "innovation": {
+        "name": "创新专注",
+        "description": "我们保持在AI技术的前沿，提供尖端的学习资源和工具。"
+      },
+      "accessibility": {
+        "name": "全球可访问性",
+        "description": "我们努力让我们的内容对全世界的开发者都可访问，无论他们的背景如何。"
+      },
+      "quality": {
+        "name": "优质内容",
+        "description": "我们致力于提供高质量、准确和最新的教育材料。"
+      }
+    },
+    "stats": {
+      "title": "平台影响",
+      "subtitle": "与开发者社区共同成长",
+      "languages": "支持语言",
+      "guides": "学习指南",
+      "examples": "代码示例",
+      "members": "社区成员"
+    },
+    "story": {
+      "title": "我们的故事",
+      "paragraph1": "当Google发布Gemini CLI作为开源项目时，我们认识到它在改变开发者使用AI工作方式方面的巨大潜力。然而，我们也看到在可访问的学习资源方面存在空白，这些资源可以帮助各种背景的开发者开始使用这个强大的工具。",
+      "paragraph2": "这就是我们决定创建这个综合学习平台的原因。我们的目标很简单：让Gemini CLI对每个人都可访问，无论他们在AI或命令行工具方面的经验水平如何。",
+      "paragraph3": "从一个小的教程集合开始，现在已经发展成为一个具有多语言支持、交互式示例和蓬勃发展的贡献者社区的综合平台。我们很自豪能成为开源生态系统的一部分，并支持Google让AI开发民主化的愿景。"
+    },
+    "disclaimer": {
+      "title": "重要声明",
+      "content": "这是一个由社区创建的非官方学习资源网站，用于支持Gemini CLI教育。虽然我们努力追求准确性和质量，但这个平台并非Google官方附属或认可。所有内容都基于官方Gemini CLI开源项目和社区贡献。"
+    },
+    "getInvolved": {
+      "title": "参与其中",
+      "subtitle": "加入我们的社区，帮助让AI开发更加可访问",
+      "contribute": {
+        "title": "贡献内容",
+        "description": "帮助我们改进教程并添加新的学习资源。",
+        "link": "贡献指南 →"
+      },
+      "discussions": {
+        "title": "加入讨论",
+        "description": "参与社区讨论并分享您的经验。",
+        "link": "GitHub讨论 →"
+      },
+      "issues": {
+        "title": "报告问题",
+        "description": "发现问题或有改进建议？",
+        "link": "联系我们 →"
+      }
+    },
+    "cta": {
+      "title": "准备开始学习了吗？",
+      "description": "探索我们的综合指南，加入已经在使用Gemini CLI增强开发工作流程的数千名开发者。",
+      "getStarted": "开始使用",
+      "browseGuides": "浏览指南"
+    }
+  },
+  "footer": {
+    "learning": {
+      "title": "学习资源",
+      "installation": "安装与设置指南",
+      "guides": "入门使用教程",
+      "advanced": "进阶使用技巧",
+      "faq": "常见问题解答",
+      "examples": "实战案例分析"
+    },
+    "tools": {
+      "title": "开发工具",
+      "download": "Gemini CLI 下载",
+      "commands": "命令参考手册",
+      "docs": "开发者文档",
+      "aiStudio": "Google AI Studio",
+      "apiDocs": "Gemini API 文档"
+    },
+    "community": {
+      "title": "社区与支持",
+      "github": "GitHub 项目主页",
+      "discussions": "GitHub 讨论区",
+      "issues": "问题反馈",
+      "troubleshooting": "安装问题排查",
+      "contributing": "贡献指南"
+    },
+    "company": {
+      "title": "关于我们",
+      "about": "网站介绍",
+      "privacy": "隐私政策",
+      "terms": "使用条款",
+      "contact": "联系我们",
+      "sitemap": "网站地图"
+    },
+    "seo": {
+      "title": "Gemini CLI 学习平台 - AI 驱动的开发工具教程",
+      "description": "专业的 Gemini CLI 中文学习平台，提供全面的 AI 编程教程、实战案例和最佳实践。学习如何使用 Google 最新的开源 AI 命令行工具，掌握人工智能辅助编程技术，提升开发效率。支持代码生成、文件操作、Google 搜索集成等强大功能。",
+      "tags": {
+        "geminiCLI": "#GeminiCLI",
+        "aiProgramming": "#AI编程",
+        "commandLine": "#命令行工具",
+        "googleAI": "#Google AI",
+        "openSource": "#开源项目"
+      }
+    },
+    "social": {
+      "visitLabel": "访问 {name}"
+    },
+    "copyright": {
+      "main": "© 2025 Gemini CLI 学习平台. 本站为非官方学习资源网站，致力于推广 AI 编程技术。",
+      "basedOn": "基于 Google 官方开源项目",
+      "license": "构建 | Apache 2.0 开源协议"
+    }
+  },
+  "meta": {
+    "defaultTitle": "Gemini CLI 学习平台",
+    "defaultDescription": "通过全面的教程、指南和文档掌握强大的 AI 命令行界面。",
+    "keywords": "Gemini CLI, AI, 命令行, 教程, 文档, 指南"
+  },
+  "errors": {
+    "pageNotFound": "页面未找到",
+    "serverError": "服务器错误",
+    "networkError": "网络错误",
+    "tryAgain": "重试",
+    "goHome": "返回首页"
+  },
+  "time": {
+    "readingTime": "{minutes} 分钟阅读",
+    "lastUpdated": "最后更新",
+    "publishedOn": "发布于"
+  },
+  "featuresStats": {
+    "freeExperience": {
+      "unit": "分钟免费开发体验",
+      "title": "无与伦比的使用限制",
+      "description": "个人 Google 账户免费获得每分钟 60 次模型请求和每天 1000 次请求的超量免费体验。"
+    },
+    "tokenContext": {
+      "unit": "Token 上下文",
+      "title": "强大的模型能力",
+      "description": "基于 Gemini 2.5 Pro 模型，拥有 100 万 token 的大型上下文窗口，支持实际的代码分析和生成。"
+    },
+    "openSource": {
+      "unit": "开源代码",
+      "title": "开放可扩展",
+      "description": "支持 Model Context Protocol (MCP) 和自定义工具，可以轻松配置多种开发工具和流程中。"
+    }
+  },
+  "heroShowcase": {
+    "title": "您的终端 AI 助手",
+    "description": "Gemini CLI 将 Google 最先进的 AI 技术直接集成到您的命令行中，为开发者提供无与伦比的智能编程体验。"
+  },
+  "stats": {
+    "title": "强大的性能表现",
+    "subtitle": "Gemini CLI 为开发者提供业界领先的免费使用额度和开源透明度",
+    "requestsPerMinute": {
+      "label": "每分钟模型请求",
+      "value": "60"
+    },
+    "requestsPerDay": {
+      "label": "每日模型请求",
+      "value": "1K"
+    },
+    "license": {
+      "label": "开源许可",
+      "value": "Apache 2.0"
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "我们很乐意听到您的声音！无论您有问题、建议，还是想要贡献，都有多种方式与我们的社区取得联系。",
+    "howCanWeHelp": {
+      "title": "我们如何帮助您？",
+      "subtitle": "选择最适合您需求的选项"
+    },
+    "options": {
+      "reportIssues": {
+        "title": "报告问题",
+        "description": "发现了错误、损坏的链接或技术问题？请告诉我们，以便我们修复。",
+        "buttonText": "在GitHub上报告"
+      },
+      "suggestImprovements": {
+        "title": "建议改进",
+        "description": "对新内容、功能或平台改进有想法吗？",
+        "buttonText": "分享想法"
+      },
+      "joinDiscussions": {
+        "title": "参与讨论",
+        "description": "参与社区讨论，提出问题，分享经验。",
+        "buttonText": "加入社区"
+      },
+      "contributeContent": {
+        "title": "贡献内容",
+        "description": "想要贡献教程、示例或翻译吗？我们欢迎贡献！",
+        "buttonText": "贡献指南"
+      }
+    },
+    "faq": {
+      "title": "常见问题",
+      "subtitle": "常见问题的快速答案",
+      "questions": {
+        "affiliation": {
+          "question": "这个网站是否与Google官方有关联？",
+          "answer": "不，这是一个非官方的社区驱动学习平台。虽然我们的内容基于Google官方的Gemini CLI文档，但我们与Google Inc.没有关联或认可关系。"
+        },
+        "contribute": {
+          "question": "我如何为平台做贡献？",
+          "answer": "我们欢迎贡献！您可以通过报告问题、建议改进、贡献内容或帮助翻译来帮助我们。查看我们的",
+          "linkText": "贡献指南",
+          "answerEnd": "了解更多详情。"
+        },
+        "reportError": {
+          "question": "我在文档中发现了错误。如何报告？",
+          "answer": "请在我们的",
+          "linkText": "GitHub问题页面",
+          "answerEnd": "上报告任何错误或问题。请尽可能详细地描述错误和发现位置。"
+        },
+        "requestContent": {
+          "question": "我可以请求新的教程或内容吗？",
+          "answer": "当然可以！我们鼓励内容请求。请在我们的",
+          "linkText": "GitHub讨论",
+          "answerEnd": "页面分享您的想法，社区可以帮助优先考虑和创建内容。"
+        },
+        "getHelp": {
+          "question": "如何获得Gemini CLI安装或使用帮助？",
+          "answer": "从我们的",
+          "installationLink": "安装指南",
+          "and": "和",
+          "guidesLink": "使用指南",
+          "middle": "开始。如果您仍需要帮助，请查看我们的",
+          "faqLink": "FAQ部分",
+          "answerEnd": "或在GitHub讨论中询问社区。"
+        }
+      }
+    },
+    "responseTime": {
+      "title": "响应时间",
+      "description": "作为社区驱动的平台，响应时间可能因志愿者可用性和请求复杂性而有所不同。",
+      "bugReports": {
+        "time": "24-48小时",
+        "label": "错误报告"
+      },
+      "featureRequests": {
+        "time": "1-3天",
+        "label": "功能请求"
+      },
+      "contentContributions": {
+        "time": "不定",
+        "label": "内容贡献"
+      }
+    },
+    "guidelines": {
+      "title": "社区准则",
+      "subtitle": "帮助我们维护一个友好和高效的社区",
+      "respectful": {
+        "title": "保持尊重",
+        "points": [
+          "尊重所有社区成员",
+          "使用包容和友好的语言",
+          "对初学者保持耐心",
+          "提供建设性反馈"
+        ]
+      },
+      "helpful": {
+        "title": "乐于助人",
+        "points": [
+          "提供清晰详细的信息",
+          "尽可能分享相关示例",
+          "发布前搜索现有讨论",
+          "跟进您的问题和请求"
+        ]
+      }
+    },
+    "cta": {
+      "title": "准备参与了吗？",
+      "description": "加入我们不断增长的开发者社区，学习和构建Gemini CLI。每一个贡献，无论多小，都有助于让AI开发更加易于访问。",
+      "joinDiscussions": "加入讨论",
+      "startContributing": "开始贡献"
+    }
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "subtitle": "您的隐私对我们很重要。本政策解释了我们如何收集、使用和保护您的信息。",
+    "lastUpdated": "最后更新",
+    "introduction": {
+      "title": "介绍",
+      "content": "本隐私政策描述了Gemini CLI学习平台在您使用我们的网站和服务时如何收集、使用和分享您的信息。我们致力于保护您的隐私并对我们的数据实践保持透明。"
+    },
+    "informationWeCollect": {
+      "title": "我们收集的信息",
+      "analytics": {
+        "title": "分析信息",
+        "description": "我们使用Google Analytics来了解访问者如何与我们的网站互动。这包括：",
+        "items": [
+          "访问的页面和在每个页面上花费的时间",
+          "地理位置（国家/地区级别）",
+          "设备和浏览器信息",
+          "推荐来源（您如何找到我们的网站）",
+          "用户交互和导航模式"
+        ]
+      },
+      "language": {
+        "title": "语言偏好",
+        "description": "我们在您的浏览器中本地存储您的语言偏好，以在访问期间提供个性化体验。此信息不会传输到我们的服务器。"
+      },
+      "technical": {
+        "title": "技术信息",
+        "description": "当您访问我们的网站时，我们会自动收集某些技术信息，包括：",
+        "items": [
+          "IP地址（用于地理位置检测）",
+          "浏览器类型和版本",
+          "操作系统",
+          "屏幕分辨率和设备类型"
+        ]
+      }
+    },
+    "howWeUse": {
+      "title": "我们如何使用信息",
+      "description": "我们将收集的信息用于以下目的：",
+      "items": [
+        {
+          "title": "改善用户体验",
+          "description": "了解用户如何浏览我们的网站以改进内容和设计"
+        },
+        {
+          "title": "内容优化",
+          "description": "识别热门内容和需要改进的领域"
+        },
+        {
+          "title": "语言本地化",
+          "description": "根据用户偏好提供适当的语言内容"
+        },
+        {
+          "title": "技术优化",
+          "description": "监控网站性能并修复技术问题"
+        },
+        {
+          "title": "使用分析",
+          "description": "生成关于网站使用情况的汇总统计信息"
+        }
+      ]
+    },
+    "informationSharing": {
+      "title": "信息共享",
+      "description": "我们不会向第三方出售、交易或以其他方式转让您的个人信息，除非：",
+      "items": [
+        {
+          "title": "Google Analytics",
+          "description": "匿名使用数据与Google Analytics共享以进行分析"
+        },
+        {
+          "title": "法律要求",
+          "description": "如果法律要求或为了保护我们的权利"
+        },
+        {
+          "title": "服务提供商",
+          "description": "与协助运营我们网站的可信服务提供商"
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie和跟踪技术",
+      "analytics": {
+        "title": "Google Analytics Cookie",
+        "description": "我们使用Google Analytics cookie来跟踪网站使用情况。这些cookie：",
+        "items": [
+          "帮助我们了解用户行为和偏好",
+          "是匿名的，不包含个人信息",
+          "可以通过您的浏览器设置禁用"
+        ]
+      },
+      "localStorage": {
+        "title": "本地存储",
+        "description": "我们使用浏览器本地存储来保存您的语言偏好。此数据保留在您的设备上，不会传输到我们的服务器。"
+      }
+    },
+    "yourRights": {
+      "title": "您的权利和选择",
+      "description": "您对您的信息拥有以下权利：",
+      "items": [
+        {
+          "title": "退出分析",
+          "description": "在浏览器中禁用cookie或使用Google Analytics退出工具"
+        },
+        {
+          "title": "清除本地数据",
+          "description": "清除浏览器的本地存储以删除保存的偏好"
+        },
+        {
+          "title": "访问信息",
+          "description": "请求我们可能收集的数据信息"
+        },
+        {
+          "title": "数据删除",
+          "description": "请求删除我们可能拥有的任何个人信息"
+        }
+      ]
+    },
+    "dataSecurity": {
+      "title": "数据安全",
+      "description": "我们实施适当的安全措施来保护您的信息：",
+      "items": [
+        "所有数据传输的HTTPS加密",
+        "定期安全更新和监控",
+        "对任何收集数据的有限访问",
+        "安全的托管基础设施"
+      ]
+    },
+    "thirdParty": {
+      "title": "第三方服务",
+      "googleAnalytics": {
+        "title": "Google Analytics",
+        "description": "我们的网站使用Google Analytics，这是Google Inc.提供的网络分析服务。Google Analytics使用cookie来帮助分析用户如何使用网站。",
+        "moreInfo": "有关Google Analytics隐私实践的更多信息，请访问：",
+        "linkText": "Google隐私政策"
+      },
+      "externalLinks": {
+        "title": "外部链接",
+        "description": "我们的网站包含指向外部网站的链接（如GitHub、Google AI Studio）。我们不对这些外部网站的隐私实践负责。"
+      }
+    },
+    "childrens": {
+      "title": "儿童隐私",
+      "description": "我们的网站不面向13岁以下的儿童。我们不会故意收集13岁以下儿童的个人信息。如果您是父母或监护人，并且认为您的孩子向我们提供了个人信息，请联系我们。"
+    },
+    "changes": {
+      "title": "本隐私政策的变更",
+      "description": "我们可能会不时更新本隐私政策。我们将通过在此页面上发布新的隐私政策并更新政策顶部的最后更新日期来通知您任何变更。"
+    },
+    "contact": {
+      "title": "联系我们",
+      "description": "如果您对本隐私政策或我们的数据实践有任何疑问，请联系我们：",
+      "email": "邮箱",
+      "contactForm": "联系表单",
+      "github": "GitHub",
+      "reportIssues": "报告问题",
+      "website": "网站"
+    },
+    "cta": {
+      "title": "对隐私有疑问？",
+      "description": "我们致力于透明度。如果您对我们如何处理您的数据有任何疑问，请随时联系我们。",
+      "contactUs": "联系我们"
+    }
+  },
+  "terms": {
+    "title": "服务条款",
+    "subtitle": "在使用我们的平台之前，请仔细阅读这些条款。使用我们的服务即表示您同意这些条款。",
+    "lastUpdated": "最后更新",
+    "acceptance": {
+      "title": "1. 条款接受",
+      "content1": "通过访问和使用Gemini CLI学习平台（\"服务\"），您接受并同意受本协议条款和条件的约束。如果您不同意遵守上述条款，请不要使用此服务。",
+      "content2": "这些服务条款（\"条款\"）管理您对我们位于geminicli.cloud的网站（\"服务\"）的使用，该网站由Gemini CLI学习平台团队运营。"
+    },
+    "service": {
+      "title": "2. 服务描述",
+      "description": "我们的服务提供与Google的Gemini CLI工具相关的教育内容、教程、文档和资源。这包括：",
+      "features": [
+        "安装指南和设置说明",
+        "使用教程和最佳实践",
+        "代码示例和实际演示",
+        "社区贡献的内容和讨论",
+        "多语言支持和本地化"
+      ],
+      "important": "重要",
+      "disclaimer": "这是一个由社区创建的非官方教育平台。我们与Google Inc.没有关联或认可关系。"
+    },
+    "responsibilities": {
+      "title": "3. 用户责任",
+      "description": "通过使用我们的服务，您同意：",
+      "items": [
+        "仅将服务用于合法目的",
+        "不尝试未经授权访问我们的系统",
+        "不干扰或破坏服务或服务器",
+        "不过度使用自动化系统访问服务",
+        "尊重所有内容的知识产权",
+        "在贡献内容时提供准确信息",
+        "在讨论和贡献中遵循社区准则"
+      ]
+    },
+    "intellectualProperty": {
+      "title": "4. 知识产权",
+      "ourContent": {
+        "title": "我们的内容",
+        "description": "本网站上的内容，包括但不限于文本、图形、图像、徽标和软件，是Gemini CLI学习平台或其内容供应商的财产，受版权和其他知识产权法保护。"
+      },
+      "thirdParty": {
+        "title": "第三方内容",
+        "description": "某些内容基于或衍生自Google的官方Gemini CLI文档和示例，这些内容受Google许可条款的约束。我们尊重并承认所有第三方知识产权。"
+      },
+      "userContributions": {
+        "title": "用户贡献",
+        "description": "通过向我们的平台贡献内容（通过GitHub或其他方式），您授予我们非独占、免版税的许可，以用于教育目的使用、修改和分发您的贡献。"
+      }
+    },
+    "disclaimers": {
+      "title": "5. 免责声明",
+      "educational": {
+        "title": "教育目的",
+        "description": "本平台仅用于教育目的。虽然我们努力确保准确性，但我们不对信息的完整性、可靠性或准确性做出任何保证。"
+      },
+      "affiliation": {
+        "title": "无官方关联",
+        "description": "本网站与Google Inc.没有官方关联、认可或赞助关系。Gemini CLI是Google Inc.的商标。"
+      },
+      "risk": {
+        "title": "风险自负",
+        "description": "您使用本平台提供的信息和工具的风险由您自己承担。我们不对因遵循我们的教程或使用所提供信息而可能产生的任何损害或问题负责。"
+      }
+    },
+    "liability": {
+      "title": "6. 责任限制",
+      "description": "在任何情况下，Gemini CLI学习平台、其运营商或贡献者都不对任何间接、偶然、特殊、后果性或惩罚性损害承担责任，包括但不限于利润、数据、使用、商誉或其他无形损失的损失，这些损失源于：",
+      "items": [
+        "您使用或无法使用服务",
+        "任何未经授权访问或使用我们的服务器",
+        "服务传输的任何中断或停止",
+        "任何错误、病毒或类似有害组件",
+        "内容或信息中的任何错误或遗漏"
+      ]
+    },
+    "privacy": {
+      "title": "7. 隐私",
+      "description": "您的隐私对我们很重要。请查看我们的隐私政策，该政策也管理您对服务的使用，以了解我们的做法。",
+      "linkText": "阅读我们的隐私政策"
+    },
+    "termination": {
+      "title": "8. 终止",
+      "description": "我们可能会立即终止或暂停您对服务的访问，无需事先通知或承担责任，原因包括但不限于您违反条款。终止后，您使用服务的权利将立即停止。"
+    },
+    "changes": {
+      "title": "9. 条款变更",
+      "description": "我们保留随时自行决定修改或替换这些条款的权利。如果修订是重大的，我们将尝试在任何新条款生效前至少提前30天通知。什么构成重大变更将由我们自行决定。"
+    },
+    "governingLaw": {
+      "title": "10. 管辖法律",
+      "description": "这些条款应根据服务运营所在司法管辖区的法律进行解释和管理，不考虑法律冲突条款。"
+    },
+    "externalLinks": {
+      "title": "11. 外部链接",
+      "description": "我们的服务可能包含指向我们不拥有或控制的第三方网站或服务的链接。我们对任何第三方网站或服务的内容、隐私政策或做法不承担控制权或责任。"
+    },
+    "contact": {
+      "title": "12. 联系信息",
+      "description": "如果您对这些服务条款有任何疑问，请联系我们：",
+      "email": "邮箱",
+      "contactForm": "联系表单",
+      "github": "GitHub",
+      "reportIssues": "报告问题",
+      "website": "网站"
+    },
+    "acknowledgment": {
+      "title": "13. 确认",
+      "description": "通过使用我们的服务，您确认已阅读这些服务条款并同意受其约束。如果您不同意这些条款，请不要使用我们的服务。"
+    },
+    "cta": {
+      "title": "对这些条款有疑问？",
+      "description": "我们在这里帮助澄清您可能对我们的服务条款有的任何疑问。请随时联系我们。",
+      "contactUs": "联系我们",
+      "privacyPolicy": "隐私政策"
+    }
+  },
+  "guidesAdvanced": {
+    "title": "高级指南",
+    "subtitle": "掌握Gemini CLI的高级教程和指南。学习复杂的工作流程、自动化和专业开发技术。",
+    "learnMore": "了解更多",
+    "difficulty": {
+      "advanced": "高级",
+      "expert": "专家"
+    },
+    "guides": [
+      {
+        "title": "高级配置",
+        "description": "掌握复杂的配置选项、环境变量和自定义设置以获得最佳性能。",
+        "estimatedTime": "30分钟"
+      },
+      {
+        "title": "代码重构",
+        "description": "学习如何使用Gemini CLI进行大规模代码重构、模式识别和代码质量改进。",
+        "estimatedTime": "45分钟"
+      },
+      {
+        "title": "代码审查自动化",
+        "description": "自动化代码审查流程，实施质量检查，并与CI/CD管道集成。",
+        "estimatedTime": "60分钟"
+      },
+      {
+        "title": "文件操作精通",
+        "description": "高级文件操作、批处理和复杂文件系统操作。",
+        "estimatedTime": "40分钟"
+      },
+      {
+        "title": "自定义命令",
+        "description": "创建自定义命令、别名和快捷方式来简化您的开发工作流程。",
+        "estimatedTime": "50分钟"
+      },
+      {
+        "title": "插件开发",
+        "description": "构建和分发自定义插件以扩展Gemini CLI功能为您的团队服务。",
+        "estimatedTime": "90分钟"
+      }
+    ],
+    "prerequisites": {
+      "title": "先决条件",
+      "technical": {
+        "title": "技术要求",
+        "items": [
+          "已安装并配置Gemini CLI",
+          "熟悉命令行界面",
+          "对开发工作流程有基本了解"
+        ]
+      },
+      "knowledge": {
+        "title": "知识要求",
+        "items": [
+          "完成基础Gemini CLI教程",
+          "熟悉AI辅助开发",
+          "了解软件开发原理"
+        ]
+      }
+    },
+    "cta": {
+      "title": "准备迎接高级挑战？",
+      "description": "通过这些全面的高级指南将您的Gemini CLI技能提升到新的水平。",
+      "allGuides": "所有指南",
+      "examples": "查看示例"
+    }
+  },
+  "guidesMain": {
+    "hero": {
+      "title": "Gemini CLI 使用指南",
+      "description": "从基础入门到高级应用，全面掌握 Gemini CLI 的强大功能，让 AI 成为您开发工作中的得力助手。"
+    },
+    "categories": {
+      "title": "学习路径",
+      "description": "根据您的经验水平选择合适的学习路径",
+      "beginner": {
+        "title": "入门教程",
+        "description": "适合初学者的基础教程，快速上手 Gemini CLI",
+        "tutorials": [
+          {
+            "title": "第一次使用 Gemini CLI",
+            "description": "了解基本概念，完成第一个 AI 对话",
+            "duration": "10 分钟",
+            "level": "入门"
+          },
+          {
+            "title": "基本命令操作",
+            "description": "学习常用命令和基本语法",
+            "duration": "15 分钟",
+            "level": "入门"
+          },
+          {
+            "title": "文件操作入门",
+            "description": "使用 AI 处理和分析文件内容",
+            "duration": "20 分钟",
+            "level": "入门"
+          }
+        ]
+      },
+      "intermediate": {
+        "title": "进阶教程",
+        "description": "深入学习高级功能和最佳实践",
+        "tutorials": [
+          {
+            "title": "高级配置选项",
+            "description": "自定义 Gemini CLI 配置和环境设置",
+            "duration": "25 分钟",
+            "level": "进阶"
+          },
+          {
+            "title": "与其他工具集成",
+            "description": "集成到现有开发工作流程中",
+            "duration": "30 分钟",
+            "level": "进阶"
+          },
+          {
+            "title": "MCP 协议使用",
+            "description": "使用 Model Context Protocol 扩展功能",
+            "duration": "35 分钟",
+            "level": "进阶"
+          }
+        ]
+      },
+      "examples": {
+        "title": "实战案例",
+        "description": "真实项目中的应用场景和解决方案",
+        "tutorials": [
+          {
+            "title": "代码重构助手",
+            "description": "使用 AI 分析和重构现有代码",
+            "duration": "40 分钟",
+            "level": "实战"
+          },
+          {
+            "title": "项目文档生成",
+            "description": "自动生成项目文档和 README",
+            "duration": "30 分钟",
+            "level": "实战"
+          },
+          {
+            "title": "代码审查助手",
+            "description": "使用 AI 进行代码质量检查",
+            "duration": "35 分钟",
+            "level": "实战"
+          }
+        ]
+      }
+    },
+    "startLearning": "开始学习",
+    "quickAccess": {
+      "title": "快速访问",
+      "description": "直接跳转到您需要的内容",
+      "advanced": "高级指南",
+      "advancedDesc": "深入的高级教程和技巧",
+      "examples": "实用示例",
+      "examplesDesc": "真实项目案例和解决方案",
+      "commands": "命令参考",
+      "commandsDesc": "完整的命令列表和语法",
+      "faq": "常见问题",
+      "faqDesc": "快速找到常见问题的答案"
+    },
+    "cta": {
+      "title": "准备开始您的 AI 编程之旅？",
+      "description": "立即安装 Gemini CLI，开始体验 AI 辅助编程的强大功能。",
+      "getStarted": "立即开始",
+      "viewDocs": "查看文档"
+    }
+  },
+  "guidesExamples": {
+    "title": "实用示例",
+    "subtitle": "Gemini CLI的真实案例和实用示例。通过实际场景和动手项目进行学习。",
+    "tryExample": "试用示例",
+    "difficulty": {
+      "beginner": "初级",
+      "intermediate": "中级",
+      "advanced": "高级"
+    },
+    "categories": [
+      {
+        "title": "代码生成示例",
+        "description": "不同编程语言和框架的实用代码生成场景",
+        "examples": [
+          {
+            "title": "React组件生成器",
+            "description": "生成带有TypeScript、属性和样式的React组件",
+            "command": "gemini \"创建一个用户资料卡片的React组件，包含头像、姓名和简介\""
+          },
+          {
+            "title": "API端点创建",
+            "description": "生成带有验证和错误处理的REST API端点",
+            "command": "gemini \"创建一个带有JWT的用户认证Node.js Express端点\""
+          },
+          {
+            "title": "数据库架构设计",
+            "description": "生成数据库架构和迁移脚本",
+            "command": "gemini \"为电商平台设计PostgreSQL架构\""
+          }
+        ]
+      },
+      {
+        "title": "文件操作示例",
+        "description": "批处理、文件操作和内容转换任务",
+        "examples": [
+          {
+            "title": "批量文件重命名",
+            "description": "基于模式和元数据重命名多个文件",
+            "command": "gemini \"重命名此目录中的所有.jpg文件以包含创建日期\""
+          },
+          {
+            "title": "内容迁移",
+            "description": "在不同格式之间转换和迁移内容",
+            "command": "gemini \"将所有Markdown文件转换为带有自定义样式的HTML\""
+          },
+          {
+            "title": "日志文件分析",
+            "description": "解析和分析日志文件以获取洞察和模式",
+            "command": "gemini \"分析这个Apache日志文件并总结流量模式\""
+          }
+        ]
+      },
+      {
+        "title": "文档示例",
+        "description": "生成全面的文档和技术写作",
+        "examples": [
+          {
+            "title": "API文档",
+            "description": "从代码生成完整的API文档",
+            "command": "gemini \"为这个Express.js API生成OpenAPI文档\""
+          },
+          {
+            "title": "README生成",
+            "description": "为项目创建详细的README文件",
+            "command": "gemini \"为这个Python项目创建一个全面的README\""
+          }
+        ]
+      }
+    ],
+    "tips": {
+      "title": "获得更好结果的专业技巧",
+      "items": [
+        {
+          "title": "具体明确",
+          "description": "提供清晰、详细的提示，包含上下文和要求，以获得更好的AI响应。"
+        },
+        {
+          "title": "使用示例",
+          "description": "在提示中包含示例，引导AI朝着您期望的输出格式发展。"
+        },
+        {
+          "title": "迭代和完善",
+          "description": "从基本提示开始，根据获得的结果进行完善。"
+        },
+        {
+          "title": "上下文很重要",
+          "description": "提供关于您的项目、技术栈和约束的相关上下文。"
+        }
+      ]
+    },
+    "cta": {
+      "title": "准备尝试这些示例？",
+      "description": "开始尝试这些实用示例，发现Gemini CLI如何加速您的开发工作流程。",
+      "allGuides": "所有指南",
+      "advancedGuides": "高级指南"
+    }
+  },
+  "guidesGettingStarted": {
+    "title": "第一次使用 Gemini CLI",
+    "subtitle": "10分钟快速入门，开始您的 AI 辅助编程之旅",
+    "description": "本教程将带您快速上手 Gemini CLI，学习基本操作和核心概念。",
+    "meta": {
+      "level": "适合初学者",
+      "duration": "10 分钟完成"
+    },
+    "prerequisites": {
+      "title": "开始之前",
+      "nodejs": "已安装 Node.js 18 或更高版本",
+      "terminal": "熟悉基本的命令行操作",
+      "google": "拥有 Google 账户（用于身份验证）"
+    },
+    "steps": {
+      "install": {
+        "title": "安装 Gemini CLI",
+        "description": "选择适合您的安装方式",
+        "methods": {
+          "npx": {
+            "name": "NPX (推荐)",
+            "description": "无需安装，直接运行最新版本"
+          },
+          "npm": {
+            "name": "NPM 全局安装",
+            "description": "全局安装后可在任何地方使用 gemini 命令"
+          },
+          "homebrew": {
+            "name": "Homebrew (macOS)",
+            "description": "macOS 用户推荐使用 Homebrew 安装"
+          }
+        }
+      },
+      "firstRun": {
+        "title": "首次启动",
+        "description": "运行 Gemini CLI 并完成初始配置",
+        "steps": {
+          "command": {
+            "title": "运行命令",
+            "description": "在终端中输入 gemini 命令启动"
+          },
+          "theme": {
+            "title": "选择主题",
+            "description": "首次启动会提示选择颜色主题，选择您喜欢的样式"
+          },
+          "auth": {
+            "title": "身份验证",
+            "description": "使用 Google 账户登录，获得免费的使用额度"
+          }
+        }
+      },
+      "firstChat": {
+        "title": "第一次对话",
+        "description": "开始与 AI 进行交互",
+        "examples": {
+          "greeting": {
+            "title": "简单问候",
+            "command": "> 你好，请介绍一下你自己",
+            "description": "测试基本对话功能"
+          },
+          "code": {
+            "title": "代码相关问题",
+            "command": "> 解释一下什么是递归函数",
+            "description": "询问编程相关问题"
+          },
+          "file": {
+            "title": "文件操作",
+            "command": "> @README.md 总结这个文件的内容",
+            "description": "使用 @ 符号读取文件内容"
+          }
+        }
+      }
+    },
+    "tips": {
+      "title": "重要提示",
+      "success": {
+        "title": "成功提示",
+        "content": "如果看到 Gemini CLI 的欢迎界面和提示符，说明安装成功！"
+      },
+      "warning": {
+        "title": "注意事项",
+        "content": "首次使用需要网络连接进行身份验证和模型访问。"
+      },
+      "info": {
+        "title": "使用技巧",
+        "content": "可以随时输入 /help 查看可用命令和功能。"
+      }
+    },
+    "commands": {
+      "help": "显示帮助信息和可用命令",
+      "clear": "清除屏幕内容",
+      "quit": "退出 Gemini CLI",
+      "theme": "更改界面主题",
+      "file": "读取文件内容到对话中",
+      "system": "执行系统命令"
+    },
+    "commandsTitle": "常用命令速查",
+    "nextSteps": {
+      "title": "下一步",
+      "description": "恭喜！您已经成功完成了 Gemini CLI 的入门。现在可以继续学习更多功能：",
+      "basicCommands": "学习基本命令",
+      "fileOperations": "文件操作入门",
+      "backToGuides": "返回指南首页"
+    }
+  },
+  "guidesBasicCommands": {
+    "hero": {
+      "title": "基本命令操作",
+      "subtitle": "掌握 Gemini CLI 的核心命令和操作语法",
+      "comprehensive": "全面覆盖",
+      "practical": "实用示例"
+    },
+    "overview": {
+      "title": "命令概览",
+      "description": "Gemini CLI 提供三类主要命令：斜杠命令用于控制 CLI 本身，@ 命令用于文件操作，! 命令用于执行系统命令。"
+    },
+    "categories": {
+      "slash": {
+        "title": "斜杠命令 (/)",
+        "description": "用于控制 CLI 本身的元级命令",
+        "commands": {
+          "help": "显示帮助信息和可用命令列表",
+          "clear": "清除屏幕内容",
+          "quit": "退出 Gemini CLI",
+          "theme": "更改界面主题"
+        }
+      },
+      "at": {
+        "title": "@ 命令",
+        "description": "用于读取和操作文件内容",
+        "commands": {
+          "file": "读取指定文件内容到对话中",
+          "folder": "读取文件夹中的文件列表",
+          "wildcard": "使用通配符匹配多个文件"
+        }
+      },
+      "exclamation": {
+        "title": "! 命令",
+        "description": "执行系统命令并显示结果",
+        "commands": {
+          "system": "执行任意系统命令",
+          "git": "执行 Git 命令",
+          "npm": "执行 NPM 命令"
+        }
+      }
+    },
+    "tips": {
+      "title": "使用技巧",
+      "info": {
+        "title": "命令组合",
+        "content": "可以在同一个对话中组合使用多种命令类型，提高工作效率。"
+      },
+      "warning": {
+        "title": "安全提醒",
+        "content": "使用 ! 命令时要谨慎，确保了解命令的作用，避免执行危险操作。"
+      },
+      "success": {
+        "title": "最佳实践",
+        "content": "建议先使用 /help 查看所有可用命令，然后逐步学习各种命令的用法。"
+      }
+    },
+    "nextSteps": {
+      "title": "下一步",
+      "description": "现在您已经掌握了基本命令，可以继续学习更高级的功能：",
+      "fileOperations": "文件操作详解",
+      "advancedConfig": "高级配置",
+      "backToGuides": "返回指南首页"
+    },
+    "examples": {
+      "title": "实用示例",
+      "description": "如何在真实场景中使用命令",
+      "scenarios": [
+        {
+          "title": "代码审查",
+          "description": "读取文件并建议改进",
+          "command": "@src/components/Button.tsx 审查这个组件并建议改进"
+        },
+        {
+          "title": "调试帮助",
+          "description": "分析错误日志",
+          "command": "@logs/error.log 分析这个错误日志并建议可能的解决方案"
+        },
+        {
+          "title": "文档生成",
+          "description": "为代码生成文档",
+          "command": "@src/utils/ 为这些工具函数创建 README 文档"
+        }
+      ]
+    }
+  },
+  "guidesFileOperations": {
+    "hero": {
+      "title": "文件操作指南",
+      "subtitle": "掌握 Gemini CLI 的文件读取、编辑和管理功能",
+      "intermediate": "中级",
+      "readingTime": "20 分钟阅读"
+    },
+    "overview": {
+      "title": "文件操作概览",
+      "description": "学习如何使用 Gemini CLI 高效地处理文件和目录，包括读取、编辑、创建和管理各种文件类型。"
+    },
+    "operationsTitle": "核心文件操作",
+    "operationsDescription": "掌握 Gemini CLI 提供的各种文件操作功能",
+    "operations": [
+      {
+        "title": "文件读取",
+        "description": "读取和分析各种格式的文件内容",
+        "icon": "DocumentTextIcon",
+        "color": "from-blue-500 to-indigo-600",
+        "command": "gemini read file.txt",
+        "features": [
+          "支持多种文件格式",
+          "智能内容解析",
+          "大文件分块处理",
+          "编码自动检测"
+        ]
+      },
+      {
+        "title": "目录浏览",
+        "description": "浏览和分析目录结构",
+        "icon": "FolderIcon",
+        "color": "from-green-500 to-emerald-600",
+        "command": "gemini list ./src",
+        "features": [
+          "递归目录遍历",
+          "文件类型过滤",
+          "大小和权限信息",
+          "隐藏文件显示"
+        ]
+      },
+      {
+        "title": "文件编辑",
+        "description": "智能编辑和修改文件内容",
+        "icon": "PencilIcon",
+        "color": "from-purple-500 to-pink-600",
+        "command": "gemini edit file.js",
+        "features": [
+          "语法感知编辑",
+          "自动格式化",
+          "备份创建",
+          "变更追踪"
+        ]
+      },
+      {
+        "title": "文件删除",
+        "description": "安全删除文件和目录",
+        "icon": "TrashIcon",
+        "color": "from-red-500 to-orange-600",
+        "command": "gemini delete old-file.txt",
+        "features": [
+          "安全确认机制",
+          "回收站支持",
+          "批量删除",
+          "权限检查"
+        ]
+      },
+      {
+        "title": "文件同步",
+        "description": "同步和备份文件操作",
+        "icon": "ArrowPathIcon",
+        "color": "from-teal-500 to-cyan-600",
+        "command": "gemini sync ./src ./backup",
+        "features": [
+          "增量同步",
+          "冲突解决",
+          "进度显示",
+          "错误恢复"
+        ]
+      }
+    ],
+    "examplesTitle": "实用示例",
+    "examplesDescription": "通过实际示例学习文件操作的最佳实践",
+    "explanation": "说明",
+    "examples": [
+      {
+        "title": "批量处理代码文件",
+        "description": "对项目中的所有 JavaScript 文件进行分析和优化",
+        "code": "# 读取所有 JS 文件并分析\ngemini read \"src/**/*.js\" --analyze\n\n# 批量格式化代码\ngemini format \"src/**/*.js\" --style=prettier\n\n# 生成文档\ngemini doc \"src/**/*.js\" --output=docs/",
+        "explanation": "使用通配符模式批量处理文件，提高工作效率。--analyze 参数会对代码进行深度分析，--style 参数指定格式化风格。"
+      },
+      {
+        "title": "智能文件重构",
+        "description": "使用 AI 辅助进行代码重构和优化",
+        "code": "# 分析文件并提出重构建议\ngemini refactor app.js --suggestions\n\n# 自动重构代码结构\ngemini refactor app.js --auto --backup\n\n# 重命名变量和函数\ngemini rename app.js --from=oldName --to=newName",
+        "explanation": "AI 会分析代码结构并提出改进建议。--backup 参数确保原文件安全，--auto 参数启用自动重构模式。"
+      },
+      {
+        "title": "配置文件管理",
+        "description": "管理项目配置文件和环境设置",
+        "code": "# 读取并验证配置文件\ngemini config validate package.json\n\n# 更新依赖版本\ngemini config update package.json --deps=latest\n\n# 生成环境配置\ngemini config generate --env=production",
+        "explanation": "配置文件管理功能帮助维护项目设置。validate 检查配置正确性，update 更新依赖，generate 创建环境配置。"
+      }
+    ],
+    "bestPracticesTitle": "最佳实践",
+    "bestPracticesDescription": "文件操作的重要建议和安全注意事项",
+    "bestPractices": [
+      {
+        "type": "success",
+        "title": "始终备份重要文件",
+        "content": "在进行任何修改操作前，确保创建文件备份。使用 --backup 参数自动创建备份副本。"
+      },
+      {
+        "type": "warning",
+        "title": "谨慎使用批量操作",
+        "content": "批量文件操作功能强大但需谨慎使用。建议先在小范围测试，确认效果后再大规模应用。"
+      },
+      {
+        "type": "info",
+        "title": "利用文件过滤功能",
+        "content": "使用文件类型过滤和模式匹配功能，精确定位需要处理的文件，避免误操作。"
+      },
+      {
+        "type": "success",
+        "title": "监控文件变更",
+        "content": "使用变更追踪功能监控文件修改历史，便于问题排查和版本回退。"
+      }
+    ],
+    "nextSteps": {
+      "title": "下一步",
+      "description": "掌握了文件操作后，可以学习系统集成和代码重构技巧：",
+      "integration": "系统集成",
+      "codeRefactoring": "代码重构",
+      "backToGuides": "返回指南首页"
+    }
+  },
+  "guidesAdvancedConfig": {
+    "hero": {
+      "title": "高级配置选项",
+      "subtitle": "深入了解 Gemini CLI 的高级配置和自定义选项",
+      "advanced": "高级",
+      "readingTime": "30分钟阅读"
+    },
+    "overview": {
+      "title": "配置概览",
+      "description": "掌握 Gemini CLI 的高级配置选项，包括 TOML 配置文件、环境变量、自定义设置等。"
+    },
+    "configSectionsTitle": "配置文件结构",
+    "configSectionsDescription": "了解不同的配置部分及其设置",
+    "location": "位置",
+    "structure": "结构",
+    "explanation": "说明",
+    "options": "选项",
+    "configSections": [
+      {
+        "id": "toml-config",
+        "title": "TOML 配置文件",
+        "description": "使用 gemini.toml 文件进行详细配置",
+        "color": "from-blue-500 to-indigo-600",
+        "content": {
+          "location": "配置文件位置：项目根目录中的 gemini.toml",
+          "structure": "[model]\nprovider = \"google\"\nname = \"gemini-1.5-pro\"\ntemperature = 0.7\nmax_tokens = 8192\n\n[ui]\ntheme = \"dark\"\nshow_token_count = true\nauto_save_history = true\n\n[tools]\nenable_shell = true\nenable_file_operations = true\nmax_file_size = \"10MB\"",
+          "explanation": "TOML 文件允许对 Gemini CLI 的所有方面进行结构化和可读的配置。"
+        }
+      },
+      {
+        "id": "env-vars",
+        "title": "环境变量",
+        "description": "通过环境变量进行快速配置",
+        "color": "from-green-500 to-emerald-600",
+        "content": {
+          "explanation": "环境变量允许快速灵活的配置",
+          "options": [
+            "GEMINI_API_KEY: 用于身份验证的 API 密钥",
+            "GEMINI_MODEL: 要使用的默认模型",
+            "GEMINI_TEMPERATURE: 创造性参数",
+            "GEMINI_MAX_TOKENS: 最大令牌数",
+            "GEMINI_CONFIG_PATH: 配置文件路径"
+          ]
+        }
+      },
+      {
+        "id": "model-config",
+        "title": "模型配置",
+        "description": "AI 模型特定设置",
+        "color": "from-indigo-500 to-purple-600",
+        "content": {
+          "explanation": "控制 AI 模型的行为和性能",
+          "options": [
+            "provider: 模型提供商 (google, openai)",
+            "name: 特定模型名称",
+            "temperature: 创造性 (0.0-2.0)",
+            "max_tokens: 输出令牌限制",
+            "top_p: 核采样",
+            "frequency_penalty: 频率惩罚"
+          ]
+        }
+      },
+      {
+        "id": "ui-config",
+        "title": "UI 配置",
+        "description": "自定义用户界面和交互体验",
+        "color": "from-purple-500 to-pink-600",
+        "content": {
+          "explanation": "调整 CLI 界面的显示和交互",
+          "options": [
+            "theme: 主题颜色 (light, dark, auto)",
+            "show_token_count: 显示令牌计数器",
+            "auto_save_history: 自动保存历史记录",
+            "syntax_highlighting: 语法高亮",
+            "line_numbers: 显示行号",
+            "word_wrap: 自动换行"
+          ]
+        }
+      },
+      {
+        "id": "tools-config",
+        "title": "工具配置",
+        "description": "启用和配置各种工具功能",
+        "color": "from-orange-500 to-red-600",
+        "content": {
+          "explanation": "控制 CLI 工具功能和权限",
+          "options": [
+            "enable_shell: 启用 Shell 命令执行",
+            "enable_file_operations: 启用文件操作",
+            "max_file_size: 最大文件大小",
+            "allowed_extensions: 允许的文件扩展名",
+            "blocked_commands: 阻止的命令列表",
+            "timeout: 执行超时"
+          ]
+        }
+      },
+      {
+        "id": "security-config",
+        "title": "安全配置",
+        "description": "安全和访问控制设置",
+        "color": "from-red-500 to-pink-600",
+        "content": {
+          "explanation": "配置安全措施和访问控制",
+          "options": [
+            "enable_audit_log: 启用审计日志",
+            "restrict_file_access: 限制文件访问",
+            "allowed_directories: 允许的目录",
+            "require_confirmation: 需要确认",
+            "session_timeout: 会话超时",
+            "max_concurrent_sessions: 最大并发会话数"
+          ]
+        }
+      }
+    ],
+    "environmentVariablesTitle": "环境变量",
+    "environmentVariablesDescription": "通过环境变量进行快速配置",
+    "defaultValue": "默认值",
+    "none": "无",
+    "environmentVariables": [
+      {
+        "name": "GEMINI_API_KEY",
+        "description": "用于身份验证的 Google Gemini API 密钥",
+        "example": "export GEMINI_API_KEY=your_api_key_here",
+        "default": null
+      },
+      {
+        "name": "GEMINI_MODEL",
+        "description": "要使用的默认模型名称",
+        "example": "export GEMINI_MODEL=gemini-1.5-pro",
+        "default": "gemini-1.5-flash"
+      },
+      {
+        "name": "GEMINI_TEMPERATURE",
+        "description": "模型创造性参数",
+        "example": "export GEMINI_TEMPERATURE=0.7",
+        "default": "0.9"
+      },
+      {
+        "name": "GEMINI_MAX_TOKENS",
+        "description": "最大输出令牌数",
+        "example": "export GEMINI_MAX_TOKENS=8192",
+        "default": "4096"
+      },
+      {
+        "name": "GEMINI_CONFIG_PATH",
+        "description": "自定义配置文件路径",
+        "example": "export GEMINI_CONFIG_PATH=/path/to/config.toml",
+        "default": "./gemini.toml"
+      }
+    ],
+    "customizationTitle": "自定义选项",
+    "customizationDescription": "针对不同使用场景的个性化配置",
+    "customizationOptions": [
+      {
+        "title": "开发环境",
+        "description": "针对开发工作流程优化的设置",
+        "features": [
+          "启用代码语法高亮",
+          "自动保存会话历史",
+          "集成版本控制系统",
+          "自定义代码模板",
+          "快速命令别名"
+        ]
+      },
+      {
+        "title": "生产环境",
+        "description": "生产环境的安全配置",
+        "features": [
+          "限制文件操作权限",
+          "禁用危险命令",
+          "启用审计日志",
+          "设置资源使用限制",
+          "配置备份策略"
+        ]
+      },
+      {
+        "title": "团队协作配置",
+        "description": "团队协作的共享设置",
+        "features": [
+          "统一配置模板",
+          "共享提示库",
+          "团队使用统计",
+          "权限管理",
+          "配置同步"
+        ]
+      }
+    ],
+    "bestPracticesTitle": "最佳实践",
+    "bestPracticesDescription": "优化配置的建议",
+    "bestPractices": [
+      {
+        "title": "配置管理",
+        "description": "组织和维护您的配置文件",
+        "tips": [
+          "对配置文件使用版本控制",
+          "记录配置更改",
+          "在开发环境中测试配置",
+          "定期备份配置"
+        ]
+      },
+      {
+        "title": "性能优化",
+        "description": "配置以获得最佳性能",
+        "tips": [
+          "根据需要调整模型参数",
+          "监控资源使用情况",
+          "优化数据传输效率",
+          "配置适当的超时"
+        ]
+      },
+      {
+        "title": "调试技巧",
+        "description": "便于调试的配置",
+        "tips": [
+          "使用详细日志模式",
+          "检查服务器状态",
+          "验证配置文件格式",
+          "测试环境变量"
+        ]
+      }
+    ],
+    "nextSteps": {
+      "title": "下一步",
+      "description": "现在您了解了高级配置，可以继续学习更高级的配置和集成方法：",
+      "integration": "集成指南",
+      "troubleshooting": "故障排除",
+      "backToGuides": "返回指南"
+    }
+  },
+  "guidesIntegration": {
+    "title": "与其他工具集成",
+    "subtitle": "将 Gemini CLI 集成到您的开发工作流程中",
+    "description": "学习如何将 Gemini CLI 无缝集成到您现有的开发工具链、IDE 和自动化流程中，提升开发效率。",
+    "overview": {
+      "title": "集成概述",
+      "description": "Gemini CLI 提供多种集成方式，让您可以在任何开发环境中充分利用 AI 的强大功能。无论是 IDE 插件、CI/CD 流水线，还是自动化脚本，都能轻松集成。"
+    },
+    "typesTitle": "集成类型",
+    "typesDescription": "选择最适合您工作流程的集成方式",
+    "types": [
+      {
+        "icon": "ide",
+        "title": "IDE 集成",
+        "description": "在您喜爱的代码编辑器中直接使用 Gemini CLI",
+        "features": [
+          {
+            "name": "VS Code 扩展"
+          },
+          {
+            "name": "IntelliJ 插件"
+          },
+          {
+            "name": "Vim/Neovim 集成"
+          },
+          {
+            "name": "Sublime Text 支持"
+          }
+        ]
+      },
+      {
+        "icon": "ci",
+        "title": "CI/CD 集成",
+        "description": "在持续集成和部署流水线中使用 AI 辅助",
+        "features": [
+          {
+            "name": "GitHub Actions"
+          },
+          {
+            "name": "GitLab CI"
+          },
+          {
+            "name": "Jenkins 插件"
+          },
+          {
+            "name": "Azure DevOps"
+          }
+        ]
+      },
+      {
+        "icon": "automation",
+        "title": "自动化脚本",
+        "description": "通过脚本和工具自动化您的开发任务",
+        "features": [
+          {
+            "name": "Shell 脚本集成"
+          },
+          {
+            "name": "Python 自动化"
+          },
+          {
+            "name": "Node.js 工具"
+          },
+          {
+            "name": "Make 文件支持"
+          }
+        ]
+      },
+      {
+        "icon": "deployment",
+        "title": "部署集成",
+        "description": "在部署过程中利用 AI 进行代码分析和优化",
+        "features": [
+          {
+            "name": "Docker 集成"
+          },
+          {
+            "name": "Kubernetes 支持"
+          },
+          {
+            "name": "云平台集成"
+          },
+          {
+            "name": "监控和日志"
+          }
+        ]
+      }
+    ],
+    "workflow": {
+      "title": "集成工作流程",
+      "description": "按照以下步骤将 Gemini CLI 集成到您的开发流程中",
+      "steps": [
+        {
+          "title": "环境准备",
+          "description": "确保您的开发环境已正确配置 Gemini CLI",
+          "example": "# 验证安装\ngemini --version\n\n# 配置 API 密钥\ngemini config set api-key YOUR_API_KEY"
+        },
+        {
+          "title": "选择集成方式",
+          "description": "根据您的需求选择最适合的集成方式",
+          "example": "# IDE 集成示例\n# 安装 VS Code 扩展\ncode --install-extension gemini-cli\n\n# 或配置命令行别名\nalias ai='gemini chat'"
+        },
+        {
+          "title": "配置工作流程",
+          "description": "设置自动化脚本和工作流程",
+          "example": "# GitHub Actions 示例\nname: AI Code Review\non: [pull_request]\njobs:\n  review:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v2\n      - name: AI Review\n        run: gemini review --files changed"
+        },
+        {
+          "title": "测试和优化",
+          "description": "测试集成效果并根据需要进行调整",
+          "example": "# 测试集成\ngemini test-integration\n\n# 查看使用统计\ngemini stats --integration"
+        }
+      ]
+    },
+    "toolsTitle": "常用工具集成",
+    "toolsDescription": "了解如何与流行的开发工具集成",
+    "tools": [
+      {
+        "name": "VS Code",
+        "description": "在 Visual Studio Code 中使用 Gemini CLI",
+        "steps": [
+          {
+            "text": "安装 Gemini CLI 扩展"
+          },
+          {
+            "text": "配置 API 密钥"
+          },
+          {
+            "text": "使用快捷键调用 AI 功能"
+          },
+          {
+            "text": "自定义命令和设置"
+          }
+        ]
+      },
+      {
+        "name": "Git Hooks",
+        "description": "在 Git 工作流程中集成 AI 检查",
+        "steps": [
+          {
+            "text": "创建 pre-commit hook"
+          },
+          {
+            "text": "配置代码质量检查"
+          },
+          {
+            "text": "设置自动化测试"
+          },
+          {
+            "text": "集成 commit 消息生成"
+          }
+        ]
+      },
+      {
+        "name": "Docker",
+        "description": "在容器化环境中使用 Gemini CLI",
+        "steps": [
+          {
+            "text": "创建包含 Gemini CLI 的镜像"
+          },
+          {
+            "text": "配置环境变量"
+          },
+          {
+            "text": "设置卷挂载"
+          },
+          {
+            "text": "优化容器性能"
+          }
+        ]
+      }
+    ],
+    "bestPracticesTitle": "集成最佳实践",
+    "bestPracticesDescription": "遵循这些最佳实践以获得最佳集成体验",
+    "bestPractices": [
+      {
+        "title": "安全配置",
+        "description": "确保 API 密钥和敏感信息的安全存储，使用环境变量或密钥管理服务。"
+      },
+      {
+        "title": "性能优化",
+        "description": "合理配置缓存和并发设置，避免过度调用 API 影响开发体验。"
+      },
+      {
+        "title": "错误处理",
+        "description": "实现完善的错误处理机制，确保集成失败时不影响正常开发流程。"
+      },
+      {
+        "title": "团队协作",
+        "description": "建立团队统一的集成标准和配置，确保所有成员都能正常使用。"
+      }
+    ],
+    "nextSteps": {
+      "title": "下一步",
+      "description": "继续学习更多高级功能和最佳实践",
+      "advancedConfig": "高级配置",
+      "codeRefactoring": "代码重构"
+    }
+  },
+  "guidesMcpProtocol": {
+    "hero": {
+      "title": "MCP 协议使用",
+      "subtitle": "掌握 Model Context Protocol 扩展 Gemini CLI 功能",
+      "advanced": "高级功能",
+      "extensible": "可扩展性"
+    },
+    "overview": {
+      "title": "协议概览",
+      "description": "Model Context Protocol (MCP) 是一个开放标准，允许 AI 应用程序与外部数据源和工具进行安全、受控的集成。"
+    },
+    "concepts": {
+      "overview": {
+        "title": "MCP 协议概述",
+        "description": "Model Context Protocol 的基本概念和架构",
+        "definition": "MCP 是一个开放标准，允许 AI 应用程序与外部数据源和工具进行安全、受控的集成。",
+        "components": {
+          "host": {
+            "name": "MCP 主机",
+            "description": "AI 应用程序（如 Gemini CLI）",
+            "role": "发起连接并使用 MCP 服务器提供的功能"
+          },
+          "server": {
+            "name": "MCP 服务器",
+            "description": "提供特定功能的独立进程",
+            "role": "暴露工具、资源和提示给主机使用"
+          },
+          "transport": {
+            "name": "传输层",
+            "description": "主机和服务器之间的通信机制",
+            "role": "支持 stdio、SSE 和 WebSocket 等协议"
+          }
+        }
+      },
+      "capabilities": {
+        "title": "核心功能",
+        "description": "MCP 服务器可以提供的三种主要功能类型",
+        "definition": "MCP 服务器通过三种主要功能类型为 AI 应用程序提供扩展能力。",
+        "types": {
+          "tools": {
+            "name": "工具 (Tools)",
+            "description": "可执行的函数，允许 AI 执行操作",
+            "examples": "文件操作、API 调用、数据库查询等"
+          },
+          "resources": {
+            "name": "资源 (Resources)",
+            "description": "可读取的数据源，为 AI 提供上下文信息",
+            "examples": "文件内容、数据库记录、API 响应等"
+          },
+          "prompts": {
+            "name": "提示 (Prompts)",
+            "description": "预定义的提示模板，提供结构化的交互方式",
+            "examples": "代码审查模板、文档生成模板等"
+          }
+        }
+      },
+      "configuration": {
+        "title": "配置设置",
+        "description": "如何配置和使用 MCP 服务器",
+        "definition": "配置 MCP 服务器需要安装、配置和验证三个步骤。",
+        "steps": {
+          "install": {
+            "step": "1. 安装 MCP 服务器",
+            "description": "使用 npm 或其他包管理器安装所需的 MCP 服务器",
+            "command": "npm install -g @modelcontextprotocol/server-filesystem"
+          },
+          "configure": {
+            "step": "2. 配置 Gemini CLI",
+            "description": "在 Gemini CLI 配置文件中添加 MCP 服务器配置",
+            "command": "gemini config mcp add filesystem"
+          },
+          "verify": {
+            "step": "3. 验证连接",
+            "description": "测试 MCP 服务器是否正常工作",
+            "command": "gemini mcp list"
+          }
+        }
+      }
+    },
+    "examples": {
+      "title": "实际应用示例",
+      "filesystem": {
+        "title": "文件系统服务器",
+        "description": "使用 MCP 文件系统服务器进行文件操作",
+        "steps": {
+          "install": "npm install -g @modelcontextprotocol/server-filesystem",
+          "installDesc": "安装文件系统 MCP 服务器",
+          "configure": "gemini config mcp add filesystem --path /your/project/path",
+          "configureDesc": "配置文件系统服务器路径",
+          "use": "请帮我分析项目中的所有 TypeScript 文件",
+          "useDesc": "AI 现在可以访问和分析指定路径下的文件"
+        }
+      },
+      "database": {
+        "title": "数据库服务器",
+        "description": "连接数据库进行查询和分析",
+        "steps": {
+          "install": "npm install -g @modelcontextprotocol/server-sqlite",
+          "installDesc": "安装 SQLite MCP 服务器",
+          "configure": "gemini config mcp add sqlite --db ./data.db",
+          "configureDesc": "配置数据库连接",
+          "query": "查询用户表中最近注册的10个用户",
+          "queryDesc": "AI 可以执行 SQL 查询并分析结果"
+        }
+      }
+    },
+    "bestPractices": {
+      "title": "最佳实践",
+      "security": {
+        "title": "安全考虑",
+        "content": "只连接信任的 MCP 服务器，定期审查服务器权限，避免暴露敏感数据。"
+      },
+      "performance": {
+        "title": "性能优化",
+        "content": "合理配置服务器数量，监控资源使用情况，优化数据传输效率。"
+      },
+      "debugging": {
+        "title": "调试技巧",
+        "content": "使用详细日志模式，检查服务器状态，验证配置文件格式。"
+      }
+    },
+    "nextSteps": {
+      "title": "下一步",
+      "description": "现在您已经了解了 MCP 协议，可以继续学习更高级的配置和集成方法：",
+      "advancedConfig": "高级配置",
+      "integration": "集成指南",
+      "backToGuides": "返回指南首页"
+    }
+  },
+  "guidesCodeRefactoring": {
+    "title": "代码重构助手",
+    "subtitle": "使用 AI 分析和重构现有代码",
+    "description": "学习如何使用 Gemini CLI 进行智能代码重构，提升代码质量、可读性和维护性。",
+    "overview": {
+      "title": "重构概述",
+      "description": "代码重构是改善现有代码结构而不改变其外部行为的过程。Gemini CLI 提供强大的 AI 辅助重构功能，帮助您识别代码异味、优化性能并提升代码质量。"
+    },
+    "typesTitle": "重构类型",
+    "typesDescription": "了解不同类型的代码重构技术",
+    "types": [
+      {
+        "icon": "structure",
+        "title": "结构重构",
+        "description": "改善代码的组织结构和架构",
+        "techniques": [
+          {
+            "name": "提取方法"
+          },
+          {
+            "name": "提取类"
+          },
+          {
+            "name": "移动方法"
+          },
+          {
+            "name": "重命名变量"
+          }
+        ]
+      },
+      {
+        "icon": "performance",
+        "title": "性能优化",
+        "description": "优化代码执行效率和资源使用",
+        "techniques": [
+          {
+            "name": "算法优化"
+          },
+          {
+            "name": "缓存策略"
+          },
+          {
+            "name": "内存管理"
+          },
+          {
+            "name": "并发优化"
+          }
+        ]
+      },
+      {
+        "icon": "maintainability",
+        "title": "可维护性",
+        "description": "提升代码的可读性和维护性",
+        "techniques": [
+          {
+            "name": "简化条件表达式"
+          },
+          {
+            "name": "消除重复代码"
+          },
+          {
+            "name": "改善命名"
+          },
+          {
+            "name": "添加注释"
+          }
+        ]
+      },
+      {
+        "icon": "security",
+        "title": "安全加固",
+        "description": "识别和修复潜在的安全漏洞",
+        "techniques": [
+          {
+            "name": "输入验证"
+          },
+          {
+            "name": "权限检查"
+          },
+          {
+            "name": "数据加密"
+          },
+          {
+            "name": "错误处理"
+          }
+        ]
+      }
+    ],
+    "workflow": {
+      "title": "重构工作流程",
+      "description": "遵循系统化的重构流程确保代码质量",
+      "steps": [
+        {
+          "title": "代码分析",
+          "description": "使用 AI 分析现有代码，识别重构机会",
+          "example": "# 分析代码质量\ngemini analyze --file src/main.js --type quality\n\n# 检测代码异味\ngemini detect --smell --directory src/"
+        },
+        {
+          "title": "制定重构计划",
+          "description": "基于分析结果制定详细的重构计划",
+          "example": "# 生成重构建议\ngemini refactor --plan --file src/main.js\n\n# 评估重构风险\ngemini assess --risk --changes planned"
+        },
+        {
+          "title": "执行重构",
+          "description": "逐步执行重构操作，保持代码功能不变",
+          "example": "# 自动重构\ngemini refactor --apply --file src/main.js\n\n# 交互式重构\ngemini refactor --interactive --directory src/"
+        },
+        {
+          "title": "验证和测试",
+          "description": "确保重构后的代码功能正确且性能良好",
+          "example": "# 运行测试\ngemini test --after-refactor\n\n# 性能对比\ngemini benchmark --before-after"
+        }
+      ]
+    },
+    "examplesTitle": "重构示例",
+    "examplesDescription": "查看实际的代码重构案例",
+    "beforeLabel": "重构前",
+    "afterLabel": "重构后",
+    "examples": [
+      {
+        "title": "函数提取",
+        "description": "将复杂函数拆分为更小、更专注的函数",
+        "before": "function processUserData(users) {\n  const result = [];\n  for (let i = 0; i < users.length; i++) {\n    if (users[i].age >= 18 && users[i].active) {\n      const formatted = {\n        id: users[i].id,\n        name: users[i].name.toUpperCase(),\n        email: users[i].email.toLowerCase()\n      };\n      result.push(formatted);\n    }\n  }\n  return result;\n}",
+        "after": "function isEligibleUser(user) {\n  return user.age >= 18 && user.active;\n}\n\nfunction formatUser(user) {\n  return {\n    id: user.id,\n    name: user.name.toUpperCase(),\n    email: user.email.toLowerCase()\n  };\n}\n\nfunction processUserData(users) {\n  return users\n    .filter(isEligibleUser)\n    .map(formatUser);\n}"
+      },
+      {
+        "title": "条件简化",
+        "description": "简化复杂的条件判断逻辑",
+        "before": "function getDiscount(user) {\n  if (user.type === 'premium') {\n    if (user.yearsActive >= 5) {\n      return 0.2;\n    } else if (user.yearsActive >= 2) {\n      return 0.15;\n    } else {\n      return 0.1;\n    }\n  } else if (user.type === 'regular') {\n    if (user.yearsActive >= 3) {\n      return 0.05;\n    } else {\n      return 0;\n    }\n  }\n  return 0;\n}",
+        "after": "const DISCOUNT_RATES = {\n  premium: { 5: 0.2, 2: 0.15, 0: 0.1 },\n  regular: { 3: 0.05, 0: 0 }\n};\n\nfunction getDiscount(user) {\n  const rates = DISCOUNT_RATES[user.type];\n  if (!rates) return 0;\n  \n  const thresholds = Object.keys(rates)\n    .map(Number)\n    .sort((a, b) => b - a);\n  \n  const threshold = thresholds\n    .find(t => user.yearsActive >= t);\n  \n  return rates[threshold] || 0;\n}"
+      }
+    ],
+    "bestPracticesTitle": "重构最佳实践",
+    "bestPracticesDescription": "遵循这些最佳实践确保重构成功",
+    "bestPractices": [
+      {
+        "title": "小步快跑",
+        "description": "进行小而频繁的重构，而不是大规模的一次性重构，降低风险并便于回滚。"
+      },
+      {
+        "title": "测试先行",
+        "description": "在重构前确保有充分的测试覆盖，重构后立即运行测试验证功能正确性。"
+      },
+      {
+        "title": "版本控制",
+        "description": "每次重构都要提交到版本控制系统，保持清晰的变更历史记录。"
+      },
+      {
+        "title": "团队沟通",
+        "description": "重构涉及多人协作的代码时，要提前沟通并获得团队成员的认可。"
+      }
+    ],
+    "nextSteps": {
+      "title": "下一步",
+      "description": "继续学习更多代码质量相关的主题",
+      "codeReview": "代码审查",
+      "advancedConfig": "高级配置"
+    }
+  },
+  "guidesDocumentation": {
+    "hero": {
+      "title": "文档生成助手",
+      "subtitle": "使用 AI 智能生成高质量的项目文档",
+      "intermediate": "中级",
+      "readingTime": "25 分钟阅读"
+    },
+    "overview": {
+      "title": "文档生成概览",
+      "description": "学习如何使用 Gemini CLI 自动生成和维护项目文档，包括 API 文档、用户手册、技术规范等。"
+    },
+    "typesTitle": "文档类型",
+    "typesDescription": "了解不同类型的文档生成方法",
+    "promptExample": "提示示例",
+    "features": "主要功能",
+    "types": [
+      {
+        "id": "api-docs",
+        "title": "API 文档生成",
+        "description": "从代码自动生成 API 文档",
+        "color": "from-blue-500 to-indigo-600",
+        "example": {
+          "prompt": "@src/api/ 为这个目录下的所有 API 文件生成完整的 API 文档，包括端点说明、参数描述、响应格式和使用示例",
+          "features": [
+            "自动提取 API 端点",
+            "生成参数说明表格",
+            "包含请求/响应示例",
+            "支持多种认证方式",
+            "生成交互式文档"
+          ]
+        }
+      },
+      {
+        "id": "readme",
+        "title": "README 文档",
+        "description": "生成项目说明文档",
+        "color": "from-green-500 to-emerald-600",
+        "example": {
+          "prompt": "@package.json @src/ 分析这个项目的结构和功能，生成一个完整的 README.md 文档，包括项目介绍、安装说明、使用方法和贡献指南",
+          "features": [
+            "项目概述和特性",
+            "安装和配置说明",
+            "使用示例和教程",
+            "贡献指南",
+            "许可证信息"
+          ]
+        }
+      },
+      {
+        "id": "user-manual",
+        "title": "用户手册",
+        "description": "创建详细的用户使用指南",
+        "color": "from-purple-500 to-pink-600",
+        "example": {
+          "prompt": "@src/components/ 基于这些组件创建用户手册，包括功能说明、使用步骤、常见问题和故障排除",
+          "features": [
+            "功能详细说明",
+            "步骤式操作指南",
+            "截图和示例",
+            "常见问题解答",
+            "故障排除指南"
+          ]
+        }
+      },
+      {
+        "id": "technical-spec",
+        "title": "技术规范",
+        "description": "生成技术架构和设计文档",
+        "color": "from-orange-500 to-red-600",
+        "example": {
+          "prompt": "@src/ @docs/architecture.md 分析项目架构，生成技术规范文档，包括系统设计、数据流、接口定义和部署要求",
+          "features": [
+            "系统架构图",
+            "数据流程图",
+            "接口规范",
+            "部署要求",
+            "性能指标"
+          ]
+        }
+      }
+    ],
+    "workflow": {
+      "title": "文档生成流程",
+      "description": "按照以下步骤生成高质量文档",
+      "steps": [
+        {
+          "step": 1,
+          "title": "分析项目结构",
+          "description": "让 AI 了解项目的整体结构和功能",
+          "commands": [
+            "@. 分析这个项目的整体结构",
+            "@package.json 解释项目的依赖和配置",
+            "@README.md 了解项目的基本信息"
+          ]
+        },
+        {
+          "step": 2,
+          "title": "选择文档类型",
+          "description": "根据需求选择合适的文档类型和模板",
+          "commands": [
+            "我需要生成 API 文档",
+            "请创建用户使用手册",
+            "生成技术架构文档"
+          ]
+        },
+        {
+          "step": 3,
+          "title": "生成初始文档",
+          "description": "使用 AI 生成文档的初始版本",
+          "commands": [
+            "@src/api/ 生成 API 文档",
+            "@src/components/ 创建组件文档",
+            "@docs/ 更新现有文档"
+          ]
+        },
+        {
+          "step": 4,
+          "title": "审查和优化",
+          "description": "检查生成的文档并进行必要的调整",
+          "commands": [
+            "检查文档的完整性和准确性",
+            "优化文档的结构和格式",
+            "添加缺失的示例和说明"
+          ]
+        }
+      ]
+    },
+    "practicalExamples": {
+      "title": "实际应用示例",
+      "description": "查看具体的文档生成案例"
+    },
+    "examples": [
+      {
+        "title": "React 组件文档",
+        "description": "为 React 组件生成详细文档",
+        "steps": [
+          {
+            "command": "@src/components/Button.tsx 生成这个按钮组件的文档",
+            "description": "分析组件的 props、用法和示例"
+          },
+          {
+            "command": "添加使用示例和最佳实践",
+            "description": "补充实际使用场景和代码示例"
+          },
+          {
+            "command": "生成 Storybook 故事文件",
+            "description": "创建交互式组件演示"
+          }
+        ]
+      },
+      {
+        "title": "REST API 文档",
+        "description": "为 REST API 生成 OpenAPI 规范",
+        "steps": [
+          {
+            "command": "@src/routes/ 分析所有 API 路由",
+            "description": "提取端点、参数和响应格式"
+          },
+          {
+            "command": "生成 OpenAPI 3.0 规范文件",
+            "description": "创建标准的 API 文档格式"
+          },
+          {
+            "command": "添加认证和错误处理说明",
+            "description": "补充安全和错误处理信息"
+          }
+        ]
+      }
+    ],
+    "bestPracticesTitle": "最佳实践",
+    "bestPracticesDescription": "文档生成的重要注意事项",
+    "bestPractices": [
+      {
+        "type": "success",
+        "title": "保持文档同步",
+        "content": "定期更新文档以确保与代码保持同步，建议在代码变更时同时更新文档。"
+      },
+      {
+        "type": "info",
+        "title": "使用模板和标准",
+        "content": "采用一致的文档模板和格式标准，提高文档的可读性和专业性。"
+      },
+      {
+        "type": "warning",
+        "title": "验证生成内容",
+        "content": "AI 生成的文档需要人工审查，确保技术细节的准确性和完整性。"
+      },
+      {
+        "type": "success",
+        "title": "添加实际示例",
+        "content": "在文档中包含真实的代码示例和使用场景，帮助用户更好地理解。"
+      }
+    ],
+    "nextSteps": {
+      "title": "下一步",
+      "description": "现在您已经掌握了文档生成技巧，可以继续学习其他实战技能：",
+      "codeRefactoring": "代码重构",
+      "codeReview": "代码审查",
+      "backToGuides": "返回指南首页"
+    }
+  },
+  "guidesCodeReview": {
+    "title": "代码审查助手",
+    "subtitle": "使用 AI 进行代码质量检查",
+    "description": "利用 AI 的力量进行全面的代码审查，提升代码质量、安全性和团队协作效率。",
+    "overview": {
+      "title": "审查概述",
+      "description": "代码审查是软件开发过程中的关键环节，通过系统性检查代码来发现潜在问题、提升代码质量。Gemini CLI 提供智能化的代码审查功能，帮助您快速识别问题并提供改进建议。"
+    },
+    "typesTitle": "审查类型",
+    "typesDescription": "了解不同类型的代码审查重点",
+    "types": [
+      {
+        "icon": "security",
+        "title": "安全审查",
+        "description": "检查代码中的安全漏洞和风险",
+        "checks": [
+          {
+            "name": "SQL 注入检测"
+          },
+          {
+            "name": "XSS 漏洞扫描"
+          },
+          {
+            "name": "权限验证检查"
+          },
+          {
+            "name": "敏感信息泄露"
+          }
+        ]
+      },
+      {
+        "icon": "bugs",
+        "title": "错误检测",
+        "description": "识别潜在的 bug 和逻辑错误",
+        "checks": [
+          {
+            "name": "空指针异常"
+          },
+          {
+            "name": "数组越界"
+          },
+          {
+            "name": "资源泄露"
+          },
+          {
+            "name": "死锁检测"
+          }
+        ]
+      },
+      {
+        "icon": "performance",
+        "title": "性能分析",
+        "description": "分析代码性能和优化机会",
+        "checks": [
+          {
+            "name": "算法复杂度"
+          },
+          {
+            "name": "内存使用"
+          },
+          {
+            "name": "数据库查询"
+          },
+          {
+            "name": "缓存策略"
+          }
+        ]
+      },
+      {
+        "icon": "style",
+        "title": "代码风格",
+        "description": "检查代码规范和一致性",
+        "checks": [
+          {
+            "name": "命名规范"
+          },
+          {
+            "name": "代码格式"
+          },
+          {
+            "name": "注释质量"
+          },
+          {
+            "name": "函数长度"
+          }
+        ]
+      }
+    ],
+    "workflow": {
+      "title": "审查工作流程",
+      "description": "遵循系统化的代码审查流程",
+      "steps": [
+        {
+          "title": "准备审查",
+          "description": "配置审查规则和检查范围",
+          "example": "# 配置审查规则\ngemini review config --rules security,performance\n\n# 设置检查范围\ngemini review setup --files src/ --exclude tests/"
+        },
+        {
+          "title": "执行审查",
+          "description": "运行自动化代码审查",
+          "example": "# 全面审查\ngemini review --comprehensive --output report.json\n\n# 增量审查\ngemini review --diff HEAD~1..HEAD"
+        },
+        {
+          "title": "分析结果",
+          "description": "查看审查报告并分析问题",
+          "example": "# 查看审查报告\ngemini review report --format html\n\n# 按严重程度排序\ngemini review list --severity high"
+        },
+        {
+          "title": "修复问题",
+          "description": "根据建议修复发现的问题",
+          "example": "# 自动修复\ngemini review fix --auto --safe-only\n\n# 交互式修复\ngemini review fix --interactive"
+        }
+      ]
+    },
+    "checkpointsTitle": "审查检查点",
+    "checkpointsDescription": "重要的代码审查检查项目",
+    "checkpoints": [
+      {
+        "severity": "high",
+        "title": "安全漏洞",
+        "description": "可能导致安全问题的代码缺陷",
+        "items": [
+          {
+            "text": "未验证的用户输入"
+          },
+          {
+            "text": "硬编码的密码或密钥"
+          },
+          {
+            "text": "不安全的加密算法"
+          },
+          {
+            "text": "权限绕过漏洞"
+          }
+        ]
+      },
+      {
+        "severity": "high",
+        "title": "关键错误",
+        "description": "可能导致程序崩溃的严重问题",
+        "items": [
+          {
+            "text": "空指针解引用"
+          },
+          {
+            "text": "数组越界访问"
+          },
+          {
+            "text": "内存泄露"
+          },
+          {
+            "text": "死锁风险"
+          }
+        ]
+      },
+      {
+        "severity": "medium",
+        "title": "性能问题",
+        "description": "影响程序性能的代码问题",
+        "items": [
+          {
+            "text": "低效的算法实现"
+          },
+          {
+            "text": "不必要的数据库查询"
+          },
+          {
+            "text": "缺少缓存机制"
+          },
+          {
+            "text": "资源使用不当"
+          }
+        ]
+      },
+      {
+        "severity": "low",
+        "title": "代码质量",
+        "description": "影响代码可读性和维护性的问题",
+        "items": [
+          {
+            "text": "函数过长或过于复杂"
+          },
+          {
+            "text": "变量命名不规范"
+          },
+          {
+            "text": "缺少必要的注释"
+          },
+          {
+            "text": "代码重复"
+          }
+        ]
+      }
+    ],
+    "aiFeatures": {
+      "title": "AI 审查功能",
+      "description": "利用人工智能提升代码审查效率和准确性",
+      "automated": {
+        "title": "自动化检测",
+        "features": [
+          {
+            "name": "智能漏洞扫描"
+          },
+          {
+            "name": "性能瓶颈识别"
+          },
+          {
+            "name": "代码异味检测"
+          },
+          {
+            "name": "最佳实践建议"
+          }
+        ]
+      },
+      "intelligent": {
+        "title": "智能分析",
+        "features": [
+          {
+            "name": "上下文理解"
+          },
+          {
+            "name": "业务逻辑分析"
+          },
+          {
+            "name": "架构模式识别"
+          },
+          {
+            "name": "个性化建议"
+          }
+        ]
+      }
+    },
+    "bestPracticesTitle": "审查最佳实践",
+    "bestPracticesDescription": "遵循这些最佳实践提升代码审查效果",
+    "bestPractices": [
+      {
+        "title": "定期审查",
+        "description": "建立定期的代码审查机制，不要等到项目结束才进行审查。"
+      },
+      {
+        "title": "关注重点",
+        "description": "优先关注安全性、性能和可维护性等关键方面，避免过度关注细节。"
+      },
+      {
+        "title": "团队协作",
+        "description": "鼓励团队成员参与审查过程，分享知识和经验。"
+      },
+      {
+        "title": "持续改进",
+        "description": "根据审查结果不断改进开发流程和编码规范。"
+      }
+    ],
+    "nextSteps": {
+      "title": "下一步",
+      "description": "继续学习更多开发工具和最佳实践",
+      "integration": "工具集成",
+      "advancedConfig": "高级配置"
+    }
+  },
+  "migrationGuide": {
+    "metadata": {
+      "title": "迁移指南 - Gemini CLI 文档",
+      "description": "从旧版本升级到最新版本的 Gemini CLI 的完整迁移指南，包括重大变更、配置更新和最佳实践。"
+    },
+    "title": "迁移指南",
+    "subtitle": "从旧版本升级到最新版本的 Gemini CLI",
+    "overview": {
+      "title": "迁移概述",
+      "description": "本指南帮助您从旧版本的 Gemini CLI 迁移到最新版本。我们将涵盖重大变更、配置更新，并提供平滑过渡的分步说明。",
+      "currentVersionLabel": "当前版本",
+      "currentVersion": "2.0.0",
+      "supportedMigrationsLabel": "支持的迁移",
+      "supportedVersions": "本指南涵盖从 1.x 版本到 2.0.0 的迁移"
+    },
+    "versionMatrix": {
+      "title": "版本兼容性矩阵",
+      "subtitle": "检查哪个迁移路径适用于您的当前版本",
+      "estimatedTimeLabel": "预估时间",
+      "breakingChangesLabel": "重大变更",
+      "versions": [
+        {
+          "from": "1.0.x - 1.2.x",
+          "to": "2.0.0",
+          "difficulty": "重大",
+          "estimatedTime": "30-60 分钟",
+          "breakingChanges": "高"
+        },
+        {
+          "from": "1.3.x - 1.5.x",
+          "to": "2.0.0",
+          "difficulty": "中等",
+          "estimatedTime": "15-30 分钟",
+          "breakingChanges": "中"
+        },
+        {
+          "from": "1.6.x - 1.9.x",
+          "to": "2.0.0",
+          "difficulty": "轻微",
+          "estimatedTime": "5-15 分钟",
+          "breakingChanges": "低"
+        }
+      ]
+    },
+    "breakingChanges": {
+      "title": "v2.0.0 中的重大变更",
+      "subtitle": "可能影响您现有设置的重要变更",
+      "impactLabel": "影响级别",
+      "migrationLabel": "迁移方法",
+      "changes": [
+        {
+          "category": "配置",
+          "title": "配置文件格式",
+          "description": "配置文件格式已从 JSON 更改为 YAML，以提供更好的可读性和注释支持。",
+          "impact": "高",
+          "migration": "使用内置迁移工具：gemini config migrate",
+          "beforeLabel": "之前 (v1.x)",
+          "afterLabel": "之后 (v2.0)",
+          "beforeCode": "{\n  \"api_key\": \"your-key\",\n  \"model\": \"gemini-pro\"\n}",
+          "afterCode": "api_key: your-key\nmodel: gemini-pro\n# 现在支持注释！"
+        },
+        {
+          "category": "命令",
+          "title": "命令结构变更",
+          "description": "一些命令已被重命名或重构以保持一致性。",
+          "impact": "中",
+          "migration": "更新您的脚本和别名",
+          "commandChangesLabel": "命令变更",
+          "commandChanges": [
+            { "old": "gemini chat", "new": "gemini ask" },
+            { "old": "gemini generate", "new": "gemini create" },
+            { "old": "gemini config show", "new": "gemini config list" }
+          ]
+        },
+        {
+          "category": "API",
+          "title": "API 密钥管理",
+          "description": "API 密钥现在以更安全的加密格式存储。",
+          "impact": "低",
+          "migration": "重新运行：gemini config set api-key YOUR_KEY",
+          "note": "您现有的 API 密钥将在首次运行时自动迁移"
+        }
+      ]
+    },
+    "migrationSteps": {
+      "title": "分步迁移",
+      "subtitle": "按照这些步骤迁移到 Gemini CLI v2.0.0",
+      "commandsLabel": "命令：",
+      "verificationLabel": "验证：",
+      "steps": [
+        {
+          "title": "备份您的配置",
+          "description": "在开始迁移之前创建当前配置的备份。",
+          "commands": [
+            "gemini config list > gemini-config-backup.txt",
+            "cp ~/.gemini/config.json ~/.gemini/config.json.backup"
+          ],
+          "note": "这确保您可以在需要时恢复设置。"
+        },
+        {
+          "title": "更新 Gemini CLI",
+          "description": "安装最新版本的 Gemini CLI。",
+          "commands": [
+            "npm update -g @google/generative-ai-cli"
+          ],
+          "verification": "gemini --version"
+        },
+        {
+          "title": "运行迁移工具",
+          "description": "使用内置迁移工具更新您的配置。",
+          "commands": [
+            "gemini config migrate"
+          ],
+          "note": "这将自动将您的配置转换为新格式。"
+        },
+        {
+          "title": "验证配置",
+          "description": "检查您的配置是否已正确迁移。",
+          "commands": [
+            "gemini config list",
+            "gemini ask \"你好，测试迁移\""
+          ],
+          "note": "确保所有设置都已保留，CLI 按预期工作。"
+        },
+        {
+          "title": "更新脚本和别名",
+          "description": "更新使用旧命令语法的任何脚本或别名。",
+          "note": "请参考上面的命令变更部分了解所需的具体更新。"
+        }
+      ]
+    },
+    "troubleshooting": {
+      "title": "迁移故障排除",
+      "subtitle": "常见问题及其解决方案",
+      "symptomsLabel": "症状：",
+      "solutionsLabel": "解决方案：",
+      "issues": [
+        {
+          "problem": "配置迁移失败",
+          "symptoms": [
+            "错误：无法迁移配置",
+            "找不到配置文件"
+          ],
+          "solutions": [
+            "确保您对 ~/.gemini 目录有写权限",
+            "检查旧配置文件是否存在：ls ~/.gemini/",
+            "尝试手动迁移：gemini config migrate --force"
+          ]
+        },
+        {
+          "problem": "迁移后命令不工作",
+          "symptoms": [
+            "找不到命令错误",
+            "意外行为"
+          ],
+          "solutions": [
+            "清除您的 shell 缓存：hash -r",
+            "重启您的终端会话",
+            "检查文档中的新命令语法"
+          ]
+        },
+        {
+          "problem": "API 密钥不工作",
+          "symptoms": [
+            "身份验证错误",
+            "无效的 API 密钥消息"
+          ],
+          "solutions": [
+            "重新设置您的 API 密钥：gemini config set api-key YOUR_KEY",
+            "验证密钥是否正确：gemini config get api-key",
+            "在 Google AI Studio 中检查 API 密钥权限"
+          ]
+        }
+      ]
+    },
+    "rollback": {
+      "title": "回滚说明",
+      "subtitle": "如何在需要时恢复到以前的版本",
+      "warning": "仅在遇到阻止正常操作的关键问题时使用回滚。",
+      "steps": [
+        "卸载当前版本：npm uninstall -g @google/generative-ai-cli",
+        "安装以前的版本：npm install -g @google/generative-ai-cli@1.9.0",
+        "恢复配置：cp ~/.gemini/config.json.backup ~/.gemini/config.json",
+        "验证回滚：gemini --version"
+      ]
+    },
+    "postMigration": {
+      "title": "迁移后步骤",
+      "subtitle": "成功迁移后的推荐操作",
+      "learnMoreLabel": "了解更多",
+      "recommendations": [
+        {
+          "title": "更新文档",
+          "description": "更新任何内部文档或团队指南以反映新的命令语法。",
+          "priority": "中"
+        },
+        {
+          "title": "测试自动化脚本",
+          "description": "运行您的自动化脚本和 CI/CD 管道，确保它们与新版本兼容。",
+          "priority": "高"
+        },
+        {
+          "title": "探索新功能",
+          "description": "查看 v2.0.0 中的新功能和改进。",
+          "priority": "低",
+          "link": "/docs/changelog"
+        },
+        {
+          "title": "清理备份",
+          "description": "确认一切正常工作后，您可以删除备份文件。",
+          "priority": "低"
+        }
+      ]
+    },
+    "footer": {
+      "title": "需要迁移帮助？",
+      "description": "如果您在迁移过程中遇到任何问题，我们的社区随时为您提供帮助。",
+      "getSupportButton": "获取支持",
+      "troubleshootingButton": "查看故障排除指南"
+    }
+  }
+}

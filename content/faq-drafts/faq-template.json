@@ -1,0 +1,38 @@
+{
+  "id": "new-faq-{timestamp}",
+  "question": "[Clear, specific question that users actually ask]",
+  "answer": "[Comprehensive answer with practical value]",
+  "category": "[installation|authentication|basic-usage|advanced-features|troubleshooting|best-practices]",
+  "difficulty": "[beginner|intermediate|advanced]",
+  "tags": [
+    "[relevant]",
+    "[searchable]",
+    "[keywords]"
+  ],
+  "lastUpdated": "2025-07-31",
+  "sources": [
+    {
+      "type": "[official|community|original]",
+      "url": "[source URL if applicable]",
+      "description": "[How this content was derived]"
+    }
+  ],
+  "relatedQuestions": [
+    "[id-of-related-faq]"
+  ],
+  "notes": {
+    "contentGuidelines": [
+      "Rewrite in your own words",
+      "Add practical examples",
+      "Include code snippets if helpful",
+      "Test solutions before publishing",
+      "Consider user skill level"
+    ],
+    "seoConsiderations": [
+      "Use natural question phrasing",
+      "Include relevant keywords",
+      "Structure for featured snippets",
+      "Link to related content"
+    ]
+  }
+}

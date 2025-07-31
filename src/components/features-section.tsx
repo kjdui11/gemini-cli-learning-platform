@@ -1,3 +1,5 @@
+'use client';
+
 import {
   GlobeAltIcon,
   PuzzlePieceIcon,
@@ -6,41 +8,44 @@ import {
   CodeBracketIcon,
   WrenchScrewdriverIcon
 } from '@heroicons/react/24/outline'
-
-const features = [
-  {
-    name: '代码理解与生成',
-    description: '使用自然语言编写代码、调试问题和优化工作流程。支持多种编程语言，提供智能代码建议和错误修复。',
-    icon: CodeBracketIcon,
-  },
-  {
-    name: '文件操作与管理',
-    description: '直接在终端中操作文件，批量处理、重命名、搜索和编辑文件内容，让文件管理变得更加智能高效。',
-    icon: WrenchScrewdriverIcon,
-  },
-  {
-    name: 'Google 搜索集成',
-    description: '内置 Google 搜索工具，获取实时网页内容和最新信息，为您的开发工作提供准确的外部上下文。',
-    icon: GlobeAltIcon,
-  },
-  {
-    name: '可扩展架构',
-    description: '支持 Model Context Protocol (MCP) 和内置扩展系统，轻松集成到现有工作流程，自定义功能满足特定需求。',
-    icon: PuzzlePieceIcon,
-  },
-  {
-    name: '任务自动化',
-    description: '通过脚本调用 Gemini CLI，实现任务自动化和工作流程集成，提高开发效率和生产力。',
-    icon: SparklesIcon,
-  },
-  {
-    name: '开源透明',
-    description: '完全开源 (Apache 2.0)，代码透明可审查，全球开发者社区共同贡献，确保安全性和可信度。',
-    icon: ShieldCheckIcon,
-  },
-]
+import Link from 'next/link'
+import { useTranslation } from '@/hooks/useTranslation'
 
 export default function FeaturesSection() {
+  const { t } = useTranslation();
+
+  const features = [
+    {
+      name: t('features.codeGeneration.name'),
+      description: t('features.codeGeneration.description'),
+      icon: CodeBracketIcon,
+    },
+    {
+      name: t('features.fileOperations.name'),
+      description: t('features.fileOperations.description'),
+      icon: WrenchScrewdriverIcon,
+    },
+    {
+      name: t('features.googleSearch.name'),
+      description: t('features.googleSearch.description'),
+      icon: GlobeAltIcon,
+    },
+    {
+      name: t('features.extensible.name'),
+      description: t('features.extensible.description'),
+      icon: PuzzlePieceIcon,
+    },
+    {
+      name: t('features.automation.name'),
+      description: t('features.automation.description'),
+      icon: SparklesIcon,
+    },
+    {
+      name: t('features.openSource.name'),
+      description: t('features.openSource.description'),
+      icon: ShieldCheckIcon,
+    },
+  ];
   return (
     <div className="relative bg-gradient-to-br from-gray-50 via-white to-blue-50 py-20 sm:py-28">
       {/* 背景装饰 */}
@@ -53,14 +58,12 @@ export default function FeaturesSection() {
         {/* 标题区域 */}
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
-            Gemini CLI
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-              能为您做什么？
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+              {t('features.title')}
             </span>
           </h2>
           <p className="mt-6 text-xl leading-8 text-gray-600 max-w-2xl mx-auto">
-            从代码编写到任务自动化，Gemini CLI 为新手开发者提供全方位的 AI 辅助功能，
-            让您在终端中体验前所未有的智能开发体验。
+            {t('features.subtitle')}
           </p>
         </div>
 
@@ -103,10 +106,10 @@ export default function FeaturesSection() {
         <div className="mx-auto mt-20 max-w-2xl text-center">
           <div className="rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 p-8 shadow-2xl">
             <h3 className="text-2xl font-bold text-white mb-4">
-              准备体验 AI 驱动的开发流程？
+              {t('features.cta.title')}
             </h3>
             <p className="text-blue-100 mb-6">
-              立即开始使用 Gemini CLI，让 AI 成为您开发工作流程中的得力助手
+              {t('features.cta.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -115,14 +118,14 @@ export default function FeaturesSection() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-lg bg-white px-6 py-3 text-base font-semibold text-blue-600 shadow-sm hover:bg-gray-50 transition-colors duration-200"
               >
-                开始使用
+                {t('features.cta.getStarted')}
               </a>
-              <a
+              <Link
                 href="/tutorials"
                 className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-6 py-3 text-base font-semibold text-white hover:bg-white/10 transition-colors duration-200"
               >
-                查看教程
-              </a>
+                {t('features.cta.viewTutorials')}
+              </Link>
             </div>
           </div>
         </div>

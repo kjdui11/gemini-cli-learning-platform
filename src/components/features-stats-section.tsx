@@ -1,4 +1,9 @@
+'use client';
+
+import { useTranslation } from '@/hooks/useTranslation';
+
 export default function FeaturesStatsSection() {
+  const { t } = useTranslation();
   return (
     <div className="bg-black py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -10,12 +15,12 @@ export default function FeaturesStatsSection() {
                 60
               </div>
               <div className="mt-2 text-white text-lg font-medium">
-                分钟免费开发体验
+                {t('featuresStats.freeExperience.unit')}
               </div>
             </div>
             <div className="text-gray-300 text-sm leading-relaxed">
-              <div className="font-semibold text-white mb-2">无与伦比的使用限制</div>
-              个人 Google 账户免费获得每分钟 60 次模型请求和每天 1000 次请求的超量免费体验。
+              <div className="font-semibold text-white mb-2">{t('featuresStats.freeExperience.title')}</div>
+              {t('featuresStats.freeExperience.description')}
             </div>
           </div>
 
@@ -26,12 +31,12 @@ export default function FeaturesStatsSection() {
                 1M
               </div>
               <div className="mt-2 text-white text-lg font-medium">
-                Token 上下文
+                {t('featuresStats.tokenContext.unit')}
               </div>
             </div>
             <div className="text-gray-300 text-sm leading-relaxed">
-              <div className="font-semibold text-white mb-2">强大的模型能力</div>
-              基于 Gemini 2.5 Pro 模型，拥有 100 万 token 的大型上下文窗口，支持实际的代码分析和生成。
+              <div className="font-semibold text-white mb-2">{t('featuresStats.tokenContext.title')}</div>
+              {t('featuresStats.tokenContext.description')}
             </div>
           </div>
 
@@ -42,12 +47,12 @@ export default function FeaturesStatsSection() {
                 100%
               </div>
               <div className="mt-2 text-white text-lg font-medium">
-                开源代码
+                {t('featuresStats.openSource.unit')}
               </div>
             </div>
             <div className="text-gray-300 text-sm leading-relaxed">
-              <div className="font-semibold text-white mb-2">开放可扩展</div>
-              支持 Model Context Protocol (MCP) 和自定义工具，可以轻松配置多种开发工具和流程中。
+              <div className="font-semibold text-white mb-2">{t('featuresStats.openSource.title')}</div>
+              {t('featuresStats.openSource.description')}
             </div>
           </div>
         </div>

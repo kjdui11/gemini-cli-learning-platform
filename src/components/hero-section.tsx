@@ -1,6 +1,10 @@
+'use client';
+
 import Link from 'next/link'
+import { useTranslation } from '@/hooks/useTranslation'
 
 export default function HeroSection() {
+  const { t } = useTranslation();
   return (
     <div className="relative isolate px-6 pt-14 lg:px-8 bg-gray-50">
       <div
@@ -24,27 +28,24 @@ export default function HeroSection() {
 
 
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
-              掌握 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Gemini CLI</span>
-              <br />
-              开启 AI 开发新时代
+              {t('hero.title.part1')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">{t('hero.title.part2')}</span>
             </h1>
 
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              专为新手开发者打造的 Gemini CLI 学习平台。通过详细教程、实战案例和视频指南，
-              快速掌握 Google 最新的开源 AI 命令行工具，让 AI 成为您开发工作流程中的得力助手。
+              {t('hero.description')}
             </p>
 
             <div className="mt-8">
               <div className="inline-flex items-center rounded-full px-4 py-2 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 transition-all">
                 <span className="mr-2">🚀</span>
-                Google 官方开源 AI 命令行工具{' '}
+{t('hero.badge.text')}{' '}
                 <Link
                   href="https://github.com/google-gemini/gemini-cli"
                   className="font-semibold text-indigo-600 ml-2 hover:text-indigo-500 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  查看源码 <span aria-hidden="true">→</span>
+                  {t('hero.badge.link')} <span aria-hidden="true">→</span>
                 </Link>
               </div>
             </div>
@@ -63,7 +64,7 @@ export default function HeroSection() {
                 playsInline
               >
                 <source src="/GenMedia_demo_keyword.mp4" type="video/mp4" />
-                您的浏览器不支持视频播放。
+{t('hero.video.fallback')}
               </video>
             </div>
           </div>

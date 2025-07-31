@@ -1,47 +1,7 @@
-import Link from 'next/link'
+'use client';
 
-const footerNavigation = {
-  learning: {
-    title: '学习资源',
-    links: [
-      { name: '安装与设置指南', href: '/installation' },
-      { name: '入门使用教程', href: '/guides' },
-      { name: '进阶使用技巧', href: '/guides/advanced' },
-      { name: '常见问题解答', href: '/faq' },
-      { name: '实战案例分析', href: '/guides/examples' },
-    ],
-  },
-  tools: {
-    title: '开发工具',
-    links: [
-      { name: 'Gemini CLI 下载', href: 'https://github.com/google-gemini/gemini-cli' },
-      { name: '命令参考手册', href: '/commands' },
-      { name: '开发者文档', href: '/docs' },
-      { name: 'Google AI Studio', href: 'https://aistudio.google.com/' },
-      { name: 'Gemini API 文档', href: 'https://ai.google.dev/gemini-api' },
-    ],
-  },
-  community: {
-    title: '社区与支持',
-    links: [
-      { name: 'GitHub 项目主页', href: 'https://github.com/google-gemini/gemini-cli' },
-      { name: 'GitHub 讨论区', href: 'https://github.com/google-gemini/gemini-cli/discussions' },
-      { name: '问题反馈', href: 'https://github.com/google-gemini/gemini-cli/issues' },
-      { name: '安装问题排查', href: '/installation#troubleshooting' },
-      { name: '贡献指南', href: '/docs/contributing' },
-    ],
-  },
-  company: {
-    title: '关于我们',
-    links: [
-      { name: '网站介绍', href: '/about' },
-      { name: '隐私政策', href: '/privacy' },
-      { name: '使用条款', href: '/terms' },
-      { name: '联系我们', href: '/contact' },
-      { name: '网站地图', href: '/sitemap.xml' },
-    ],
-  },
-}
+import Link from 'next/link'
+import { useTranslation } from '@/hooks/useTranslation'
 
 const socialLinks = [
   {
@@ -78,6 +38,50 @@ const socialLinks = [
 ]
 
 export default function Footer() {
+  const { t } = useTranslation();
+
+  const footerNavigation = {
+    learning: {
+      title: t('footer.learning.title'),
+      links: [
+        { name: t('footer.learning.installation'), href: '/installation' },
+        { name: t('footer.learning.guides'), href: '/guides' },
+        { name: t('footer.learning.advanced'), href: '/guides/advanced' },
+        { name: t('footer.learning.faq'), href: '/faq' },
+        { name: t('footer.learning.examples'), href: '/guides/examples' },
+      ],
+    },
+    tools: {
+      title: t('footer.tools.title'),
+      links: [
+        { name: t('footer.tools.download'), href: 'https://github.com/google-gemini/gemini-cli' },
+        { name: t('footer.tools.commands'), href: '/commands' },
+        { name: t('footer.tools.docs'), href: '/docs' },
+        { name: t('footer.tools.aiStudio'), href: 'https://aistudio.google.com/' },
+        { name: t('footer.tools.apiDocs'), href: 'https://ai.google.dev/gemini-api' },
+      ],
+    },
+    community: {
+      title: t('footer.community.title'),
+      links: [
+        { name: t('footer.community.github'), href: 'https://github.com/google-gemini/gemini-cli' },
+        { name: t('footer.community.discussions'), href: 'https://github.com/google-gemini/gemini-cli/discussions' },
+        { name: t('footer.community.issues'), href: 'https://github.com/google-gemini/gemini-cli/issues' },
+        { name: t('footer.community.troubleshooting'), href: '/installation#troubleshooting' },
+        { name: t('footer.community.contributing'), href: '/docs/contributing' },
+      ],
+    },
+    company: {
+      title: t('footer.company.title'),
+      links: [
+        { name: t('footer.company.about'), href: '/about' },
+        { name: t('footer.company.privacy'), href: '/privacy' },
+        { name: t('footer.company.terms'), href: '/terms' },
+        { name: t('footer.company.contact'), href: '/contact' },
+        { name: t('footer.company.sitemap'), href: '/sitemap.xml' },
+      ],
+    },
+  };
   return (
     <footer className="bg-gray-900 text-white" role="contentinfo">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
@@ -177,28 +181,26 @@ export default function Footer() {
           {/* 网站描述和关键词 */}
           <div className="mb-8">
             <h4 className="text-lg font-semibold text-white mb-3">
-              Gemini CLI 学习平台 - AI 驱动的开发工具教程
+              {t('footer.seo.title')}
             </h4>
             <p className="text-gray-400 text-sm leading-relaxed max-w-3xl">
-              专业的 Gemini CLI 中文学习平台，提供全面的 AI 编程教程、实战案例和最佳实践。
-              学习如何使用 Google 最新的开源 AI 命令行工具，掌握人工智能辅助编程技术，
-              提升开发效率。支持代码生成、文件操作、Google 搜索集成等强大功能。
+              {t('footer.seo.description')}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
               <span className="inline-block bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs">
-                #GeminiCLI
+                {t('footer.seo.tags.geminiCLI')}
               </span>
               <span className="inline-block bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs">
-                #AI编程
+                {t('footer.seo.tags.aiProgramming')}
               </span>
               <span className="inline-block bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs">
-                #命令行工具
+                {t('footer.seo.tags.commandLine')}
               </span>
               <span className="inline-block bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs">
-                #Google AI
+                {t('footer.seo.tags.googleAI')}
               </span>
               <span className="inline-block bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs">
-                #开源项目
+                {t('footer.seo.tags.openSource')}
               </span>
             </div>
           </div>
@@ -213,7 +215,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors duration-200"
-                  aria-label={`访问 ${item.name}`}
+                  aria-label={t('footer.social.visitLabel', { name: item.name })}
                 >
                   <item.icon className="h-6 w-6" aria-hidden="true" />
                 </Link>
@@ -222,10 +224,10 @@ export default function Footer() {
 
             <div className="text-sm text-gray-400">
               <p className="mb-1">
-                &copy; 2025 Gemini CLI 学习平台. 本站为非官方学习资源网站，致力于推广 AI 编程技术。
+                {t('footer.copyright.main')}
               </p>
               <p>
-                基于 Google 官方开源项目{' '}
+                {t('footer.copyright.basedOn')}{' '}
                 <Link
                   href="https://github.com/google-gemini/gemini-cli"
                   className="text-blue-400 hover:text-blue-300 transition-colors"
@@ -234,7 +236,7 @@ export default function Footer() {
                 >
                   Gemini CLI
                 </Link>
-                {' '}构建 | Apache 2.0 开源协议
+                {' '}{t('footer.copyright.license')}
               </p>
             </div>
           </div>

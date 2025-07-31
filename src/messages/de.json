@@ -1,0 +1,2906 @@
+{
+  "common": {
+    "loading": "Lädt...",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen",
+    "save": "Speichern",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "search": "Suchen",
+    "filter": "Filter",
+    "sort": "Sortieren",
+    "next": "Weiter",
+    "previous": "Zurück",
+    "home": "Startseite",
+    "back": "Zurück",
+    "close": "Schließen",
+    "open": "Öffnen",
+    "copy": "Kopieren",
+    "share": "Teilen",
+    "download": "Herunterladen",
+    "upload": "Hochladen",
+    "language": "Sprache",
+    "theme": "Design",
+    "settings": "Einstellungen"
+  },
+  "navigation": {
+    "installation": "Installation & Einrichtung",
+    "guides": "Benutzerhandbuch",
+    "faq": "Häufig gestellte Fragen",
+    "commands": "Befehlsreferenz",
+    "docs": "Entwicklerdokumentation",
+    "toggleMenu": "Menü umschalten",
+    "logo": {
+      "title": "Gemini CLI",
+      "subtitle": "Lernplattform",
+      "alt": "Gemini CLI Lernplattform"
+    }
+  },
+  "hero": {
+    "title": {
+      "part1": "Gemini",
+      "part2": "CLI"
+    },
+    "subtitle": "Ein Open-Source-KI-Agent, der die Macht von Gemini direkt in Ihr Terminal bringt",
+    "description": "Ein Kommandozeilen-KI-Workflow-Tool, das sich mit Ihren Tools verbindet, Ihren Code versteht und Ihre Arbeitsabläufe beschleunigt. Abfragen und Bearbeiten großer Codebasen im 1-Millionen-Token-Kontextfenster von Gemini und darüber hinaus, Generieren neuer Apps aus PDFs oder Skizzen und Automatisieren operativer Aufgaben.",
+    "getStarted": "Loslegen",
+    "learnMore": "Mehr erfahren",
+    "watchDemo": "Demo ansehen",
+    "githubStars": "GitHub Sterne",
+    "freeToUse": "Kostenlos nutzbar",
+    "openSource": "Open Source",
+    "activeUsers": "Aktive Benutzer",
+    "badge": {
+      "text": "Open-Source-KI-Agent",
+      "link": "https://github.com/google-gemini/gemini-cli"
+    },
+    "video": {
+      "fallback": "Ihr Browser unterstützt keine Videowiedergabe."
+    }
+  },
+  "features": {
+    "title": "Warum Gemini CLI wählen?",
+    "subtitle": "Leistungsstarke Funktionen für moderne KI-Entwicklung",
+    "easyToUse": {
+      "title": "Einfach zu verwenden",
+      "description": "Einfache Befehle und intuitive Benutzeroberfläche machen KI für jeden zugänglich"
+    },
+    "powerful": {
+      "title": "Leistungsstark",
+      "description": "Erweiterte Funktionen für komplexe KI-Workflows und Integrationen"
+    },
+    "flexible": {
+      "title": "Flexibel",
+      "description": "Anpassbar und erweiterbar für Ihre spezifischen Bedürfnisse"
+    },
+    "reliable": {
+      "title": "Zuverlässig",
+      "description": "Mit Fokus auf Stabilität und Leistung entwickelt"
+    },
+    "secure": {
+      "title": "Sicher",
+      "description": "Unternehmenssicherheit für Ihre KI-Anwendungen"
+    },
+    "community": {
+      "title": "Community-getrieben",
+      "description": "Aktive Community-Unterstützung und kontinuierliche Entwicklung"
+    },
+    "codeGeneration": {
+      "name": "Code-Verständnis & Generierung",
+      "description": "Schreiben Sie Code in natürlicher Sprache, debuggen Sie Probleme und optimieren Sie Workflows. Unterstützt mehrere Programmiersprachen mit intelligenten Code-Vorschlägen und Fehlerbehebungen."
+    },
+    "fileOperations": {
+      "name": "Dateioperationen & Verwaltung",
+      "description": "Arbeiten Sie direkt im Terminal mit Dateien, Stapelverarbeitung, Umbenennung, Suche und Bearbeitung von Dateiinhalten, wodurch die Dateiverwaltung intelligenter und effizienter wird."
+    },
+    "googleSearch": {
+      "name": "Google Search Integration",
+      "description": "Integrierte Google-Suchtools für Echtzeit-Webinhalte und aktuelle Informationen, die genauen externen Kontext für Ihre Entwicklungsarbeit bieten."
+    },
+    "extensible": {
+      "name": "Erweiterbare Architektur",
+      "description": "Unterstützung für Model Context Protocol (MCP) und benutzerdefinierte Tools, einfache Integration mit verschiedenen Entwicklungstools und Workflows."
+    },
+    "automation": {
+      "name": "Intelligente Automatisierung",
+      "description": "Automatisieren Sie wiederkehrende Aufgaben, generieren Sie Skripte und optimieren Sie Entwicklungsprozesse mit KI-gestützten Automatisierungsfunktionen."
+    },
+    "openSource": {
+      "name": "Open Source & Transparent",
+      "description": "Vollständig Open Source mit Apache 2.0 Lizenz, transparenter Entwicklungsprozess und community-getriebene Verbesserungen."
+    },
+    "cta": {
+      "title": "Bereit, Ihren Entwicklungsworkflow zu transformieren?",
+      "description": "Schließen Sie sich Tausenden von Entwicklern an, die bereits Gemini CLI verwenden, um ihre Produktivität zu steigern.",
+      "getStarted": "Jetzt loslegen",
+      "viewTutorials": "Tutorials ansehen"
+    }
+  },
+  "installation": {
+    "hero": {
+      "title": "Installation & Einrichtung",
+      "description": "Starten Sie mit Gemini CLI in wenigen Minuten. Folgen Sie unserer Schritt-für-Schritt-Anleitung zur Installation und Konfiguration des Tools auf Ihrem System."
+    },
+    "steps": {
+      "title": "Installationsschritte",
+      "requirements": {
+        "title": "Systemanforderungen",
+        "description": "Stellen Sie sicher, dass Ihr System die Mindestanforderungen vor der Installation erfüllt",
+        "items": {
+          "node": "Node.js 18.0.0 oder höher",
+          "npm": "npm 8.0.0 oder höher (oder yarn/pnpm)",
+          "git": "Git für Versionskontrolle",
+          "apiKey": "Google AI Studio API-Schlüssel"
+        }
+      },
+      "install": {
+        "title": "Gemini CLI installieren",
+        "description": "Installieren Sie das CLI-Tool global mit Ihrem bevorzugten Paketmanager",
+        "commands": {
+          "npm": "npm install -g @google/gemini-cli",
+          "verify": "gemini --version"
+        }
+      },
+      "config": {
+        "title": "Konfiguration",
+        "description": "Richten Sie Ihren API-Schlüssel ein und konfigurieren Sie das Tool für Ihren Workflow",
+        "items": {
+          "apiKey": "Setzen Sie Ihren Google AI Studio API-Schlüssel",
+          "settings": "Konfigurieren Sie Standardeinstellungen und Präferenzen",
+          "verify": "Testen Sie die Konfiguration mit einem einfachen Befehl"
+        }
+      },
+      "firstRun": {
+        "title": "Erster Lauf",
+        "description": "Überprüfen Sie Ihre Installation und führen Sie Ihre ersten Befehle aus",
+        "commands": {
+          "help": "gemini --help",
+          "version": "gemini --version",
+          "test": "gemini 'Hello, world!'"
+        }
+      }
+    },
+    "troubleshooting": {
+      "description": "Installationsprobleme? Hier sind Lösungen für häufige Probleme",
+      "title": "Fehlerbehebung",
+      "nodeVersion": {
+        "issue": "Node.js Versionskompatibilitätsproblem",
+        "solution": "Verwenden Sie nvm, um auf Node.js 18.0.0 oder höher zu aktualisieren, oder laden Sie von nodejs.org herunter"
+      },
+      "permissions": {
+        "issue": "Berechtigung verweigert Fehler",
+        "solution": "Verwenden Sie sudo für die globale Installation oder konfigurieren Sie npm, um ein anderes Verzeichnis für globale Pakete zu verwenden"
+      },
+      "apiKey": {
+        "issue": "API-Schlüssel Konfigurationsproblem",
+        "solution": "Stellen Sie sicher, dass Ihr Google AI API-Schlüssel korrekt mit 'gemini config set apiKey YOUR_API_KEY' gesetzt ist"
+      },
+      "network": {
+        "issue": "Netzwerkverbindungsfehler",
+        "solution": "Überprüfen Sie Ihre Internetverbindung und Firewall-Einstellungen, oder versuchen Sie ein VPN in einem eingeschränkten Netzwerk zu verwenden"
+      }
+    },
+    "nextSteps": {
+      "title": "Was kommt als Nächstes?",
+      "description": "Jetzt, da Sie Gemini CLI installiert haben, erkunden Sie unsere Anleitungen und Dokumentation, um das Beste aus dem Tool herauszuholen.",
+      "guides": "Anleitungen anzeigen",
+      "commands": "Befehlsreferenz"
+    },
+    "requirements": {
+      "title": "Systemanforderungen",
+      "description": "Gemini CLI unterstützt wichtige Betriebssysteme, stellen Sie sicher, dass Ihr System die folgenden Anforderungen erfüllt"
+    },
+    "platforms": {
+      "windows": {
+        "name": "Windows",
+        "requirements": {
+          "os": "Windows 10 oder höher",
+          "shell": "PowerShell 5.1 oder höher",
+          "node": "Node.js 20+ (empfohlen mit nvm-windows)"
+        },
+        "notes": "Empfohlen, Windows Terminal für bessere Erfahrung zu verwenden"
+      },
+      "macos": {
+        "name": "macOS",
+        "requirements": {
+          "os": "macOS 10.15 oder höher",
+          "terminal": "Terminal oder iTerm2",
+          "node": "Node.js 20+ (empfohlen mit nvm)"
+        },
+        "notes": "Sie können Node.js mit Homebrew installieren: brew install node"
+      },
+      "linux": {
+        "name": "Linux",
+        "requirements": {
+          "distro": "Ubuntu 18.04+ / CentOS 7+ / andere wichtige Distributionen",
+          "shell": "Bash 4.0 oder höher",
+          "node": "Node.js 20+ (empfohlen mit nvm)"
+        },
+        "notes": "Stellen Sie sicher, dass curl und git auf Ihrem System installiert sind"
+      }
+    }
+  },
+  "guides": {
+    "title": "Benutzerhandbuch",
+    "subtitle": "Umfassende Tutorials und Beispiele",
+    "gettingStarted": "Erste Schritte",
+    "basicCommands": "Grundlegende Befehle",
+    "advancedConfig": "Erweiterte Konfiguration",
+    "integration": "Integrationsleitfaden",
+    "fileOperations": "Dateioperationen",
+    "codeRefactoring": "Code-Refactoring",
+    "codeReview": "Code-Review",
+    "documentation": "Dokumentation",
+    "mcpProtocol": "MCP-Protokoll"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Finden Sie Antworten auf häufige Fragen",
+    "searchPlaceholder": "FAQ durchsuchen...",
+    "noResults": "Keine Ergebnisse gefunden",
+    "categories": {
+      "general": "Allgemein",
+      "installation": "Installation",
+      "usage": "Verwendung",
+      "troubleshooting": "Fehlerbehebung",
+      "advanced": "Erweitert"
+    }
+  },
+  "commands": {
+    "title": "Befehlsreferenz",
+    "subtitle": "Vollständige Referenz für alle integrierten Gemini CLI-Befehle und -Funktionen",
+    "searchPlaceholder": "Befehle suchen...",
+    "categories": {
+      "basic": "Slash-Befehle (/)",
+      "advanced": "At-Befehle (@)",
+      "configuration": "Shell-Befehle (!)",
+      "utilities": "Benutzerdefinierte Befehle"
+    }
+  },
+  "docs": {
+    "title": "Entwicklerdokumentation",
+    "subtitle": "Technische Dokumentation für Entwickler",
+    "categories": {
+      "development": "Entwicklungsgrundlagen",
+      "configuration": "Konfiguration & Protokoll",
+      "extensions": "Erweiterungsentwicklung",
+      "contributing": "Mitwirken"
+    },
+    "developmentSetup": "Entwicklungsumgebung",
+    "projectStructure": "Projektstruktur",
+    "buildAndTest": "Erstellen und Testen",
+    "coreApi": "Kern-API",
+    "pluginApi": "Plugin-API",
+    "configApi": "Konfigurations-API",
+    "mcpIntroduction": "MCP-Einführung",
+    "mcpServer": "MCP-Server",
+    "mcpClient": "MCP-Client",
+    "extensionArchitecture": "Erweiterungsarchitektur",
+    "firstExtension": "Erste Erweiterung",
+    "extensionPublishing": "Erweiterung veröffentlichen",
+    "contributingGuide": "Mitwirkungsleitfaden",
+    "codingStandards": "Codierungsstandards",
+    "pullRequestGuide": "Pull-Request-Leitfaden"
+  },
+  "footer": {
+    "learning": {
+      "title": "Lernressourcen",
+      "installation": "Installations- und Einrichtungsanleitung",
+      "guides": "Erste Schritte Tutorials",
+      "advanced": "Erweiterte Nutzungstipps",
+      "faq": "Häufig gestellte Fragen",
+      "examples": "Praktische Fallstudien"
+    },
+    "tools": {
+      "title": "Entwicklungstools",
+      "download": "Gemini CLI Download",
+      "commands": "Befehlsreferenz-Handbuch",
+      "docs": "Entwicklerdokumentation",
+      "aiStudio": "Google AI Studio",
+      "apiDocs": "Gemini API Dokumentation"
+    },
+    "community": {
+      "title": "Community & Support",
+      "github": "GitHub Projekt-Homepage",
+      "discussions": "GitHub Diskussionen",
+      "issues": "Problem-Feedback",
+      "troubleshooting": "Installations-Fehlerbehebung",
+      "contributing": "Beitragsleitfaden"
+    },
+    "company": {
+      "title": "Über uns",
+      "about": "Website-Einführung",
+      "privacy": "Datenschutzrichtlinie",
+      "terms": "Nutzungsbedingungen",
+      "contact": "Kontaktieren Sie uns",
+      "sitemap": "Sitemap"
+    },
+    "seo": {
+      "title": "Gemini CLI Lernplattform - KI-gestützte Entwicklungstools-Tutorials",
+      "description": "Professionelle Gemini CLI Lernplattform mit umfassenden KI-Programmier-Tutorials, praktischen Fällen und bewährten Praktiken. Lernen Sie, wie Sie Googles neuestes Open-Source-KI-Kommandozeilen-Tool verwenden.",
+      "tags": {
+        "geminiCLI": "#GeminiCLI",
+        "aiProgramming": "#KIProgrammierung",
+        "commandLine": "#Kommandozeilen-Tool",
+        "googleAI": "#GoogleAI",
+        "openSource": "#OpenSource"
+      }
+    },
+    "social": {
+      "visitLabel": "{name} besuchen"
+    },
+    "copyright": {
+      "main": "© 2025 Gemini CLI Lernplattform. Dies ist eine inoffizielle Lernressourcen-Website, die sich der Förderung der KI-Programmierungstechnologie widmet.",
+      "basedOn": "Basierend auf Googles offiziellem Open-Source-Projekt",
+      "license": "Erstellt | Apache 2.0 Open-Source-Lizenz"
+    }
+  },
+  "meta": {
+    "defaultTitle": "Gemini CLI Lernplattform",
+    "defaultDescription": "Meistern Sie die leistungsstarke KI-Befehlszeile mit umfassenden Tutorials, Anleitungen und Dokumentation.",
+    "keywords": "Gemini CLI, KI, Befehlszeile, Tutorial, Dokumentation, Anleitung"
+  },
+  "errors": {
+    "pageNotFound": "Seite nicht gefunden",
+    "serverError": "Serverfehler",
+    "networkError": "Netzwerkfehler",
+    "tryAgain": "Erneut versuchen",
+    "goHome": "Zur Startseite"
+  },
+  "time": {
+    "readingTime": "{minutes} Min. Lesezeit",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "publishedOn": "Veröffentlicht am"
+  },
+  "stats": {
+    "title": "Leistungsstarke Performance",
+    "subtitle": "Gemini CLI bietet Entwicklern branchenführende kostenlose Nutzungslimits und Open-Source-Transparenz",
+    "requestsPerMinute": {
+      "label": "Anfragen pro Minute",
+      "value": "60"
+    },
+    "requestsPerDay": {
+      "label": "Anfragen pro Tag",
+      "value": "1K"
+    },
+    "license": {
+      "label": "Open-Source-Lizenz",
+      "value": "Apache 2.0"
+    }
+  },
+  "featuresStats": {
+    "freeExperience": {
+      "unit": "Minuten kostenlose Entwicklungserfahrung",
+      "title": "Unübertroffene Nutzungslimits",
+      "description": "Persönliche Google-Konten erhalten 60 Modellanfragen pro Minute und 1000 Anfragen pro Tag für eine außergewöhnliche kostenlose Erfahrung."
+    },
+    "tokenContext": {
+      "unit": "Token-Kontext",
+      "title": "Leistungsstarke Modellfähigkeiten",
+      "description": "Basierend auf dem Gemini 2.5 Pro-Modell mit 1 Million Token großem Kontextfenster, unterstützt echte Code-Analyse und -Generierung."
+    },
+    "openSource": {
+      "unit": "Open-Source-Code",
+      "title": "Offen und erweiterbar",
+      "description": "Unterstützt Model Context Protocol (MCP) und benutzerdefinierte Tools, einfach konfigurierbar in verschiedenen Entwicklungstools und Workflows."
+    }
+  },
+  "heroShowcase": {
+    "title": "Ihr Terminal-KI-Assistent",
+    "description": "Gemini CLI integriert Googles fortschrittlichste KI-Technologie direkt in Ihre Befehlszeile und bietet Entwicklern eine unvergleichliche intelligente Programmiererfahrung."
+  },
+  "about": {
+    "title": "Über unsere Plattform",
+    "subtitle": "Wir sind bestrebt, KI-gestützte Entwicklung für Entwickler weltweit durch umfassende Lernressourcen und von der Community erstellte Inhalte zugänglich zu machen.",
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "KI-gestützte Entwicklung zu demokratisieren, indem wir umfassende, zugängliche und praktische Lernressourcen für Googles Gemini CLI bereitstellen. Wir glauben, dass jeder Entwickler die Möglichkeit haben sollte, die Kraft der künstlichen Intelligenz in seinem täglichen Arbeitsablauf zu nutzen.",
+      "excellence": "Bildungsexzellenz",
+      "excellenceDesc": "Wir erstellen hochwertige Tutorials, Anleitungen und Dokumentationen, die komplexe KI-Konzepte für Entwickler aller Fähigkeitsstufen verständlich machen.",
+      "community": "Community-Fokus",
+      "communityDesc": "Unsere Plattform gedeiht durch Community-Beiträge und fördert Zusammenarbeit und Wissensaustausch unter KI-Entwicklungsbegeisterten.",
+      "practical": "Praktisches Lernen",
+      "practicalDesc": "Wir betonen praktische, reale Beispiele, die Entwickler sofort in ihren Projekten und Arbeitsabläufen anwenden können.",
+      "global": "Globale Zugänglichkeit",
+      "globalDesc": "Durch die Unterstützung mehrerer Sprachen und inklusives Design stellen wir sicher, dass unsere Ressourcen für Entwickler weltweit zugänglich sind."
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "subtitle": "Die Prinzipien, die alles leiten, was wir tun",
+      "education": {
+        "name": "Bildung zuerst",
+        "description": "Wir glauben daran, KI-Entwicklung durch umfassende, verständliche Bildungsinhalte zugänglich zu machen."
+      },
+      "communityDriven": {
+        "name": "Community-getrieben",
+        "description": "Unsere Plattform gedeiht durch Community-Beiträge, Feedback und kollaborative Lernerfahrungen."
+      },
+      "openSource": {
+        "name": "Open-Source-Geist",
+        "description": "Wir unterstützen und fördern Open-Source-Entwicklung, Transparenz und Wissensaustausch."
+      },
+      "innovation": {
+        "name": "Innovationsfokus",
+        "description": "Wir bleiben an der Spitze der KI-Technologie und bieten modernste Lernressourcen und Tools."
+      },
+      "accessibility": {
+        "name": "Globale Zugänglichkeit",
+        "description": "Wir bemühen uns, unsere Inhalte für Entwickler weltweit zugänglich zu machen, unabhängig von ihrem Hintergrund."
+      },
+      "quality": {
+        "name": "Qualitätsinhalt",
+        "description": "Wir sind verpflichtet, hochwertige, genaue und aktuelle Bildungsmaterialien bereitzustellen."
+      }
+    },
+    "stats": {
+      "title": "Plattform-Impact",
+      "subtitle": "Wachsen mit der Entwicklergemeinschaft",
+      "languages": "Unterstützte Sprachen",
+      "guides": "Lernanleitungen",
+      "examples": "Code-Beispiele",
+      "members": "Community-Mitglieder"
+    },
+    "story": {
+      "title": "Unsere Geschichte",
+      "paragraph1": "Als Google Gemini CLI als Open-Source-Projekt veröffentlichte, erkannten wir sein enormes Potenzial, die Art und Weise zu verändern, wie Entwickler mit KI arbeiten. Wir sahen jedoch auch eine Lücke bei zugänglichen Lernressourcen, die Entwicklern verschiedener Hintergründe helfen könnten, mit diesem mächtigen Tool zu beginnen.",
+      "paragraph2": "Deshalb beschlossen wir, diese umfassende Lernplattform zu erstellen. Unser Ziel ist einfach: Gemini CLI für alle zugänglich zu machen, unabhängig von ihrer Erfahrung mit KI oder Kommandozeilen-Tools.",
+      "paragraph3": "Von einer kleinen Sammlung von Tutorials ausgehend, sind wir zu einer umfassenden Plattform mit mehrsprachiger Unterstützung, interaktiven Beispielen und einer blühenden Gemeinschaft von Mitwirkenden gewachsen. Wir sind stolz darauf, Teil des Open-Source-Ökosystems zu sein und Googles Vision zur Demokratisierung der KI-Entwicklung zu unterstützen."
+    },
+    "disclaimer": {
+      "title": "Wichtiger Hinweis",
+      "content": "Dies ist eine inoffizielle, von der Community erstellte Lernressource zur Unterstützung der Gemini CLI-Bildung. Obwohl wir uns um Genauigkeit und Qualität bemühen, ist diese Plattform nicht mit Google verbunden oder von Google unterstützt. Alle Inhalte basieren auf dem offiziellen Open-Source-Projekt Gemini CLI und Community-Beiträgen."
+    },
+    "getInvolved": {
+      "title": "Mitmachen",
+      "subtitle": "Treten Sie unserer Community bei und helfen Sie dabei, KI-Entwicklung zugänglicher zu machen",
+      "contribute": {
+        "title": "Inhalte beitragen",
+        "description": "Helfen Sie uns, Tutorials zu verbessern und neue Lernressourcen hinzuzufügen.",
+        "link": "Beitragsleitfaden →"
+      },
+      "discussions": {
+        "title": "An Diskussionen teilnehmen",
+        "description": "Beteiligen Sie sich an Community-Diskussionen und teilen Sie Ihre Erfahrungen.",
+        "link": "GitHub-Diskussionen →"
+      },
+      "issues": {
+        "title": "Problem melden",
+        "description": "Ein Problem gefunden oder einen Verbesserungsvorschlag?",
+        "link": "Kontaktieren Sie uns →"
+      }
+    },
+    "cta": {
+      "title": "Bereit zum Lernen?",
+      "description": "Erkunden Sie unsere umfassenden Anleitungen und schließen Sie sich Tausenden von Entwicklern an, die bereits Gemini CLI verwenden, um ihre Entwicklungsworkflows zu verbessern.",
+      "getStarted": "Loslegen",
+      "browseGuides": "Anleitungen durchsuchen"
+    }
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Haben Sie Fragen, Vorschläge oder benötigen Hilfe? Wir sind hier, um zu helfen!",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "send": "Nachricht senden"
+    },
+    "info": {
+      "title": "Kontaktieren Sie uns",
+      "description": "Wir schätzen Ihr Feedback und helfen gerne bei allen Fragen zu Gemini CLI.",
+      "response": "Wir bemühen uns, alle Anfragen innerhalb von 24 Stunden zu beantworten."
+    },
+    "community": {
+      "title": "Der Community beitreten",
+      "description": "Treten Sie unserer wachsenden Entwicklergemeinschaft bei:",
+      "github": "GitHub",
+      "discord": "Discord",
+      "twitter": "Twitter"
+    }
+  },
+  "privacy": {
+    "title": "Datenschutzrichtlinie",
+    "subtitle": "Ihre Privatsphäre ist uns wichtig. Diese Richtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden und schützen.",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "introduction": {
+      "title": "Einführung",
+      "content": "Diese Datenschutzrichtlinie beschreibt, wie die Gemini CLI Lernplattform Ihre Informationen sammelt, verwendet und teilt, wenn Sie unsere Website und Dienste nutzen. Wir verpflichten uns, Ihre Privatsphäre zu schützen und transparent über unsere Datenpraktiken zu sein."
+    },
+    "informationWeCollect": {
+      "title": "Informationen, die wir sammeln",
+      "analytics": {
+        "title": "Analyseinformationen",
+        "description": "Wir verwenden Google Analytics, um zu verstehen, wie Besucher mit unserer Website interagieren. Dies umfasst:",
+        "items": [
+          "Besuchte Seiten und Verweildauer auf jeder Seite",
+          "Geografische Lage (Land/Region-Ebene)",
+          "Geräte- und Browser-Informationen",
+          "Verweisquellen (wie Sie unsere Website gefunden haben)",
+          "Benutzerinteraktionen und Navigationsmuster"
+        ]
+      },
+      "language": {
+        "title": "Spracheinstellungen",
+        "description": "Wir speichern Ihre Spracheinstellung lokal in Ihrem Browser, um eine personalisierte Erfahrung zu bieten. Diese Informationen werden nicht an unsere Server übertragen."
+      },
+      "technical": {
+        "title": "Technische Informationen",
+        "description": "Wir sammeln automatisch bestimmte technische Informationen, wenn Sie unsere Website besuchen:",
+        "items": [
+          "IP-Adresse (anonymisiert für Analysen)",
+          "Browser-Typ und -Version",
+          "Betriebssystem",
+          "Bildschirmauflösung und Gerätetyp"
+        ]
+      }
+    },
+    "howWeUse": {
+      "title": "Wie wir Ihre Informationen verwenden",
+      "description": "Wir verwenden die gesammelten Informationen für folgende Zwecke:",
+      "items": [
+        {
+          "title": "Website-Analyse",
+          "description": "Um das Benutzerverhalten zu verstehen und die Leistung und Benutzererfahrung unserer Website zu verbessern"
+        },
+        {
+          "title": "Inhaltsoptimierung",
+          "description": "Um zu bestimmen, welche Inhalte für unsere Benutzer am wertvollsten sind und unsere Bildungsmaterialien zu optimieren"
+        },
+        {
+          "title": "Technische Verbesserungen",
+          "description": "Um technische Probleme zu identifizieren und zu beheben, Ladezeiten zu optimieren und geräteübergreifende Kompatibilität sicherzustellen"
+        },
+        {
+          "title": "Sprachlokalisierung",
+          "description": "Um Inhalte in Ihrer bevorzugten Sprache bereitzustellen und die Qualität unserer Übersetzungen zu verbessern"
+        },
+        {
+          "title": "Sicherheit",
+          "description": "Um unsere Website vor Missbrauch, Spam und bösartigen Aktivitäten zu schützen"
+        }
+      ]
+    },
+    "informationSharing": {
+      "title": "Informationsaustausch",
+      "description": "Wir verkaufen, handeln oder übertragen Ihre persönlichen Informationen nicht an Dritte, außer unter folgenden begrenzten Umständen:",
+      "items": [
+        {
+          "title": "Dienstanbieter",
+          "description": "Wir teilen anonymisierte Analysedaten mit Google Analytics, um Website-Analysedienste bereitzustellen"
+        },
+        {
+          "title": "Rechtliche Anforderungen",
+          "description": "Wir können Informationen preisgeben, wenn dies gesetzlich vorgeschrieben ist oder um unsere Rechte und Sicherheit zu schützen"
+        },
+        {
+          "title": "Geschäftsübertragungen",
+          "description": "Im Falle einer Fusion oder Übernahme können Benutzerinformationen als Teil der Geschäftsvermögen übertragen werden"
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookies und Tracking-Technologien",
+      "analytics": {
+        "title": "Google Analytics Cookies",
+        "description": "Wir verwenden Google Analytics Cookies, um Nutzungsstatistiken zu sammeln. Diese Cookies helfen uns zu verstehen:",
+        "items": [
+          "Welche Seiten am beliebtesten sind",
+          "Wie Benutzer durch unsere Website navigieren",
+          "Technische Leistungsmetriken"
+        ]
+      },
+      "localStorage": {
+        "title": "Lokaler Speicher",
+        "description": "Wir verwenden den lokalen Browser-Speicher, um Ihre Spracheinstellung zu merken und eine bessere Benutzererfahrung zu bieten. Diese Daten bleiben auf Ihrem Gerät und werden nicht an unsere Server übertragen."
+      }
+    },
+    "yourRights": {
+      "title": "Ihre Rechte und Wahlmöglichkeiten",
+      "description": "Sie haben mehrere Rechte bezüglich Ihrer Informationen:",
+      "items": [
+        {
+          "title": "Analyse-Opt-out",
+          "description": "Sie können das Google Analytics-Tracking durch Browser-Erweiterungen oder Anpassung Ihrer Browser-Einstellungen deaktivieren"
+        },
+        {
+          "title": "Lokale Daten löschen",
+          "description": "Sie können Ihre Spracheinstellungen und andere lokale Daten löschen, indem Sie den lokalen Speicher Ihres Browsers leeren"
+        },
+        {
+          "title": "Informationen abrufen",
+          "description": "Sie können Informationen darüber anfordern, welche Daten wir über Sie gesammelt haben"
+        },
+        {
+          "title": "Kontaktieren Sie uns",
+          "description": "Sie können uns bei datenschutzbezogenen Fragen oder Bedenken kontaktieren"
+        }
+      ]
+    },
+    "dataSecurity": {
+      "title": "Datensicherheit",
+      "description": "Wir implementieren angemessene Sicherheitsmaßnahmen zum Schutz Ihrer Informationen:",
+      "items": [
+        "HTTPS-Verschlüsselung für alle Website-Kommunikationen",
+        "Regelmäßige Sicherheitsupdates und -überwachung",
+        "Begrenzter Zugang zu gesammelten Daten",
+        "Sichere Hosting-Infrastruktur"
+      ]
+    },
+    "thirdParty": {
+      "title": "Drittanbieter-Dienste",
+      "googleAnalytics": {
+        "title": "Google Analytics",
+        "description": "Unsere Website verwendet Google Analytics, einen Webanalysedienst von Google Inc. Google Analytics verwendet Cookies, um zu analysieren, wie Benutzer die Website nutzen.",
+        "moreInfo": "Weitere Informationen zu Googles Datenschutzpraktiken finden Sie unter:",
+        "linkText": "Google Datenschutzrichtlinie"
+      },
+      "externalLinks": {
+        "title": "Externe Links",
+        "description": "Unsere Website kann Links zu externen Websites enthalten. Wir sind nicht verantwortlich für die Datenschutzpraktiken dieser externen Websites. Wir ermutigen Sie, deren Datenschutzrichtlinien zu lesen."
+      }
+    },
+    "childrens": {
+      "title": "Datenschutz für Kinder",
+      "description": "Unsere Website ist nicht für Kinder unter 13 Jahren bestimmt. Wir sammeln wissentlich keine persönlichen Informationen von Kindern unter 13 Jahren. Wenn Sie ein Elternteil oder Erziehungsberechtigter sind und glauben, dass Ihr Kind uns persönliche Informationen zur Verfügung gestellt hat, kontaktieren Sie uns bitte."
+    },
+    "changes": {
+      "title": "Änderungen an dieser Datenschutzrichtlinie",
+      "description": "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Wir werden Sie über Änderungen informieren, indem wir die neue Datenschutzrichtlinie auf dieser Seite veröffentlichen und das Datum 'Zuletzt aktualisiert' aktualisieren. Es wird empfohlen, diese Datenschutzrichtlinie regelmäßig auf Änderungen zu überprüfen."
+    },
+    "contact": {
+      "title": "Kontaktinformationen",
+      "description": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie oder unseren Datenschutzpraktiken haben, kontaktieren Sie uns bitte:",
+      "email": "E-Mail",
+      "github": "GitHub",
+      "website": "Website",
+      "contactForm": "Kontaktformular",
+      "reportIssues": "Probleme melden"
+    },
+    "cta": {
+      "title": "Fragen zu unserer Datenschutzrichtlinie?",
+      "description": "Wir sind hier, um alle Fragen zu klären, die Sie zu unseren Datenschutzpraktiken haben könnten. Zögern Sie nicht, uns zu kontaktieren.",
+      "contactUs": "Kontaktieren Sie uns"
+    }
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "sections": [
+      {
+        "title": "Service-Nutzung",
+        "content": "Dieser Service wird für Bildungszwecke bereitgestellt und erfordert angemessene Nutzung."
+      },
+      {
+        "title": "Geistiges Eigentum",
+        "content": "Das Urheberrecht der Inhalte gehört unserer Plattform oder den jeweiligen Rechteinhabern."
+      },
+      {
+        "title": "Haftungsausschluss",
+        "content": "Wir übernehmen keine Verantwortung für Schäden, die durch die Nutzung des Services entstehen."
+      }
+    ]
+  },
+  "guidesAdvanced": {
+    "title": "Erweiterte Anleitungen",
+    "subtitle": "Erweiterte Tutorials und Anleitungen zur Beherrschung von Gemini CLI. Lernen Sie komplexe Workflows, Automatisierung und professionelle Entwicklungstechniken.",
+    "learnMore": "Mehr Erfahren",
+    "difficulty": {
+      "advanced": "Fortgeschritten",
+      "expert": "Experte"
+    },
+    "guides": [
+      {
+        "title": "Erweiterte Konfiguration",
+        "description": "Beherrschen Sie komplexe Konfigurationsoptionen, Umgebungsvariablen und benutzerdefinierte Einstellungen für optimale Leistung.",
+        "estimatedTime": "30 Min"
+      },
+      {
+        "title": "Code-Refactoring",
+        "description": "Lernen Sie, wie Sie Gemini CLI für großangelegtes Code-Refactoring, Mustererkennung und Code-Qualitätsverbesserungen verwenden.",
+        "estimatedTime": "45 Min"
+      },
+      {
+        "title": "Code-Review-Automatisierung",
+        "description": "Automatisieren Sie Code-Review-Prozesse, implementieren Sie Qualitätsprüfungen und integrieren Sie mit CI/CD-Pipelines.",
+        "estimatedTime": "60 Min"
+      },
+      {
+        "title": "Dateioperationen-Meisterschaft",
+        "description": "Erweiterte Dateimanipulation, Stapelverarbeitung und komplexe Dateisystemoperationen.",
+        "estimatedTime": "40 Min"
+      },
+      {
+        "title": "Benutzerdefinierte Befehle",
+        "description": "Erstellen Sie benutzerdefinierte Befehle, Aliase und Verknüpfungen, um Ihren Entwicklungsworkflow zu optimieren.",
+        "estimatedTime": "50 Min"
+      },
+      {
+        "title": "Plugin-Entwicklung",
+        "description": "Erstellen und verteilen Sie benutzerdefinierte Plugins, um die Gemini CLI-Funktionalität für Ihr Team zu erweitern.",
+        "estimatedTime": "90 Min"
+      }
+    ],
+    "prerequisites": {
+      "title": "Voraussetzungen",
+      "technical": {
+        "title": "Technische Anforderungen",
+        "items": [
+          "Gemini CLI installiert und konfiguriert",
+          "Vertraut mit Befehlszeilenschnittstellen",
+          "Grundverständnis von Entwicklungsworkflows"
+        ]
+      },
+      "knowledge": {
+        "title": "Wissensanforderungen",
+        "items": [
+          "Grundlegende Gemini CLI-Tutorials abgeschlossen",
+          "Vertrautheit mit KI-unterstützter Entwicklung",
+          "Verständnis von Software-Entwicklungsprinzipien"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Bereit für Erweiterte Herausforderungen?",
+      "description": "Bringen Sie Ihre Gemini CLI-Fähigkeiten mit diesen umfassenden erweiterten Anleitungen auf die nächste Stufe.",
+      "allGuides": "Alle Anleitungen",
+      "examples": "Beispiele Anzeigen"
+    }
+  },
+  "guidesMain": {
+    "hero": {
+      "title": "Gemini CLI Nutzungsanleitungen",
+      "description": "Von der grundlegenden Einführung bis zu fortgeschrittenen Anwendungen - meistern Sie die leistungsstarken Funktionen von Gemini CLI und machen Sie KI zu Ihrem zuverlässigen Assistenten in der Entwicklungsarbeit."
+    },
+    "categories": {
+      "title": "Lernpfade",
+      "description": "Wählen Sie den passenden Lernpfad basierend auf Ihrem Erfahrungslevel",
+      "beginner": {
+        "title": "Einsteiger-Tutorials",
+        "description": "Grundlegende Tutorials für Anfänger, um schnell mit Gemini CLI zu beginnen",
+        "tutorials": [
+          {
+            "title": "Erste Verwendung von Gemini CLI",
+            "description": "Grundkonzepte verstehen und Ihr erstes KI-Gespräch führen",
+            "duration": "10 Minuten",
+            "level": "Einsteiger"
+          },
+          {
+            "title": "Grundlegende Befehlsoperationen",
+            "description": "Häufige Befehle und grundlegende Syntax lernen",
+            "duration": "15 Minuten",
+            "level": "Einsteiger"
+          },
+          {
+            "title": "Dateioperationen Grundlagen",
+            "description": "KI zur Verarbeitung und Analyse von Dateiinhalten verwenden",
+            "duration": "20 Minuten",
+            "level": "Einsteiger"
+          }
+        ]
+      },
+      "intermediate": {
+        "title": "Fortgeschrittene Tutorials",
+        "description": "Vertiefen Sie sich in erweiterte Funktionen und bewährte Praktiken",
+        "tutorials": [
+          {
+            "title": "Erweiterte Konfigurationsoptionen",
+            "description": "Gemini CLI-Konfiguration und Umgebungseinstellungen anpassen",
+            "duration": "25 Minuten",
+            "level": "Fortgeschritten"
+          },
+          {
+            "title": "Integration mit anderen Tools",
+            "description": "In bestehende Entwicklungsworkflows integrieren",
+            "duration": "30 Minuten",
+            "level": "Fortgeschritten"
+          },
+          {
+            "title": "MCP-Protokoll Verwendung",
+            "description": "Model Context Protocol zur Funktionserweiterung verwenden",
+            "duration": "35 Minuten",
+            "level": "Fortgeschritten"
+          }
+        ]
+      },
+      "examples": {
+        "title": "Praktische Fälle",
+        "description": "Anwendungsszenarien und Lösungen in realen Projekten",
+        "tutorials": [
+          {
+            "title": "Code-Refactoring-Assistent",
+            "description": "KI zur Analyse und Refaktorierung bestehenden Codes verwenden",
+            "duration": "40 Minuten",
+            "level": "Praktisch"
+          },
+          {
+            "title": "Projektdokumentation generieren",
+            "description": "Automatische Generierung von Projektdokumentation und README",
+            "duration": "30 Minuten",
+            "level": "Praktisch"
+          },
+          {
+            "title": "Code-Review-Assistent",
+            "description": "KI für Code-Qualitätsprüfung verwenden",
+            "duration": "35 Minuten",
+            "level": "Praktisch"
+          }
+        ]
+      }
+    },
+    "startLearning": "Lernen beginnen",
+    "quickAccess": {
+      "title": "Schnellzugriff",
+      "description": "Springen Sie direkt zu den Inhalten, die Sie benötigen",
+      "advanced": "Erweiterte Anleitungen",
+      "advancedDesc": "Tiefgreifende fortgeschrittene Tutorials und Techniken",
+      "examples": "Praktische Beispiele",
+      "examplesDesc": "Echte Projektfälle und Lösungen",
+      "commands": "Befehlsreferenz",
+      "commandsDesc": "Vollständige Befehlsliste und Syntax",
+      "faq": "FAQ",
+      "faqDesc": "Schnell Antworten auf häufige Fragen finden"
+    },
+    "cta": {
+      "title": "Bereit, Ihre KI-Programmierreise zu beginnen?",
+      "description": "Installieren Sie Gemini CLI jetzt und beginnen Sie, die leistungsstarken Funktionen der KI-unterstützten Programmierung zu erleben.",
+      "getStarted": "Jetzt beginnen",
+      "viewDocs": "Dokumentation anzeigen"
+    }
+  },
+  "guidesExamples": {
+    "title": "Praktische Beispiele",
+    "subtitle": "Reale Beispiele und Fallstudien für Gemini CLI. Lernen Sie durch praktische Szenarien und praktische Projekte.",
+    "tryExample": "Beispiel Ausprobieren",
+    "difficulty": {
+      "beginner": "Anfänger",
+      "intermediate": "Fortgeschritten",
+      "advanced": "Experte"
+    },
+    "categories": [
+      {
+        "title": "Code-Generierung Beispiele",
+        "description": "Praktische Code-Generierungsszenarien für verschiedene Programmiersprachen und Frameworks",
+        "examples": [
+          {
+            "title": "React-Komponenten-Generator",
+            "description": "React-Komponenten mit TypeScript, Props und Styling generieren",
+            "command": "gemini \"Erstelle eine React-Komponente für eine Benutzerprofilkarte mit Avatar, Name und Bio\""
+          },
+          {
+            "title": "API-Endpoint-Erstellung",
+            "description": "REST-API-Endpoints mit Validierung und Fehlerbehandlung generieren",
+            "command": "gemini \"Erstelle einen Node.js Express-Endpoint für Benutzerauthentifizierung mit JWT\""
+          },
+          {
+            "title": "Datenbank-Schema-Design",
+            "description": "Datenbank-Schemas und Migrationsskripte generieren",
+            "command": "gemini \"Entwerfe ein PostgreSQL-Schema für eine E-Commerce-Plattform\""
+          }
+        ]
+      },
+      {
+        "title": "Dateioperationen Beispiele",
+        "description": "Stapelverarbeitung, Dateimanipulation und Inhaltstransformationsaufgaben",
+        "examples": [
+          {
+            "title": "Stapel-Dateiumbenennung",
+            "description": "Mehrere Dateien basierend auf Mustern und Metadaten umbenennen",
+            "command": "gemini \"Benenne alle .jpg-Dateien in diesem Verzeichnis um, um das Erstellungsdatum einzuschließen\""
+          },
+          {
+            "title": "Inhaltsmigration",
+            "description": "Inhalte zwischen verschiedenen Formaten konvertieren und migrieren",
+            "command": "gemini \"Konvertiere alle Markdown-Dateien zu HTML mit benutzerdefiniertem Styling\""
+          },
+          {
+            "title": "Log-Datei-Analyse",
+            "description": "Log-Dateien für Einblicke und Muster parsen und analysieren",
+            "command": "gemini \"Analysiere diese Apache-Log-Datei und fasse Traffic-Muster zusammen\""
+          }
+        ]
+      },
+      {
+        "title": "Dokumentations-Beispiele",
+        "description": "Umfassende Dokumentation und technisches Schreiben generieren",
+        "examples": [
+          {
+            "title": "API-Dokumentation",
+            "description": "Vollständige API-Dokumentation aus Code generieren",
+            "command": "gemini \"Generiere OpenAPI-Dokumentation für diese Express.js-API\""
+          },
+          {
+            "title": "README-Generierung",
+            "description": "Detaillierte README-Dateien für Projekte erstellen",
+            "command": "gemini \"Erstelle eine umfassende README für dieses Python-Projekt\""
+          }
+        ]
+      }
+    ],
+    "tips": {
+      "title": "Profi-Tipps für Bessere Ergebnisse",
+      "items": [
+        {
+          "title": "Seien Sie Spezifisch",
+          "description": "Geben Sie klare, detaillierte Prompts mit Kontext und Anforderungen für bessere KI-Antworten."
+        },
+        {
+          "title": "Verwenden Sie Beispiele",
+          "description": "Fügen Sie Beispiele in Ihre Prompts ein, um die KI zu Ihrem gewünschten Ausgabeformat zu führen."
+        },
+        {
+          "title": "Iterieren und Verfeinern",
+          "description": "Beginnen Sie mit grundlegenden Prompts und verfeinern Sie sie basierend auf den Ergebnissen, die Sie erhalten."
+        },
+        {
+          "title": "Kontext Ist Wichtig",
+          "description": "Geben Sie relevanten Kontext über Ihr Projekt, Tech-Stack und Einschränkungen an."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bereit, Diese Beispiele Auszuprobieren?",
+      "description": "Beginnen Sie mit diesen praktischen Beispielen zu experimentieren und entdecken Sie, wie Gemini CLI Ihren Entwicklungsworkflow beschleunigen kann.",
+      "allGuides": "Alle Anleitungen",
+      "advancedGuides": "Erweiterte Anleitungen"
+    }
+  },
+  "guidesGettingStarted": {
+    "title": "Erste Verwendung von Gemini CLI",
+    "subtitle": "10-minütiger Schnellstart für Ihre KI-unterstützte Programmierreise",
+    "description": "Dieses Tutorial hilft Ihnen beim schnellen Einstieg in Gemini CLI und beim Erlernen grundlegender Operationen und Kernkonzepte.",
+    "meta": {
+      "level": "Anfängerfreundlich",
+      "duration": "10 Minuten zum Abschluss"
+    },
+    "prerequisites": {
+      "title": "Bevor Sie Beginnen",
+      "nodejs": "Node.js 18 oder höher installiert",
+      "terminal": "Vertrautheit mit grundlegenden Kommandozeilenoperationen",
+      "google": "Google-Konto (für Authentifizierung)"
+    },
+    "steps": {
+      "install": {
+        "title": "Gemini CLI Installieren",
+        "description": "Wählen Sie die für Sie passende Installationsmethode",
+        "methods": {
+          "npx": {
+            "name": "NPX (Empfohlen)",
+            "description": "Keine Installation erforderlich, führt direkt die neueste Version aus"
+          },
+          "npm": {
+            "name": "NPM Globale Installation",
+            "description": "Globale Installation zur Verwendung des gemini-Befehls überall"
+          },
+          "homebrew": {
+            "name": "Homebrew (macOS)",
+            "description": "Empfohlen für macOS-Benutzer mit Homebrew"
+          }
+        }
+      },
+      "firstRun": {
+        "title": "Erster Start",
+        "description": "Führen Sie Gemini CLI aus und vervollständigen Sie die Erstkonfiguration",
+        "steps": {
+          "command": {
+            "title": "Befehl Ausführen",
+            "description": "Geben Sie den gemini-Befehl im Terminal ein, um zu starten"
+          },
+          "theme": {
+            "title": "Thema Wählen",
+            "description": "Der erste Start fordert Sie auf, ein Farbthema zu wählen, wählen Sie Ihren bevorzugten Stil"
+          },
+          "auth": {
+            "title": "Authentifizierung",
+            "description": "Melden Sie sich mit Ihrem Google-Konto an, um kostenloses Nutzungskontingent zu erhalten"
+          }
+        }
+      },
+      "firstChat": {
+        "title": "Erstes Gespräch",
+        "description": "Beginnen Sie mit der Interaktion mit der KI",
+        "examples": {
+          "greeting": {
+            "title": "Einfache Begrüßung",
+            "command": "> Hallo, können Sie sich vorstellen?",
+            "description": "Testen Sie die grundlegende Gesprächsfunktion"
+          },
+          "code": {
+            "title": "Code-bezogene Fragen",
+            "command": "> Erklären Sie, was eine rekursive Funktion ist",
+            "description": "Stellen Sie programmierungsbezogene Fragen"
+          },
+          "file": {
+            "title": "Dateioperationen",
+            "command": "> @README.md fassen Sie den Inhalt dieser Datei zusammen",
+            "description": "Verwenden Sie das @-Symbol, um Dateiinhalte zu lesen"
+          }
+        }
+      }
+    },
+    "tips": {
+      "title": "Wichtige Tipps",
+      "success": {
+        "title": "Erfolgs-Tipp",
+        "content": "Wenn Sie die Willkommensschnittstelle von Gemini CLI und die Eingabeaufforderung sehen, war die Installation erfolgreich!"
+      },
+      "warning": {
+        "title": "Wichtige Hinweise",
+        "content": "Die erste Verwendung erfordert eine Netzwerkverbindung für Authentifizierung und Modellzugriff."
+      },
+      "info": {
+        "title": "Nutzungstipps",
+        "content": "Sie können jederzeit /help eingeben, um verfügbare Befehle und Funktionen anzuzeigen."
+      }
+    },
+    "commands": {
+      "help": "Hilfeinformationen und verfügbare Befehle anzeigen",
+      "clear": "Bildschirminhalt löschen",
+      "quit": "Gemini CLI beenden",
+      "theme": "Oberflächenthema ändern",
+      "file": "Dateiinhalt in Gespräch einlesen",
+      "system": "Systembefehle ausführen"
+    },
+    "commandsTitle": "Schnellreferenz für Häufige Befehle",
+    "nextSteps": {
+      "title": "Nächste Schritte",
+      "description": "Herzlichen Glückwunsch! Sie haben die Einführung in Gemini CLI erfolgreich abgeschlossen. Sie können nun weitere Funktionen erlernen:",
+      "basicCommands": "Grundlegende Befehle Lernen",
+      "fileOperations": "Einführung in Dateioperationen",
+      "backToGuides": "Zurück zur Anleitung-Startseite"
+    }
+  },
+  "guidesBasicCommands": {
+    "hero": {
+      "title": "Grundlegende Befehlsoperationen",
+      "subtitle": "Beherrschen Sie die Kernbefehle und Operationssyntax von Gemini CLI",
+      "comprehensive": "Umfassende Abdeckung",
+      "practical": "Praktische Beispiele"
+    },
+    "overview": {
+      "title": "Befehlsübersicht",
+      "description": "Gemini CLI bietet drei Haupttypen von Befehlen: Slash-Befehle zur Steuerung der CLI selbst, @-Befehle für Dateioperationen und !-Befehle zur Ausführung von Systembefehlen."
+    },
+    "categories": {
+      "slash": {
+        "title": "Slash-Befehle (/)",
+        "description": "Meta-Level-Befehle zur Steuerung der CLI selbst",
+        "commands": {
+          "help": "Alle verfügbaren Befehle und ihre Verwendung anzeigen",
+          "clear": "Aktuelle Gesprächshistorie löschen",
+          "quit": "Gemini CLI beenden",
+          "theme": "Farbthema ändern (hell/dunkel/auto)"
+        }
+      },
+      "at": {
+        "title": "@ Befehle (@)",
+        "description": "Befehle zur Interaktion mit Dateiinhalten",
+        "commands": {
+          "file": "Dateiinhalt in Gespräch einbeziehen",
+          "folder": "Ordnerstruktur und -inhalt analysieren",
+          "wildcard": "Mehrere Dateien mit Musterabgleich einbeziehen"
+        }
+      },
+      "exclamation": {
+        "title": "! Befehle (!)",
+        "description": "Befehle zur Ausführung von Systembefehlen",
+        "commands": {
+          "system": "Beliebige Systembefehle ausführen",
+          "git": "Git-Befehle ausführen",
+          "npm": "NPM-Befehle ausführen"
+        }
+      }
+    },
+    "examples": {
+      "title": "Praktische Beispiele",
+      "description": "Wie man Befehle in realen Szenarien verwendet",
+      "scenarios": [
+        {
+          "title": "Code-Review",
+          "description": "Datei lesen und Verbesserungen vorschlagen",
+          "command": "@src/components/Button.tsx Überprüfen Sie diese Komponente und schlagen Sie Verbesserungen vor"
+        },
+        {
+          "title": "Debugging-Hilfe",
+          "description": "Fehlerprotokolle analysieren",
+          "command": "@logs/error.log Analysieren Sie dieses Fehlerprotokoll und schlagen Sie mögliche Lösungen vor"
+        },
+        {
+          "title": "Dokumentation",
+          "description": "Dokumentation für Code generieren",
+          "command": "@src/utils/ Erstellen Sie README-Dokumentation für diese Hilfsfunktionen"
+        }
+      ]
+    },
+    "tips": {
+      "title": "Verwendungstipps",
+      "info": {
+        "title": "Befehlskombination",
+        "content": "Sie können mehrere Befehlstypen in derselben Unterhaltung kombinieren, um die Arbeitseffizienz zu verbessern."
+      },
+      "warning": {
+        "title": "Sicherheitserinnerung",
+        "content": "Seien Sie vorsichtig bei der Verwendung von !-Befehlen, stellen Sie sicher, dass Sie verstehen, was der Befehl tut, um gefährliche Operationen zu vermeiden."
+      },
+      "success": {
+        "title": "Beste Praktiken",
+        "content": "Es wird empfohlen, zuerst /help zu verwenden, um alle verfügbaren Befehle zu sehen, und dann schrittweise die Verwendung verschiedener Befehle zu erlernen."
+      }
+    },
+    "nextSteps": {
+      "title": "Nächste Schritte",
+      "description": "Nachdem Sie die grundlegenden Befehle beherrschen, können Sie erweiterte Funktionen erlernen:",
+      "fileOperations": "Details zu Dateioperationen",
+      "advancedConfig": "Erweiterte Konfiguration",
+      "backToGuides": "Zurück zu den Anleitungen"
+    }
+  },
+  "guidesFileOperations": {
+    "hero": {
+      "title": "Dateioperationen Leitfaden",
+      "subtitle": "Meistern Sie Gemini CLIs Dateilesung, -bearbeitung und -verwaltungsfunktionen",
+      "intermediate": "Fortgeschritten",
+      "readingTime": "20 Min Lesezeit"
+    },
+    "overview": {
+      "title": "Dateioperationen Übersicht",
+      "description": "Lernen Sie, wie Sie Gemini CLI effizient für die Verarbeitung von Dateien und Verzeichnissen verwenden, einschließlich Lesen, Bearbeiten, Erstellen und Verwalten verschiedener Dateitypen."
+    },
+    "operationsTitle": "Kern-Dateioperationen",
+    "operationsDescription": "Meistern Sie die verschiedenen Dateioperationsfunktionen von Gemini CLI",
+    "operations": [
+      {
+        "title": "Datei Lesen",
+        "description": "Lesen und analysieren Sie Inhalte aus verschiedenen Dateiformaten mit intelligenter Erkennung",
+        "icon": "DocumentTextIcon",
+        "color": "from-blue-500 to-indigo-600",
+        "command": "gemini read datei.txt",
+        "features": [
+          "Unterstützung für mehrere Dateiformate (TXT, JSON, CSV, MD, YAML)",
+          "Intelligente Inhaltsanalyse und automatische Strukturerkennung",
+          "Effiziente Verarbeitung großer Dateien durch Chunk-basiertes Lesen",
+          "Automatische Zeichenkodierung-Erkennung (UTF-8, ASCII, ISO-8859-1)",
+          "Syntax-Highlighting und Formatierung für Code-Dateien"
+        ]
+      },
+      {
+        "title": "Verzeichnis Durchsuchen",
+        "description": "Effiziente Navigation und Analyse von Verzeichnisstrukturen mit erweiterten Filteroptionen",
+        "icon": "FolderIcon",
+        "color": "from-green-500 to-emerald-600",
+        "command": "gemini list ./src",
+        "features": [
+          "Rekursive Verzeichnisdurchquerung mit konfigurierbarer Tiefenkontrolle",
+          "Erweiterte Dateityp-Filterung nach Erweiterungen und MIME-Typen",
+          "Detaillierte Metadaten: Größe, Berechtigungen, Erstellungs- und Änderungsdatum",
+          "Anzeige versteckter Dateien und Systemdateien mit Sicherheitshinweisen",
+          "Interaktive Baumstruktur-Visualisierung für bessere Navigation"
+        ]
+      },
+      {
+        "title": "Datei Bearbeiten",
+        "description": "Intelligente und kontextbewusste Bearbeitung von Dateiinhalten mit automatischen Sicherheitsmaßnahmen",
+        "icon": "PencilIcon",
+        "color": "from-purple-500 to-pink-600",
+        "command": "gemini edit datei.js",
+        "features": [
+          "Syntax-bewusste Bearbeitung für über 50 Programmiersprachen",
+          "Automatische Code-Formatierung, Einrückung und Stil-Konsistenz",
+          "Intelligente Backup-Erstellung mit Versionierung vor jeder Änderung",
+          "Echtzeit-Änderungsverfolgung mit visueller Diff-Anzeige",
+          "Gleichzeitige Bearbeitung mehrerer Dateien mit Batch-Operationen"
+        ]
+      },
+      {
+        "title": "Datei Löschen",
+        "description": "Sichere und kontrollierte Löschung von Dateien mit umfassenden Schutzmaßnahmen",
+        "icon": "TrashIcon",
+        "color": "from-red-500 to-orange-600",
+        "command": "gemini delete alte-datei.txt",
+        "features": [
+          "Mehrstufiger Sicherheitsbestätigungsmechanismus für kritische Dateien",
+          "Integrierte Papierkorb-Funktionalität für einfache Wiederherstellung",
+          "Leistungsstarke Batch-Löschung mit Wildcard- und Regex-Unterstützung",
+          "Automatische Berechtigungsprüfung und Zugriffsvalidierung",
+          "Intelligenter Schutz vor versehentlichem Löschen wichtiger Systemdateien"
+        ]
+      },
+      {
+        "title": "Datei Verschieben",
+        "description": "Zuverlässiges Verschieben und Umbenennen mit intelligenter Konfliktauflösung",
+        "icon": "ArrowPathIcon",
+        "color": "from-cyan-500 to-blue-600",
+        "command": "gemini move quelle.txt ziel.txt",
+        "features": [
+          "Intelligente Pfadauflösung mit Unterstützung für relative und absolute Pfade",
+          "Automatische Konfliktbehandlung mit benutzerdefinierten Auflösungsstrategien",
+          "Effiziente Batch-Operationen für große Dateimengen",
+          "Vollständige Rückgängig-Funktionalität für versehentliche Verschiebungen",
+          "Echtzeit-Fortschrittsanzeige mit Geschwindigkeits- und Zeitschätzungen"
+        ]
+      }
+    ],
+    "examplesTitle": "Praktische Beispiele",
+    "examplesDescription": "Lernen Sie bewährte Praktiken für Dateioperationen durch detaillierte, praxisnahe Beispiele",
+    "explanation": "Erklärung",
+    "examples": [
+      {
+        "title": "JavaScript-Projekt Batch-Verarbeitung",
+        "description": "Umfassende Analyse und Optimierung aller JavaScript-Dateien in einem komplexen Projekt",
+        "code": "# Alle JS-Dateien rekursiv lesen und analysieren\ngemini read \"src/**/*.js\" --analyze --depth=full --output=analysis.json\n\n# Code nach modernen Standards formatieren\ngemini format \"src/**/*.js\" --style=prettier --config=.prettierrc\n\n# Automatische Dokumentation mit JSDoc generieren\ngemini doc \"src/**/*.js\" --format=jsdoc --output=docs/ --include-private",
+        "explanation": "Dieses Beispiel zeigt eine vollständige Projekt-Analyse-Pipeline. Der Parameter --analyze mit --depth=full führt eine umfassende Code-Qualitätsanalyse durch, einschließlich Komplexitätsmessungen und Sicherheitsprüfungen. Die Option --config ermöglicht projektspezifische Formatierungsregeln, während --include-private auch private Funktionen in die Dokumentation einbezieht."
+      },
+      {
+        "title": "Konfigurationsdateien-Management",
+        "description": "Professionelle Verwaltung und Validierung von Projekt-Konfigurationsdateien",
+        "code": "# Alle Konfigurationsdateien im Projekt finden\ngemini list . --type=config --recursive --include-hidden\n\n# Sicherheitsbackup vor kritischen Änderungen\ngemini backup config/*.{json,yaml,toml} --timestamp --compress\n\n# Konfiguration gegen Schema validieren\ngemini validate config/app.json --schema=schemas/app-schema.json --strict",
+        "explanation": "Systematisches Konfigurationsmanagement ist entscheidend für die Projektstabilität. Der Parameter --include-hidden findet auch versteckte Konfigurationsdateien wie .env. Die Option --timestamp erstellt zeitgestempelte Backups, während --strict eine strenge Schema-Validierung durchführt und auch kleinste Abweichungen meldet."
+      },
+      {
+        "title": "Log-Datei Analyse und Rotation",
+        "description": "Effiziente Verarbeitung und Verwaltung großer Log-Dateien für System-Monitoring",
+        "code": "# Große Log-Datei in Blöcken verarbeiten um Speicher zu sparen\ngemini read logs/application.log --chunk-size=10MB --stream\n\n# Kritische Fehler extrahieren und kategorisieren\ngemini search logs/ --pattern=\"(ERROR|FATAL|CRITICAL)\" --context=5 --output=kritische-fehler.log\n\n# Intelligente Log-Rotation mit Kompression\ngemini rotate logs/application.log --max-size=500MB --keep=10 --compress=gzip",
+        "explanation": "Effizienz ist entscheidend bei der Log-Analyse. Der Parameter --stream ermöglicht Echtzeit-Verarbeitung ohne vollständiges Laden in den Speicher. --context=5 zeigt 5 Zeilen vor und nach jeder Übereinstimmung für besseren Kontext. Rotation mit --compress=gzip spart erheblich Speicherplatz für archivierte Logs."
+      }
+    ],
+    "bestPracticesTitle": "Bewährte Praktiken",
+    "bestPracticesDescription": "Essenzielle Empfehlungen und Sicherheitsrichtlinien für professionelle Dateioperationen",
+    "bestPractices": [
+      {
+        "type": "success",
+        "title": "Systematische Backup-Strategie implementieren",
+        "content": "Entwickeln Sie eine umfassende Backup-Strategie für alle kritischen Dateien. Nutzen Sie automatisierte Backups mit der Option --backup, implementieren Sie die 3-2-1-Regel (3 Kopien, 2 verschiedene Medien, 1 externe Kopie) und testen Sie regelmäßig die Wiederherstellbarkeit Ihrer Backups. Verwenden Sie Versionierung für wichtige Konfigurationsdateien."
+      },
+      {
+        "type": "warning",
+        "title": "Berechtigungen und Sicherheit priorisieren",
+        "content": "Implementieren Sie konsequent das Prinzip der geringsten Berechtigung. Überprüfen Sie Dateiberechtigungen vor jeder Operation mit --check-permissions, vermeiden Sie Root-Rechte außer bei absoluter Notwendigkeit, und nutzen Sie Benutzergruppen für granulare Zugriffskontrolle. Aktivieren Sie Audit-Logging für alle kritischen Dateioperationen in Produktionsumgebungen."
+      },
+      {
+        "type": "info",
+        "title": "Versionskontrolle strategisch nutzen",
+        "content": "Integrieren Sie alle Dateioperationen transparent in Ihr Versionskontrollsystem. Erstellen Sie beschreibende Commit-Nachrichten mit strukturierten Formaten, nutzen Sie Feature-Branches für experimentelle Änderungen, und implementieren Sie Pre-Commit-Hooks für automatische Validierung. Verwenden Sie .gitignore strategisch für temporäre und generierte Dateien."
+      },
+      {
+        "type": "error",
+        "title": "Destruktive Operationen absichern",
+        "content": "Behandeln Sie alle destruktiven Operationen mit größter Vorsicht. Verwenden Sie immer --dry-run für Tests, implementieren Sie Bestätigungsdialoge für kritische Aktionen, und halten Sie sich strikt von Systemverzeichnissen fern. Erstellen Sie Rollback-Pläne für alle größeren Operationen und dokumentieren Sie Notfallverfahren für Datenwiederherstellung."
+      }
+    ],
+    "nextSteps": {
+      "title": "Nächste Schritte",
+      "description": "Nachdem Sie die Dateioperationen gemeistert haben, erweitern Sie Ihre Fähigkeiten mit diesen fortgeschrittenen Themen:",
+      "integration": "System-Integration",
+      "codeRefactoring": "Code-Refactoring",
+      "backToGuides": "Zurück zu den Leitfäden"
+    }
+  },
+  "guidesAdvancedConfig": {
+    "hero": {
+      "title": "Erweiterte Konfigurationsoptionen",
+      "subtitle": "Tauchen Sie tief in die erweiterten Konfigurations- und Anpassungsoptionen von Gemini CLI ein",
+      "advanced": "Erweitert",
+      "readingTime": "30 Min. Lesezeit"
+    },
+    "overview": {
+      "title": "Konfigurationsübersicht",
+      "description": "Beherrschen Sie die erweiterten Konfigurationsoptionen von Gemini CLI, einschließlich TOML-Konfigurationsdateien, Umgebungsvariablen, benutzerdefinierten Einstellungen und mehr."
+    },
+    "configSectionsTitle": "Konfigurationsdatei-Struktur",
+    "configSectionsDescription": "Lernen Sie verschiedene Konfigurationsabschnitte und ihre Einstellungen kennen",
+    "location": "Standort",
+    "structure": "Struktur",
+    "explanation": "Erklärung",
+    "options": "Optionen",
+    "configSections": [
+      {
+        "id": "toml-config",
+        "title": "TOML-Konfigurationsdatei",
+        "description": "Verwenden Sie die gemini.toml-Datei für detaillierte Konfiguration",
+        "color": "from-blue-500 to-indigo-600",
+        "content": {
+          "location": "Konfigurationsdatei-Standort: gemini.toml im Projekt-Stammverzeichnis",
+          "structure": "[model]\nprovider = \"google\"\nname = \"gemini-1.5-pro\"\ntemperature = 0.7\nmax_tokens = 8192\n\n[ui]\ntheme = \"dark\"\nshow_token_count = true\nauto_save_history = true\n\n[tools]\nenable_shell = true\nenable_file_operations = true\nmax_file_size = \"10MB\"",
+          "explanation": "Die TOML-Datei ermöglicht eine strukturierte und lesbare Konfiguration aller Aspekte von Gemini CLI."
+        }
+      },
+      {
+        "id": "env-vars",
+        "title": "Umgebungsvariablen",
+        "description": "Schnelle Konfiguration über Umgebungsvariablen",
+        "color": "from-green-500 to-emerald-600",
+        "content": {
+          "explanation": "Umgebungsvariablen ermöglichen eine schnelle und flexible Konfiguration",
+          "options": [
+            "GEMINI_API_KEY: API-Schlüssel für Authentifizierung",
+            "GEMINI_MODEL: Standard-Modell zu verwenden",
+            "GEMINI_TEMPERATURE: Kreativitätsparameter",
+            "GEMINI_MAX_TOKENS: Maximale Token-Anzahl",
+            "GEMINI_CONFIG_PATH: Pfad zur Konfigurationsdatei"
+          ]
+        }
+      },
+      {
+        "id": "model-config",
+        "title": "Modell-Konfiguration",
+        "description": "AI-modellspezifische Einstellungen",
+        "color": "from-indigo-500 to-purple-600",
+        "content": {
+          "explanation": "Steuern Sie das Verhalten und die Leistung des AI-Modells",
+          "options": [
+            "provider: Modell-Anbieter (google, openai)",
+            "name: Spezifischer Modellname",
+            "temperature: Kreativität (0.0-2.0)",
+            "max_tokens: Ausgabe-Token-Limit",
+            "top_p: Nucleus-Sampling",
+            "frequency_penalty: Häufigkeitsstrafe"
+          ]
+        }
+      },
+      {
+        "id": "ui-config",
+        "title": "Benutzeroberflächen-Konfiguration",
+        "description": "Passen Sie die Benutzeroberfläche und Interaktionserfahrung an",
+        "color": "from-purple-500 to-pink-600",
+        "content": {
+          "explanation": "Passen Sie die Anzeige und Interaktion der CLI-Oberfläche an",
+          "options": [
+            "theme: Themenfarbe (light, dark, auto)",
+            "show_token_count: Token-Zähler anzeigen",
+            "auto_save_history: Automatische Verlaufsspeicherung",
+            "syntax_highlighting: Syntax-Hervorhebung",
+            "line_numbers: Zeilennummern anzeigen",
+            "word_wrap: Automatischer Zeilenumbruch"
+          ]
+        }
+      },
+      {
+        "id": "tools-config",
+        "title": "Werkzeug-Konfiguration",
+        "description": "Aktivieren und konfigurieren Sie verschiedene Werkzeugfunktionen",
+        "color": "from-orange-500 to-red-600",
+        "content": {
+          "explanation": "Steuern Sie CLI-Werkzeugfunktionen und -berechtigungen",
+          "options": [
+            "enable_shell: Shell-Befehlsausführung aktivieren",
+            "enable_file_operations: Dateioperationen aktivieren",
+            "max_file_size: Maximale Dateigröße",
+            "allowed_extensions: Erlaubte Dateierweiterungen",
+            "blocked_commands: Liste gesperrter Befehle",
+            "timeout: Ausführungs-Timeout"
+          ]
+        }
+      },
+      {
+        "id": "security-config",
+        "title": "Sicherheitskonfiguration",
+        "description": "Sicherheits- und Zugriffskontrolleinstellungen",
+        "color": "from-red-500 to-pink-600",
+        "content": {
+          "explanation": "Konfigurieren Sie Sicherheitsmaßnahmen und Zugriffskontrollen",
+          "options": [
+            "enable_audit_log: Audit-Protokollierung aktivieren",
+            "restrict_file_access: Dateizugriff beschränken",
+            "allowed_directories: Erlaubte Verzeichnisse",
+            "require_confirmation: Bestätigung erforderlich",
+            "session_timeout: Sitzungs-Timeout",
+            "max_concurrent_sessions: Max. gleichzeitige Sitzungen"
+          ]
+        }
+      }
+    ],
+    "environmentVariablesTitle": "Umgebungsvariablen",
+    "environmentVariablesDescription": "Schnelle Konfiguration über Umgebungsvariablen",
+    "defaultValue": "Standardwert",
+    "none": "Keine",
+    "environmentVariables": [
+      {
+        "name": "GEMINI_API_KEY",
+        "description": "Google Gemini API-Schlüssel für Authentifizierung",
+        "example": "export GEMINI_API_KEY=ihr_api_schluessel_hier",
+        "default": null
+      },
+      {
+        "name": "GEMINI_MODEL",
+        "description": "Standard-Modellname zu verwenden",
+        "example": "export GEMINI_MODEL=gemini-1.5-pro",
+        "default": "gemini-1.5-flash"
+      },
+      {
+        "name": "GEMINI_TEMPERATURE",
+        "description": "Modell-Kreativitätsparameter",
+        "example": "export GEMINI_TEMPERATURE=0.7",
+        "default": "0.9"
+      },
+      {
+        "name": "GEMINI_MAX_TOKENS",
+        "description": "Maximale Ausgabe-Token-Anzahl",
+        "example": "export GEMINI_MAX_TOKENS=8192",
+        "default": "4096"
+      },
+      {
+        "name": "GEMINI_CONFIG_PATH",
+        "description": "Benutzerdefinierter Konfigurationsdateipfad",
+        "example": "export GEMINI_CONFIG_PATH=/pfad/zur/config.toml",
+        "default": "./gemini.toml"
+      }
+    ],
+    "customizationTitle": "Anpassungsoptionen",
+    "customizationDescription": "Personalisierte Konfiguration für verschiedene Anwendungsfälle",
+    "customizationOptions": [
+      {
+        "title": "Entwicklungsumgebung",
+        "description": "Optimierte Einstellungen für Entwicklungsworkflows",
+        "features": [
+          "Code-Syntax-Hervorhebung aktivieren",
+          "Automatische Sitzungsverlaufsspeicherung",
+          "Versionskontrollsysteme integrieren",
+          "Benutzerdefinierte Code-Vorlagen",
+          "Schnelle Befehlsaliase"
+        ]
+      },
+      {
+        "title": "Produktionsumgebung",
+        "description": "Sicherheitskonfiguration für Produktionsumgebungen",
+        "features": [
+          "Dateioperationsberechtigungen beschränken",
+          "Gefährliche Befehle deaktivieren",
+          "Audit-Protokollierung aktivieren",
+          "Ressourcennutzungslimits festlegen",
+          "Backup-Strategien konfigurieren"
+        ]
+      },
+      {
+        "title": "Team-Kollaborationskonfiguration",
+        "description": "Geteilte Einstellungen für Teamzusammenarbeit",
+        "features": [
+          "Einheitliche Konfigurationsvorlagen",
+          "Geteilte Prompt-Bibliothek",
+          "Team-Nutzungsstatistiken",
+          "Berechtigungsverwaltung",
+          "Konfigurationssynchronisation"
+        ]
+      }
+    ],
+    "bestPracticesTitle": "Beste Praktiken",
+    "bestPracticesDescription": "Empfehlungen für optimale Konfiguration",
+    "bestPractices": [
+      {
+        "title": "Konfigurationsverwaltung",
+        "description": "Organisieren und pflegen Sie Ihre Konfigurationsdateien",
+        "tips": [
+          "Verwenden Sie Versionskontrolle für Konfigurationsdateien",
+          "Dokumentieren Sie Konfigurationsänderungen",
+          "Testen Sie Konfigurationen in Entwicklungsumgebung",
+          "Sichern Sie Konfigurationen regelmäßig"
+        ]
+      },
+      {
+        "title": "Leistungsoptimierung",
+        "description": "Konfigurieren Sie für optimale Leistung",
+        "tips": [
+          "Passen Sie Modellparameter an Ihre Bedürfnisse an",
+          "Überwachen Sie Ressourcennutzung",
+          "Optimieren Sie Datenübertragungseffizienz",
+          "Konfigurieren Sie angemessene Timeouts"
+        ]
+      },
+      {
+        "title": "Debugging-Tipps",
+        "description": "Konfiguration zur Erleichterung des Debuggings",
+        "tips": [
+          "Verwenden Sie ausführlichen Protokollierungsmodus",
+          "Überprüfen Sie Serverstatus",
+          "Validieren Sie Konfigurationsdateiformat",
+          "Testen Sie Umgebungsvariablen"
+        ]
+      }
+    ],
+    "nextSteps": {
+      "title": "Nächste Schritte",
+      "description": "Nachdem Sie die erweiterte Konfiguration verstehen, können Sie fortgeschrittenere Konfigurations- und Integrationsmethoden erlernen:",
+      "integration": "Integrationsleitfaden",
+      "troubleshooting": "Fehlerbehebung",
+      "backToGuides": "Zurück zu den Anleitungen"
+    }
+  },
+  "guidesIntegration": {
+    "title": "Integration mit Anderen Tools",
+    "subtitle": "Integrieren Sie Gemini CLI in Ihren Entwicklungsworkflow",
+    "description": "Lernen Sie, wie Sie Gemini CLI nahtlos in Ihre bestehende Entwicklungs-Toolchain, IDEs und Automatisierungsprozesse integrieren, um die Produktivität zu steigern.",
+    "overview": {
+      "title": "Integrationsübersicht",
+      "description": "Gemini CLI bietet mehrere Integrationsmethoden, die es Ihnen ermöglichen, die mächtigen KI-Fähigkeiten in jeder Entwicklungsumgebung voll auszuschöpfen. Ob IDE-Plugins, CI/CD-Pipelines oder Automatisierungsskripte - die Integration ist mühelos."
+    },
+    "typesTitle": "Integrationstypen",
+    "typesDescription": "Wählen Sie die Integrationsmethode, die am besten zu Ihrem Workflow passt",
+    "types": [
+      {
+        "icon": "ide",
+        "title": "IDE-Integration",
+        "description": "Verwenden Sie Gemini CLI direkt in Ihrem bevorzugten Code-Editor",
+        "features": [
+          {
+            "name": "VS Code Erweiterung"
+          },
+          {
+            "name": "IntelliJ Plugin"
+          },
+          {
+            "name": "Vim/Neovim Integration"
+          },
+          {
+            "name": "Sublime Text Unterstützung"
+          }
+        ]
+      },
+      {
+        "icon": "ci",
+        "title": "CI/CD-Integration",
+        "description": "Nutzen Sie KI-Unterstützung in kontinuierlichen Integrations- und Deployment-Pipelines",
+        "features": [
+          {
+            "name": "GitHub Actions"
+          },
+          {
+            "name": "GitLab CI"
+          },
+          {
+            "name": "Jenkins Plugin"
+          },
+          {
+            "name": "Azure DevOps"
+          }
+        ]
+      },
+      {
+        "icon": "automation",
+        "title": "Automatisierungsskripte",
+        "description": "Automatisieren Sie Ihre Entwicklungsaufgaben durch Skripte und Tools",
+        "features": [
+          {
+            "name": "Shell-Skript Integration"
+          },
+          {
+            "name": "Python Automatisierung"
+          },
+          {
+            "name": "Node.js Tools"
+          },
+          {
+            "name": "Makefile Unterstützung"
+          }
+        ]
+      },
+      {
+        "icon": "deployment",
+        "title": "Deployment-Integration",
+        "description": "Nutzen Sie KI für Code-Analyse und -Optimierung während des Deployments",
+        "features": [
+          {
+            "name": "Docker Integration"
+          },
+          {
+            "name": "Kubernetes Unterstützung"
+          },
+          {
+            "name": "Cloud-Plattform Integration"
+          },
+          {
+            "name": "Monitoring und Logging"
+          }
+        ]
+      }
+    ],
+    "workflow": {
+      "title": "Integrations-Workflow",
+      "description": "Folgen Sie diesen Schritten, um Gemini CLI in Ihren Entwicklungsprozess zu integrieren",
+      "steps": [
+        {
+          "title": "Umgebungssetup",
+          "description": "Stellen Sie sicher, dass Ihre Entwicklungsumgebung Gemini CLI korrekt konfiguriert hat",
+          "example": "# Installation überprüfen\ngemini --version\n\n# API-Schlüssel konfigurieren\ngemini config set api-key YOUR_API_KEY"
+        },
+        {
+          "title": "Integrationsmethode Wählen",
+          "description": "Wählen Sie die am besten geeignete Integrationsmethode basierend auf Ihren Anforderungen",
+          "example": "# IDE-Integrationsbeispiel\n# VS Code Erweiterung installieren\ncode --install-extension gemini-cli\n\n# Oder Kommandozeilen-Alias konfigurieren\nalias ai='gemini chat'"
+        },
+        {
+          "title": "Workflow Konfigurieren",
+          "description": "Richten Sie Automatisierungsskripte und Workflows ein",
+          "example": "# GitHub Actions Beispiel\nname: AI Code Review\non: [pull_request]\njobs:\n  review:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v2\n      - name: AI Review\n        run: gemini review --files changed"
+        },
+        {
+          "title": "Testen und Optimieren",
+          "description": "Testen Sie die Integrationseffektivität und passen Sie nach Bedarf an",
+          "example": "# Integration testen\ngemini test-integration\n\n# Nutzungsstatistiken anzeigen\ngemini stats --integration"
+        }
+      ]
+    },
+    "toolsTitle": "Beliebte Tool-Integrationen",
+    "toolsDescription": "Lernen Sie die Integration mit beliebten Entwicklungstools",
+    "tools": [
+      {
+        "name": "VS Code",
+        "description": "Verwenden Sie Gemini CLI in Visual Studio Code",
+        "steps": [
+          {
+            "text": "Gemini CLI Erweiterung installieren"
+          },
+          {
+            "text": "API-Schlüssel konfigurieren"
+          },
+          {
+            "text": "Tastenkürzel verwenden, um KI-Features aufzurufen"
+          },
+          {
+            "text": "Befehle und Einstellungen anpassen"
+          }
+        ]
+      },
+      {
+        "name": "Git Hooks",
+        "description": "Integrieren Sie KI-Checks in den Git-Workflow",
+        "steps": [
+          {
+            "text": "Pre-commit Hook erstellen"
+          },
+          {
+            "text": "Code-Qualitätschecks konfigurieren"
+          },
+          {
+            "text": "Automatisierte Tests einrichten"
+          },
+          {
+            "text": "Commit-Message-Generierung integrieren"
+          }
+        ]
+      },
+      {
+        "name": "Docker",
+        "description": "Verwenden Sie Gemini CLI in containerisierten Umgebungen",
+        "steps": [
+          {
+            "text": "Image mit Gemini CLI erstellen"
+          },
+          {
+            "text": "Umgebungsvariablen konfigurieren"
+          },
+          {
+            "text": "Volume-Mounts einrichten"
+          },
+          {
+            "text": "Container-Performance optimieren"
+          }
+        ]
+      }
+    ],
+    "bestPracticesTitle": "Integrations-Best-Practices",
+    "bestPracticesDescription": "Befolgen Sie diese Best Practices für eine optimale Integrationserfahrung",
+    "bestPractices": [
+      {
+        "title": "Sicherheitskonfiguration",
+        "description": "Stellen Sie sichere Speicherung von API-Schlüsseln und sensiblen Informationen durch Umgebungsvariablen oder Schlüsselverwaltungsdienste sicher."
+      },
+      {
+        "title": "Performance-Optimierung",
+        "description": "Konfigurieren Sie Caching- und Parallelitätseinstellungen korrekt, um übermäßige API-Aufrufe zu vermeiden, die die Entwicklungserfahrung beeinträchtigen könnten."
+      },
+      {
+        "title": "Fehlerbehandlung",
+        "description": "Implementieren Sie umfassende Fehlerbehandlungsmechanismen, um sicherzustellen, dass Integrationsfehler den normalen Entwicklungsworkflow nicht beeinträchtigen."
+      },
+      {
+        "title": "Team-Zusammenarbeit",
+        "description": "Etablieren Sie einheitliche Integrationsstandards und Konfigurationen für das Team, damit alle Mitglieder es korrekt verwenden können."
+      }
+    ],
+    "nextSteps": {
+      "title": "Nächste Schritte",
+      "description": "Lernen Sie weiterhin erweiterte Features und Best Practices",
+      "advancedConfig": "Erweiterte Konfiguration",
+      "codeRefactoring": "Code-Refactoring"
+    }
+  },
+  "guidesMcpProtocol": {
+    "hero": {
+      "title": "MCP-Protokoll Verwendung",
+      "subtitle": "Meistern Sie das Model Context Protocol zur Erweiterung der Gemini CLI-Funktionalität",
+      "advanced": "Erweiterte Features",
+      "extensible": "Erweiterbar"
+    },
+    "overview": {
+      "title": "Protokoll-Übersicht",
+      "description": "Das Model Context Protocol (MCP) ist ein offener Standard, der es KI-Anwendungen ermöglicht, sich sicher und kontrolliert mit externen Datenquellen und Tools zu integrieren."
+    },
+    "concepts": {
+      "overview": {
+        "title": "MCP-Protokoll Übersicht",
+        "description": "Grundlegende Konzepte und Architektur des Model Context Protocol",
+        "definition": "MCP ist ein offener Standard, der es KI-Anwendungen ermöglicht, sich sicher und kontrolliert mit externen Datenquellen und Tools zu integrieren.",
+        "components": {
+          "host": {
+            "name": "MCP-Host",
+            "description": "KI-Anwendung (wie Gemini CLI)",
+            "role": "Initiiert Verbindungen und nutzt von MCP-Servern bereitgestellte Funktionalitäten"
+          },
+          "server": {
+            "name": "MCP-Server",
+            "description": "Unabhängiger Prozess, der spezifische Funktionalitäten bereitstellt",
+            "role": "Stellt Tools, Ressourcen und Prompts für die Host-Nutzung bereit"
+          },
+          "transport": {
+            "name": "Transport-Schicht",
+            "description": "Kommunikationsmechanismus zwischen Host und Server",
+            "role": "Unterstützt Protokolle wie stdio, SSE und WebSocket"
+          }
+        }
+      },
+      "capabilities": {
+        "title": "Kernfähigkeiten",
+        "description": "Drei Haupttypen von Funktionalitäten, die MCP-Server bereitstellen können",
+        "definition": "MCP-Server bieten KI-Anwendungen Erweiterungsfähigkeiten durch drei Hauptfunktionalitätstypen.",
+        "types": {
+          "tools": {
+            "name": "Tools",
+            "description": "Ausführbare Funktionen, die der KI ermöglichen, Operationen durchzuführen",
+            "examples": "Dateioperationen, API-Aufrufe, Datenbankabfragen, etc."
+          },
+          "resources": {
+            "name": "Ressourcen",
+            "description": "Lesbare Datenquellen, die der KI kontextuelle Informationen bereitstellen",
+            "examples": "Dateiinhalte, Datenbankeinträge, API-Antworten, etc."
+          },
+          "prompts": {
+            "name": "Prompts",
+            "description": "Vordefinierte Prompt-Vorlagen, die strukturierte Interaktionsmethoden bereitstellen",
+            "examples": "Code-Review-Vorlagen, Dokumentationsgenerierungs-Vorlagen, etc."
+          }
+        }
+      },
+      "configuration": {
+        "title": "Konfiguration Setup",
+        "description": "Wie MCP-Server konfiguriert und verwendet werden",
+        "definition": "Die Konfiguration von MCP-Servern erfordert drei Schritte: Installation, Konfiguration und Verifikation.",
+        "steps": {
+          "install": {
+            "step": "1. MCP-Server Installieren",
+            "description": "Verwenden Sie npm oder andere Paketmanager, um erforderliche MCP-Server zu installieren",
+            "command": "npm install -g @modelcontextprotocol/server-filesystem"
+          },
+          "configure": {
+            "step": "2. Gemini CLI Konfigurieren",
+            "description": "MCP-Server-Konfiguration zur Gemini CLI-Konfigurationsdatei hinzufügen",
+            "command": "gemini config mcp add filesystem"
+          },
+          "verify": {
+            "step": "3. Verbindung Verifizieren",
+            "description": "Testen, ob der MCP-Server ordnungsgemäß funktioniert",
+            "command": "gemini mcp list"
+          }
+        }
+      }
+    },
+    "examples": {
+      "title": "Praktische Beispiele",
+      "filesystem": {
+        "title": "Filesystem-Server",
+        "description": "MCP-Filesystem-Server für Dateioperationen verwenden",
+        "steps": {
+          "install": "npm install -g @modelcontextprotocol/server-filesystem",
+          "installDesc": "Filesystem MCP-Server installieren",
+          "configure": "gemini config mcp add filesystem --path /your/project/path",
+          "configureDesc": "Filesystem-Server-Pfad konfigurieren",
+          "use": "Bitte helfen Sie mir, alle TypeScript-Dateien im Projekt zu analysieren",
+          "useDesc": "KI kann nun auf Dateien im angegebenen Pfad zugreifen und sie analysieren"
+        }
+      },
+      "database": {
+        "title": "Datenbank-Server",
+        "description": "Mit Datenbank für Abfragen und Analysen verbinden",
+        "steps": {
+          "install": "npm install -g @modelcontextprotocol/server-sqlite",
+          "installDesc": "SQLite MCP-Server installieren",
+          "configure": "gemini config mcp add sqlite --db ./data.db",
+          "configureDesc": "Datenbankverbindung konfigurieren",
+          "query": "Die 10 zuletzt registrierten Benutzer aus der Benutzertabelle abfragen",
+          "queryDesc": "KI kann SQL-Abfragen ausführen und Ergebnisse analysieren"
+        }
+      }
+    },
+    "bestPractices": {
+      "title": "Best Practices",
+      "security": {
+        "title": "Sicherheitsüberlegungen",
+        "content": "Nur mit vertrauenswürdigen MCP-Servern verbinden, Server-Berechtigungen regelmäßig überprüfen, Exposition sensibler Daten vermeiden."
+      },
+      "performance": {
+        "title": "Performance-Optimierung",
+        "content": "Server-Anzahl vernünftig konfigurieren, Ressourcenverbrauch überwachen, Datenübertragungseffizienz optimieren."
+      },
+      "debugging": {
+        "title": "Debugging-Tipps",
+        "content": "Ausführlichen Logging-Modus verwenden, Server-Status überprüfen, Konfigurationsdatei-Format verifizieren."
+      }
+    },
+    "nextSteps": {
+      "title": "Nächste Schritte",
+      "description": "Nachdem Sie das MCP-Protokoll verstehen, können Sie weiterhin erweiterte Konfigurations- und Integrationsmethoden lernen:",
+      "advancedConfig": "Erweiterte Konfiguration",
+      "integration": "Integrationsleitfaden",
+      "backToGuides": "Zurück zu den Leitfäden"
+    }
+  },
+  "guidesCodeRefactoring": {
+    "title": "Code-Refactoring-Assistent",
+    "subtitle": "Verwenden Sie KI zur Analyse und Refactoring von bestehendem Code",
+    "description": "Lernen Sie, wie Sie Gemini CLI für intelligentes Code-Refactoring verwenden, um Codequalität, Lesbarkeit und Wartbarkeit zu verbessern.",
+    "overview": {
+      "title": "Refactoring-Übersicht",
+      "description": "Code-Refactoring ist der Prozess der Verbesserung bestehender Code-Struktur ohne Änderung des externen Verhaltens. Gemini CLI bietet mächtige KI-unterstützte Refactoring-Fähigkeiten, um Code-Smells zu identifizieren, Performance zu optimieren und Code-Qualität zu verbessern."
+    },
+    "typesTitle": "Refactoring-Typen",
+    "typesDescription": "Lernen Sie verschiedene Arten von Code-Refactoring-Techniken kennen",
+    "types": [
+      {
+        "icon": "structure",
+        "title": "Strukturelles Refactoring",
+        "description": "Code-Organisation und -Architektur verbessern",
+        "techniques": [
+          {
+            "name": "Methode Extrahieren"
+          },
+          {
+            "name": "Klasse Extrahieren"
+          },
+          {
+            "name": "Methode Verschieben"
+          },
+          {
+            "name": "Variable Umbenennen"
+          }
+        ]
+      },
+      {
+        "icon": "performance",
+        "title": "Performance-Optimierung",
+        "description": "Code-Ausführungseffizienz und Ressourcennutzung optimieren",
+        "techniques": [
+          {
+            "name": "Algorithmus-Optimierung"
+          },
+          {
+            "name": "Caching-Strategie"
+          },
+          {
+            "name": "Speicherverwaltung"
+          },
+          {
+            "name": "Parallelitäts-Optimierung"
+          }
+        ]
+      },
+      {
+        "icon": "maintainability",
+        "title": "Wartbarkeit",
+        "description": "Code-Lesbarkeit und Wartbarkeit verbessern",
+        "techniques": [
+          {
+            "name": "Bedingte Ausdrücke Vereinfachen"
+          },
+          {
+            "name": "Duplizierten Code Eliminieren"
+          },
+          {
+            "name": "Benennung Verbessern"
+          },
+          {
+            "name": "Kommentare Hinzufügen"
+          }
+        ]
+      },
+      {
+        "icon": "security",
+        "title": "Sicherheitshärtung",
+        "description": "Potenzielle Sicherheitslücken identifizieren und beheben",
+        "techniques": [
+          {
+            "name": "Eingabevalidierung"
+          },
+          {
+            "name": "Berechtigungsprüfungen"
+          },
+          {
+            "name": "Datenverschlüsselung"
+          },
+          {
+            "name": "Fehlerbehandlung"
+          }
+        ]
+      }
+    ],
+    "workflow": {
+      "title": "Refactoring-Workflow",
+      "description": "Folgen Sie einem systematischen Refactoring-Prozess zur Sicherstellung der Code-Qualität",
+      "steps": [
+        {
+          "title": "Code-Analyse",
+          "description": "Verwenden Sie KI zur Analyse bestehenden Codes und Identifikation von Refactoring-Möglichkeiten",
+          "example": "# Code-Qualität analysieren\ngemini analyze --file src/main.js --type quality\n\n# Code-Smells erkennen\ngemini detect --smell --directory src/"
+        },
+        {
+          "title": "Refactoring-Plan Erstellen",
+          "description": "Entwickeln Sie einen detaillierten Refactoring-Plan basierend auf Analyseergebnissen",
+          "example": "# Refactoring-Vorschläge generieren\ngemini refactor --plan --file src/main.js\n\n# Refactoring-Risiken bewerten\ngemini assess --risk --changes planned"
+        },
+        {
+          "title": "Refactoring Ausführen",
+          "description": "Führen Sie Refactoring-Operationen schrittweise aus, während Sie die Code-Funktionalität beibehalten",
+          "example": "# Automatisches Refactoring\ngemini refactor --apply --file src/main.js\n\n# Interaktives Refactoring\ngemini refactor --interactive --directory src/"
+        },
+        {
+          "title": "Verifizieren und Testen",
+          "description": "Stellen Sie sicher, dass refactorierter Code korrekt funktioniert und gut performt",
+          "example": "# Tests ausführen\ngemini test --after-refactor\n\n# Performance-Vergleich\ngemini benchmark --before-after"
+        }
+      ]
+    },
+    "examplesTitle": "Refactoring-Beispiele",
+    "examplesDescription": "Sehen Sie echte Code-Refactoring-Fälle",
+    "beforeLabel": "Vorher",
+    "afterLabel": "Nachher",
+    "examples": [
+      {
+        "title": "Funktions-Extraktion",
+        "description": "Komplexe Funktionen in kleinere, fokussiertere Funktionen aufteilen",
+        "before": "function processUserData(users) {\n  const result = [];\n  for (let i = 0; i < users.length; i++) {\n    if (users[i].age >= 18 && users[i].active) {\n      const formatted = {\n        id: users[i].id,\n        name: users[i].name.toUpperCase(),\n        email: users[i].email.toLowerCase()\n      };\n      result.push(formatted);\n    }\n  }\n  return result;\n}",
+        "after": "function isEligibleUser(user) {\n  return user.age >= 18 && user.active;\n}\n\nfunction formatUser(user) {\n  return {\n    id: user.id,\n    name: user.name.toUpperCase(),\n    email: user.email.toLowerCase()\n  };\n}\n\nfunction processUserData(users) {\n  return users\n    .filter(isEligibleUser)\n    .map(formatUser);\n}"
+      },
+      {
+        "title": "Bedingungsvereinfachung",
+        "description": "Komplexe bedingte Logik vereinfachen",
+        "before": "function getDiscount(user) {\n  if (user.type === 'premium') {\n    if (user.yearsActive >= 5) {\n      return 0.2;\n    } else if (user.yearsActive >= 2) {\n      return 0.15;\n    } else {\n      return 0.1;\n    }\n  } else if (user.type === 'regular') {\n    if (user.yearsActive >= 3) {\n      return 0.05;\n    } else {\n      return 0;\n    }\n  }\n  return 0;\n}",
+        "after": "const DISCOUNT_RATES = {\n  premium: { 5: 0.2, 2: 0.15, 0: 0.1 },\n  regular: { 3: 0.05, 0: 0 }\n};\n\nfunction getDiscount(user) {\n  const rates = DISCOUNT_RATES[user.type];\n  if (!rates) return 0;\n  \n  const thresholds = Object.keys(rates)\n    .map(Number)\n    .sort((a, b) => b - a);\n  \n  const threshold = thresholds\n    .find(t => user.yearsActive >= t);\n  \n  return rates[threshold] || 0;\n}"
+      }
+    ],
+    "bestPracticesTitle": "Refactoring-Best-Practices",
+    "bestPracticesDescription": "Befolgen Sie diese Best Practices für erfolgreiches Refactoring",
+    "bestPractices": [
+      {
+        "title": "Kleine Schritte",
+        "description": "Machen Sie kleine, häufige Refactorings anstatt großangelegter einmaliger Refactorings, um Risiken zu reduzieren und Rollbacks zu erleichtern."
+      },
+      {
+        "title": "Tests Zuerst",
+        "description": "Stellen Sie angemessene Testabdeckung vor dem Refactoring sicher und führen Sie Tests sofort danach aus, um Funktionalität zu verifizieren."
+      },
+      {
+        "title": "Versionskontrolle",
+        "description": "Committen Sie jedes Refactoring ins Versionskontrollsystem, um eine klare Änderungshistorie zu erhalten."
+      },
+      {
+        "title": "Team-Kommunikation",
+        "description": "Kommunizieren Sie im Voraus und holen Sie Team-Genehmigung ein, wenn Sie Code refactorieren, der mehrere Mitarbeiter betrifft."
+      }
+    ],
+    "nextSteps": {
+      "title": "Nächste Schritte",
+      "description": "Lernen Sie weiterhin mehr Code-Qualitäts-bezogene Themen",
+      "codeReview": "Code-Review",
+      "advancedConfig": "Erweiterte Konfiguration"
+    }
+  },
+  "guidesDocumentation": {
+    "hero": {
+      "title": "Dokumentations-Generator",
+      "subtitle": "Verwenden Sie KI zur intelligenten Generierung hochwertiger Projektdokumentation",
+      "intermediate": "Fortgeschritten",
+      "readingTime": "25 Min Lesezeit"
+    },
+    "overview": {
+      "title": "Dokumentations-Übersicht",
+      "description": "Lernen Sie, wie Sie Gemini CLI verwenden, um automatisch Projektdokumentation zu generieren und zu pflegen, einschließlich API-Docs, Benutzerhandbücher, technische Spezifikationen und mehr."
+    },
+    "typesTitle": "Dokumentationstypen",
+    "typesDescription": "Lernen Sie verschiedene Arten von Dokumentationsgenerierungsmethoden kennen",
+    "promptExample": "Prompt-Beispiel",
+    "features": "Hauptfunktionen",
+    "types": [
+      {
+        "id": "api-docs",
+        "title": "API-Dokumentation",
+        "description": "Automatische Generierung von API-Dokumentation aus Code",
+        "color": "from-blue-500 to-indigo-600",
+        "example": {
+          "prompt": "@src/api/ Generiere vollständige API-Dokumentation für alle API-Dateien in diesem Verzeichnis, einschließlich Endpoint-Beschreibungen, Parameter-Beschreibungen, Antwortformaten und Verwendungsbeispielen",
+          "features": [
+            "Automatisches Extrahieren von API-Endpoints",
+            "Generierung von Parameter-Beschreibungstabellen",
+            "Einbeziehung von Request/Response-Beispielen",
+            "Unterstützung mehrerer Authentifizierungsmethoden",
+            "Generierung interaktiver Dokumentation"
+          ]
+        }
+      },
+      {
+        "id": "readme",
+        "title": "README-Dokumentation",
+        "description": "Generierung von Projektbeschreibungsdokumentation",
+        "color": "from-green-500 to-emerald-600",
+        "example": {
+          "prompt": "@package.json @src/ Analysiere die Struktur und Funktionalität dieses Projekts, generiere ein vollständiges README.md-Dokument einschließlich Projekteinführung, Installationsanweisungen, Verwendungsmethoden und Beitragsleitlinien",
+          "features": [
+            "Projektübersicht und Features",
+            "Installations- und Konfigurationsanweisungen",
+            "Verwendungsbeispiele und Tutorials",
+            "Beitragsleitlinien",
+            "Lizenzinformationen"
+          ]
+        }
+      },
+      {
+        "id": "user-manual",
+        "title": "Benutzerhandbuch",
+        "description": "Detaillierte Benutzerführer erstellen",
+        "color": "from-purple-500 to-pink-600",
+        "example": {
+          "prompt": "@src/components/ Erstelle ein Benutzerhandbuch basierend auf diesen Komponenten, einschließlich Feature-Beschreibungen, Verwendungsschritte, FAQ und Fehlerbehebung",
+          "features": [
+            "Detaillierte Feature-Beschreibungen",
+            "Schritt-für-Schritt-Bedienungsanleitungen",
+            "Screenshots und Beispiele",
+            "Häufig gestellte Fragen",
+            "Fehlerbehebungsanleitungen"
+          ]
+        }
+      },
+      {
+        "id": "technical-spec",
+        "title": "Technische Spezifikationen",
+        "description": "Technische Architektur- und Design-Dokumente generieren",
+        "color": "from-orange-500 to-red-600",
+        "example": {
+          "prompt": "@src/ @docs/architecture.md Analysiere die Projektarchitektur, generiere technische Spezifikationsdokumente einschließlich Systemdesign, Datenfluss, Interface-Definitionen und Deployment-Anforderungen",
+          "features": [
+            "System-Architektur-Diagramme",
+            "Datenfluss-Diagramme",
+            "Interface-Spezifikationen",
+            "Deployment-Anforderungen",
+            "Performance-Metriken"
+          ]
+        }
+      }
+    ],
+    "workflow": {
+      "title": "Dokumentationsgenerierungs-Workflow",
+      "description": "Befolgen Sie diese Schritte zur Generierung hochwertiger Dokumentation",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Projektstruktur Analysieren",
+          "description": "Lassen Sie die KI die Gesamtstruktur und Funktionalität des Projekts verstehen",
+          "commands": [
+            "@. Analysiere die Gesamtstruktur dieses Projekts",
+            "@package.json Erkläre die Abhängigkeiten und Konfiguration des Projekts",
+            "@README.md Verstehe die Grundinformationen des Projekts"
+          ]
+        },
+        {
+          "step": 2,
+          "title": "Dokumentationstyp Wählen",
+          "description": "Wählen Sie den geeigneten Dokumentationstyp und die Vorlage basierend auf den Anforderungen",
+          "commands": [
+            "Ich muss API-Dokumentation generieren",
+            "Bitte erstelle ein Benutzerhandbuch",
+            "Generiere technische Architekturdokumentation"
+          ]
+        },
+        {
+          "step": 3,
+          "title": "Initiale Dokumentation Generieren",
+          "description": "Verwenden Sie KI zur Generierung der ersten Version der Dokumentation",
+          "commands": [
+            "@src/api/ Generiere API-Dokumentation",
+            "@src/components/ Erstelle Komponentendokumentation",
+            "@docs/ Aktualisiere bestehende Dokumentation"
+          ]
+        },
+        {
+          "step": 4,
+          "title": "Überprüfen und Optimieren",
+          "description": "Überprüfen Sie die generierte Dokumentation und nehmen Sie notwendige Anpassungen vor",
+          "commands": [
+            "Überprüfe die Vollständigkeit und Genauigkeit der Dokumentation",
+            "Optimiere die Struktur und das Format der Dokumentation",
+            "Füge fehlende Beispiele und Erklärungen hinzu"
+          ]
+        }
+      ]
+    },
+    "practicalExamples": {
+      "title": "Praktische Beispiele",
+      "description": "Sehen Sie spezifische Dokumentationsgenerierungsfälle"
+    },
+    "examples": [
+      {
+        "title": "React-Komponenten-Dokumentation",
+        "description": "Detaillierte Dokumentation für React-Komponenten generieren",
+        "steps": [
+          {
+            "command": "@src/components/Button.tsx Generiere Dokumentation für diese Button-Komponente",
+            "description": "Analysiere Komponenten-Props, Verwendung und Beispiele"
+          },
+          {
+            "command": "Füge Verwendungsbeispiele und Best Practices hinzu",
+            "description": "Ergänze echte Anwendungsfälle und Code-Beispiele"
+          },
+          {
+            "command": "Generiere Storybook-Story-Dateien",
+            "description": "Erstelle interaktive Komponenten-Demonstrationen"
+          }
+        ]
+      },
+      {
+        "title": "REST-API-Dokumentation",
+        "description": "OpenAPI-Spezifikation für REST-API generieren",
+        "steps": [
+          {
+            "command": "@src/routes/ Analysiere alle API-Routen",
+            "description": "Extrahiere Endpoints, Parameter und Antwortformate"
+          },
+          {
+            "command": "Generiere OpenAPI 3.0 Spezifikationsdatei",
+            "description": "Erstelle Standard-API-Dokumentationsformat"
+          },
+          {
+            "command": "Füge Authentifizierungs- und Fehlerbehandlungsbeschreibungen hinzu",
+            "description": "Ergänze Sicherheits- und Fehlerbehandlungsinformationen"
+          }
+        ]
+      }
+    ],
+    "bestPracticesTitle": "Best Practices",
+    "bestPracticesDescription": "Wichtige Überlegungen für die Dokumentationsgenerierung",
+    "bestPractices": [
+      {
+        "type": "success",
+        "title": "Dokumentation Synchron Halten",
+        "content": "Aktualisieren Sie die Dokumentation regelmäßig, um sicherzustellen, dass sie mit dem Code synchron bleibt. Empfehlen Sie, die Dokumentation bei Code-Änderungen zu aktualisieren."
+      },
+      {
+        "type": "info",
+        "title": "Vorlagen und Standards Verwenden",
+        "content": "Verwenden Sie konsistente Dokumentationsvorlagen und Formatstandards zur Verbesserung der Lesbarkeit und Professionalität."
+      },
+      {
+        "type": "warning",
+        "title": "Generierten Inhalt Validieren",
+        "content": "KI-generierte Dokumentation benötigt menschliche Überprüfung, um Genauigkeit und Vollständigkeit technischer Details sicherzustellen."
+      },
+      {
+        "type": "success",
+        "title": "Praktische Beispiele Hinzufügen",
+        "content": "Fügen Sie echte Code-Beispiele und Anwendungsfälle in die Dokumentation ein, um Benutzern beim besseren Verständnis zu helfen."
+      }
+    ],
+    "nextSteps": {
+      "title": "Nächste Schritte",
+      "description": "Nachdem Sie die Dokumentationsgenerierungstechniken gemeistert haben, können Sie weiterhin andere praktische Fähigkeiten erlernen:",
+      "codeRefactoring": "Code-Refactoring",
+      "codeReview": "Code-Review",
+      "backToGuides": "Zurück zu den Leitfäden"
+    }
+  },
+  "guidesCodeReview": {
+    "title": "Code-Review-Assistent",
+    "subtitle": "Verwenden Sie KI für Code-Qualitätsprüfung",
+    "description": "Nutzen Sie die Kraft der KI für umfassende Code-Reviews zur Verbesserung von Code-Qualität, Sicherheit und Team-Kollaborationseffizienz.",
+    "overview": {
+      "title": "Review-Übersicht",
+      "description": "Code-Review ist ein kritischer Teil des Software-Entwicklungsprozesses, der Code systematisch überprüft, um potenzielle Probleme zu identifizieren und die Code-Qualität zu verbessern. Gemini CLI bietet intelligente Code-Review-Fähigkeiten, um Ihnen zu helfen, Probleme schnell zu identifizieren und Verbesserungsvorschläge zu liefern."
+    },
+    "typesTitle": "Review-Typen",
+    "typesDescription": "Lernen Sie verschiedene Arten von Code-Review-Schwerpunkten kennen",
+    "types": [
+      {
+        "icon": "security",
+        "title": "Sicherheits-Review",
+        "description": "Überprüfung auf Sicherheitslücken und Risiken im Code",
+        "checks": [
+          {
+            "name": "SQL-Injection-Erkennung"
+          },
+          {
+            "name": "XSS-Schwachstellen-Scan"
+          },
+          {
+            "name": "Berechtigungsverifizierung"
+          },
+          {
+            "name": "Leckage sensibler Informationen"
+          }
+        ]
+      },
+      {
+        "icon": "bugs",
+        "title": "Bug-Erkennung",
+        "description": "Identifikation potenzieller Bugs und logischer Fehler",
+        "checks": [
+          {
+            "name": "Null-Pointer-Exception"
+          },
+          {
+            "name": "Array-Grenzüberschreitung"
+          },
+          {
+            "name": "Ressourcen-Lecks"
+          },
+          {
+            "name": "Deadlock-Erkennung"
+          }
+        ]
+      },
+      {
+        "icon": "performance",
+        "title": "Performance-Analyse",
+        "description": "Analyse der Code-Performance und Optimierungsmöglichkeiten",
+        "checks": [
+          {
+            "name": "Algorithmus-Komplexität"
+          },
+          {
+            "name": "Speicherverbrauch"
+          },
+          {
+            "name": "Datenbank-Abfragen"
+          },
+          {
+            "name": "Caching-Strategie"
+          }
+        ]
+      },
+      {
+        "icon": "style",
+        "title": "Code-Stil",
+        "description": "Überprüfung von Code-Standards und Konsistenz",
+        "checks": [
+          {
+            "name": "Namenskonventionen"
+          },
+          {
+            "name": "Code-Formatierung"
+          },
+          {
+            "name": "Kommentar-Qualität"
+          },
+          {
+            "name": "Funktionslänge"
+          }
+        ]
+      }
+    ],
+    "workflow": {
+      "title": "Review-Workflow",
+      "description": "Folgen Sie einem systematischen Code-Review-Prozess",
+      "steps": [
+        {
+          "title": "Review Vorbereiten",
+          "description": "Review-Regeln und Prüfbereich konfigurieren",
+          "example": "# Review-Regeln konfigurieren\ngemini review config --rules security,performance\n\n# Prüfbereich festlegen\ngemini review setup --files src/ --exclude tests/"
+        },
+        {
+          "title": "Review Ausführen",
+          "description": "Automatisiertes Code-Review durchführen",
+          "example": "# Umfassendes Review\ngemini review --comprehensive --output report.json\n\n# Inkrementelles Review\ngemini review --diff HEAD~1..HEAD"
+        },
+        {
+          "title": "Ergebnisse Analysieren",
+          "description": "Review-Bericht anzeigen und Probleme analysieren",
+          "example": "# Review-Bericht anzeigen\ngemini review report --format html\n\n# Nach Schweregrad sortieren\ngemini review list --severity high"
+        },
+        {
+          "title": "Probleme Beheben",
+          "description": "Identifizierte Probleme basierend auf Vorschlägen beheben",
+          "example": "# Automatische Behebung\ngemini review fix --auto --safe-only\n\n# Interaktive Behebung\ngemini review fix --interactive"
+        }
+      ]
+    },
+    "checkpointsTitle": "Review-Checkpoints",
+    "checkpointsDescription": "Wichtige Code-Review-Prüfpunkte",
+    "checkpoints": [
+      {
+        "severity": "high",
+        "title": "Sicherheitslücken",
+        "description": "Code-Defekte, die zu Sicherheitsproblemen führen können",
+        "items": [
+          {
+            "text": "Unvalidierte Benutzereingaben"
+          },
+          {
+            "text": "Hartcodierte Passwörter oder Schlüssel"
+          },
+          {
+            "text": "Unsichere Verschlüsselungsalgorithmen"
+          },
+          {
+            "text": "Berechtigungs-Bypass-Schwachstellen"
+          }
+        ]
+      },
+      {
+        "severity": "high",
+        "title": "Kritische Fehler",
+        "description": "Schwerwiegende Probleme, die Programmabstürze verursachen können",
+        "items": [
+          {
+            "text": "Null-Pointer-Dereferenzierung"
+          },
+          {
+            "text": "Array-Grenzüberschreitung"
+          },
+          {
+            "text": "Speicher-Lecks"
+          },
+          {
+            "text": "Deadlock-Risiken"
+          }
+        ]
+      },
+      {
+        "severity": "medium",
+        "title": "Performance-Probleme",
+        "description": "Code-Probleme, die die Programmleistung beeinträchtigen",
+        "items": [
+          {
+            "text": "Ineffiziente Algorithmus-Implementierung"
+          },
+          {
+            "text": "Unnötige Datenbankabfragen"
+          },
+          {
+            "text": "Fehlende Caching-Mechanismen"
+          },
+          {
+            "text": "Unsachgemäße Ressourcennutzung"
+          }
+        ]
+      },
+      {
+        "severity": "low",
+        "title": "Code-Qualität",
+        "description": "Probleme, die Code-Lesbarkeit und Wartbarkeit beeinträchtigen",
+        "items": [
+          {
+            "text": "Funktionen zu lang oder komplex"
+          },
+          {
+            "text": "Nicht-standardmäßige Variablenbenennung"
+          },
+          {
+            "text": "Fehlende notwendige Kommentare"
+          },
+          {
+            "text": "Code-Duplikation"
+          }
+        ]
+      }
+    ],
+    "aiFeatures": {
+      "title": "KI-Review-Features",
+      "description": "Nutzen Sie künstliche Intelligenz zur Verbesserung der Code-Review-Effizienz und -Genauigkeit",
+      "automated": {
+        "title": "Automatisierte Erkennung",
+        "features": [
+          {
+            "name": "Intelligentes Schwachstellen-Scanning"
+          },
+          {
+            "name": "Performance-Engpass-Identifikation"
+          },
+          {
+            "name": "Code-Smell-Erkennung"
+          },
+          {
+            "name": "Best-Practice-Vorschläge"
+          }
+        ]
+      },
+      "intelligent": {
+        "title": "Intelligente Analyse",
+        "features": [
+          {
+            "name": "Kontext-Verständnis"
+          },
+          {
+            "name": "Geschäftslogik-Analyse"
+          },
+          {
+            "name": "Architektur-Muster-Erkennung"
+          },
+          {
+            "name": "Personalisierte Empfehlungen"
+          }
+        ]
+      }
+    },
+    "bestPracticesTitle": "Review-Best-Practices",
+    "bestPracticesDescription": "Befolgen Sie diese Best Practices zur Verbesserung der Code-Review-Effektivität",
+    "bestPractices": [
+      {
+        "title": "Regelmäßige Reviews",
+        "description": "Etablieren Sie regelmäßige Code-Review-Mechanismen, warten Sie nicht bis zum Projektabschluss für Reviews."
+      },
+      {
+        "title": "Fokus auf Schlüsselbereiche",
+        "description": "Priorisieren Sie Sicherheit, Performance und Wartbarkeit, vermeiden Sie Überfokussierung auf Details."
+      },
+      {
+        "title": "Team-Kollaboration",
+        "description": "Ermutigen Sie Teammitglieder zur Teilnahme am Review-Prozess, teilen Sie Wissen und Erfahrung."
+      },
+      {
+        "title": "Kontinuierliche Verbesserung",
+        "description": "Verbessern Sie kontinuierlich Entwicklungsprozesse und Coding-Standards basierend auf Review-Ergebnissen."
+      }
+    ],
+    "nextSteps": {
+      "title": "Nächste Schritte",
+      "description": "Lernen Sie weiterhin mehr Entwicklungstools und Best Practices",
+      "integration": "Tool-Integration",
+      "advancedConfig": "Erweiterte Konfiguration"
+    }
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "subtitle": "Bitte lesen Sie diese Bedingungen sorgfältig durch, bevor Sie unsere Plattform nutzen. Durch die Nutzung unserer Dienste stimmen Sie diesen Bedingungen zu.",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "acceptance": {
+      "title": "1. Annahme der Bedingungen",
+      "content1": "Durch den Zugriff auf und die Nutzung der Gemini CLI Lernplattform (der \"Dienst\") akzeptieren Sie und stimmen zu, an die Bedingungen und Bestimmungen dieser Vereinbarung gebunden zu sein. Wenn Sie nicht zustimmen, das oben Genannte einzuhalten, nutzen Sie diesen Dienst bitte nicht.",
+      "content2": "Diese Nutzungsbedingungen (\"Bedingungen\") regeln Ihre Nutzung unserer Website unter geminicli.cloud (der \"Dienst\"), die vom Gemini CLI Lernplattform-Team betrieben wird."
+    },
+    "service": {
+      "title": "2. Dienstbeschreibung",
+      "description": "Unser Dienst bietet Bildungsinhalte, Tutorials, Dokumentation und Ressourcen im Zusammenhang mit Googles Gemini CLI-Tool. Dies umfasst:",
+      "features": [
+        "Installationsanleitungen und Setup-Anweisungen",
+        "Nutzungs-Tutorials und bewährte Praktiken",
+        "Code-Beispiele und praktische Demonstrationen",
+        "Von der Community beigesteuerte Inhalte und Diskussionen",
+        "Mehrsprachige Unterstützung und Lokalisierung"
+      ],
+      "important": "Wichtig",
+      "disclaimer": "Dies ist eine inoffizielle Bildungsplattform, die von der Community erstellt wurde. Wir sind nicht mit Google Inc. verbunden oder von ihnen unterstützt."
+    },
+    "responsibilities": {
+      "title": "3. Nutzerverantwortlichkeiten",
+      "description": "Durch die Nutzung unseres Dienstes stimmen Sie zu:",
+      "items": [
+        "Den Dienst nur für rechtmäßige Zwecke zu nutzen",
+        "Nicht zu versuchen, unbefugten Zugang zu unseren Systemen zu erlangen",
+        "Nicht mit dem Dienst oder den Servern zu interferieren oder sie zu stören",
+        "Keine automatisierten Systeme zu verwenden, um übermäßig auf den Dienst zuzugreifen",
+        "Die geistigen Eigentumsrechte aller Inhalte zu respektieren",
+        "Genaue Informationen bei der Beitragserstellung anzugeben",
+        "Community-Richtlinien in Diskussionen und Beiträgen zu befolgen"
+      ]
+    },
+    "intellectualProperty": {
+      "title": "4. Geistiges Eigentum",
+      "ourContent": {
+        "title": "Unser Inhalt",
+        "description": "Der Inhalt dieser Website, einschließlich aber nicht beschränkt auf Text, Grafiken, Bilder, Logos und Software, ist Eigentum der Gemini CLI Lernplattform oder ihrer Inhaltslieferanten und ist durch Urheberrecht und andere Gesetze zum geistigen Eigentum geschützt."
+      },
+      "thirdParty": {
+        "title": "Inhalte Dritter",
+        "description": "Einige Inhalte basieren auf oder sind abgeleitet von Googles offizieller Gemini CLI-Dokumentation und -Beispielen, die Googles Lizenzbedingungen unterliegen. Wir respektieren und anerkennen alle geistigen Eigentumsrechte Dritter."
+      },
+      "userContributions": {
+        "title": "Nutzerbeiträge",
+        "description": "Durch das Beitragen von Inhalten zu unserer Plattform (über GitHub oder andere Mittel) gewähren Sie uns eine nicht-exklusive, gebührenfreie Lizenz zur Nutzung, Änderung und Verteilung Ihrer Beiträge für Bildungszwecke."
+      }
+    },
+    "disclaimers": {
+      "title": "5. Haftungsausschlüsse",
+      "educational": {
+        "title": "Bildungszweck",
+        "description": "Diese Plattform wird nur für Bildungszwecke bereitgestellt. Obwohl wir uns um Genauigkeit bemühen, geben wir keine Garantien bezüglich der Vollständigkeit, Zuverlässigkeit oder Genauigkeit der Informationen."
+      },
+      "affiliation": {
+        "title": "Keine offizielle Verbindung",
+        "description": "Diese Website ist nicht offiziell mit Google Inc. verbunden, von ihnen unterstützt oder gesponsert. Gemini CLI ist eine Marke von Google Inc."
+      },
+      "risk": {
+        "title": "Nutzung auf eigenes Risiko",
+        "description": "Sie nutzen die auf dieser Plattform bereitgestellten Informationen und Tools auf eigenes Risiko. Wir sind nicht verantwortlich für Schäden oder Probleme, die durch das Befolgen unserer Tutorials oder die Nutzung der bereitgestellten Informationen entstehen können."
+      }
+    },
+    "liability": {
+      "title": "6. Haftungsbeschränkung",
+      "description": "In keinem Fall haften die Gemini CLI Lernplattform, ihre Betreiber oder Mitwirkenden für indirekte, zufällige, besondere, Folge- oder Strafschäden, einschließlich ohne Einschränkung Verlust von Gewinnen, Daten, Nutzung, Goodwill oder anderen immateriellen Verlusten, die sich ergeben aus:",
+      "items": [
+        "Ihrer Nutzung oder Unfähigkeit, den Dienst zu nutzen",
+        "Jedem unbefugten Zugriff auf oder Nutzung unserer Server",
+        "Jeder Unterbrechung oder Beendigung der Übertragung zu oder vom Dienst",
+        "Jeglichen Bugs, Viren oder ähnlichen schädlichen Komponenten",
+        "Jeglichen Fehlern oder Auslassungen in Inhalten oder Informationen"
+      ]
+    },
+    "privacy": {
+      "title": "7. Datenschutz",
+      "description": "Ihre Privatsphäre ist uns wichtig. Bitte lesen Sie unsere Datenschutzrichtlinie, die auch Ihre Nutzung des Dienstes regelt, um unsere Praktiken zu verstehen.",
+      "linkText": "Unsere Datenschutzrichtlinie lesen"
+    },
+    "termination": {
+      "title": "8. Kündigung",
+      "description": "Wir können Ihren Zugang zum Dienst sofort beenden oder aussetzen, ohne vorherige Ankündigung oder Haftung, aus jedem Grund, einschließlich ohne Einschränkung, wenn Sie die Bedingungen verletzen. Bei Kündigung endet Ihr Recht zur Nutzung des Dienstes sofort."
+    },
+    "changes": {
+      "title": "9. Änderungen der Bedingungen",
+      "description": "Wir behalten uns das Recht vor, nach unserem alleinigen Ermessen diese Bedingungen jederzeit zu ändern oder zu ersetzen. Wenn eine Überarbeitung wesentlich ist, werden wir versuchen, mindestens 30 Tage im Voraus zu benachrichtigen, bevor neue Bedingungen in Kraft treten."
+    },
+    "governingLaw": {
+      "title": "10. Geltendes Recht",
+      "description": "Diese Bedingungen werden nach den Gesetzen der Gerichtsbarkeit ausgelegt und geregelt, in der der Dienst betrieben wird, ohne Rücksicht auf Kollisionsnormen."
+    },
+    "externalLinks": {
+      "title": "11. Externe Links",
+      "description": "Unser Dienst kann Links zu Websites oder Diensten Dritter enthalten, die nicht in unserem Besitz oder unter unserer Kontrolle stehen. Wir haben keine Kontrolle über und übernehmen keine Verantwortung für den Inhalt, die Datenschutzrichtlinien oder Praktiken von Websites oder Diensten Dritter."
+    },
+    "contact": {
+      "title": "12. Kontaktinformationen",
+      "description": "Wenn Sie Fragen zu diesen Nutzungsbedingungen haben, kontaktieren Sie uns bitte:",
+      "email": "E-Mail",
+      "contactForm": "Kontaktformular",
+      "github": "GitHub",
+      "reportIssues": "Probleme melden",
+      "website": "Website"
+    },
+    "acknowledgment": {
+      "title": "13. Anerkennung",
+      "description": "Durch die Nutzung unseres Dienstes bestätigen Sie, dass Sie diese Nutzungsbedingungen gelesen haben und zustimmen, an sie gebunden zu sein. Wenn Sie diesen Bedingungen nicht zustimmen, nutzen Sie unseren Dienst bitte nicht."
+    },
+    "cta": {
+      "title": "Fragen zu diesen Bedingungen?",
+      "description": "Wir sind hier, um alle Fragen zu klären, die Sie möglicherweise zu unseren Nutzungsbedingungen haben. Zögern Sie nicht, uns zu kontaktieren.",
+      "contactUs": "Kontaktieren Sie uns",
+      "privacyPolicy": "Datenschutzrichtlinie"
+    }
+  },
+  "contact": {
+    "title": "Kontaktieren Sie Uns",
+    "subtitle": "Wir würden gerne von Ihnen hören! Ob Sie Fragen, Vorschläge haben oder beitragen möchten, es gibt mehrere Möglichkeiten, sich mit unserer Community zu verbinden.",
+    "howCanWeHelp": {
+      "title": "Wie Können Wir Helfen?",
+      "subtitle": "Wählen Sie die Option, die am besten zu Ihren Bedürfnissen passt"
+    },
+    "options": {
+      "reportIssues": {
+        "title": "Probleme Melden",
+        "description": "Haben Sie einen Bug, einen defekten Link oder ein technisches Problem gefunden? Lassen Sie es uns wissen, damit wir es beheben können.",
+        "buttonText": "Auf GitHub Melden"
+      },
+      "suggestImprovements": {
+        "title": "Verbesserungen Vorschlagen",
+        "description": "Haben Sie Ideen für neue Inhalte, Funktionen oder Verbesserungen unserer Plattform?",
+        "buttonText": "Ideen Teilen"
+      },
+      "joinDiscussions": {
+        "title": "An Diskussionen Teilnehmen",
+        "description": "Nehmen Sie an Community-Diskussionen teil, stellen Sie Fragen und teilen Sie Erfahrungen.",
+        "buttonText": "Community Beitreten"
+      },
+      "contributeContent": {
+        "title": "Inhalte Beitragen",
+        "description": "Möchten Sie Tutorials, Beispiele oder Übersetzungen beitragen? Wir begrüßen Beiträge!",
+        "buttonText": "Beitragsleitfaden"
+      }
+    },
+    "faq": {
+      "title": "Häufig Gestellte Fragen",
+      "subtitle": "Schnelle Antworten auf häufige Fragen",
+      "questions": {
+        "affiliation": {
+          "question": "Ist diese Website offiziell mit Google verbunden?",
+          "answer": "Nein, dies ist eine inoffizielle, von der Community betriebene Lernplattform. Obwohl wir unsere Inhalte auf Googles offizieller Gemini CLI-Dokumentation basieren, sind wir nicht mit Google Inc. verbunden oder von ihnen unterstützt."
+        },
+        "contribute": {
+          "question": "Wie kann ich zur Plattform beitragen?",
+          "answer": "Wir begrüßen Beiträge! Sie können helfen, indem Sie Probleme melden, Verbesserungen vorschlagen, Inhalte beitragen oder bei Übersetzungen helfen. Schauen Sie sich unseren",
+          "linkText": "Beitragsleitfaden",
+          "answerEnd": " für weitere Details an."
+        },
+        "reportError": {
+          "question": "Ich habe einen Fehler in der Dokumentation gefunden. Wie melde ich ihn?",
+          "answer": "Bitte melden Sie alle Fehler oder Probleme auf unserer",
+          "linkText": "GitHub Issues-Seite",
+          "answerEnd": ". Geben Sie so viele Details wie möglich über den Fehler und wo Sie ihn gefunden haben an."
+        },
+        "requestContent": {
+          "question": "Kann ich neue Tutorials oder Inhalte anfordern?",
+          "answer": "Absolut! Wir suchen immer nach Vorschlägen für neue Themen und Inhalte. Teilen Sie Ihre Ideen in unseren",
+          "linkText": "GitHub Discussions",
+          "answerEnd": "."
+        },
+        "getHelp": {
+          "question": "Ich brauche Hilfe mit Gemini CLI. Wohin soll ich gehen?",
+          "answer": "Beginnen Sie mit unserem",
+          "installationLink": "Installationsleitfaden",
+          "and": " und ",
+          "guidesLink": "Nutzungsleitfäden",
+          "middle": ". Wenn Sie noch Hilfe benötigen, schauen Sie sich unseren",
+          "faqLink": "FAQ-Bereich",
+          "answerEnd": " an oder stellen Sie Fragen in den Community-Diskussionen."
+        }
+      }
+    },
+    "responseTime": {
+      "title": "Antwortzeit",
+      "description": "Wir bemühen uns, auf Ihre Anfragen zu antworten. Hier sind unsere typischen Antwortzeiten:",
+      "bugReports": {
+        "time": "24-48 Stunden",
+        "label": "Bug-Berichte"
+      },
+      "featureRequests": {
+        "time": "3-5 Tage",
+        "label": "Feature-Anfragen"
+      },
+      "contentContributions": {
+        "time": "1-2 Wochen",
+        "label": "Inhaltsbeiträge"
+      }
+    },
+    "guidelines": {
+      "title": "Community-Richtlinien",
+      "subtitle": "Helfen Sie uns, unsere Community für alle einladend und hilfreich zu gestalten",
+      "respectful": {
+        "title": "Seien Sie Respektvoll",
+        "points": [
+          "Behandeln Sie alle Community-Mitglieder mit Freundlichkeit und Respekt",
+          "Geben Sie konstruktive Kritik und vermeiden Sie persönliche Angriffe",
+          "Begrüßen Sie verschiedene Perspektiven und Erfahrungsstufen",
+          "Seien Sie geduldig und bereit, neuen Mitgliedern zu helfen"
+        ]
+      },
+      "helpful": {
+        "title": "Seien Sie Hilfreich",
+        "points": [
+          "Stellen Sie klare und detaillierte Fragen",
+          "Geben Sie Reproduktionsschritte beim Melden von Problemen an",
+          "Teilen Sie Ihr Wissen und Ihre Erfahrungen mit anderen",
+          "Anerkennen und schätzen Sie die Beiträge anderer"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Starten Sie Heute!",
+      "description": "Treten Sie unserer Community bei und helfen Sie, die Zukunft von Gemini CLI zu gestalten.",
+      "joinDiscussions": "An Diskussionen Teilnehmen",
+      "startContributing": "Mit Beiträgen Beginnen"
+    }
+  },
+  "migrationGuide": {
+    "metadata": {
+      "title": "Migrationsleitfaden - Gemini CLI Dokumentation",
+      "description": "Vollständiger Migrationsleitfaden für das Upgrade von älteren Versionen auf die neueste Gemini CLI, einschließlich Breaking Changes, Konfigurationsupdates und Best Practices."
+    },
+    "title": "Migrationsleitfaden",
+    "subtitle": "Upgrade von älteren Versionen auf die neueste Gemini CLI",
+    "overview": {
+      "title": "Migrationsübersicht",
+      "description": "Dieser Leitfaden hilft Ihnen bei der Migration von älteren Versionen der Gemini CLI zur neuesten Version. Wir behandeln Breaking Changes, Konfigurationsupdates und bieten schrittweise Anweisungen für einen reibungslosen Übergang.",
+      "currentVersionLabel": "Aktuelle Version",
+      "currentVersion": "2.0.0",
+      "supportedMigrationsLabel": "Unterstützte Migrationen",
+      "supportedVersions": "Dieser Leitfaden behandelt die Migration von Versionen 1.x zu 2.0.0"
+    },
+    "versionMatrix": {
+      "title": "Versionskompatibilitätsmatrix",
+      "subtitle": "Überprüfen Sie, welcher Migrationspfad für Ihre aktuelle Version gilt",
+      "estimatedTimeLabel": "Geschätzte Zeit",
+      "breakingChangesLabel": "Breaking Changes",
+      "versions": [
+        {
+          "from": "1.0.x - 1.2.x",
+          "to": "2.0.0",
+          "difficulty": "Groß",
+          "estimatedTime": "30-60 Minuten",
+          "breakingChanges": "Hoch"
+        },
+        {
+          "from": "1.3.x - 1.5.x",
+          "to": "2.0.0",
+          "difficulty": "Moderat",
+          "estimatedTime": "15-30 Minuten",
+          "breakingChanges": "Mittel"
+        },
+        {
+          "from": "1.6.x - 1.9.x",
+          "to": "2.0.0",
+          "difficulty": "Gering",
+          "estimatedTime": "5-15 Minuten",
+          "breakingChanges": "Niedrig"
+        }
+      ]
+    },
+    "breakingChanges": {
+      "title": "Breaking Changes in v2.0.0",
+      "subtitle": "Wichtige Änderungen, die Ihre bestehende Einrichtung beeinträchtigen können",
+      "impactLabel": "Auswirkungsgrad",
+      "migrationLabel": "Migration",
+      "changes": [
+        {
+          "category": "Konfiguration",
+          "title": "Konfigurationsdateiformat",
+          "description": "Das Konfigurationsdateiformat wurde von JSON zu YAML geändert für bessere Lesbarkeit und Kommentarunterstützung.",
+          "impact": "Hoch",
+          "migration": "Verwenden Sie das eingebaute Migrationstool: gemini config migrate",
+          "beforeLabel": "Vorher (v1.x)",
+          "afterLabel": "Nachher (v2.0)",
+          "beforeCode": "{\n  \"api_key\": \"your-key\",\n  \"model\": \"gemini-pro\"\n}",
+          "afterCode": "api_key: your-key\nmodel: gemini-pro\n# Kommentare werden jetzt unterstützt!"
+        },
+        {
+          "category": "Befehle",
+          "title": "Befehlsstrukturänderungen",
+          "description": "Einige Befehle wurden für Konsistenz umbenannt oder umstrukturiert.",
+          "impact": "Mittel",
+          "migration": "Aktualisieren Sie Ihre Skripte und Aliase",
+          "commandChangesLabel": "Befehlsänderungen",
+          "commandChanges": [
+            { "old": "gemini chat", "new": "gemini ask" },
+            { "old": "gemini generate", "new": "gemini create" },
+            { "old": "gemini config show", "new": "gemini config list" }
+          ]
+        },
+        {
+          "category": "API",
+          "title": "API-Schlüsselverwaltung",
+          "description": "API-Schlüssel werden jetzt in einem sichereren Format mit Verschlüsselung gespeichert.",
+          "impact": "Niedrig",
+          "migration": "Führen Sie erneut aus: gemini config set api-key YOUR_KEY",
+          "note": "Ihr bestehender API-Schlüssel wird beim ersten Ausführen automatisch migriert"
+        }
+      ]
+    },
+    "migrationSteps": {
+      "title": "Schritt-für-Schritt-Migration",
+      "subtitle": "Befolgen Sie diese Schritte zur Migration auf Gemini CLI v2.0.0",
+      "commandsLabel": "Befehle:",
+      "verificationLabel": "Überprüfung:",
+      "steps": [
+        {
+          "title": "Sichern Sie Ihre Konfiguration",
+          "description": "Erstellen Sie eine Sicherung Ihrer aktuellen Konfiguration, bevor Sie mit der Migration beginnen.",
+          "commands": [
+            "gemini config list > gemini-config-backup.txt",
+            "cp ~/.gemini/config.json ~/.gemini/config.json.backup"
+          ],
+          "note": "Dies stellt sicher, dass Sie Ihre Einstellungen bei Bedarf wiederherstellen können."
+        },
+        {
+          "title": "Aktualisieren Sie Gemini CLI",
+          "description": "Installieren Sie die neueste Version der Gemini CLI.",
+          "commands": [
+            "npm update -g @google/generative-ai-cli"
+          ],
+          "verification": "gemini --version"
+        },
+        {
+          "title": "Führen Sie das Migrationstool aus",
+          "description": "Verwenden Sie das eingebaute Migrationstool zur Aktualisierung Ihrer Konfiguration.",
+          "commands": [
+            "gemini config migrate"
+          ],
+          "note": "Dies wird Ihre Konfiguration automatisch in das neue Format konvertieren."
+        },
+        {
+          "title": "Überprüfen Sie die Konfiguration",
+          "description": "Überprüfen Sie, dass Ihre Konfiguration korrekt migriert wurde.",
+          "commands": [
+            "gemini config list",
+            "gemini ask \"Hallo, Migrationstest\""
+          ],
+          "note": "Stellen Sie sicher, dass alle Ihre Einstellungen erhalten bleiben und die CLI wie erwartet funktioniert."
+        },
+        {
+          "title": "Aktualisieren Sie Skripte und Aliase",
+          "description": "Aktualisieren Sie alle Skripte oder Aliase, die die alte Befehlssyntax verwenden.",
+          "note": "Siehe den Abschnitt über Befehlsänderungen oben für spezifische erforderliche Updates."
+        }
+      ]
+    },
+    "troubleshooting": {
+      "title": "Migrationsproblembehebung",
+      "subtitle": "Häufige Probleme und ihre Lösungen",
+      "symptomsLabel": "Symptome:",
+      "solutionsLabel": "Lösungen:",
+      "issues": [
+        {
+          "problem": "Konfigurationsmigration fehlgeschlagen",
+          "symptoms": [
+            "Fehler: Konfiguration kann nicht migriert werden",
+            "Konfigurationsdatei nicht gefunden"
+          ],
+          "solutions": [
+            "Stellen Sie sicher, dass Sie Schreibberechtigungen für das ~/.gemini-Verzeichnis haben",
+            "Überprüfen Sie, ob die alte Konfigurationsdatei existiert: ls ~/.gemini/",
+            "Versuchen Sie manuelle Migration: gemini config migrate --force"
+          ]
+        },
+        {
+          "problem": "Befehle funktionieren nach Migration nicht",
+          "symptoms": [
+            "Befehl nicht gefunden Fehler",
+            "Unerwartetes Verhalten"
+          ],
+          "solutions": [
+            "Leeren Sie Ihren Shell-Cache: hash -r",
+            "Starten Sie Ihre Terminal-Sitzung neu",
+            "Überprüfen Sie die neue Befehlssyntax in der Dokumentation"
+          ]
+        },
+        {
+          "problem": "API-Schlüssel funktioniert nicht",
+          "symptoms": [
+            "Authentifizierungsfehler",
+            "Ungültige API-Schlüssel-Nachrichten"
+          ],
+          "solutions": [
+            "Setzen Sie Ihren API-Schlüssel zurück: gemini config set api-key YOUR_KEY",
+            "Überprüfen Sie, dass der Schlüssel korrekt ist: gemini config get api-key",
+            "Überprüfen Sie API-Schlüssel-Berechtigungen in Google AI Studio"
+          ]
+        }
+      ]
+    },
+    "rollback": {
+      "title": "Rollback-Anweisungen",
+      "subtitle": "Wie Sie bei Bedarf zur vorherigen Version zurückkehren",
+      "warning": "Verwenden Sie Rollback nur, wenn Sie kritische Probleme haben, die den normalen Betrieb verhindern.",
+      "steps": [
+        "Deinstallieren Sie die aktuelle Version: npm uninstall -g @google/generative-ai-cli",
+        "Installieren Sie die vorherige Version: npm install -g @google/generative-ai-cli@1.9.0",
+        "Stellen Sie die Konfiguration wieder her: cp ~/.gemini/config.json.backup ~/.gemini/config.json",
+        "Überprüfen Sie das Rollback: gemini --version"
+      ]
+    },
+    "postMigration": {
+      "title": "Nach-Migrations-Schritte",
+      "subtitle": "Empfohlene Aktionen nach erfolgreicher Migration",
+      "learnMoreLabel": "Mehr erfahren",
+      "recommendations": [
+        {
+          "title": "Dokumentation aktualisieren",
+          "description": "Aktualisieren Sie interne Dokumentation oder Team-Leitfäden, um die neue Befehlssyntax zu reflektieren.",
+          "priority": "Mittel"
+        },
+        {
+          "title": "Automatisierungsskripte testen",
+          "description": "Führen Sie Ihre automatisierten Skripte und CI/CD-Pipelines aus, um sicherzustellen, dass sie mit der neuen Version funktionieren.",
+          "priority": "Hoch"
+        },
+        {
+          "title": "Neue Funktionen erkunden",
+          "description": "Schauen Sie sich die neuen Funktionen und Verbesserungen in v2.0.0 an.",
+          "priority": "Niedrig",
+          "link": "/docs/changelog"
+        },
+        {
+          "title": "Sicherungen aufräumen",
+          "description": "Nach der Bestätigung, dass alles funktioniert, können Sie die Sicherungsdateien entfernen.",
+          "priority": "Niedrig"
+        }
+      ]
+    },
+    "footer": {
+      "title": "Hilfe bei der Migration benötigt?",
+      "description": "Wenn Sie während der Migration auf Probleme stoßen, ist unsere Community da, um zu helfen.",
+      "getSupportButton": "Unterstützung erhalten",
+      "troubleshootingButton": "Problembehebungsleitfaden anzeigen"
+    }
+  }
+}

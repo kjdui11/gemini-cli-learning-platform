@@ -1,0 +1,2903 @@
+{
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "cancel": "キャンセル",
+    "confirm": "確認",
+    "save": "保存",
+    "edit": "編集",
+    "delete": "削除",
+    "search": "検索",
+    "filter": "フィルター",
+    "sort": "並び替え",
+    "next": "次へ",
+    "previous": "前へ",
+    "home": "ホーム",
+    "back": "戻る",
+    "close": "閉じる",
+    "open": "開く",
+    "copy": "コピー",
+    "share": "共有",
+    "download": "ダウンロード",
+    "upload": "アップロード",
+    "language": "言語",
+    "theme": "テーマ",
+    "settings": "設定"
+  },
+  "navigation": {
+    "installation": "インストールとセットアップ",
+    "guides": "ユーザーガイド",
+    "faq": "よくある質問",
+    "commands": "コマンドリファレンス",
+    "docs": "開発者ドキュメント",
+    "toggleMenu": "メニューを切り替え",
+    "logo": {
+      "title": "Gemini CLI",
+      "subtitle": "学習プラットフォーム",
+      "alt": "Gemini CLI 学習プラットフォーム"
+    }
+  },
+  "hero": {
+    "title": {
+      "part1": "Gemini",
+      "part2": "CLI"
+    },
+    "subtitle": "Geminiの力を直接ターミナルに持ち込むオープンソースAIエージェント",
+    "description": "ツールに接続し、コードを理解し、ワークフローを加速するコマンドラインAIワークフローツール。Geminiの100万トークンコンテキストウィンドウ内外で大規模なコードベースをクエリ・編集し、PDFやスケッチから新しいアプリを生成し、運用タスクを自動化します。",
+    "getStarted": "始める",
+    "learnMore": "詳細を見る",
+    "watchDemo": "デモを見る",
+    "githubStars": "GitHub スター",
+    "freeToUse": "無料で使用",
+    "openSource": "オープンソース",
+    "activeUsers": "アクティブユーザー",
+    "badge": {
+      "text": "オープンソースAIエージェント",
+      "link": "https://github.com/google-gemini/gemini-cli"
+    },
+    "video": {
+      "fallback": "お使いのブラウザは動画再生をサポートしていません。"
+    }
+  },
+  "features": {
+    "title": "なぜGemini CLIを選ぶのか？",
+    "subtitle": "現代のAI開発のための強力な機能",
+    "easyToUse": {
+      "title": "使いやすい",
+      "description": "シンプルなコマンドと直感的なインターフェースで、誰でもAIにアクセスできます"
+    },
+    "powerful": {
+      "title": "強力",
+      "description": "複雑なAIワークフローと統合のための高度な機能"
+    },
+    "flexible": {
+      "title": "柔軟",
+      "description": "特定のニーズに合わせてカスタマイズ可能で拡張可能"
+    },
+    "reliable": {
+      "title": "信頼性",
+      "description": "安定性とパフォーマンスを念頭に置いて構築"
+    },
+    "secure": {
+      "title": "セキュア",
+      "description": "AIアプリケーションのためのエンタープライズグレードのセキュリティ"
+    },
+    "community": {
+      "title": "コミュニティ主導",
+      "description": "アクティブなコミュニティサポートと継続的な開発"
+    },
+    "codeGeneration": {
+      "name": "コード理解と生成",
+      "description": "自然言語を使用してコードを書き、問題をデバッグし、ワークフローを最適化します。インテリジェントなコード提案とエラー修正で複数のプログラミング言語をサポートします。"
+    },
+    "fileOperations": {
+      "name": "ファイル操作と管理",
+      "description": "ターミナルで直接ファイルを操作し、バッチ処理、名前変更、検索、ファイル内容の編集を行い、ファイル管理をより知的で効率的にします。"
+    },
+    "googleSearch": {
+      "name": "Google検索統合",
+      "description": "リアルタイムのWebコンテンツと最新情報を取得するための組み込みGoogle検索ツールで、開発作業に正確な外部コンテキストを提供します。"
+    },
+    "extensible": {
+      "name": "拡張可能なアーキテクチャ",
+      "description": "Model Context Protocol (MCP)とカスタムツールのサポート、さまざまな開発ツールとワークフローとの簡単な統合。"
+    },
+    "automation": {
+      "name": "インテリジェント自動化",
+      "description": "反復的なタスクを自動化し、スクリプトを生成し、AI駆動の自動化機能で開発プロセスを合理化します。"
+    },
+    "openSource": {
+      "name": "オープンソースと透明性",
+      "description": "Apache 2.0ライセンスで完全にオープンソース、透明な開発プロセス、コミュニティ主導の改善。"
+    },
+    "cta": {
+      "title": "開発ワークフローを変革する準備はできていますか？",
+      "description": "すでにGemini CLIを使用して生産性を向上させている何千人もの開発者に参加してください。",
+      "getStarted": "今すぐ始める",
+      "viewTutorials": "チュートリアルを見る"
+    }
+  },
+  "installation": {
+    "hero": {
+      "title": "インストールとセットアップ",
+      "description": "数分でGemini CLIを始めましょう。システムにツールをインストールして設定するためのステップバイステップガイドに従ってください。"
+    },
+    "steps": {
+      "title": "インストール手順",
+      "requirements": {
+        "title": "システム要件",
+        "description": "インストール前にシステムが最小要件を満たしていることを確認してください",
+        "items": {
+          "node": "Node.js 18.0.0以上",
+          "npm": "npm 8.0.0以上（またはyarn/pnpm）",
+          "git": "バージョン管理用のGit",
+          "apiKey": "Google AI Studio APIキー"
+        }
+      },
+      "install": {
+        "title": "Gemini CLIのインストール",
+        "description": "お好みのパッケージマネージャーを使用してCLIツールをグローバルにインストールします",
+        "commands": {
+          "npm": "npm install -g @google/gemini-cli",
+          "verify": "gemini --version"
+        }
+      },
+      "config": {
+        "title": "設定",
+        "description": "APIキーを設定し、ワークフローに合わせてツールを設定します",
+        "items": {
+          "apiKey": "Google AI Studio APIキーを設定",
+          "settings": "デフォルト設定と設定を構成",
+          "verify": "簡単なコマンドで設定をテスト"
+        }
+      },
+      "firstRun": {
+        "title": "初回実行",
+        "description": "インストールを確認し、最初のコマンドを実行します",
+        "commands": {
+          "help": "gemini --help",
+          "version": "gemini --version",
+          "test": "gemini 'Hello, world!'"
+        }
+      }
+    },
+    "troubleshooting": {
+      "description": "インストールの問題が発生していますか？一般的な問題の解決策をご紹介します",
+      "title": "トラブルシューティング",
+      "nodeVersion": {
+        "issue": "Node.jsバージョン互換性の問題",
+        "solution": "nvmを使用してNode.js 18.0.0以上に更新するか、nodejs.orgからダウンロードしてください"
+      },
+      "permissions": {
+        "issue": "権限拒否エラー",
+        "solution": "グローバルインストールにはsudoを使用するか、グローバルパッケージ用に別のディレクトリを使用するようnpmを設定してください"
+      },
+      "apiKey": {
+        "issue": "APIキー設定の問題",
+        "solution": "'gemini config set apiKey YOUR_API_KEY'を使用してGoogle AI APIキーが正しく設定されていることを確認してください"
+      },
+      "network": {
+        "issue": "ネットワーク接続エラー",
+        "solution": "インターネット接続とファイアウォール設定を確認するか、制限されたネットワークでVPNの使用を試してください"
+      }
+    },
+    "nextSteps": {
+      "title": "次は何をしますか？",
+      "description": "Gemini CLIがインストールされたので、ガイドとドキュメントを探索してツールを最大限に活用してください。",
+      "guides": "ガイドを見る",
+      "commands": "コマンドリファレンス"
+    },
+    "requirements": {
+      "title": "システム要件",
+      "description": "Gemini CLIは主要なオペレーティングシステムをサポートしています。システムが以下の要件を満たしていることを確認してください"
+    },
+    "platforms": {
+      "windows": {
+        "name": "Windows",
+        "requirements": {
+          "os": "Windows 10以上",
+          "shell": "PowerShell 5.1以上",
+          "node": "Node.js 20+（nvm-windowsの使用を推奨）"
+        },
+        "notes": "より良い体験のためにWindows Terminalの使用を推奨"
+      },
+      "macos": {
+        "name": "macOS",
+        "requirements": {
+          "os": "macOS 10.15以上",
+          "terminal": "TerminalまたはiTerm2",
+          "node": "Node.js 20+（nvmの使用を推奨）"
+        },
+        "notes": "Homebrewを使用してNode.jsをインストールできます: brew install node"
+      },
+      "linux": {
+        "name": "Linux",
+        "requirements": {
+          "distro": "Ubuntu 18.04+ / CentOS 7+ / その他の主要ディストリビューション",
+          "shell": "Bash 4.0以上",
+          "node": "Node.js 20+（nvmの使用を推奨）"
+        },
+        "notes": "システムにcurlとgitがインストールされていることを確認してください"
+      }
+    }
+  },
+  "guides": {
+    "title": "ユーザーガイド",
+    "subtitle": "包括的なチュートリアルと例",
+    "gettingStarted": "はじめに",
+    "basicCommands": "基本コマンド",
+    "advancedConfig": "高度な設定",
+    "integration": "統合ガイド",
+    "fileOperations": "ファイル操作",
+    "codeRefactoring": "コードリファクタリング",
+    "codeReview": "コードレビュー",
+    "documentation": "ドキュメント",
+    "mcpProtocol": "MCPプロトコル"
+  },
+  "faq": {
+    "title": "よくある質問",
+    "subtitle": "よくある質問の答えを見つける",
+    "searchPlaceholder": "FAQを検索...",
+    "noResults": "結果が見つかりません",
+    "categories": {
+      "general": "一般",
+      "installation": "インストール",
+      "usage": "使用方法",
+      "troubleshooting": "トラブルシューティング",
+      "advanced": "高度"
+    }
+  },
+  "commands": {
+    "title": "コマンドリファレンス",
+    "subtitle": "すべての組み込みGemini CLIコマンドと機能の完全なリファレンス",
+    "searchPlaceholder": "コマンドを検索...",
+    "categories": {
+      "basic": "スラッシュコマンド (/)",
+      "advanced": "アットコマンド (@)",
+      "configuration": "シェルコマンド (!)",
+      "utilities": "カスタムコマンド"
+    }
+  },
+  "docs": {
+    "title": "開発者ドキュメント",
+    "subtitle": "開発者向けの技術ドキュメント",
+    "categories": {
+      "development": "開発の基本",
+      "configuration": "設定とプロトコル",
+      "extensions": "拡張機能開発",
+      "contributing": "貢献"
+    },
+    "developmentSetup": "開発環境のセットアップ",
+    "projectStructure": "プロジェクト構造",
+    "buildAndTest": "ビルドとテスト",
+    "coreApi": "コアAPI",
+    "pluginApi": "プラグインAPI",
+    "configApi": "設定API",
+    "mcpIntroduction": "MCP入門",
+    "mcpServer": "MCPサーバー",
+    "mcpClient": "MCPクライアント",
+    "extensionArchitecture": "拡張機能アーキテクチャ",
+    "firstExtension": "最初の拡張機能",
+    "extensionPublishing": "拡張機能の公開",
+    "contributingGuide": "貢献ガイド",
+    "codingStandards": "コーディング規約",
+    "pullRequestGuide": "プルリクエストガイド"
+  },
+  "footer": {
+    "learning": {
+      "title": "学習リソース",
+      "installation": "インストールとセットアップガイド",
+      "guides": "入門チュートリアル",
+      "advanced": "高度な使用方法のヒント",
+      "faq": "よくある質問",
+      "examples": "実践的なケーススタディ"
+    },
+    "tools": {
+      "title": "開発ツール",
+      "download": "Gemini CLI ダウンロード",
+      "commands": "コマンドリファレンスマニュアル",
+      "docs": "開発者ドキュメント",
+      "aiStudio": "Google AI Studio",
+      "apiDocs": "Gemini API ドキュメント"
+    },
+    "community": {
+      "title": "コミュニティとサポート",
+      "github": "GitHub プロジェクトホームページ",
+      "discussions": "GitHub ディスカッション",
+      "issues": "問題のフィードバック",
+      "troubleshooting": "インストールのトラブルシューティング",
+      "contributing": "貢献ガイド"
+    },
+    "company": {
+      "title": "私たちについて",
+      "about": "ウェブサイト紹介",
+      "privacy": "プライバシーポリシー",
+      "terms": "利用規約",
+      "contact": "お問い合わせ",
+      "sitemap": "サイトマップ"
+    },
+    "seo": {
+      "title": "Gemini CLI 学習プラットフォーム - AI駆動開発ツールチュートリアル",
+      "description": "包括的なAIプログラミングチュートリアル、実践的なケース、ベストプラクティスを提供するプロフェッショナルなGemini CLI学習プラットフォーム。",
+      "tags": {
+        "geminiCLI": "#GeminiCLI",
+        "aiProgramming": "#AIプログラミング",
+        "commandLine": "#コマンドラインツール",
+        "googleAI": "#GoogleAI",
+        "openSource": "#オープンソース"
+      }
+    },
+    "social": {
+      "visitLabel": "{name}を訪問"
+    },
+    "copyright": {
+      "main": "© 2025 Gemini CLI 学習プラットフォーム。これはAIプログラミング技術の普及に専念する非公式の学習リソースウェブサイトです。",
+      "basedOn": "Googleの公式オープンソースプロジェクトに基づく",
+      "license": "構築 | Apache 2.0 オープンソースライセンス"
+    }
+  },
+  "meta": {
+    "defaultTitle": "Gemini CLI 学習プラットフォーム",
+    "defaultDescription": "包括的なチュートリアル、ガイド、ドキュメントで強力なAIコマンドラインインターフェースをマスターしましょう。",
+    "keywords": "Gemini CLI, AI, コマンドライン, チュートリアル, ドキュメント, ガイド"
+  },
+  "errors": {
+    "pageNotFound": "ページが見つかりません",
+    "serverError": "サーバーエラー",
+    "networkError": "ネットワークエラー",
+    "tryAgain": "再試行",
+    "goHome": "ホームに戻る"
+  },
+  "time": {
+    "readingTime": "{minutes}分で読める",
+    "lastUpdated": "最終更新",
+    "publishedOn": "公開日"
+  },
+  "stats": {
+    "title": "強力なパフォーマンス",
+    "subtitle": "Gemini CLIは開発者に業界最高水準の無料利用制限とオープンソースの透明性を提供します",
+    "requestsPerMinute": {
+      "label": "1分あたりのリクエスト",
+      "value": "60"
+    },
+    "requestsPerDay": {
+      "label": "1日あたりのリクエスト",
+      "value": "1K"
+    },
+    "license": {
+      "label": "オープンソースライセンス",
+      "value": "Apache 2.0"
+    }
+  },
+  "featuresStats": {
+    "freeExperience": {
+      "unit": "分の無料開発体験",
+      "title": "比類のない使用制限",
+      "description": "個人のGoogleアカウントは、毎分60回のモデルリクエストと1日1000回のリクエストで、卓越した無料体験を得られます。"
+    },
+    "tokenContext": {
+      "unit": "トークンコンテキスト",
+      "title": "強力なモデル機能",
+      "description": "100万トークンの大きなコンテキストウィンドウを持つGemini 2.5 Proモデルに基づき、実際のコード分析と生成をサポートします。"
+    },
+    "openSource": {
+      "unit": "オープンソースコード",
+      "title": "オープンで拡張可能",
+      "description": "Model Context Protocol (MCP)とカスタムツールをサポートし、さまざまな開発ツールとワークフローで簡単に設定できます。"
+    }
+  },
+  "heroShowcase": {
+    "title": "あなたのターミナルAIアシスタント",
+    "description": "Gemini CLIは、Googleの最も先進的なAI技術をコマンドラインに直接統合し、開発者に比類のないインテリジェントなプログラミング体験を提供します。"
+  },
+  "about": {
+    "title": "私たちのプラットフォームについて",
+    "subtitle": "包括的な学習リソースとコミュニティ作成コンテンツを通じて、世界中の開発者にAI駆動開発を利用可能にすることに取り組んでいます。",
+    "mission": {
+      "title": "私たちの使命",
+      "description": "GoogleのGemini CLIに包括的で利用しやすく実用的な学習リソースを提供することで、AI駆動開発を民主化することです。すべての開発者が日常のワークフローで人工知能の力を活用する機会を持つべきだと信じています。",
+      "excellence": "教育の卓越性",
+      "excellenceDesc": "あらゆるスキルレベルの開発者に複雑なAI概念を理解可能にする高品質なチュートリアル、ガイド、ドキュメントを作成しています。",
+      "community": "コミュニティフォーカス",
+      "communityDesc": "私たちのプラットフォームはコミュニティの貢献によって繁栄し、AI開発愛好者間のコラボレーションと知識共有を促進しています。",
+      "practical": "実践的学習",
+      "practicalDesc": "開発者がプロジェクトやワークフローにすぐに適用できる実世界の実践的な例を重視しています。",
+      "global": "グローバルアクセシビリティ",
+      "globalDesc": "複数言語のサポートと包括的なデザインにより、世界中の開発者がリソースにアクセスできることを保証しています。"
+    },
+    "values": {
+      "title": "私たちの価値観",
+      "subtitle": "私たちの行動すべてを導く原則",
+      "education": {
+        "name": "教育第一",
+        "description": "包括的で理解しやすい教育コンテンツを通じてAI開発をアクセシブルにすることを信じています。"
+      },
+      "communityDriven": {
+        "name": "コミュニティ主導",
+        "description": "私たちのプラットフォームはコミュニティの貢献、フィードバック、協力的な学習体験によって繁栄しています。"
+      },
+      "openSource": {
+        "name": "オープンソース精神",
+        "description": "オープンソース開発、透明性、知識共有を支持し推進しています。"
+      },
+      "innovation": {
+        "name": "イノベーションフォーカス",
+        "description": "AI技術の最前線に留まり、最先端の学習リソースとツールを提供しています。"
+      },
+      "accessibility": {
+        "name": "グローバルアクセシビリティ",
+        "description": "背景に関係なく、世界中の開発者がコンテンツにアクセスできるよう努めています。"
+      },
+      "quality": {
+        "name": "品質コンテンツ",
+        "description": "高品質で正確かつ最新の教育材料を提供することにコミットしています。"
+      }
+    },
+    "stats": {
+      "title": "プラットフォームの影響",
+      "subtitle": "開発者コミュニティと共に成長",
+      "languages": "サポート言語",
+      "guides": "学習ガイド",
+      "examples": "コード例",
+      "members": "コミュニティメンバー"
+    },
+    "story": {
+      "title": "私たちのストーリー",
+      "paragraph1": "GoogleがGemini CLIをオープンソースプロジェクトとしてリリースしたとき、開発者がAIと働く方法を変える巨大な可能性を認識しました。しかし、様々な背景の開発者がこの強力なツールを始めるのに役立つアクセシブルな学習リソースの不足も見ました。",
+      "paragraph2": "そのため、この包括的な学習プラットフォームを作成することを決めました。私たちの目標はシンプルです：AIやコマンドラインツールの経験レベルに関係なく、すべての人にGemini CLIをアクセシブルにすることです。",
+      "paragraph3": "小さなチュートリアルコレクションから始まり、多言語サポート、インタラクティブな例、繁栄するコントリビューターコミュニティを持つ包括的なプラットフォームに成長しました。オープンソースエコシステムの一部であり、AI開発を民主化するGoogleのビジョンをサポートしていることを誇りに思います。"
+    },
+    "disclaimer": {
+      "title": "重要な免責事項",
+      "content": "これはGemini CLI教育をサポートするためにコミュニティが作成した非公式学習リソースです。正確性と品質に努めていますが、このプラットフォームはGoogleと提携または承認されていません。すべてのコンテンツは公式Gemini CLIオープンソースプロジェクトとコミュニティ貢献に基づいています。"
+    },
+    "getInvolved": {
+      "title": "参加する",
+      "subtitle": "コミュニティに参加し、AI開発をよりアクセシブルにするのを手伝ってください",
+      "contribute": {
+        "title": "コンテンツに貢献",
+        "description": "チュートリアルの改善と新しい学習リソースの追加を手伝ってください。",
+        "link": "貢献ガイド →"
+      },
+      "discussions": {
+        "title": "ディスカッションに参加",
+        "description": "コミュニティディスカッションに参加し、経験を共有してください。",
+        "link": "GitHubディスカッション →"
+      },
+      "issues": {
+        "title": "問題を報告",
+        "description": "問題を見つけたり改善提案がありますか？",
+        "link": "お問い合わせ →"
+      }
+    },
+    "cta": {
+      "title": "学習を始める準備はできましたか？",
+      "description": "包括的なガイドを探索し、開発ワークフローを強化するためにすでにGemini CLIを使用している何千人もの開発者に参加してください。",
+      "getStarted": "始める",
+      "browseGuides": "ガイドを閲覧"
+    }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "ご質問やフィードバックをお聞かせください",
+    "form": {
+      "name": "お名前",
+      "email": "メールアドレス",
+      "subject": "件名",
+      "message": "メッセージ",
+      "submit": "送信"
+    },
+    "info": {
+      "title": "連絡先情報",
+      "email": "メール",
+      "response": "24時間以内に返信いたします"
+    },
+    "support": {
+      "title": "サポート",
+      "description": "技術的な問題やバグ報告については、GitHubのIssuesをご利用ください。"
+    }
+  },
+  "privacy": {
+    "title": "プライバシーポリシー",
+    "subtitle": "あなたのプライバシーは私たちにとって重要です。このポリシーでは、私たちがあなたの情報をどのように収集、使用、保護するかを説明します。",
+    "lastUpdated": "最終更新",
+    "introduction": {
+      "title": "はじめに",
+      "content": "このプライバシーポリシーは、Gemini CLI学習プラットフォームが、あなたが私たちのウェブサイトやサービスを使用する際に、あなたの情報をどのように収集、使用、共有するかを説明しています。私たちはあなたのプライバシーを保護し、データの取り扱いについて透明性を保つことをお約束します。"
+    },
+    "informationWeCollect": {
+      "title": "収集する情報",
+      "analytics": {
+        "title": "分析情報",
+        "description": "私たちはGoogle Analyticsを使用して、訪問者が私たちのウェブサイトとどのように相互作用するかを理解しています。これには以下が含まれます：",
+        "items": [
+          "訪問したページと各ページでの滞在時間",
+          "地理的位置（国/地域レベル）",
+          "デバイスとブラウザの情報",
+          "参照元（私たちのウェブサイトをどのように見つけたか）",
+          "ユーザーの相互作用とナビゲーションパターン"
+        ]
+      },
+      "language": {
+        "title": "言語設定",
+        "description": "パーソナライズされた体験を提供するために、あなたの言語設定をブラウザにローカルに保存します。この情報は私たちのサーバーに送信されません。"
+      },
+      "technical": {
+        "title": "技術情報",
+        "description": "あなたが私たちのウェブサイトを訪問する際に、特定の技術情報を自動的に収集します：",
+        "items": [
+          "IPアドレス（分析用に匿名化）",
+          "ブラウザの種類とバージョン",
+          "オペレーティングシステム",
+          "画面解像度とデバイスタイプ"
+        ]
+      }
+    },
+    "howWeUse": {
+      "title": "情報の使用方法",
+      "description": "収集した情報を以下の目的で使用します：",
+      "items": [
+        {
+          "title": "ウェブサイト分析",
+          "description": "ユーザーの行動を理解し、ウェブサイトのパフォーマンスとユーザーエクスペリエンスを向上させるため"
+        },
+        {
+          "title": "コンテンツ最適化",
+          "description": "ユーザーにとって最も価値のあるコンテンツを特定し、教育資料を最適化するため"
+        },
+        {
+          "title": "技術的改善",
+          "description": "技術的問題を特定・修正し、読み込み時間を最適化し、デバイス間の互換性を確保するため"
+        },
+        {
+          "title": "言語ローカライゼーション",
+          "description": "お好みの言語でコンテンツを提供し、翻訳品質を向上させるため"
+        },
+        {
+          "title": "セキュリティ",
+          "description": "ウェブサイトを悪用、スパム、悪意のある活動から保護するため"
+        }
+      ]
+    },
+    "informationSharing": {
+      "title": "情報の共有",
+      "description": "以下の限定的な状況を除き、個人情報を第三者に販売、取引、または譲渡することはありません：",
+      "items": [
+        {
+          "title": "サービスプロバイダー",
+          "description": "ウェブサイト分析サービスを提供するために、匿名化された分析データをGoogle Analyticsと共有します"
+        },
+        {
+          "title": "法的要件",
+          "description": "法律で要求された場合、または私たちの権利と安全を保護するために情報を開示する場合があります"
+        },
+        {
+          "title": "事業譲渡",
+          "description": "合併や買収の場合、ユーザー情報は事業資産の一部として譲渡される可能性があります"
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookieと追跡技術",
+      "analytics": {
+        "title": "Google Analytics Cookie",
+        "description": "使用統計を収集するためにGoogle Analytics Cookieを使用します。これらのCookieは以下を理解するのに役立ちます：",
+        "items": [
+          "最も人気のあるページ",
+          "ユーザーがサイト内をどのようにナビゲートするか",
+          "技術的パフォーマンス指標"
+        ]
+      },
+      "localStorage": {
+        "title": "ローカルストレージ",
+        "description": "あなたの言語設定を記憶し、より良いユーザーエクスペリエンスを提供するために、ブラウザのローカルストレージを使用します。このデータはあなたのデバイスに残り、私たちのサーバーに送信されません。"
+      }
+    },
+    "yourRights": {
+      "title": "あなたの権利と選択",
+      "description": "あなたの情報に関していくつかの権利があります：",
+      "items": [
+        {
+          "title": "分析のオプトアウト",
+          "description": "ブラウザ拡張機能を使用するか、ブラウザ設定を調整することで、Google Analytics追跡をオプトアウトできます"
+        },
+        {
+          "title": "ローカルデータの削除",
+          "description": "ブラウザのローカルストレージをクリアすることで、言語設定やその他のローカルデータを削除できます"
+        },
+        {
+          "title": "情報へのアクセス",
+          "description": "私たちがあなたについて収集したデータに関する情報を要求できます"
+        },
+        {
+          "title": "お問い合わせ",
+          "description": "プライバシーに関する質問や懸念について私たちに連絡できます"
+        }
+      ]
+    },
+    "dataSecurity": {
+      "title": "データセキュリティ",
+      "description": "あなたの情報を保護するために適切なセキュリティ対策を実装しています：",
+      "items": [
+        "すべてのウェブサイト通信のHTTPS暗号化",
+        "定期的なセキュリティ更新と監視",
+        "収集されたデータへの限定的なアクセス",
+        "安全なホスティングインフラストラクチャ"
+      ]
+    },
+    "thirdParty": {
+      "title": "第三者サービス",
+      "googleAnalytics": {
+        "title": "Google Analytics",
+        "description": "私たちのウェブサイトは、Google Inc.が提供するウェブ分析サービスであるGoogle Analyticsを使用しています。Google Analyticsは、ユーザーがサイトをどのように使用するかを分析するためにCookieを使用します。",
+        "moreInfo": "Googleのプライバシー慣行の詳細については、以下をご覧ください：",
+        "linkText": "Googleプライバシーポリシー"
+      },
+      "externalLinks": {
+        "title": "外部リンク",
+        "description": "私たちのウェブサイトには外部サイトへのリンクが含まれている場合があります。これらの外部ウェブサイトのプライバシー慣行については責任を負いません。それらのプライバシーポリシーを読むことをお勧めします。"
+      }
+    },
+    "childrens": {
+      "title": "子供のプライバシー",
+      "description": "私たちのウェブサイトは13歳未満の子供を対象としていません。13歳未満の子供から故意に個人情報を収集することはありません。あなたが親または保護者で、お子様が私たちに個人情報を提供したと思われる場合は、私たちにご連絡ください。"
+    },
+    "changes": {
+      "title": "このプライバシーポリシーの変更",
+      "description": "このプライバシーポリシーを随時更新する場合があります。このページに新しいプライバシーポリシーを投稿し、「最終更新」日付を更新することで、変更をお知らせします。変更について定期的にこのプライバシーポリシーを確認することをお勧めします。"
+    },
+    "contact": {
+      "title": "連絡先情報",
+      "description": "このプライバシーポリシーまたは私たちのプライバシー慣行について質問がある場合は、私たちにご連絡ください：",
+      "email": "メール",
+      "github": "GitHub",
+      "website": "ウェブサイト",
+      "contactForm": "お問い合わせフォーム",
+      "reportIssues": "問題を報告"
+    },
+    "cta": {
+      "title": "プライバシーポリシーについて質問がありますか？",
+      "description": "私たちのプライバシー慣行について質問がある場合は、お気軽にお問い合わせください。",
+      "contactUs": "お問い合わせ"
+    }
+  },
+  "terms": {
+    "title": "利用規約",
+    "lastUpdated": "最終更新日",
+    "sections": [
+      {
+        "title": "サービスの利用",
+        "content": "本サービスは教育目的で提供されており、適切な利用が求められます。"
+      },
+      {
+        "title": "知的財産権",
+        "content": "コンテンツの著作権は当プラットフォームまたは各権利者に帰属します。"
+      },
+      {
+        "title": "免責事項",
+        "content": "サービスの利用により生じた損害について、当方は責任を負いません。"
+      }
+    ]
+  },
+  "guidesAdvanced": {
+    "title": "上級ガイド",
+    "subtitle": "Gemini CLIをマスターするための上級チュートリアルとガイド。複雑なワークフロー、自動化、プロフェッショナル開発技術を学びます。",
+    "learnMore": "詳細を見る",
+    "difficulty": {
+      "advanced": "上級",
+      "expert": "エキスパート"
+    },
+    "guides": [
+      {
+        "title": "高度な設定",
+        "description": "最適なパフォーマンスのための複雑な設定オプション、環境変数、カスタム設定をマスターします。",
+        "estimatedTime": "30分"
+      },
+      {
+        "title": "コードリファクタリング",
+        "description": "大規模なコードリファクタリング、パターン認識、コード品質向上のためのGemini CLIの使用方法を学びます。",
+        "estimatedTime": "45分"
+      },
+      {
+        "title": "コードレビュー自動化",
+        "description": "コードレビュープロセスを自動化し、品質チェックを実装し、CI/CDパイプラインと統合します。",
+        "estimatedTime": "60分"
+      },
+      {
+        "title": "ファイル操作マスタリー",
+        "description": "高度なファイル操作、バッチ処理、複雑なファイルシステム操作。",
+        "estimatedTime": "40分"
+      },
+      {
+        "title": "カスタムコマンド",
+        "description": "開発ワークフローを合理化するためのカスタムコマンド、エイリアス、ショートカットを作成します。",
+        "estimatedTime": "50分"
+      },
+      {
+        "title": "プラグイン開発",
+        "description": "チームのためにGemini CLI機能を拡張するカスタムプラグインを構築・配布します。",
+        "estimatedTime": "90分"
+      }
+    ],
+    "prerequisites": {
+      "title": "前提条件",
+      "technical": {
+        "title": "技術要件",
+        "items": [
+          "Gemini CLIがインストールされ設定済み",
+          "コマンドラインインターフェースに慣れている",
+          "開発ワークフローの基本的な理解"
+        ]
+      },
+      "knowledge": {
+        "title": "知識要件",
+        "items": [
+          "基本的なGemini CLIチュートリアルを完了",
+          "AI支援開発に精通",
+          "ソフトウェア開発原則の理解"
+        ]
+      }
+    },
+    "cta": {
+      "title": "上級チャレンジの準備はできましたか？",
+      "description": "これらの包括的な上級ガイドでGemini CLIスキルを次のレベルに引き上げましょう。",
+      "allGuides": "すべてのガイド",
+      "examples": "例を見る"
+    }
+  },
+  "guidesMain": {
+    "hero": {
+      "title": "Gemini CLI 使用ガイド",
+      "description": "基本的な紹介から高度なアプリケーションまで、Gemini CLIの強力な機能をマスターし、AIを開発作業の信頼できるアシスタントにしましょう。"
+    },
+    "categories": {
+      "title": "学習パス",
+      "description": "経験レベルに基づいて適切な学習パスを選択してください",
+      "beginner": {
+        "title": "初心者向けチュートリアル",
+        "description": "初心者がGemini CLIを素早く始めるための基本チュートリアル",
+        "tutorials": [
+          {
+            "title": "Gemini CLIの初回使用",
+            "description": "基本概念を理解し、最初のAI会話を完了する",
+            "duration": "10分",
+            "level": "初心者"
+          },
+          {
+            "title": "基本コマンド操作",
+            "description": "一般的なコマンドと基本構文を学ぶ",
+            "duration": "15分",
+            "level": "初心者"
+          },
+          {
+            "title": "ファイル操作の基本",
+            "description": "AIを使用してファイルコンテンツを処理・分析する",
+            "duration": "20分",
+            "level": "初心者"
+          }
+        ]
+      },
+      "intermediate": {
+        "title": "中級チュートリアル",
+        "description": "高度な機能とベストプラクティスを深く学ぶ",
+        "tutorials": [
+          {
+            "title": "高度な設定オプション",
+            "description": "Gemini CLI設定と環境設定をカスタマイズする",
+            "duration": "25分",
+            "level": "中級"
+          },
+          {
+            "title": "他のツールとの統合",
+            "description": "既存の開発ワークフローに統合する",
+            "duration": "30分",
+            "level": "中級"
+          },
+          {
+            "title": "MCPプロトコルの使用",
+            "description": "Model Context Protocolを使用して機能を拡張する",
+            "duration": "35分",
+            "level": "中級"
+          }
+        ]
+      },
+      "examples": {
+        "title": "実践的なケース",
+        "description": "実際のプロジェクトでのアプリケーションシナリオとソリューション",
+        "tutorials": [
+          {
+            "title": "コードリファクタリングアシスタント",
+            "description": "AIを使用して既存のコードを分析・リファクタリングする",
+            "duration": "40分",
+            "level": "実践"
+          },
+          {
+            "title": "プロジェクトドキュメント生成",
+            "description": "プロジェクトドキュメントとREADMEを自動生成する",
+            "duration": "30分",
+            "level": "実践"
+          },
+          {
+            "title": "コードレビューアシスタント",
+            "description": "AIを使用してコード品質検査を行う",
+            "duration": "35分",
+            "level": "実践"
+          }
+        ]
+      }
+    },
+    "startLearning": "学習を開始",
+    "quickAccess": {
+      "title": "クイックアクセス",
+      "description": "必要なコンテンツに直接ジャンプ",
+      "advanced": "高度なガイド",
+      "advancedDesc": "詳細な高度なチュートリアルとテクニック",
+      "examples": "実用的な例",
+      "examplesDesc": "実際のプロジェクトケースとソリューション",
+      "commands": "コマンドリファレンス",
+      "commandsDesc": "完全なコマンドリストと構文",
+      "faq": "FAQ",
+      "faqDesc": "よくある質問の答えを素早く見つける"
+    },
+    "cta": {
+      "title": "AIプログラミングの旅を始める準備はできましたか？",
+      "description": "今すぐGemini CLIをインストールして、AI支援プログラミングの強力な機能を体験し始めましょう。",
+      "getStarted": "今すぐ始める",
+      "viewDocs": "ドキュメントを見る"
+    }
+  },
+  "guidesExamples": {
+    "title": "実践的な例",
+    "subtitle": "Gemini CLIの実世界の例とケーススタディ。実践的なシナリオとハンズオンプロジェクトを通して学習します。",
+    "tryExample": "例を試す",
+    "difficulty": {
+      "beginner": "初心者",
+      "intermediate": "中級",
+      "advanced": "上級"
+    },
+    "categories": [
+      {
+        "title": "コード生成の例",
+        "description": "さまざまなプログラミング言語とフレームワークの実践的なコード生成シナリオ",
+        "examples": [
+          {
+            "title": "Reactコンポーネントジェネレーター",
+            "description": "TypeScript、props、スタイリングを含むReactコンポーネントを生成",
+            "command": "gemini \"アバター、名前、経歴を含むユーザープロフィールカードのReactコンポーネントを作成\""
+          },
+          {
+            "title": "APIエンドポイント作成",
+            "description": "バリデーションとエラーハンドリングを含むREST APIエンドポイントを生成",
+            "command": "gemini \"JWTを使用したユーザー認証のためのNode.js Expressエンドポイントを作成\""
+          },
+          {
+            "title": "データベーススキーマ設計",
+            "description": "データベーススキーマとマイグレーションスクリプトを生成",
+            "command": "gemini \"eコマースプラットフォーム用のPostgreSQLスキーマを設計\""
+          }
+        ]
+      },
+      {
+        "title": "ファイル操作の例",
+        "description": "バッチ処理、ファイル操作、コンテンツ変換タスク",
+        "examples": [
+          {
+            "title": "バッチファイル名変更",
+            "description": "パターンとメタデータに基づいて複数のファイル名を変更",
+            "command": "gemini \"このディレクトリ内のすべての.jpgファイルの名前を変更して作成日を含める\""
+          },
+          {
+            "title": "コンテンツ移行",
+            "description": "異なる形式間でコンテンツを変換・移行",
+            "command": "gemini \"すべてのMarkdownファイルをカスタムスタイリングでHTMLに変換\""
+          },
+          {
+            "title": "ログファイル分析",
+            "description": "洞察とパターンのためにログファイルを解析・分析",
+            "command": "gemini \"このApacheログファイルを分析してトラフィックパターンを要約\""
+          }
+        ]
+      },
+      {
+        "title": "ドキュメントの例",
+        "description": "包括的なドキュメントと技術文書を生成",
+        "examples": [
+          {
+            "title": "APIドキュメント",
+            "description": "コードから完全なAPIドキュメントを生成",
+            "command": "gemini \"このExpress.js APIのOpenAPIドキュメントを生成\""
+          },
+          {
+            "title": "README生成",
+            "description": "プロジェクト用の詳細なREADMEファイルを作成",
+            "command": "gemini \"このPythonプロジェクトの包括的なREADMEを作成\""
+          }
+        ]
+      }
+    ],
+    "tips": {
+      "title": "より良い結果のためのプロのヒント",
+      "items": [
+        {
+          "title": "具体的に",
+          "description": "より良いAI応答のために、コンテキストと要件を含む明確で詳細なプロンプトを提供してください。"
+        },
+        {
+          "title": "例を使用",
+          "description": "AIを望ましい出力形式に導くために、プロンプトに例を含めてください。"
+        },
+        {
+          "title": "反復と改良",
+          "description": "基本的なプロンプトから始めて、得られる結果に基づいて改良してください。"
+        },
+        {
+          "title": "コンテキストが重要",
+          "description": "プロジェクト、技術スタック、制約について関連するコンテキストを提供してください。"
+        }
+      ]
+    },
+    "cta": {
+      "title": "これらの例を試す準備はできましたか？",
+      "description": "これらの実践的な例で実験を始めて、Gemini CLIがあなたの開発ワークフローをどのように加速できるかを発見してください。",
+      "allGuides": "すべてのガイド",
+      "advancedGuides": "上級ガイド"
+    }
+  },
+  "guidesGettingStarted": {
+    "title": "Gemini CLI の初回使用",
+    "subtitle": "10分間のクイックスタートでAI支援プログラミングの旅を始めましょう",
+    "description": "このチュートリアルは、Gemini CLIの基本操作とコア概念を学び、素早く始めるのに役立ちます。",
+    "meta": {
+      "level": "初心者向け",
+      "duration": "完了まで10分"
+    },
+    "prerequisites": {
+      "title": "始める前に",
+      "nodejs": "Node.js 18以上がインストールされていること",
+      "terminal": "基本的なコマンドライン操作に慣れていること",
+      "google": "Googleアカウント（認証用）"
+    },
+    "steps": {
+      "install": {
+        "title": "Gemini CLI のインストール",
+        "description": "適切なインストール方法を選択してください",
+        "methods": {
+          "npx": {
+            "name": "NPX（推奨）",
+            "description": "インストール不要、最新バージョンを直接実行"
+          },
+          "npm": {
+            "name": "NPM グローバルインストール",
+            "description": "グローバルインストールでどこでもgeminiコマンドを使用"
+          },
+          "homebrew": {
+            "name": "Homebrew（macOS）",
+            "description": "Homebrewを使用するmacOSユーザーに推奨"
+          }
+        }
+      },
+      "firstRun": {
+        "title": "初回起動",
+        "description": "Gemini CLIを実行し、初期設定を完了します",
+        "steps": {
+          "command": {
+            "title": "コマンド実行",
+            "description": "ターミナルでgeminiコマンドを入力して開始"
+          },
+          "theme": {
+            "title": "テーマ選択",
+            "description": "初回起動時にカラーテーマの選択を求められます。お好みのスタイルを選択してください"
+          },
+          "auth": {
+            "title": "認証",
+            "description": "Googleアカウントでログインして無料使用枠を取得"
+          }
+        }
+      },
+      "firstChat": {
+        "title": "初回会話",
+        "description": "AIとの対話を開始します",
+        "examples": {
+          "greeting": {
+            "title": "簡単な挨拶",
+            "command": "> こんにちは、自己紹介をしてください",
+            "description": "基本的な会話機能をテスト"
+          },
+          "code": {
+            "title": "コード関連の質問",
+            "command": "> 再帰関数とは何か説明してください",
+            "description": "プログラミング関連の質問をする"
+          },
+          "file": {
+            "title": "ファイル操作",
+            "command": "> @README.md このファイルの内容を要約してください",
+            "description": "@記号を使用してファイル内容を読み取り"
+          }
+        }
+      }
+    },
+    "tips": {
+      "title": "重要なヒント",
+      "success": {
+        "title": "成功のヒント",
+        "content": "Gemini CLIのウェルカム画面とプロンプトが表示されれば、インストール成功です！"
+      },
+      "warning": {
+        "title": "重要な注意事項",
+        "content": "初回使用時は認証とモデルアクセスのためにネットワーク接続が必要です。"
+      },
+      "info": {
+        "title": "使用のヒント",
+        "content": "いつでも /help を入力して利用可能なコマンドと機能を確認できます。"
+      }
+    },
+    "commands": {
+      "help": "ヘルプ情報と利用可能なコマンドを表示",
+      "clear": "画面内容をクリア",
+      "quit": "Gemini CLIを終了",
+      "theme": "インターフェーステーマを変更",
+      "file": "ファイル内容を会話に読み込み",
+      "system": "システムコマンドを実行"
+    },
+    "commandsTitle": "よく使うコマンドのクイックリファレンス",
+    "nextSteps": {
+      "title": "次のステップ",
+      "description": "おめでとうございます！Gemini CLIの入門を正常に完了しました。さらなる機能を学習できます：",
+      "basicCommands": "基本コマンドを学ぶ",
+      "fileOperations": "ファイル操作入門",
+      "backToGuides": "ガイドホームに戻る"
+    }
+  },
+  "guidesBasicCommands": {
+    "hero": {
+      "title": "基本コマンド操作",
+      "subtitle": "Gemini CLIのコアコマンドと操作構文をマスターする",
+      "comprehensive": "包括的カバレッジ",
+      "practical": "実践的な例"
+    },
+    "overview": {
+      "title": "コマンド概要",
+      "description": "Gemini CLIは3つの主要なコマンドタイプを提供します：CLI自体を制御するスラッシュコマンド、ファイル操作用の@コマンド、システムコマンド実行用の!コマンド。"
+    },
+    "categories": {
+      "slash": {
+        "title": "スラッシュコマンド (/)",
+        "description": "CLI自体を制御するメタレベルコマンド",
+        "commands": {
+          "help": "利用可能なすべてのコマンドとその使用法を表示",
+          "clear": "現在の会話履歴をクリア",
+          "quit": "Gemini CLIを終了",
+          "theme": "カラーテーマを変更（ライト/ダーク/オート）"
+        }
+      },
+      "at": {
+        "title": "@ コマンド (@)",
+        "description": "ファイル内容と対話するためのコマンド",
+        "commands": {
+          "file": "ファイル内容を会話に含める",
+          "folder": "フォルダ構造と内容を分析",
+          "wildcard": "パターンマッチングを使用して複数ファイルを含める"
+        }
+      },
+      "exclamation": {
+        "title": "! コマンド (!)",
+        "description": "システムコマンドを実行するためのコマンド",
+        "commands": {
+          "system": "任意のシステムコマンドを実行",
+          "git": "Gitコマンドを実行",
+          "npm": "NPMコマンドを実行"
+        }
+      }
+    },
+    "examples": {
+      "title": "実践的な例",
+      "description": "実際のシナリオでコマンドを使用する方法",
+      "scenarios": [
+        {
+          "title": "コードレビュー",
+          "description": "ファイルを読んで改善を提案",
+          "command": "@src/components/Button.tsx このコンポーネントをレビューして改善を提案してください"
+        },
+        {
+          "title": "デバッグ支援",
+          "description": "エラーログを分析",
+          "command": "@logs/error.log このエラーログを分析して可能な解決策を提案してください"
+        },
+        {
+          "title": "ドキュメント作成",
+          "description": "コードのドキュメントを生成",
+          "command": "@src/utils/ これらのユーティリティ関数のREADMEドキュメントを作成してください"
+        }
+      ]
+    },
+    "tips": {
+      "title": "使用のヒント",
+      "info": {
+        "title": "コマンドの組み合わせ",
+        "content": "作業効率を向上させるために、同じ会話で複数のコマンドタイプを組み合わせることができます。"
+      },
+      "warning": {
+        "title": "セキュリティリマインダー",
+        "content": "!コマンドを使用する際は注意してください。危険な操作を避けるために、コマンドが何をするかを理解していることを確認してください。"
+      },
+      "success": {
+        "title": "ベストプラクティス",
+        "content": "まず/helpを使用してすべての利用可能なコマンドを確認し、その後徐々に様々なコマンドの使用法を学習することをお勧めします。"
+      }
+    },
+    "nextSteps": {
+      "title": "次のステップ",
+      "description": "基本コマンドをマスターしたので、より高度な機能を学習できます：",
+      "fileOperations": "ファイル操作の詳細",
+      "advancedConfig": "高度な設定",
+      "backToGuides": "ガイドに戻る"
+    }
+  },
+  "guidesFileOperations": {
+    "hero": {
+      "title": "ファイル操作ガイド",
+      "subtitle": "Gemini CLIのファイル読み取り、編集、管理機能をマスターしましょう",
+      "intermediate": "中級",
+      "readingTime": "20分で読める"
+    },
+    "overview": {
+      "title": "ファイル操作の概要",
+      "description": "読み取り、編集、作成、さまざまなファイルタイプの管理など、ファイルとディレクトリを効率的に処理するためのGemini CLIの使用方法を学びます。"
+    },
+    "operationsTitle": "コアファイル操作",
+    "operationsDescription": "Gemini CLIが提供するさまざまなファイル操作機能をマスターしましょう",
+    "operations": [
+      {
+        "title": "ファイル読み取り",
+        "description": "インテリジェント認識機能を備えたさまざまなファイル形式のコンテンツ読み取りと分析",
+        "icon": "DocumentTextIcon",
+        "color": "from-blue-500 to-indigo-600",
+        "command": "gemini read fichier.txt",
+        "features": [
+          "複数のファイル形式のサポート（TXT、JSON、CSV、MD、YAML）",
+          "インテリジェントなコンテンツ分析と自動構造認識",
+          "チャンクベースの読み取りによる大きなファイルの効率的な処理",
+          "自動文字エンコーディング検出（UTF-8、ASCII、ISO-8859-1）",
+          "コードファイルのシンタックスハイライトとフォーマット"
+        ]
+      },
+      {
+        "title": "ディレクトリ閲覧",
+        "description": "高度なフィルタリングオプションを備えた効率的なディレクトリ構造のナビゲーションと分析",
+        "icon": "FolderIcon",
+        "color": "from-green-500 to-emerald-600",
+        "command": "gemini list ./src",
+        "features": [
+          "設定可能な深度制御による再帰的ディレクトリトラバーサル",
+          "拡張子とMIMEタイプによる高度なファイルタイプフィルタリング",
+          "詳細なメタデータ：サイズ、権限、作成日時と変更日時",
+          "セキュリティ警告付きの隠しファイルとシステムファイルの表示",
+          "ナビゲーション向上のためのインタラクティブなツリー構造可視化"
+        ]
+      },
+      {
+        "title": "ファイル編集",
+        "description": "自動セキュリティ対策を備えたファイルコンテンツのインテリジェントでコンテキスト対応編集",
+        "icon": "PencilIcon",
+        "color": "from-purple-500 to-pink-600",
+        "command": "gemini edit fichier.js",
+        "features": [
+          "50以上のプログラミング言語に対応したシンタックス対応編集",
+          "自動コードフォーマット、インデント、スタイル一貫性",
+          "各変更前のバージョニング付きインテリジェントバックアップ作成",
+          "視覚的差分表示によるリアルタイム変更追跡",
+          "バッチ操作による複数ファイルの同時編集"
+        ]
+      },
+      {
+        "title": "ファイル削除",
+        "description": "包括的な保護対策を備えたファイルの安全で制御された削除",
+        "icon": "TrashIcon",
+        "color": "from-red-500 to-orange-600",
+        "command": "gemini delete ancien-fichier.txt",
+        "features": [
+          "重要ファイル用の多段階セキュリティ確認メカニズム",
+          "簡単な復元のための統合ゴミ箱機能",
+          "ワイルドカードと正規表現サポートによる高性能バッチ削除",
+          "自動権限チェックとアクセス検証",
+          "重要なシステムファイルの誤削除に対するインテリジェント保護"
+        ]
+      },
+      {
+        "title": "ファイル移動",
+        "description": "インテリジェント競合解決機能を備えた信頼性の高いファイル移動と名前変更",
+        "icon": "ArrowPathIcon",
+        "color": "from-cyan-500 to-blue-600",
+        "command": "gemini move source.txt destination.txt",
+        "features": [
+          "相対パスと絶対パスサポートによるインテリジェントパス解決",
+          "カスタマイズ可能な解決戦略による自動競合処理",
+          "大量ファイルに対する効率的なバッチ操作",
+          "誤った移動に対する完全な元に戻す機能",
+          "速度と時間推定付きのリアルタイム進捗表示"
+        ]
+      }
+    ],
+    "examplesTitle": "実用的な例",
+    "examplesDescription": "詳細で実用的な例を通じてファイル操作のベストプラクティスを学びます",
+    "explanation": "説明",
+    "examples": [
+      {
+        "title": "JavaScriptプロジェクトバッチ処理",
+        "description": "複雑なプロジェクト内のすべてのJavaScriptファイルの包括的な分析と最適化",
+        "code": "# すべてのJSファイルを再帰的に読み取り分析\ngemini read \"src/**/*.js\" --analyze --depth=full --output=analysis.json\n\n# モダンスタンダードに従ってコードをフォーマット\ngemini format \"src/**/*.js\" --style=prettier --config=.prettierrc\n\n# JSDocで自動ドキュメント生成\ngemini doc \"src/**/*.js\" --format=jsdoc --output=docs/ --include-private",
+        "explanation": "この例は完全なプロジェクト分析パイプラインを示しています。--analyzeパラメータと--depth=fullは、複雑性測定とセキュリティ検証を含む包括的なコード品質分析を実行します。--configオプションはプロジェクト固有のフォーマットルールを可能にし、--include-privateはプライベート関数もドキュメントに含めます。"
+      },
+      {
+        "title": "設定ファイル管理",
+        "description": "プロジェクト設定ファイルの専門的な管理と検証",
+        "code": "# プロジェクト内のすべての設定ファイルを検索\ngemini list . --type=config --recursive --include-hidden\n\n# 重要な変更前のセキュリティバックアップ\ngemini backup config/*.{json,yaml,toml} --timestamp --compress\n\n# スキーマに対する設定の検証\ngemini validate config/app.json --schema=schemas/app-schema.json --strict",
+        "explanation": "体系的な設定管理はプロジェクトの安定性にとって重要です。--include-hiddenパラメータは.envのような隠し設定ファイルも見つけます。--timestampオプションはタイムスタンプ付きバックアップを作成し、--strictは厳密なスキーマ検証を実行して最小の逸脱も報告します。"
+      },
+      {
+        "title": "ログファイル分析とローテーション",
+        "description": "システム監視のための大きなログファイルの効率的な処理と管理",
+        "code": "# メモリを節約するために大きなログファイルをブロックで処理\ngemini read logs/application.log --chunk-size=10MB --stream\n\n# 重要なエラーを抽出して分類\ngemini search logs/ --pattern=\"(ERROR|FATAL|CRITICAL)\" --context=5 --output=重要エラー.log\n\n# 圧縮による知的ログローテーション\ngemini rotate logs/application.log --max-size=500MB --keep=10 --compress=gzip",
+        "explanation": "ログ分析では効率性が重要です。--streamパラメータはメモリに完全にロードすることなくリアルタイム処理を可能にします。--context=5は各マッチの前後5行を表示してより良いコンテキストを提供します。--compress=gzipによるローテーションはアーカイブされたログのストレージスペースを大幅に節約します。"
+      }
+    ],
+    "bestPracticesTitle": "ベストプラクティス",
+    "bestPracticesDescription": "プロフェッショナルなファイル操作のための重要な推奨事項とセキュリティガイドライン",
+    "bestPractices": [
+      {
+        "type": "success",
+        "title": "体系的なバックアップ戦略の実装",
+        "content": "すべての重要なファイルに対する包括的なバックアップ戦略を開発してください。--backupオプションで自動バックアップを使用し、3-2-1ルール（3つのコピー、2つの異なるメディア、1つの外部コピー）を実装し、バックアップの復旧可能性を定期的にテストしてください。重要な設定ファイルにはバージョニングを使用してください。"
+      },
+      {
+        "type": "warning",
+        "title": "権限とセキュリティの優先",
+        "content": "最小権限の原則を一貫して実装してください。--check-permissionsで各操作前にファイル権限を確認し、絶対に必要でない限りroot権限を避け、きめ細かいアクセス制御にユーザーグループを使用してください。本番環境ではすべての重要なファイル操作に対して監査ログを有効にしてください。"
+      },
+      {
+        "type": "info",
+        "title": "バージョン管理の戦略的使用",
+        "content": "すべてのファイル操作をバージョン管理システムに透明に統合してください。構造化された形式で説明的なコミットメッセージを作成し、実験的な変更にはフィーチャーブランチを使用し、自動検証のためのpre-commitフックを実装してください。一時的および生成されたファイルには.gitignoreを戦略的に使用してください。"
+      },
+      {
+        "type": "error",
+        "title": "破壊的操作の保護",
+        "content": "すべての破壊的操作を最大限の注意で扱ってください。テストには常に--dry-runを使用し、重要なアクションには確認ダイアログを実装し、システムディレクトリから厳密に離れてください。すべての主要な操作にロールバック計画を作成し、データ復旧の緊急手順を文書化してください。"
+      }
+    ],
+    "nextSteps": {
+      "title": "次のステップ",
+      "description": "ファイル操作をマスターした後、これらの高度なトピックでスキルを拡張してください：",
+      "integration": "システム統合",
+      "codeRefactoring": "コードリファクタリング",
+      "backToGuides": "ガイドに戻る"
+    }
+  },
+  "guidesAdvancedConfig": {
+    "hero": {
+      "title": "高度な設定オプション",
+      "subtitle": "Gemini CLIの高度な設定とカスタマイズオプションを詳しく学ぶ",
+      "advanced": "高度",
+      "readingTime": "30分で読める"
+    },
+    "overview": {
+      "title": "設定概要",
+      "description": "TOMLコンフィグファイル、環境変数、カスタム設定など、Gemini CLIの高度な設定オプションをマスターしましょう。"
+    },
+    "configSectionsTitle": "設定ファイル構造",
+    "configSectionsDescription": "異なる設定セクションとその設定について学ぶ",
+    "location": "場所",
+    "structure": "構造",
+    "explanation": "説明",
+    "options": "オプション",
+    "configSections": [
+      {
+        "id": "toml-config",
+        "title": "TOML設定ファイル",
+        "description": "詳細な設定にはgemini.tomlファイルを使用",
+        "color": "from-blue-500 to-indigo-600",
+        "content": {
+          "location": "設定ファイルの場所：プロジェクトルートディレクトリのgemini.toml",
+          "structure": "[model]\nprovider = \"google\"\nname = \"gemini-1.5-pro\"\ntemperature = 0.7\nmax_tokens = 8192\n\n[ui]\ntheme = \"dark\"\nshow_token_count = true\nauto_save_history = true\n\n[tools]\nenable_shell = true\nenable_file_operations = true\nmax_file_size = \"10MB\"",
+          "explanation": "TOMLファイルにより、Gemini CLIのすべての側面を構造化され読みやすい形で設定できます。"
+        }
+      },
+      {
+        "id": "env-vars",
+        "title": "環境変数",
+        "description": "環境変数による迅速な設定",
+        "color": "from-green-500 to-emerald-600",
+        "content": {
+          "explanation": "環境変数により迅速で柔軟な設定が可能",
+          "options": [
+            "GEMINI_API_KEY: 認証用APIキー",
+            "GEMINI_MODEL: 使用するデフォルトモデル",
+            "GEMINI_TEMPERATURE: 創造性パラメータ",
+            "GEMINI_MAX_TOKENS: 最大トークン数",
+            "GEMINI_CONFIG_PATH: 設定ファイルパス"
+          ]
+        }
+      },
+      {
+        "id": "model-config",
+        "title": "モデル設定",
+        "description": "AIモデル固有の設定",
+        "color": "from-indigo-500 to-purple-600",
+        "content": {
+          "explanation": "AIモデルの動作とパフォーマンスを制御",
+          "options": [
+            "provider: モデルプロバイダー (google, openai)",
+            "name: 特定のモデル名",
+            "temperature: 創造性 (0.0-2.0)",
+            "max_tokens: 出力トークン制限",
+            "top_p: ニュークリアスサンプリング",
+            "frequency_penalty: 頻度ペナルティ"
+          ]
+        }
+      },
+      {
+        "id": "ui-config",
+        "title": "UI設定",
+        "description": "ユーザーインターフェースと操作体験をカスタマイズ",
+        "color": "from-purple-500 to-pink-600",
+        "content": {
+          "explanation": "CLIインターフェースの表示と操作を調整",
+          "options": [
+            "theme: テーマカラー (light, dark, auto)",
+            "show_token_count: トークンカウンターを表示",
+            "auto_save_history: 履歴の自動保存",
+            "syntax_highlighting: シンタックスハイライト",
+            "line_numbers: 行番号を表示",
+            "word_wrap: 自動改行"
+          ]
+        }
+      },
+      {
+        "id": "tools-config",
+        "title": "ツール設定",
+        "description": "様々なツール機能を有効化・設定",
+        "color": "from-orange-500 to-red-600",
+        "content": {
+          "explanation": "CLIツールの機能と権限を制御",
+          "options": [
+            "enable_shell: シェルコマンド実行を有効化",
+            "enable_file_operations: ファイル操作を有効化",
+            "max_file_size: 最大ファイルサイズ",
+            "allowed_extensions: 許可されるファイル拡張子",
+            "blocked_commands: 禁止コマンドリスト",
+            "timeout: 実行タイムアウト"
+          ]
+        }
+      },
+      {
+        "id": "security-config",
+        "title": "セキュリティ設定",
+        "description": "セキュリティとアクセス制御設定",
+        "color": "from-red-500 to-pink-600",
+        "content": {
+          "explanation": "セキュリティ対策とアクセス制御を設定",
+          "options": [
+            "enable_audit_log: 監査ログを有効化",
+            "restrict_file_access: ファイルアクセスを制限",
+            "allowed_directories: 許可されるディレクトリ",
+            "require_confirmation: 確認を要求",
+            "session_timeout: セッションタイムアウト",
+            "max_concurrent_sessions: 最大同時セッション数"
+          ]
+        }
+      }
+    ],
+    "environmentVariablesTitle": "環境変数",
+    "environmentVariablesDescription": "環境変数による迅速な設定",
+    "defaultValue": "デフォルト値",
+    "none": "なし",
+    "environmentVariables": [
+      {
+        "name": "GEMINI_API_KEY",
+        "description": "認証用Google Gemini APIキー",
+        "example": "export GEMINI_API_KEY=your_api_key_here",
+        "default": null
+      },
+      {
+        "name": "GEMINI_MODEL",
+        "description": "使用するデフォルトモデル名",
+        "example": "export GEMINI_MODEL=gemini-1.5-pro",
+        "default": "gemini-1.5-flash"
+      },
+      {
+        "name": "GEMINI_TEMPERATURE",
+        "description": "モデルの創造性パラメータ",
+        "example": "export GEMINI_TEMPERATURE=0.7",
+        "default": "0.9"
+      },
+      {
+        "name": "GEMINI_MAX_TOKENS",
+        "description": "最大出力トークン数",
+        "example": "export GEMINI_MAX_TOKENS=8192",
+        "default": "4096"
+      },
+      {
+        "name": "GEMINI_CONFIG_PATH",
+        "description": "カスタム設定ファイルパス",
+        "example": "export GEMINI_CONFIG_PATH=/path/to/config.toml",
+        "default": "./gemini.toml"
+      }
+    ],
+    "customizationTitle": "カスタマイズオプション",
+    "customizationDescription": "異なる使用ケースに対応した個人設定",
+    "customizationOptions": [
+      {
+        "title": "開発環境",
+        "description": "開発ワークフロー向けの最適化設定",
+        "features": [
+          "コードシンタックスハイライトを有効化",
+          "セッション履歴の自動保存",
+          "バージョン管理システムとの統合",
+          "カスタムコードテンプレート",
+          "クイックコマンドエイリアス"
+        ]
+      },
+      {
+        "title": "本番環境",
+        "description": "本番環境向けのセキュリティ設定",
+        "features": [
+          "ファイル操作権限の制限",
+          "危険なコマンドの無効化",
+          "監査ログの有効化",
+          "リソース使用制限の設定",
+          "バックアップ戦略の設定"
+        ]
+      },
+      {
+        "title": "チーム協業設定",
+        "description": "チーム協業のための共有設定",
+        "features": [
+          "統一設定テンプレート",
+          "共有プロンプトライブラリ",
+          "チーム使用統計",
+          "権限管理",
+          "設定同期"
+        ]
+      }
+    ],
+    "bestPracticesTitle": "ベストプラクティス",
+    "bestPracticesDescription": "最適な設定のための推奨事項",
+    "bestPractices": [
+      {
+        "title": "設定管理",
+        "description": "設定ファイルの整理と保守",
+        "tips": [
+          "設定ファイルにバージョン管理を使用",
+          "設定変更を文書化",
+          "開発環境で設定をテスト",
+          "設定を定期的にバックアップ"
+        ]
+      },
+      {
+        "title": "パフォーマンス最適化",
+        "description": "最適なパフォーマンスのための設定",
+        "tips": [
+          "ニーズに応じてモデルパラメータを調整",
+          "リソース使用量を監視",
+          "データ転送効率を最適化",
+          "適切なタイムアウトを設定"
+        ]
+      },
+      {
+        "title": "デバッグのヒント",
+        "description": "デバッグを容易にする設定",
+        "tips": [
+          "詳細ログモードを使用",
+          "サーバーステータスを確認",
+          "設定ファイル形式を検証",
+          "環境変数をテスト"
+        ]
+      }
+    ],
+    "nextSteps": {
+      "title": "次のステップ",
+      "description": "高度な設定を理解したので、より高度な設定と統合方法を学習できます：",
+      "integration": "統合ガイド",
+      "troubleshooting": "トラブルシューティング",
+      "backToGuides": "ガイドに戻る"
+    }
+  },
+  "guidesIntegration": {
+    "title": "他のツールとの統合",
+    "subtitle": "開発ワークフローにGemini CLIを統合する",
+    "description": "既存の開発ツールチェーン、IDE、自動化プロセスにGemini CLIをシームレスに統合して生産性を向上させる方法を学びます。",
+    "overview": {
+      "title": "統合の概要",
+      "description": "Gemini CLIは複数の統合方法を提供し、あらゆる開発環境でAIの強力な機能を最大限に活用できます。IDEプラグイン、CI/CDパイプライン、自動化スクリプトなど、統合は簡単です。"
+    },
+    "typesTitle": "統合タイプ",
+    "typesDescription": "ワークフローに最適な統合方法を選択してください",
+    "types": [
+      {
+        "icon": "ide",
+        "title": "IDE統合",
+        "description": "お気に入りのコードエディターでGemini CLIを直接使用",
+        "features": [
+          {
+            "name": "VS Code拡張機能"
+          },
+          {
+            "name": "IntelliJプラグイン"
+          },
+          {
+            "name": "Vim/Neovim統合"
+          },
+          {
+            "name": "Sublime Textサポート"
+          }
+        ]
+      },
+      {
+        "icon": "ci",
+        "title": "CI/CD統合",
+        "description": "継続的インテグレーションとデプロイメントパイプラインでAIアシスタンスを使用",
+        "features": [
+          {
+            "name": "GitHub Actions"
+          },
+          {
+            "name": "GitLab CI"
+          },
+          {
+            "name": "Jenkinsプラグイン"
+          },
+          {
+            "name": "Azure DevOps"
+          }
+        ]
+      },
+      {
+        "icon": "automation",
+        "title": "自動化スクリプト",
+        "description": "スクリプトとツールを通じて開発タスクを自動化",
+        "features": [
+          {
+            "name": "シェルスクリプト統合"
+          },
+          {
+            "name": "Python自動化"
+          },
+          {
+            "name": "Node.jsツール"
+          },
+          {
+            "name": "Makefileサポート"
+          }
+        ]
+      },
+      {
+        "icon": "deployment",
+        "title": "デプロイメント統合",
+        "description": "デプロイメント中のコード分析と最適化にAIを活用",
+        "features": [
+          {
+            "name": "Docker統合"
+          },
+          {
+            "name": "Kubernetesサポート"
+          },
+          {
+            "name": "クラウドプラットフォーム統合"
+          },
+          {
+            "name": "監視とログ記録"
+          }
+        ]
+      }
+    ],
+    "workflow": {
+      "title": "統合ワークフロー",
+      "description": "開発プロセスにGemini CLIを統合するためのステップに従ってください",
+      "steps": [
+        {
+          "title": "環境セットアップ",
+          "description": "開発環境でGemini CLIが適切に設定されていることを確認",
+          "example": "# インストールを確認\ngemini --version\n\n# APIキーを設定\ngemini config set api-key YOUR_API_KEY"
+        },
+        {
+          "title": "統合方法の選択",
+          "description": "ニーズに基づいて最適な統合方法を選択",
+          "example": "# IDE統合の例\n# VS Code拡張機能をインストール\ncode --install-extension gemini-cli\n\n# またはコマンドラインエイリアスを設定\nalias ai='gemini chat'"
+        },
+        {
+          "title": "ワークフローの設定",
+          "description": "自動化スクリプトとワークフローをセットアップ",
+          "example": "# GitHub Actionsの例\nname: AI Code Review\non: [pull_request]\njobs:\n  review:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v2\n      - name: AI Review\n        run: gemini review --files changed"
+        },
+        {
+          "title": "テストと最適化",
+          "description": "統合の効果をテストし、必要に応じて調整",
+          "example": "# 統合をテスト\ngemini test-integration\n\n# 使用統計を表示\ngemini stats --integration"
+        }
+      ]
+    },
+    "toolsTitle": "人気ツール統合",
+    "toolsDescription": "人気の開発ツールとの統合方法を学ぶ",
+    "tools": [
+      {
+        "name": "VS Code",
+        "description": "Visual Studio CodeでGemini CLIを使用",
+        "steps": [
+          {
+            "text": "Gemini CLI拡張機能をインストール"
+          },
+          {
+            "text": "APIキーを設定"
+          },
+          {
+            "text": "キーボードショートカットでAI機能を呼び出し"
+          },
+          {
+            "text": "コマンドと設定をカスタマイズ"
+          }
+        ]
+      },
+      {
+        "name": "Git Hooks",
+        "description": "GitワークフローにAIチェックを統合",
+        "steps": [
+          {
+            "text": "pre-commitフックを作成"
+          },
+          {
+            "text": "コード品質チェックを設定"
+          },
+          {
+            "text": "自動テストをセットアップ"
+          },
+          {
+            "text": "コミットメッセージ生成を統合"
+          }
+        ]
+      },
+      {
+        "name": "Docker",
+        "description": "コンテナ化環境でGemini CLIを使用",
+        "steps": [
+          {
+            "text": "Gemini CLIでイメージを作成"
+          },
+          {
+            "text": "環境変数を設定"
+          },
+          {
+            "text": "ボリュームマウントをセットアップ"
+          },
+          {
+            "text": "コンテナパフォーマンスを最適化"
+          }
+        ]
+      }
+    ],
+    "bestPracticesTitle": "統合のベストプラクティス",
+    "bestPracticesDescription": "最適な統合体験のためのベストプラクティスに従ってください",
+    "bestPractices": [
+      {
+        "title": "セキュリティ設定",
+        "description": "環境変数やキー管理サービスを使用してAPIキーと機密情報の安全な保存を確保してください。"
+      },
+      {
+        "title": "パフォーマンス最適化",
+        "description": "開発体験に影響を与える可能性のある過度なAPI呼び出しを避けるため、キャッシュと並行性設定を適切に設定してください。"
+      },
+      {
+        "title": "エラーハンドリング",
+        "description": "統合の失敗が通常の開発ワークフローに影響しないよう、包括的なエラーハンドリングメカニズムを実装してください。"
+      },
+      {
+        "title": "チーム協力",
+        "description": "すべてのメンバーが適切に使用できるよう、チーム向けの統一された統合標準と設定を確立してください。"
+      }
+    ],
+    "nextSteps": {
+      "title": "次のステップ",
+      "description": "より高度な機能とベストプラクティスを学び続けてください",
+      "advancedConfig": "高度な設定",
+      "codeRefactoring": "コードリファクタリング"
+    }
+  },
+  "guidesMcpProtocol": {
+    "hero": {
+      "title": "MCPプロトコル使用法",
+      "subtitle": "Gemini CLIの機能を拡張するためにModel Context Protocolをマスターする",
+      "advanced": "高度な機能",
+      "extensible": "拡張可能"
+    },
+    "overview": {
+      "title": "プロトコル概要",
+      "description": "Model Context Protocol (MCP)は、AIアプリケーションが外部データソースやツールと安全かつ制御された方法で統合できるオープンスタンダードです。"
+    },
+    "concepts": {
+      "overview": {
+        "title": "MCPプロトコル概要",
+        "description": "Model Context Protocolの基本概念とアーキテクチャ",
+        "definition": "MCPは、AIアプリケーションが外部データソースやツールと安全かつ制御された方法で統合できるオープンスタンダードです。",
+        "components": {
+          "host": {
+            "name": "MCPホスト",
+            "description": "AIアプリケーション（Gemini CLIなど）",
+            "role": "接続を開始し、MCPサーバーが提供する機能を使用します"
+          },
+          "server": {
+            "name": "MCPサーバー",
+            "description": "特定の機能を提供する独立したプロセス",
+            "role": "ホストが使用するためのツール、リソース、プロンプトを公開します"
+          },
+          "transport": {
+            "name": "トランスポート層",
+            "description": "ホストとサーバー間の通信メカニズム",
+            "role": "stdio、SSE、WebSocketなどのプロトコルをサポートします"
+          }
+        }
+      },
+      "capabilities": {
+        "title": "コア機能",
+        "description": "MCPサーバーが提供できる3つの主要な機能タイプ",
+        "definition": "MCPサーバーは、3つの主要な機能タイプを通じてAIアプリケーションに拡張機能を提供します。",
+        "types": {
+          "tools": {
+            "name": "ツール",
+            "description": "AIが操作を実行できる実行可能な関数",
+            "examples": "ファイル操作、API呼び出し、データベースクエリなど"
+          },
+          "resources": {
+            "name": "リソース",
+            "description": "AIにコンテキスト情報を提供する読み取り可能なデータソース",
+            "examples": "ファイル内容、データベースレコード、APIレスポンスなど"
+          },
+          "prompts": {
+            "name": "プロンプト",
+            "description": "構造化された相互作用方法を提供する事前定義されたプロンプトテンプレート",
+            "examples": "コードレビューテンプレート、ドキュメント生成テンプレートなど"
+          }
+        }
+      },
+      "configuration": {
+        "title": "設定セットアップ",
+        "description": "MCPサーバーの設定と使用方法",
+        "definition": "MCPサーバーの設定には3つのステップが必要です：インストール、設定、検証。",
+        "steps": {
+          "install": {
+            "step": "1. MCPサーバーをインストール",
+            "description": "npmや他のパッケージマネージャーを使用して必要なMCPサーバーをインストールします",
+            "command": "npm install -g @modelcontextprotocol/server-filesystem"
+          },
+          "configure": {
+            "step": "2. Gemini CLIを設定",
+            "description": "Gemini CLI設定ファイルにMCPサーバー設定を追加します",
+            "command": "gemini config mcp add filesystem"
+          },
+          "verify": {
+            "step": "3. 接続を検証",
+            "description": "MCPサーバーが正常に動作しているかテストします",
+            "command": "gemini mcp list"
+          }
+        }
+      }
+    },
+    "examples": {
+      "title": "実践的な例",
+      "filesystem": {
+        "title": "ファイルシステムサーバー",
+        "description": "ファイル操作にMCPファイルシステムサーバーを使用",
+        "steps": {
+          "install": "npm install -g @modelcontextprotocol/server-filesystem",
+          "installDesc": "ファイルシステムMCPサーバーをインストール",
+          "configure": "gemini config mcp add filesystem --path /your/project/path",
+          "configureDesc": "ファイルシステムサーバーパスを設定",
+          "use": "プロジェクト内のすべてのTypeScriptファイルの分析を手伝ってください",
+          "useDesc": "AIは指定されたパス内のファイルにアクセスして分析できるようになります"
+        }
+      },
+      "database": {
+        "title": "データベースサーバー",
+        "description": "クエリと分析のためにデータベースに接続",
+        "steps": {
+          "install": "npm install -g @modelcontextprotocol/server-sqlite",
+          "installDesc": "SQLite MCPサーバーをインストール",
+          "configure": "gemini config mcp add sqlite --db ./data.db",
+          "configureDesc": "データベース接続を設定",
+          "query": "ユーザーテーブルから最近登録された10人のユーザーをクエリ",
+          "queryDesc": "AIはSQLクエリを実行し、結果を分析できます"
+        }
+      }
+    },
+    "bestPractices": {
+      "title": "ベストプラクティス",
+      "security": {
+        "title": "セキュリティの考慮事項",
+        "content": "信頼できるMCPサーバーにのみ接続し、サーバー権限を定期的に確認し、機密データの露出を避けてください。"
+      },
+      "performance": {
+        "title": "パフォーマンス最適化",
+        "content": "サーバー数を合理的に設定し、リソース使用量を監視し、データ転送効率を最適化してください。"
+      },
+      "debugging": {
+        "title": "デバッグのヒント",
+        "content": "詳細ログモードを使用し、サーバーステータスを確認し、設定ファイル形式を検証してください。"
+      }
+    },
+    "nextSteps": {
+      "title": "次のステップ",
+      "description": "MCPプロトコルを理解したので、より高度な設定と統合方法を学び続けることができます：",
+      "advancedConfig": "高度な設定",
+      "integration": "統合ガイド",
+      "backToGuides": "ガイドに戻る"
+    }
+  },
+  "guidesCodeRefactoring": {
+    "title": "コードリファクタリングアシスタント",
+    "subtitle": "AIを使用して既存のコードを分析・リファクタリングする",
+    "description": "コード品質、可読性、保守性を向上させるためのインテリジェントなコードリファクタリングにGemini CLIを使用する方法を学びます。",
+    "overview": {
+      "title": "リファクタリング概要",
+      "description": "コードリファクタリングは、外部動作を変更することなく既存のコード構造を改善するプロセスです。Gemini CLIは、コードスメルの特定、パフォーマンスの最適化、コード品質の向上を支援する強力なAI支援リファクタリング機能を提供します。"
+    },
+    "typesTitle": "リファクタリングタイプ",
+    "typesDescription": "さまざまなタイプのコードリファクタリング技術について学ぶ",
+    "types": [
+      {
+        "icon": "structure",
+        "title": "構造的リファクタリング",
+        "description": "コードの組織とアーキテクチャを改善",
+        "techniques": [
+          {
+            "name": "メソッドの抽出"
+          },
+          {
+            "name": "クラスの抽出"
+          },
+          {
+            "name": "メソッドの移動"
+          },
+          {
+            "name": "変数の名前変更"
+          }
+        ]
+      },
+      {
+        "icon": "performance",
+        "title": "パフォーマンス最適化",
+        "description": "コード実行効率とリソース使用量を最適化",
+        "techniques": [
+          {
+            "name": "アルゴリズム最適化"
+          },
+          {
+            "name": "キャッシュ戦略"
+          },
+          {
+            "name": "メモリ管理"
+          },
+          {
+            "name": "並行性最適化"
+          }
+        ]
+      },
+      {
+        "icon": "maintainability",
+        "title": "保守性",
+        "description": "コードの可読性と保守性を向上",
+        "techniques": [
+          {
+            "name": "条件式の簡素化"
+          },
+          {
+            "name": "重複コードの除去"
+          },
+          {
+            "name": "命名の改善"
+          },
+          {
+            "name": "コメントの追加"
+          }
+        ]
+      },
+      {
+        "icon": "security",
+        "title": "セキュリティ強化",
+        "description": "潜在的なセキュリティ脆弱性を特定・修正",
+        "techniques": [
+          {
+            "name": "入力検証"
+          },
+          {
+            "name": "権限チェック"
+          },
+          {
+            "name": "データ暗号化"
+          },
+          {
+            "name": "エラーハンドリング"
+          }
+        ]
+      }
+    ],
+    "workflow": {
+      "title": "リファクタリングワークフロー",
+      "description": "コード品質を確保するための体系的なリファクタリングプロセスに従う",
+      "steps": [
+        {
+          "title": "コード分析",
+          "description": "AIを使用して既存のコードを分析し、リファクタリングの機会を特定",
+          "example": "# コード品質を分析\ngemini analyze --file src/main.js --type quality\n\n# コードスメルを検出\ngemini detect --smell --directory src/"
+        },
+        {
+          "title": "リファクタリング計画の作成",
+          "description": "分析結果に基づいて詳細なリファクタリング計画を策定",
+          "example": "# リファクタリング提案を生成\ngemini refactor --plan --file src/main.js\n\n# リファクタリングリスクを評価\ngemini assess --risk --changes planned"
+        },
+        {
+          "title": "リファクタリングの実行",
+          "description": "コード機能を維持しながら段階的にリファクタリング操作を実行",
+          "example": "# 自動リファクタリング\ngemini refactor --apply --file src/main.js\n\n# インタラクティブリファクタリング\ngemini refactor --interactive --directory src/"
+        },
+        {
+          "title": "検証とテスト",
+          "description": "リファクタリングされたコードが正しく機能し、良好なパフォーマンスを発揮することを確認",
+          "example": "# テストを実行\ngemini test --after-refactor\n\n# パフォーマンス比較\ngemini benchmark --before-after"
+        }
+      ]
+    },
+    "examplesTitle": "リファクタリング例",
+    "examplesDescription": "実際のコードリファクタリングケースを確認",
+    "beforeLabel": "前",
+    "afterLabel": "後",
+    "examples": [
+      {
+        "title": "関数の抽出",
+        "description": "複雑な関数をより小さく、焦点を絞った関数に分割",
+        "before": "function processUserData(users) {\n  const result = [];\n  for (let i = 0; i < users.length; i++) {\n    if (users[i].age >= 18 && users[i].active) {\n      const formatted = {\n        id: users[i].id,\n        name: users[i].name.toUpperCase(),\n        email: users[i].email.toLowerCase()\n      };\n      result.push(formatted);\n    }\n  }\n  return result;\n}",
+        "after": "function isEligibleUser(user) {\n  return user.age >= 18 && user.active;\n}\n\nfunction formatUser(user) {\n  return {\n    id: user.id,\n    name: user.name.toUpperCase(),\n    email: user.email.toLowerCase()\n  };\n}\n\nfunction processUserData(users) {\n  return users\n    .filter(isEligibleUser)\n    .map(formatUser);\n}"
+      },
+      {
+        "title": "条件の簡素化",
+        "description": "複雑な条件ロジックを簡素化",
+        "before": "function getDiscount(user) {\n  if (user.type === 'premium') {\n    if (user.yearsActive >= 5) {\n      return 0.2;\n    } else if (user.yearsActive >= 2) {\n      return 0.15;\n    } else {\n      return 0.1;\n    }\n  } else if (user.type === 'regular') {\n    if (user.yearsActive >= 3) {\n      return 0.05;\n    } else {\n      return 0;\n    }\n  }\n  return 0;\n}",
+        "after": "const DISCOUNT_RATES = {\n  premium: { 5: 0.2, 2: 0.15, 0: 0.1 },\n  regular: { 3: 0.05, 0: 0 }\n};\n\nfunction getDiscount(user) {\n  const rates = DISCOUNT_RATES[user.type];\n  if (!rates) return 0;\n  \n  const thresholds = Object.keys(rates)\n    .map(Number)\n    .sort((a, b) => b - a);\n  \n  const threshold = thresholds\n    .find(t => user.yearsActive >= t);\n  \n  return rates[threshold] || 0;\n}"
+      }
+    ],
+    "bestPracticesTitle": "リファクタリングベストプラクティス",
+    "bestPracticesDescription": "成功するリファクタリングのためのベストプラクティスに従う",
+    "bestPractices": [
+      {
+        "title": "小さなステップ",
+        "description": "リスクを減らし、ロールバックを容易にするため、大規模な一度のリファクタリングではなく、小さく頻繁なリファクタリングを行う。"
+      },
+      {
+        "title": "テストファースト",
+        "description": "リファクタリング前に適切なテストカバレッジを確保し、機能を検証するために直後にテストを実行する。"
+      },
+      {
+        "title": "バージョン管理",
+        "description": "明確な変更履歴を維持するため、各リファクタリングをバージョン管理システムにコミットする。"
+      },
+      {
+        "title": "チームコミュニケーション",
+        "description": "複数の協力者が関わるコードをリファクタリングする際は、事前にコミュニケーションを取り、チームの承認を得る。"
+      }
+    ],
+    "nextSteps": {
+      "title": "次のステップ",
+      "description": "コード品質関連のより多くのトピックを学び続ける",
+      "codeReview": "コードレビュー",
+      "advancedConfig": "高度な設定"
+    }
+  },
+  "guidesDocumentation": {
+    "hero": {
+      "title": "ドキュメント生成器",
+      "subtitle": "AIを使用して高品質なプロジェクトドキュメントを知的に生成する",
+      "intermediate": "中級",
+      "readingTime": "25分読了"
+    },
+    "overview": {
+      "title": "ドキュメント概要",
+      "description": "API ドキュメント、ユーザーマニュアル、技術仕様書などを含むプロジェクトドキュメントを自動的に生成・維持するためのGemini CLIの使用方法を学びます。"
+    },
+    "typesTitle": "ドキュメントタイプ",
+    "typesDescription": "さまざまなタイプのドキュメント生成方法について学ぶ",
+    "promptExample": "プロンプト例",
+    "features": "主要機能",
+    "types": [
+      {
+        "id": "api-docs",
+        "title": "APIドキュメント",
+        "description": "コードからAPIドキュメントを自動生成",
+        "color": "from-blue-500 to-indigo-600",
+        "example": {
+          "prompt": "@src/api/ このディレクトリ内のすべてのAPIファイルの完全なAPIドキュメントを生成し、エンドポイント説明、パラメータ説明、レスポンス形式、使用例を含める",
+          "features": [
+            "APIエンドポイントの自動抽出",
+            "パラメータ説明テーブルの生成",
+            "リクエスト/レスポンス例の包含",
+            "複数の認証方法のサポート",
+            "インタラクティブドキュメントの生成"
+          ]
+        }
+      },
+      {
+        "id": "readme",
+        "title": "READMEドキュメント",
+        "description": "プロジェクト説明ドキュメントの生成",
+        "color": "from-green-500 to-emerald-600",
+        "example": {
+          "prompt": "@package.json @src/ このプロジェクトの構造と機能を分析し、プロジェクト紹介、インストール手順、使用方法、貢献ガイドラインを含む完全なREADME.mdドキュメントを生成",
+          "features": [
+            "プロジェクト概要と機能",
+            "インストールと設定手順",
+            "使用例とチュートリアル",
+            "貢献ガイドライン",
+            "ライセンス情報"
+          ]
+        }
+      },
+      {
+        "id": "user-manual",
+        "title": "ユーザーマニュアル",
+        "description": "詳細なユーザーガイドの作成",
+        "color": "from-purple-500 to-pink-600",
+        "example": {
+          "prompt": "@src/components/ これらのコンポーネントに基づいてユーザーマニュアルを作成し、機能説明、使用手順、FAQ、トラブルシューティングを含める",
+          "features": [
+            "詳細な機能説明",
+            "ステップバイステップの操作ガイド",
+            "スクリーンショットと例",
+            "よくある質問",
+            "トラブルシューティングガイド"
+          ]
+        }
+      },
+      {
+        "id": "technical-spec",
+        "title": "技術仕様書",
+        "description": "技術アーキテクチャと設計ドキュメントの生成",
+        "color": "from-orange-500 to-red-600",
+        "example": {
+          "prompt": "@src/ @docs/architecture.md プロジェクトアーキテクチャを分析し、システム設計、データフロー、インターフェース定義、デプロイメント要件を含む技術仕様書を生成",
+          "features": [
+            "システムアーキテクチャ図",
+            "データフロー図",
+            "インターフェース仕様",
+            "デプロイメント要件",
+            "パフォーマンスメトリクス"
+          ]
+        }
+      }
+    ],
+    "workflow": {
+      "title": "ドキュメント生成ワークフロー",
+      "description": "高品質なドキュメントを生成するためのステップに従ってください",
+      "steps": [
+        {
+          "step": 1,
+          "title": "プロジェクト構造の分析",
+          "description": "AIにプロジェクトの全体構造と機能を理解させる",
+          "commands": [
+            "@. このプロジェクトの全体構造を分析",
+            "@package.json プロジェクトの依存関係と設定を説明",
+            "@README.md プロジェクトの基本情報を理解"
+          ]
+        },
+        {
+          "step": 2,
+          "title": "ドキュメントタイプの選択",
+          "description": "要件に基づいて適切なドキュメントタイプとテンプレートを選択",
+          "commands": [
+            "APIドキュメントを生成する必要があります",
+            "ユーザーマニュアルを作成してください",
+            "技術アーキテクチャドキュメントを生成"
+          ]
+        },
+        {
+          "step": 3,
+          "title": "初期ドキュメントの生成",
+          "description": "AIを使用してドキュメントの初期バージョンを生成",
+          "commands": [
+            "@src/api/ APIドキュメントを生成",
+            "@src/components/ コンポーネントドキュメントを作成",
+            "@docs/ 既存のドキュメントを更新"
+          ]
+        },
+        {
+          "step": 4,
+          "title": "レビューと最適化",
+          "description": "生成されたドキュメントをチェックし、必要な調整を行う",
+          "commands": [
+            "ドキュメントの完全性と正確性をチェック",
+            "ドキュメントの構造と形式を最適化",
+            "不足している例と説明を追加"
+          ]
+        }
+      ]
+    },
+    "practicalExamples": {
+      "title": "実践例",
+      "description": "具体的なドキュメント生成ケースを確認"
+    },
+    "examples": [
+      {
+        "title": "Reactコンポーネントドキュメント",
+        "description": "Reactコンポーネントの詳細ドキュメントを生成",
+        "steps": [
+          {
+            "command": "@src/components/Button.tsx このボタンコンポーネントのドキュメントを生成",
+            "description": "コンポーネントのprops、使用法、例を分析"
+          },
+          {
+            "command": "使用例とベストプラクティスを追加",
+            "description": "実際の使用ケースとコード例を補完"
+          },
+          {
+            "command": "Storybookストーリーファイルを生成",
+            "description": "インタラクティブなコンポーネントデモを作成"
+          }
+        ]
+      },
+      {
+        "title": "REST APIドキュメント",
+        "description": "REST APIのOpenAPI仕様を生成",
+        "steps": [
+          {
+            "command": "@src/routes/ すべてのAPIルートを分析",
+            "description": "エンドポイント、パラメータ、レスポンス形式を抽出"
+          },
+          {
+            "command": "OpenAPI 3.0仕様ファイルを生成",
+            "description": "標準APIドキュメント形式を作成"
+          },
+          {
+            "command": "認証とエラーハンドリングの説明を追加",
+            "description": "セキュリティとエラーハンドリング情報を補完"
+          }
+        ]
+      }
+    ],
+    "bestPracticesTitle": "ベストプラクティス",
+    "bestPracticesDescription": "ドキュメント生成の重要な考慮事項",
+    "bestPractices": [
+      {
+        "type": "success",
+        "title": "ドキュメントの同期を保つ",
+        "content": "ドキュメントがコードと同期を保つよう定期的に更新し、コード変更時にドキュメントを更新することを推奨します。"
+      },
+      {
+        "type": "info",
+        "title": "テンプレートと標準の使用",
+        "content": "読みやすさと専門性を向上させるため、一貫したドキュメントテンプレートと形式標準を採用してください。"
+      },
+      {
+        "type": "warning",
+        "title": "生成コンテンツの検証",
+        "content": "AI生成ドキュメントは技術詳細の正確性と完全性を確保するため、人間によるレビューが必要です。"
+      },
+      {
+        "type": "success",
+        "title": "実践例の追加",
+        "content": "ユーザーの理解を助けるため、ドキュメントに実際のコード例と使用ケースを含めてください。"
+      }
+    ],
+    "nextSteps": {
+      "title": "次のステップ",
+      "description": "ドキュメント生成技術をマスターしたので、他の実践的なスキルを学び続けることができます：",
+      "codeRefactoring": "コードリファクタリング",
+      "codeReview": "コードレビュー",
+      "backToGuides": "ガイドに戻る"
+    }
+  },
+  "guidesCodeReview": {
+    "title": "コードレビューアシスタント",
+    "subtitle": "コード品質検査にAIを使用する",
+    "description": "コード品質、セキュリティ、チーム協力効率を向上させるための包括的なコードレビューにAIの力を活用します。",
+    "overview": {
+      "title": "レビュー概要",
+      "description": "コードレビューはソフトウェア開発プロセスの重要な部分であり、潜在的な問題を特定し、コード品質を向上させるためにコードを体系的にチェックします。Gemini CLIは、問題を迅速に特定し、改善提案を提供するのに役立つインテリジェントなコードレビュー機能を提供します。"
+    },
+    "typesTitle": "レビュータイプ",
+    "typesDescription": "さまざまなタイプのコードレビューフォーカスについて学ぶ",
+    "types": [
+      {
+        "icon": "security",
+        "title": "セキュリティレビュー",
+        "description": "コード内のセキュリティ脆弱性とリスクをチェック",
+        "checks": [
+          {
+            "name": "SQLインジェクション検出"
+          },
+          {
+            "name": "XSS脆弱性スキャン"
+          },
+          {
+            "name": "権限検証チェック"
+          },
+          {
+            "name": "機密情報漏洩"
+          }
+        ]
+      },
+      {
+        "icon": "bugs",
+        "title": "バグ検出",
+        "description": "潜在的なバグと論理エラーを特定",
+        "checks": [
+          {
+            "name": "ヌルポインタ例外"
+          },
+          {
+            "name": "配列境界外アクセス"
+          },
+          {
+            "name": "リソースリーク"
+          },
+          {
+            "name": "デッドロック検出"
+          }
+        ]
+      },
+      {
+        "icon": "performance",
+        "title": "パフォーマンス分析",
+        "description": "コードパフォーマンスと最適化機会を分析",
+        "checks": [
+          {
+            "name": "アルゴリズム複雑度"
+          },
+          {
+            "name": "メモリ使用量"
+          },
+          {
+            "name": "データベースクエリ"
+          },
+          {
+            "name": "キャッシュ戦略"
+          }
+        ]
+      },
+      {
+        "icon": "style",
+        "title": "コードスタイル",
+        "description": "コード標準と一貫性をチェック",
+        "checks": [
+          {
+            "name": "命名規則"
+          },
+          {
+            "name": "コードフォーマット"
+          },
+          {
+            "name": "コメント品質"
+          },
+          {
+            "name": "関数の長さ"
+          }
+        ]
+      }
+    ],
+    "workflow": {
+      "title": "レビューワークフロー",
+      "description": "体系的なコードレビュープロセスに従う",
+      "steps": [
+        {
+          "title": "レビュー準備",
+          "description": "レビュールールとチェック範囲を設定",
+          "example": "# レビュールールを設定\ngemini review config --rules security,performance\n\n# チェック範囲を設定\ngemini review setup --files src/ --exclude tests/"
+        },
+        {
+          "title": "レビュー実行",
+          "description": "自動化されたコードレビューを実行",
+          "example": "# 包括的レビュー\ngemini review --comprehensive --output report.json\n\n# 増分レビュー\ngemini review --diff HEAD~1..HEAD"
+        },
+        {
+          "title": "結果分析",
+          "description": "レビューレポートを表示し、問題を分析",
+          "example": "# レビューレポートを表示\ngemini review report --format html\n\n# 重要度でソート\ngemini review list --severity high"
+        },
+        {
+          "title": "問題修正",
+          "description": "提案に基づいて特定された問題を修正",
+          "example": "# 自動修正\ngemini review fix --auto --safe-only\n\n# インタラクティブ修正\ngemini review fix --interactive"
+        }
+      ]
+    },
+    "checkpointsTitle": "レビューチェックポイント",
+    "checkpointsDescription": "重要なコードレビューチェック項目",
+    "checkpoints": [
+      {
+        "severity": "high",
+        "title": "セキュリティ脆弱性",
+        "description": "セキュリティ問題につながる可能性のあるコード欠陥",
+        "items": [
+          {
+            "text": "検証されていないユーザー入力"
+          },
+          {
+            "text": "ハードコードされたパスワードやキー"
+          },
+          {
+            "text": "安全でない暗号化アルゴリズム"
+          },
+          {
+            "text": "権限バイパス脆弱性"
+          }
+        ]
+      },
+      {
+        "severity": "high",
+        "title": "重大なエラー",
+        "description": "プログラムクラッシュを引き起こす可能性のある深刻な問題",
+        "items": [
+          {
+            "text": "ヌルポインタ参照"
+          },
+          {
+            "text": "配列境界外アクセス"
+          },
+          {
+            "text": "メモリリーク"
+          },
+          {
+            "text": "デッドロックリスク"
+          }
+        ]
+      },
+      {
+        "severity": "medium",
+        "title": "パフォーマンス問題",
+        "description": "プログラムパフォーマンスに影響するコード問題",
+        "items": [
+          {
+            "text": "非効率なアルゴリズム実装"
+          },
+          {
+            "text": "不要なデータベースクエリ"
+          },
+          {
+            "text": "キャッシュメカニズムの欠如"
+          },
+          {
+            "text": "不適切なリソース使用"
+          }
+        ]
+      },
+      {
+        "severity": "low",
+        "title": "コード品質",
+        "description": "コードの可読性と保守性に影響する問題",
+        "items": [
+          {
+            "text": "関数が長すぎるか複雑すぎる"
+          },
+          {
+            "text": "非標準の変数命名"
+          },
+          {
+            "text": "必要なコメントの欠如"
+          },
+          {
+            "text": "コードの重複"
+          }
+        ]
+      }
+    ],
+    "aiFeatures": {
+      "title": "AIレビュー機能",
+      "description": "人工知能を活用してコードレビューの効率性と精度を向上させる",
+      "automated": {
+        "title": "自動検出",
+        "features": [
+          {
+            "name": "インテリジェント脆弱性スキャン"
+          },
+          {
+            "name": "パフォーマンスボトルネック特定"
+          },
+          {
+            "name": "コードスメル検出"
+          },
+          {
+            "name": "ベストプラクティス提案"
+          }
+        ]
+      },
+      "intelligent": {
+        "title": "インテリジェント分析",
+        "features": [
+          {
+            "name": "コンテキスト理解"
+          },
+          {
+            "name": "ビジネスロジック分析"
+          },
+          {
+            "name": "アーキテクチャパターン認識"
+          },
+          {
+            "name": "パーソナライズされた推奨事項"
+          }
+        ]
+      }
+    },
+    "bestPracticesTitle": "レビューベストプラクティス",
+    "bestPracticesDescription": "コードレビューの効果を向上させるためのベストプラクティスに従う",
+    "bestPractices": [
+      {
+        "title": "定期的なレビュー",
+        "description": "定期的なコードレビューメカニズムを確立し、プロジェクト完了まで待ってレビューを行わないでください。"
+      },
+      {
+        "title": "重要な領域に焦点を当てる",
+        "description": "セキュリティ、パフォーマンス、保守性を優先し、詳細に過度に焦点を当てることを避けてください。"
+      },
+      {
+        "title": "チーム協力",
+        "description": "チームメンバーがレビュープロセスに参加することを奨励し、知識と経験を共有してください。"
+      },
+      {
+        "title": "継続的改善",
+        "description": "レビュー結果に基づいて開発プロセスとコーディング標準を継続的に改善してください。"
+      }
+    ],
+    "nextSteps": {
+      "title": "次のステップ",
+      "description": "より多くの開発ツールとベストプラクティスを学び続ける",
+      "integration": "ツール統合",
+      "advancedConfig": "高度な設定"
+    }
+  },
+  "terms": {
+    "title": "利用規約",
+    "subtitle": "当プラットフォームをご利用になる前に、これらの規約を注意深くお読みください。当サービスをご利用いただくことで、これらの規約に同意したものとみなされます。",
+    "lastUpdated": "最終更新",
+    "acceptance": {
+      "title": "1. 規約の承諾",
+      "content1": "Gemini CLI学習プラットフォーム（「サービス」）にアクセスし、これを使用することにより、お客様はこの契約の条項および規定に拘束されることを受け入れ、同意するものとします。上記に従うことに同意されない場合は、このサービスをご利用にならないでください。",
+      "content2": "これらの利用規約（「規約」）は、Gemini CLI学習プラットフォームチームが運営するgeminicli.cloudにある当ウェブサイト（「サービス」）のご利用を規定します。"
+    },
+    "service": {
+      "title": "2. サービスの説明",
+      "description": "当サービスは、GoogleのGemini CLIツールに関連する教育コンテンツ、チュートリアル、ドキュメント、リソースを提供します。これには以下が含まれます：",
+      "features": [
+        "インストールガイドとセットアップ手順",
+        "使用チュートリアルとベストプラクティス",
+        "コード例と実践的なデモンストレーション",
+        "コミュニティ貢献のコンテンツとディスカッション",
+        "多言語サポートとローカライゼーション"
+      ],
+      "important": "重要",
+      "disclaimer": "これはコミュニティによって作成された非公式の教育プラットフォームです。私たちはGoogle Inc.と提携または承認されていません。"
+    },
+    "responsibilities": {
+      "title": "3. ユーザーの責任",
+      "description": "当サービスをご利用いただくことで、お客様は以下に同意するものとします：",
+      "items": [
+        "合法的な目的のためにのみサービスを使用すること",
+        "当システムへの不正アクセスを試みないこと",
+        "サービスまたはサーバーに干渉または妨害しないこと",
+        "サービスに過度にアクセスするために自動化システムを使用しないこと",
+        "すべてのコンテンツの知的財産権を尊重すること",
+        "コンテンツを投稿する際に正確な情報を提供すること",
+        "ディスカッションと投稿においてコミュニティガイドラインに従うこと"
+      ]
+    },
+    "intellectualProperty": {
+      "title": "4. 知的財産",
+      "ourContent": {
+        "title": "当サイトのコンテンツ",
+        "description": "このウェブサイトのコンテンツ（テキスト、グラフィック、画像、ロゴ、ソフトウェアを含むがこれらに限定されない）は、Gemini CLI学習プラットフォームまたはそのコンテンツ提供者の財産であり、著作権およびその他の知的財産法によって保護されています。"
+      },
+      "thirdParty": {
+        "title": "第三者コンテンツ",
+        "description": "一部のコンテンツは、Googleの公式Gemini CLIドキュメントと例に基づいているか、それらから派生したものであり、Googleのライセンス条項の対象となります。私たちはすべての第三者の知的財産権を尊重し、認めています。"
+      },
+      "userContributions": {
+        "title": "ユーザー投稿",
+        "description": "当プラットフォームにコンテンツを投稿することにより（GitHubまたはその他の手段を通じて）、お客様は教育目的でお客様の投稿を使用、修正、配布するための非独占的でロイヤリティフリーのライセンスを当方に付与するものとします。"
+      }
+    },
+    "disclaimers": {
+      "title": "5. 免責事項",
+      "educational": {
+        "title": "教育目的",
+        "description": "このプラットフォームは教育目的のためにのみ提供されています。正確性を期すよう努めていますが、情報の完全性、信頼性、正確性について保証はいたしません。"
+      },
+      "affiliation": {
+        "title": "公式な提携なし",
+        "description": "このウェブサイトは、Google Inc.と公式に提携、承認、またはスポンサーされていません。Gemini CLIはGoogle Inc.の商標です。"
+      },
+      "risk": {
+        "title": "自己責任での使用",
+        "description": "このプラットフォームで提供される情報とツールは、お客様の責任でご使用ください。当チュートリアルに従ったり、提供された情報を使用したりすることで生じる可能性のある損害や問題について、当方は責任を負いません。"
+      }
+    },
+    "liability": {
+      "title": "6. 責任の制限",
+      "description": "いかなる場合においても、Gemini CLI学習プラットフォーム、その運営者または貢献者は、利益、データ、使用、のれん、またはその他の無形の損失を含むがこれらに限定されない間接的、偶発的、特別、結果的、または懲罰的損害について責任を負いません。これらの損害は以下から生じるものです：",
+      "items": [
+        "サービスのご利用またはご利用いただけないこと",
+        "当サーバーへの不正アクセスまたは使用",
+        "サービスとの間の送信の中断または停止",
+        "バグ、ウイルス、または類似の有害なコンポーネント",
+        "コンテンツまたは情報のエラーまたは省略"
+      ]
+    },
+    "privacy": {
+      "title": "7. プライバシー",
+      "description": "お客様のプライバシーは当方にとって重要です。当サービスのご利用も規定するプライバシーポリシーをご確認いただき、当方の慣行をご理解ください。",
+      "linkText": "プライバシーポリシーを読む"
+    },
+    "termination": {
+      "title": "8. 終了",
+      "description": "当方は、規約違反を含むがこれに限定されない理由により、事前の通知や責任なしに、お客様のサービスへのアクセスを即座に終了または停止することができます。終了時に、サービスを使用するお客様の権利は即座に停止されます。"
+    },
+    "changes": {
+      "title": "9. 規約の変更",
+      "description": "当方は、独自の裁量により、いつでもこれらの規約を修正または置き換える権利を留保します。改訂が重要な場合、新しい規約が有効になる前に少なくとも30日前に通知するよう努めます。"
+    },
+    "governingLaw": {
+      "title": "10. 準拠法",
+      "description": "これらの規約は、法の抵触に関する規定に関係なく、サービスが運営される管轄区域の法律によって解釈され、規定されるものとします。"
+    },
+    "externalLinks": {
+      "title": "11. 外部リンク",
+      "description": "当サービスには、当方が所有または管理していない第三者のウェブサイトまたはサービスへのリンクが含まれる場合があります。当方は、第三者のウェブサイトまたはサービスのコンテンツ、プライバシーポリシー、または慣行について管理せず、責任を負いません。"
+    },
+    "contact": {
+      "title": "12. 連絡先情報",
+      "description": "これらの利用規約についてご質問がございましたら、お気軽にお問い合わせください：",
+      "email": "メール",
+      "contactForm": "お問い合わせフォーム",
+      "github": "GitHub",
+      "reportIssues": "問題を報告",
+      "website": "ウェブサイト"
+    },
+    "acknowledgment": {
+      "title": "13. 承認",
+      "description": "当サービスをご利用いただくことで、お客様はこれらの利用規約を読み、これらに拘束されることに同意したことを認めるものとします。これらの規約に同意されない場合は、当サービスをご利用にならないでください。"
+    },
+    "cta": {
+      "title": "これらの規約についてご質問がありますか？",
+      "description": "利用規約についてご質問がございましたら、お気軽にお問い合わせください。喜んでお答えいたします。",
+      "contactUs": "お問い合わせ",
+      "privacyPolicy": "プライバシーポリシー"
+    }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "ぜひお聞かせください！ご質問、ご提案、または貢献をお考えの方は、コミュニティとつながる方法がいくつかあります。",
+    "howCanWeHelp": {
+      "title": "どのようにお手伝いできますか？",
+      "subtitle": "ニーズに最も適したオプションをお選びください"
+    },
+    "options": {
+      "reportIssues": {
+        "title": "問題を報告",
+        "description": "バグ、リンク切れ、技術的な問題を見つけましたか？修正できるようお知らせください。",
+        "buttonText": "GitHubで報告"
+      },
+      "suggestImprovements": {
+        "title": "改善提案",
+        "description": "新しいコンテンツ、機能、またはプラットフォームの改善についてアイデアはありますか？",
+        "buttonText": "アイデアを共有"
+      },
+      "joinDiscussions": {
+        "title": "ディスカッションに参加",
+        "description": "コミュニティディスカッションに参加し、質問をして、経験を共有してください。",
+        "buttonText": "コミュニティに参加"
+      },
+      "contributeContent": {
+        "title": "コンテンツ貢献",
+        "description": "チュートリアル、例、翻訳を貢献したいですか？貢献を歓迎します！",
+        "buttonText": "貢献ガイド"
+      }
+    },
+    "faq": {
+      "title": "よくある質問",
+      "subtitle": "よくある質問への迅速な回答",
+      "questions": {
+        "affiliation": {
+          "question": "このウェブサイトはGoogleと公式に提携していますか？",
+          "answer": "いいえ、これは非公式のコミュニティ主導の学習プラットフォームです。GoogleのGemini CLI公式ドキュメントに基づいてコンテンツを作成していますが、Google Inc.と提携または承認されていません。"
+        },
+        "contribute": {
+          "question": "プラットフォームにどのように貢献できますか？",
+          "answer": "貢献を歓迎します！問題の報告、改善提案、コンテンツ貢献、翻訳支援によってお手伝いいただけます。詳細については",
+          "linkText": "貢献ガイド",
+          "answerEnd": "をご確認ください。"
+        },
+        "reportError": {
+          "question": "ドキュメントでエラーを見つけました。どのように報告すればよいですか？",
+          "answer": "エラーや問題は",
+          "linkText": "GitHub Issuesページ",
+          "answerEnd": "で報告してください。エラーとそれを見つけた場所について可能な限り詳細を含めてください。"
+        },
+        "requestContent": {
+          "question": "新しいチュートリアルやコンテンツをリクエストできますか？",
+          "answer": "もちろんです！新しいトピックやコンテンツの提案を常に求めています。",
+          "linkText": "GitHub Discussions",
+          "answerEnd": "でアイデアを共有してください。"
+        },
+        "getHelp": {
+          "question": "Gemini CLIでヘルプが必要です。どこに行けばよいですか？",
+          "answer": "",
+          "installationLink": "インストールガイド",
+          "and": "と",
+          "guidesLink": "使用ガイド",
+          "middle": "から始めてください。まだヘルプが必要な場合は、",
+          "faqLink": "FAQセクション",
+          "answerEnd": "をご覧いただくか、コミュニティディスカッションで質問してください。"
+        }
+      }
+    },
+    "responseTime": {
+      "title": "応答時間",
+      "description": "お問い合わせにお答えするよう努めています。一般的な応答時間は以下の通りです：",
+      "bugReports": {
+        "time": "24-48時間",
+        "label": "バグレポート"
+      },
+      "featureRequests": {
+        "time": "3-5日",
+        "label": "機能リクエスト"
+      },
+      "contentContributions": {
+        "time": "1-2週間",
+        "label": "コンテンツ貢献"
+      }
+    },
+    "guidelines": {
+      "title": "コミュニティガイドライン",
+      "subtitle": "すべての人にとって歓迎的で役立つコミュニティ作りにご協力ください",
+      "respectful": {
+        "title": "敬意を持って",
+        "points": [
+          "すべてのコミュニティメンバーを親切さと敬意を持って扱う",
+          "建設的な批判を提供し、個人攻撃を避ける",
+          "多様な視点と経験レベルを歓迎する",
+          "忍耐強く、新しいメンバーを助ける意欲を持つ"
+        ]
+      },
+      "helpful": {
+        "title": "役立つように",
+        "points": [
+          "明確で詳細な質問をする",
+          "問題を報告する際は再現手順を提供する",
+          "知識と経験を他の人と共有する",
+          "他の人の貢献を認め、感謝する"
+        ]
+      }
+    },
+    "cta": {
+      "title": "今日から始めましょう！",
+      "description": "コミュニティに参加して、Gemini CLIの未来を形作るお手伝いをしてください。",
+      "joinDiscussions": "ディスカッションに参加",
+      "startContributing": "貢献を開始"
+    }
+  },
+  "migrationGuide": {
+    "metadata": {
+      "title": "移行ガイド - Gemini CLI ドキュメント",
+      "description": "古いバージョンから最新のGemini CLIへのアップグレードのための完全な移行ガイド。破壊的変更、設定の更新、ベストプラクティスを含みます。"
+    },
+    "title": "移行ガイド",
+    "subtitle": "古いバージョンから最新のGemini CLIへのアップグレード",
+    "overview": {
+      "title": "移行概要",
+      "description": "このガイドは、Gemini CLIの古いバージョンから最新バージョンへの移行をサポートします。破壊的変更、設定の更新をカバーし、スムーズな移行のためのステップバイステップの手順を提供します。",
+      "currentVersionLabel": "現在のバージョン",
+      "currentVersion": "2.0.0",
+      "supportedMigrationsLabel": "サポートされる移行",
+      "supportedVersions": "このガイドはバージョン1.xから2.0.0への移行をカバーします"
+    },
+    "versionMatrix": {
+      "title": "バージョン互換性マトリックス",
+      "subtitle": "現在のバージョンに適用される移行パスを確認してください",
+      "estimatedTimeLabel": "推定時間",
+      "breakingChangesLabel": "破壊的変更",
+      "versions": [
+        {
+          "from": "1.0.x - 1.2.x",
+          "to": "2.0.0",
+          "difficulty": "重大",
+          "estimatedTime": "30-60分",
+          "breakingChanges": "高"
+        },
+        {
+          "from": "1.3.x - 1.5.x",
+          "to": "2.0.0",
+          "difficulty": "中程度",
+          "estimatedTime": "15-30分",
+          "breakingChanges": "中"
+        },
+        {
+          "from": "1.6.x - 1.9.x",
+          "to": "2.0.0",
+          "difficulty": "軽微",
+          "estimatedTime": "5-15分",
+          "breakingChanges": "低"
+        }
+      ]
+    },
+    "breakingChanges": {
+      "title": "v2.0.0での破壊的変更",
+      "subtitle": "既存の設定に影響を与える可能性のある重要な変更",
+      "impactLabel": "影響レベル",
+      "migrationLabel": "移行",
+      "changes": [
+        {
+          "category": "設定",
+          "title": "設定ファイル形式",
+          "description": "設定ファイル形式が、より良い可読性とコメントサポートのためにJSONからYAMLに変更されました。",
+          "impact": "高",
+          "migration": "内蔵の移行ツールを使用：gemini config migrate",
+          "beforeLabel": "変更前 (v1.x)",
+          "afterLabel": "変更後 (v2.0)",
+          "beforeCode": "{\n  \"api_key\": \"your-key\",\n  \"model\": \"gemini-pro\"\n}",
+          "afterCode": "api_key: your-key\nmodel: gemini-pro\n# コメントがサポートされました！"
+        },
+        {
+          "category": "コマンド",
+          "title": "コマンド構造の変更",
+          "description": "一貫性のために一部のコマンドが名前変更または再構築されました。",
+          "impact": "中",
+          "migration": "スクリプトとエイリアスを更新してください",
+          "commandChangesLabel": "コマンドの変更",
+          "commandChanges": [
+            { "old": "gemini chat", "new": "gemini ask" },
+            { "old": "gemini generate", "new": "gemini create" },
+            { "old": "gemini config show", "new": "gemini config list" }
+          ]
+        },
+        {
+          "category": "API",
+          "title": "APIキー管理",
+          "description": "APIキーは暗号化を使用したより安全な形式で保存されるようになりました。",
+          "impact": "低",
+          "migration": "再実行：gemini config set api-key YOUR_KEY",
+          "note": "既存のAPIキーは初回実行時に自動的に移行されます"
+        }
+      ]
+    },
+    "migrationSteps": {
+      "title": "ステップバイステップ移行",
+      "subtitle": "Gemini CLI v2.0.0への移行にはこれらのステップに従ってください",
+      "commandsLabel": "コマンド：",
+      "verificationLabel": "検証：",
+      "steps": [
+        {
+          "title": "設定をバックアップ",
+          "description": "移行を開始する前に現在の設定のバックアップを作成してください。",
+          "commands": [
+            "gemini config list > gemini-config-backup.txt",
+            "cp ~/.gemini/config.json ~/.gemini/config.json.backup"
+          ],
+          "note": "これにより、必要に応じて設定を復元できます。"
+        },
+        {
+          "title": "Gemini CLIを更新",
+          "description": "Gemini CLIの最新バージョンをインストールしてください。",
+          "commands": [
+            "npm update -g @google/generative-ai-cli"
+          ],
+          "verification": "gemini --version"
+        },
+        {
+          "title": "移行ツールを実行",
+          "description": "内蔵の移行ツールを使用して設定を更新してください。",
+          "commands": [
+            "gemini config migrate"
+          ],
+          "note": "これにより設定が自動的に新しい形式に変換されます。"
+        },
+        {
+          "title": "設定を検証",
+          "description": "設定が正しく移行されたことを確認してください。",
+          "commands": [
+            "gemini config list",
+            "gemini ask \"こんにちは、移行テスト\""
+          ],
+          "note": "すべての設定が保持され、CLIが期待通りに動作することを確認してください。"
+        },
+        {
+          "title": "スクリプトとエイリアスを更新",
+          "description": "古いコマンド構文を使用するスクリプトやエイリアスを更新してください。",
+          "note": "必要な具体的な更新については、上記のコマンド変更セクションを参照してください。"
+        }
+      ]
+    },
+    "troubleshooting": {
+      "title": "移行トラブルシューティング",
+      "subtitle": "一般的な問題とその解決策",
+      "symptomsLabel": "症状：",
+      "solutionsLabel": "解決策：",
+      "issues": [
+        {
+          "problem": "設定移行の失敗",
+          "symptoms": [
+            "エラー：設定を移行できません",
+            "設定ファイルが見つかりません"
+          ],
+          "solutions": [
+            "~/.geminiディレクトリへの書き込み権限があることを確認してください",
+            "古い設定ファイルが存在するか確認：ls ~/.gemini/",
+            "手動移行を試行：gemini config migrate --force"
+          ]
+        },
+        {
+          "problem": "移行後にコマンドが動作しない",
+          "symptoms": [
+            "コマンドが見つからないエラー",
+            "予期しない動作"
+          ],
+          "solutions": [
+            "シェルキャッシュをクリア：hash -r",
+            "ターミナルセッションを再起動",
+            "ドキュメントで新しいコマンド構文を確認"
+          ]
+        },
+        {
+          "problem": "APIキーが動作しない",
+          "symptoms": [
+            "認証エラー",
+            "無効なAPIキーメッセージ"
+          ],
+          "solutions": [
+            "APIキーを再設定：gemini config set api-key YOUR_KEY",
+            "キーが正しいことを確認：gemini config get api-key",
+            "Google AI StudioでAPIキーの権限を確認"
+          ]
+        }
+      ]
+    },
+    "rollback": {
+      "title": "ロールバック手順",
+      "subtitle": "必要に応じて以前のバージョンに戻す方法",
+      "warning": "通常の動作を妨げる重大な問題が発生した場合のみロールバックを使用してください。",
+      "steps": [
+        "現在のバージョンをアンインストール：npm uninstall -g @google/generative-ai-cli",
+        "以前のバージョンをインストール：npm install -g @google/generative-ai-cli@1.9.0",
+        "設定を復元：cp ~/.gemini/config.json.backup ~/.gemini/config.json",
+        "ロールバックを確認：gemini --version"
+      ]
+    },
+    "postMigration": {
+      "title": "移行後のステップ",
+      "subtitle": "移行成功後の推奨アクション",
+      "learnMoreLabel": "詳細を見る",
+      "recommendations": [
+        {
+          "title": "ドキュメントの更新",
+          "description": "新しいコマンド構文を反映するために、内部ドキュメントやチームガイドを更新してください。",
+          "priority": "中"
+        },
+        {
+          "title": "自動化スクリプトのテスト",
+          "description": "自動化スクリプトとCI/CDパイプラインを実行して、新しいバージョンで動作することを確認してください。",
+          "priority": "高"
+        },
+        {
+          "title": "新機能の探索",
+          "description": "v2.0.0の新機能と改善点をチェックしてください。",
+          "priority": "低",
+          "link": "/docs/changelog"
+        },
+        {
+          "title": "バックアップのクリーンアップ",
+          "description": "すべてが正常に動作することを確認した後、バックアップファイルを削除できます。",
+          "priority": "低"
+        }
+      ]
+    },
+    "footer": {
+      "title": "移行でお困りですか？",
+      "description": "移行中に問題が発生した場合、コミュニティがサポートします。",
+      "getSupportButton": "サポートを受ける",
+      "troubleshootingButton": "トラブルシューティングガイドを見る"
+    }
+  }
+}

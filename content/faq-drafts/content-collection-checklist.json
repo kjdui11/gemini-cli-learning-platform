@@ -1,0 +1,66 @@
+{
+  "title": "FAQ Content Collection Checklist",
+  "legalCompliance": {
+    "required": [
+      "✅ Content is rewritten in original language",
+      "✅ Sources are properly attributed",
+      "✅ Original value is added to each answer",
+      "✅ Fair use principles are followed",
+      "✅ No direct copying of substantial portions"
+    ],
+    "recommended": [
+      "📝 Include personal experience and insights",
+      "🔗 Link back to original sources",
+      "💡 Add practical examples and use cases",
+      "🎯 Focus on user problems, not just features"
+    ]
+  },
+  "contentSources": {
+    "official": {
+      "name": "Official Documentation",
+      "url": "https://github.com/google-gemini/gemini-cli/blob/main/docs/",
+      "approach": "Extract concepts, rewrite explanations, add practical context",
+      "examples": [
+        "Installation steps → Troubleshooting guide",
+        "Command reference → Usage scenarios",
+        "Configuration options → Best practices"
+      ]
+    },
+    "community": {
+      "name": "Community Discussions",
+      "sources": [
+        "GitHub Issues (closed, with solutions)",
+        "Stack Overflow questions",
+        "Reddit discussions",
+        "Discord/Slack conversations"
+      ],
+      "approach": "Identify common problems, create comprehensive solutions"
+    },
+    "original": {
+      "name": "Original Content",
+      "sources": [
+        "Personal testing and experimentation",
+        "User feedback from your website",
+        "Integration experiences",
+        "Performance observations"
+      ],
+      "approach": "Document real-world usage patterns and solutions"
+    }
+  },
+  "qualityStandards": {
+    "content": [
+      "Each answer solves a real user problem",
+      "Solutions are tested and verified",
+      "Code examples are included where helpful",
+      "Answers are beginner-friendly but comprehensive",
+      "Related questions are cross-referenced"
+    ],
+    "seo": [
+      "Questions use natural language patterns",
+      "Keywords are naturally integrated",
+      "Content is scannable with clear structure",
+      "Meta descriptions are compelling",
+      "Internal linking is strategic"
+    ]
+  }
+}

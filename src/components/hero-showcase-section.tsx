@@ -1,8 +1,12 @@
+'use client';
+
 import Link from 'next/link'
 import { ArrowRightIcon } from '@heroicons/react/24/outline'
 import GeminiLogo from './gemini-logo'
+import { useTranslation } from '@/hooks/useTranslation'
 
 export default function HeroShowcaseSection() {
+  const { t } = useTranslation();
   return (
     <div className="bg-gray-900 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -11,11 +15,10 @@ export default function HeroShowcaseSection() {
             <GeminiLogo className="h-20 w-20" />
           </div>
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            您的终端 AI 助手
+            {t('heroShowcase.title')}
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Gemini CLI 将 Google 最先进的 AI 技术直接集成到您的命令行中，
-            为开发者提供无与伦比的智能编程体验。
+            {t('heroShowcase.description')}
           </p>
         </div>
         

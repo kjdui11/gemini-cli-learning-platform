@@ -1,0 +1,74 @@
+{
+  "title": "GitHub Issues Analysis Template",
+  "instructions": [
+    "1. Visit: https://github.com/google-gemini/gemini-cli/issues",
+    "2. Filter by: is:issue is:closed label:question",
+    "3. Look for recurring themes and problems",
+    "4. Manually extract and rewrite common issues",
+    "5. Always add original value and context"
+  ],
+  "categories": [
+    {
+      "name": "Installation Issues",
+      "searchTerms": [
+        "install",
+        "npm",
+        "node",
+        "permission"
+      ],
+      "commonPatterns": [
+        "Permission denied errors",
+        "Node.js version compatibility",
+        "Global vs local installation",
+        "Windows-specific issues"
+      ]
+    },
+    {
+      "name": "Authentication Problems",
+      "searchTerms": [
+        "auth",
+        "login",
+        "api key",
+        "google"
+      ],
+      "commonPatterns": [
+        "OAuth flow issues",
+        "API key configuration",
+        "Account switching",
+        "Token expiration"
+      ]
+    },
+    {
+      "name": "Usage Questions",
+      "searchTerms": [
+        "how to",
+        "usage",
+        "command",
+        "help"
+      ],
+      "commonPatterns": [
+        "First-time usage confusion",
+        "Command syntax questions",
+        "File format support",
+        "Output formatting"
+      ]
+    }
+  ],
+  "template": {
+    "id": "generated-from-issue-{number}",
+    "question": "[Rewrite the issue title as a clear question]",
+    "answer": "[Provide a comprehensive answer based on the solution, but rewritten in your own words]",
+    "category": "[Choose appropriate category]",
+    "difficulty": "[beginner|intermediate|advanced]",
+    "tags": [
+      "[relevant-tags]"
+    ],
+    "sources": [
+      {
+        "type": "community",
+        "url": "[GitHub issue URL]",
+        "description": "Based on community issue and solution"
+      }
+    ]
+  }
+}

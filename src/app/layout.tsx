@@ -4,6 +4,7 @@ import "./globals.css";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { generateMetadata as generateSEOMetadata, structuredData, organizationStructuredData } from "@/lib/seo";
+import LanguageDetector from '@/components/LanguageDetector';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-CN">
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* Google tag (gtag.js) - 按照官方要求添加 */}
         <>
@@ -58,13 +59,15 @@ export default function RootLayout({
             __html: JSON.stringify(organizationStructuredData),
           }}
         />
-        <div className="min-h-screen flex flex-col">
-          <Navigation />
-          <main className="flex-1 pt-20">
-            {children}
-          </main>
-          <Footer />
-        </div>
+        <LanguageDetector>
+          <div className="min-h-screen flex flex-col">
+            <Navigation />
+            <main className="flex-1 pt-20">
+              {children}
+            </main>
+            <Footer />
+          </div>
+        </LanguageDetector>
       </body>
     </html>
   );
