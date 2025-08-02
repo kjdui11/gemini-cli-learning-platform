@@ -10,6 +10,8 @@
     "deploy": "vercel --prod",
     "verify": "node verify-deployment.js",
     "verify-online": "node verify-deployment.js --online",
+    "seo-setup": "node generate-verification-files.js",
+    "submit-sitemap": "echo '📤 Sitemap URLs:' && echo 'Google: https://www.google.com/ping?sitemap=https://www.geminicli.cloud/sitemap.xml' && echo 'Bing: https://www.bing.com/ping?sitemap=https://www.geminicli.cloud/sitemap.xml'",
     "prebuild": "echo '🔨 开始构建 Gemini CLI 学习平台...'",
     "postbuild": "echo '✅ 构建完成！运行 npm run verify 验证构建结果'"
   },
