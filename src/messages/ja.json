@@ -270,7 +270,6 @@
     },
     "developmentSetup": "開発環境のセットアップ",
     "projectStructure": "プロジェクト構造",
-    "buildAndTest": "ビルドとテスト",
     "coreApi": "コアAPI",
     "pluginApi": "プラグインAPI",
     "configApi": "設定API",

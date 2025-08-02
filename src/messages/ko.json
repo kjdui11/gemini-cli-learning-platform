@@ -270,7 +270,6 @@
     },
     "developmentSetup": "개발 환경 설정",
     "projectStructure": "프로젝트 구조",
-    "buildAndTest": "빌드 및 테스트",
     "coreApi": "코어 API",
     "pluginApi": "플러그인 API",
     "configApi": "설정 API",

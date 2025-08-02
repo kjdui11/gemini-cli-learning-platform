@@ -270,7 +270,6 @@
     },
     "developmentSetup": "Entwicklungsumgebung",
     "projectStructure": "Projektstruktur",
-    "buildAndTest": "Erstellen und Testen",
     "coreApi": "Kern-API",
     "pluginApi": "Plugin-API",
     "configApi": "Konfigurations-API",

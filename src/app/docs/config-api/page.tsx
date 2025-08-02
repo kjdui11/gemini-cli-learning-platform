@@ -9,72 +9,72 @@ import {
 } from '@heroicons/react/24/outline'
 
 export const metadata: Metadata = {
-  title: '配置 API 文档 | Gemini CLI 开发者文档',
-  description: '详细的 Gemini CLI 配置管理 API 文档，包括配置文件格式、环境变量、动态配置和安全设置。',
-  keywords: 'Gemini CLI 配置 API, 配置管理, TOML 配置, 环境变量, 动态配置',
+  title: 'Configuration API Documentation | Gemini CLI Developer Documentation',
+  description: 'Comprehensive Gemini CLI configuration management API documentation, including configuration file formats, environment variables, dynamic configuration, and security settings.',
+  keywords: 'Gemini CLI configuration API, configuration management, TOML configuration, environment variables, dynamic configuration',
   openGraph: {
-    title: '配置 API 文档 - Gemini CLI 开发者文档',
-    description: '完整的配置管理 API 参考文档',
+    title: 'Configuration API Documentation - Gemini CLI Developer Documentation',
+    description: 'Complete configuration management API reference documentation',
     type: 'article',
   },
 }
 
 const configStructure = {
-  description: 'Gemini CLI 使用分层配置系统，支持多种配置源和动态更新',
+  description: 'Gemini CLI uses a hierarchical configuration system that supports multiple configuration sources and dynamic updates',
   hierarchy: [
-    { level: 1, source: '默认配置', priority: '最低', description: '内置的默认配置值' },
-    { level: 2, source: '全局配置文件', priority: '低', description: '~/.gemini/config.toml' },
-    { level: 3, source: '项目配置文件', priority: '中', description: './gemini.toml 或 ./.gemini/config.toml' },
-    { level: 4, source: '环境变量', priority: '高', description: 'GEMINI_* 前缀的环境变量' },
-    { level: 5, source: '命令行参数', priority: '最高', description: '运行时传入的参数' }
+    { level: 1, source: 'Default Configuration', priority: 'Lowest', description: 'Built-in default configuration values' },
+    { level: 2, source: 'Global Config File', priority: 'Low', description: '~/.gemini/config.toml' },
+    { level: 3, source: 'Project Config File', priority: 'Medium', description: './gemini.toml or ./.gemini/config.toml' },
+    { level: 4, source: 'Environment Variables', priority: 'High', description: 'Environment variables with GEMINI_* prefix' },
+    { level: 5, source: 'Command Line Arguments', priority: 'Highest', description: 'Runtime arguments passed to the command' }
   ]
 }
 
 const configSections = [
   {
     section: 'api',
-    description: 'Gemini API 相关配置',
+    description: 'Gemini API related configuration',
     options: [
-      { name: 'key', type: 'string', required: true, description: 'Google AI API 密钥' },
-      { name: 'model', type: 'string', default: 'gemini-pro', description: '默认使用的模型' },
-      { name: 'temperature', type: 'number', default: 0.7, description: '生成温度 (0-1)' },
-      { name: 'max_tokens', type: 'number', default: 4096, description: '最大令牌数' },
-      { name: 'timeout', type: 'number', default: 30000, description: '请求超时时间 (毫秒)' }
+      { name: 'key', type: 'string', required: true, description: 'Google AI API key' },
+      { name: 'model', type: 'string', default: 'gemini-pro', description: 'Default model to use' },
+      { name: 'temperature', type: 'number', default: 0.7, description: 'Generation temperature (0-1)' },
+      { name: 'max_tokens', type: 'number', default: 4096, description: 'Maximum number of tokens' },
+      { name: 'timeout', type: 'number', default: 30000, description: 'Request timeout in milliseconds' }
     ]
   },
   {
     section: 'session',
-    description: '会话管理配置',
+    description: 'Session management configuration',
     options: [
-      { name: 'auto_save', type: 'boolean', default: true, description: '自动保存会话' },
-      { name: 'max_history', type: 'number', default: 100, description: '最大历史消息数' },
-      { name: 'storage_path', type: 'string', default: '~/.gemini/sessions', description: '会话存储路径' },
-      { name: 'compression', type: 'boolean', default: true, description: '启用会话压缩' }
+      { name: 'auto_save', type: 'boolean', default: true, description: 'Automatically save sessions' },
+      { name: 'max_history', type: 'number', default: 100, description: 'Maximum number of history messages' },
+      { name: 'storage_path', type: 'string', default: '~/.gemini/sessions', description: 'Session storage path' },
+      { name: 'compression', type: 'boolean', default: true, description: 'Enable session compression' }
     ]
   },
   {
     section: 'context',
-    description: '上下文处理配置',
+    description: 'Context processing configuration',
     options: [
-      { name: 'max_files', type: 'number', default: 50, description: '最大文件数量' },
-      { name: 'max_file_size', type: 'string', default: '1MB', description: '单文件最大大小' },
-      { name: 'exclude_patterns', type: 'array', default: ['*.log', '*.tmp'], description: '排除文件模式' },
-      { name: 'auto_detect_language', type: 'boolean', default: true, description: '自动检测编程语言' }
+      { name: 'max_files', type: 'number', default: 50, description: 'Maximum number of files' },
+      { name: 'max_file_size', type: 'string', default: '1MB', description: 'Maximum file size per file' },
+      { name: 'exclude_patterns', type: 'array', default: ['*.log', '*.tmp'], description: 'File exclusion patterns' },
+      { name: 'auto_detect_language', type: 'boolean', default: true, description: 'Automatically detect programming language' }
     ]
   },
   {
     section: 'plugins',
-    description: '插件系统配置',
+    description: 'Plugin system configuration',
     options: [
-      { name: 'enabled', type: 'boolean', default: true, description: '启用插件系统' },
-      { name: 'auto_load', type: 'boolean', default: true, description: '自动加载插件' },
-      { name: 'plugin_paths', type: 'array', default: ['~/.gemini/plugins'], description: '插件搜索路径' },
-      { name: 'security_mode', type: 'string', default: 'strict', description: '安全模式 (strict/permissive)' }
+      { name: 'enabled', type: 'boolean', default: true, description: 'Enable plugin system' },
+      { name: 'auto_load', type: 'boolean', default: true, description: 'Automatically load plugins' },
+      { name: 'plugin_paths', type: 'array', default: ['~/.gemini/plugins'], description: 'Plugin search paths' },
+      { name: 'security_mode', type: 'string', default: 'strict', description: 'Security mode (strict/permissive)' }
     ]
   }
 ]
 
-const configExample = `# Gemini CLI 配置文件 (gemini.toml)
+const configExample = `# Gemini CLI Configuration File (gemini.toml)
 
 [api]
 key = "your-api-key-here"
@@ -122,72 +122,72 @@ progress_bar = true
 confirm_destructive = true`
 
 const configApiInterface = `interface ConfigManager {
-  // 获取配置值
+  // Get configuration value
   get<T>(key: string): T | undefined
   get<T>(key: string, defaultValue: T): T
-  
-  // 设置配置值
+
+  // Set configuration value
   set(key: string, value: any): void
-  
-  // 删除配置项
+
+  // Delete configuration item
   delete(key: string): void
-  
-  // 检查配置项是否存在
+
+  // Check if configuration item exists
   has(key: string): boolean
-  
-  // 获取所有配置
+
+  // Get all configurations
   getAll(): Record<string, any>
-  
-  // 重新加载配置
+
+  // Reload configuration
   reload(): Promise<void>
-  
-  // 保存配置到文件
+
+  // Save configuration to file
   save(): Promise<void>
-  
-  // 监听配置变化
+
+  // Watch configuration changes
   watch(key: string, callback: (value: any) => void): void
-  
-  // 取消监听
+
+  // Unwatch configuration changes
   unwatch(key: string, callback?: (value: any) => void): void
-  
-  // 验证配置
+
+  // Validate configuration
   validate(): ConfigValidationResult
 }`
 
 const environmentVariables = [
   {
     name: 'GEMINI_API_KEY',
-    description: 'Google AI API 密钥',
+    description: 'Google AI API key',
     example: 'export GEMINI_API_KEY="your-api-key"',
     configPath: 'api.key'
   },
   {
     name: 'GEMINI_MODEL',
-    description: '默认模型名称',
+    description: 'Default model name',
     example: 'export GEMINI_MODEL="gemini-pro"',
     configPath: 'api.model'
   },
   {
     name: 'GEMINI_TEMPERATURE',
-    description: '生成温度',
+    description: 'Generation temperature',
     example: 'export GEMINI_TEMPERATURE="0.7"',
     configPath: 'api.temperature'
   },
   {
     name: 'GEMINI_CONFIG_PATH',
-    description: '配置文件路径',
+    description: 'Configuration file path',
     example: 'export GEMINI_CONFIG_PATH="/path/to/config.toml"',
     configPath: 'N/A'
   },
   {
     name: 'GEMINI_LOG_LEVEL',
-    description: '日志级别',
+    description: 'Log level',
     example: 'export GEMINI_LOG_LEVEL="debug"',
     configPath: 'logging.level'
   },
   {
     name: 'GEMINI_PLUGIN_PATH',
-    description: '插件路径',
+    description: 'Plugin path',
     example: 'export GEMINI_PLUGIN_PATH="/path/to/plugins"',
     configPath: 'plugins.plugin_paths'
   }
@@ -195,42 +195,42 @@ const environmentVariables = [
 
 const configUsageExamples = [
   {
-    title: '基本配置操作',
-    description: '读取和设置配置值',
+    title: 'Basic Configuration Operations',
+    description: 'Reading and setting configuration values',
     code: `import { ConfigManager } from '@gemini-cli/core'
 
 const config = new ConfigManager()
 
-// 获取配置值
+// Get configuration values
 const apiKey = config.get('api.key')
 const model = config.get('api.model', 'gemini-pro')
 
-// 设置配置值
+// Set configuration values
 config.set('api.temperature', 0.8)
 config.set('session.auto_save', false)
 
-// 保存配置
+// Save configuration
 await config.save()`
   },
   {
-    title: '配置监听',
-    description: '监听配置变化',
-    code: `// 监听 API 密钥变化
+    title: 'Configuration Watching',
+    description: 'Listening to configuration changes',
+    code: `// Watch API key changes
 config.watch('api.key', (newKey) => {
   console.log('API key changed:', newKey)
-  // 重新初始化客户端
+  // Reinitialize client
   reinitializeClient(newKey)
 })
 
-// 监听模型变化
+// Watch model changes
 config.watch('api.model', (newModel) => {
   console.log('Model changed to:', newModel)
 })`
   },
   {
-    title: '配置验证',
-    description: '验证配置的有效性',
-    code: `// 验证配置
+    title: 'Configuration Validation',
+    description: 'Validating configuration validity',
+    code: `// Validate configuration
 const validation = config.validate()
 
 if (!validation.isValid) {
@@ -244,23 +244,23 @@ if (!validation.isValid) {
 console.log('Configuration is valid')`
   },
   {
-    title: '动态配置更新',
-    description: '运行时更新配置',
-    code: `// 动态更新配置
+    title: 'Dynamic Configuration Updates',
+    description: 'Runtime configuration updates',
+    code: `// Dynamic configuration update
 async function updateConfig(updates: Record<string, any>) {
   for (const [key, value] of Object.entries(updates)) {
     config.set(key, value)
   }
-  
-  // 验证新配置
+
+  // Validate new configuration
   const validation = config.validate()
   if (!validation.isValid) {
     throw new Error('Invalid configuration')
   }
-  
-  // 保存配置
+
+  // Save configuration
   await config.save()
-  
+
   console.log('Configuration updated successfully')
 }`
   }
@@ -268,38 +268,38 @@ async function updateConfig(updates: Record<string, any>) {
 
 const securityConsiderations = [
   {
-    title: 'API 密钥安全',
-    description: '保护 API 密钥的最佳实践',
+    title: 'API Key Security',
+    description: 'Best practices for protecting API keys',
     practices: [
-      '使用环境变量存储 API 密钥',
-      '避免在配置文件中硬编码密钥',
-      '设置适当的文件权限 (600)',
-      '定期轮换 API 密钥'
+      'Use environment variables to store API keys',
+      'Avoid hardcoding keys in configuration files',
+      'Set appropriate file permissions (600)',
+      'Regularly rotate API keys'
     ]
   },
   {
-    title: '配置文件权限',
-    description: '配置文件的安全设置',
+    title: 'Configuration File Permissions',
+    description: 'Security settings for configuration files',
     practices: [
-      '设置配置文件为只读 (chmod 600)',
-      '避免在版本控制中提交敏感配置',
-      '使用 .gitignore 排除配置文件',
-      '定期审查配置文件内容'
+      'Set configuration files to read-only (chmod 600)',
+      'Avoid committing sensitive configurations to version control',
+      'Use .gitignore to exclude configuration files',
+      'Regularly review configuration file contents'
     ]
   },
   {
-    title: '插件安全',
-    description: '插件配置的安全考虑',
+    title: 'Plugin Security',
+    description: 'Security considerations for plugin configuration',
     practices: [
-      '启用严格安全模式',
-      '验证插件来源和签名',
-      '限制插件权限范围',
-      '定期更新插件版本'
+      'Enable strict security mode',
+      'Verify plugin sources and signatures',
+      'Limit plugin permission scope',
+      'Regularly update plugin versions'
     ]
   }
 ]
 
-const configValidation = `// 配置验证规则
+const configValidation = `// Configuration validation rules
 const configSchema = {
   api: {
     key: {
@@ -334,25 +334,25 @@ const configSchema = {
   }
 }
 
-// 验证配置
+// Validate configuration
 function validateConfig(config: any): ConfigValidationResult {
   const errors: ConfigError[] = []
-  
-  // 验证 API 配置
+
+  // Validate API configuration
   if (!config.api?.key) {
     errors.push({
       path: 'api.key',
       message: 'API key is required'
     })
   }
-  
+
   if (config.api?.temperature < 0 || config.api?.temperature > 1) {
     errors.push({
       path: 'api.temperature',
       message: 'Temperature must be between 0 and 1'
     })
   }
-  
+
   return {
     isValid: errors.length === 0,
     errors
@@ -370,19 +370,19 @@ export default function ConfigApiPage() {
               <AdjustmentsHorizontalIcon className="h-12 w-12 text-white" />
             </div>
             <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              配置 API 文档
+              Configuration API Documentation
             </h1>
             <p className="mt-4 text-lg text-green-100">
-              完整的配置管理 API 参考文档
+              Complete configuration management API reference documentation
             </p>
             <div className="mt-6 flex items-center justify-center space-x-4 text-sm text-green-100">
               <span className="flex items-center">
                 <CheckCircleIcon className="h-4 w-4 mr-1" />
-                配置管理
+                Configuration Management
               </span>
               <span className="flex items-center">
                 <CheckCircleIcon className="h-4 w-4 mr-1" />
-                25 分钟阅读
+                25 min read
               </span>
             </div>
           </div>
@@ -393,7 +393,7 @@ export default function ConfigApiPage() {
       <div className="py-16">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">配置层次结构</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Configuration Hierarchy</h2>
             <p className="mt-4 text-lg text-gray-600">
               {configStructure.description}
             </p>
@@ -413,13 +413,13 @@ export default function ConfigApiPage() {
                     </div>
                   </div>
                   <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                    level.priority === '最高' ? 'bg-red-100 text-red-800' :
-                    level.priority === '高' ? 'bg-orange-100 text-orange-800' :
-                    level.priority === '中' ? 'bg-yellow-100 text-yellow-800' :
-                    level.priority === '低' ? 'bg-blue-100 text-blue-800' :
+                    level.priority === 'Highest' ? 'bg-red-100 text-red-800' :
+                    level.priority === 'High' ? 'bg-orange-100 text-orange-800' :
+                    level.priority === 'Medium' ? 'bg-yellow-100 text-yellow-800' :
+                    level.priority === 'Low' ? 'bg-blue-100 text-blue-800' :
                     'bg-gray-100 text-gray-800'
                   }`}>
-                    优先级: {level.priority}
+                    Priority: {level.priority}
                   </span>
                 </div>
               </div>
@@ -432,9 +432,9 @@ export default function ConfigApiPage() {
       <div className="bg-gray-50 py-16">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">配置选项</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Configuration Options</h2>
             <p className="mt-4 text-lg text-gray-600">
-              详细的配置选项说明
+              Detailed configuration options description
             </p>
           </div>
 
@@ -453,10 +453,10 @@ export default function ConfigApiPage() {
                   <table className="min-w-full">
                     <thead>
                       <tr className="border-b border-gray-200">
-                        <th className="text-left py-3 px-4 font-semibold text-gray-900">选项</th>
-                        <th className="text-left py-3 px-4 font-semibold text-gray-900">类型</th>
-                        <th className="text-left py-3 px-4 font-semibold text-gray-900">默认值</th>
-                        <th className="text-left py-3 px-4 font-semibold text-gray-900">说明</th>
+                        <th className="text-left py-3 px-4 font-semibold text-gray-900">Option</th>
+                        <th className="text-left py-3 px-4 font-semibold text-gray-900">Type</th>
+                        <th className="text-left py-3 px-4 font-semibold text-gray-900">Default</th>
+                        <th className="text-left py-3 px-4 font-semibold text-gray-900">Description</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -465,7 +465,7 @@ export default function ConfigApiPage() {
                           <td className="py-3 px-4">
                             <code className="text-sm font-mono text-blue-600">{option.name}</code>
                             {'required' in option && option.required && (
-                              <span className="ml-2 text-xs bg-red-100 text-red-800 px-2 py-1 rounded">必需</span>
+                              <span className="ml-2 text-xs bg-red-100 text-red-800 px-2 py-1 rounded">Required</span>
                             )}
                           </td>
                           <td className="py-3 px-4 text-sm text-gray-600">{option.type}</td>
@@ -494,9 +494,9 @@ export default function ConfigApiPage() {
       <div className="py-16">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">配置文件示例</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Configuration File Example</h2>
             <p className="mt-4 text-lg text-gray-600">
-              完整的 TOML 配置文件示例
+              Complete TOML configuration file example
             </p>
           </div>
 
@@ -512,9 +512,9 @@ export default function ConfigApiPage() {
       <div className="bg-gray-50 py-16">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">配置 API 接口</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Configuration API Interface</h2>
             <p className="mt-4 text-lg text-gray-600">
-              ConfigManager 类的接口定义
+              ConfigManager class interface definition
             </p>
           </div>
 
@@ -530,9 +530,9 @@ export default function ConfigApiPage() {
       <div className="py-16">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">环境变量</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Environment Variables</h2>
             <p className="mt-4 text-lg text-gray-600">
-              支持的环境变量列表
+              List of supported environment variables
             </p>
           </div>
 
@@ -549,14 +549,14 @@ export default function ConfigApiPage() {
 
                 <div className="space-y-3">
                   <div>
-                    <h4 className="font-medium text-gray-900 text-sm mb-1">示例：</h4>
+                    <h4 className="font-medium text-gray-900 text-sm mb-1">Example:</h4>
                     <div className="bg-gray-900 rounded p-2">
                       <code className="text-green-400 text-xs font-mono">{env.example}</code>
                     </div>
                   </div>
 
                   <div>
-                    <h4 className="font-medium text-gray-900 text-sm mb-1">对应配置：</h4>
+                    <h4 className="font-medium text-gray-900 text-sm mb-1">Corresponding Config:</h4>
                     <code className="text-blue-600 text-sm">{env.configPath}</code>
                   </div>
                 </div>
@@ -570,9 +570,9 @@ export default function ConfigApiPage() {
       <div className="bg-gray-50 py-16">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">使用示例</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Usage Examples</h2>
             <p className="mt-4 text-lg text-gray-600">
-              配置管理的实际应用示例
+              Practical application examples of configuration management
             </p>
           </div>
 
@@ -594,9 +594,9 @@ export default function ConfigApiPage() {
       <div className="py-16">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">安全考虑</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Security Considerations</h2>
             <p className="mt-4 text-lg text-gray-600">
-              配置安全的最佳实践
+              Best practices for configuration security
             </p>
           </div>
 
@@ -626,9 +626,9 @@ export default function ConfigApiPage() {
       <div className="bg-gray-50 py-16">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">配置验证</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Configuration Validation</h2>
             <p className="mt-4 text-lg text-gray-600">
-              配置验证规则和实现
+              Configuration validation rules and implementation
             </p>
           </div>
 
@@ -644,28 +644,28 @@ export default function ConfigApiPage() {
       <div className="bg-green-50 py-16">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">继续学习</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Continue Learning</h2>
             <p className="text-lg text-gray-600 mb-8">
-              探索 MCP 协议和扩展开发
+              Explore MCP protocol and extension development
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/docs/mcp-introduction"
                 className="rounded-lg bg-green-600 px-6 py-3 text-base font-semibold text-white hover:bg-green-500 transition-colors"
               >
-                MCP 协议介绍
+                MCP Protocol Introduction
               </Link>
               <Link
                 href="/docs/extension-architecture"
                 className="rounded-lg border border-green-600 px-6 py-3 text-base font-semibold text-green-600 hover:bg-green-50 transition-colors"
               >
-                扩展架构
+                Extension Architecture
               </Link>
               <Link
                 href="/docs"
                 className="rounded-lg border border-gray-300 px-6 py-3 text-base font-semibold text-gray-700 hover:bg-gray-50 transition-colors"
               >
-                返回文档首页
+                Back to Documentation
               </Link>
             </div>
           </div>

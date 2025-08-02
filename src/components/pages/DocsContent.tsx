@@ -25,7 +25,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
   }
 
   // Get translations based on locale
-  const getTranslations = (locale: string) => {
+  const getTranslations = (locale: string, getLocalizedHref: (path: string) => string) => {
     const translations: Record<string, any> = {
       zh: {
         title: '开发者文档',
@@ -453,19 +453,19 @@ export default function DocsContent({ locale }: DocsContentProps) {
                               {
                                       "title": "API संदर्भ",
                                       "description": "पूर्ण API दस्तावेज़ीकरण",
-                                      "href": "/docs/api-reference",
+                                      "href": getLocalizedHref("/docs/api-reference"),
                                       "external": false
                               },
                               {
                                       "title": "कोड उदाहरण",
                                       "description": "व्यावहारिक कोड उदाहरण और टेम्प्लेट",
-                                      "href": "/docs/examples",
+                                      "href": getLocalizedHref("/docs/examples"),
                                       "external": false
                               },
                               {
                                       "title": "चेंजलॉग",
                                       "description": "संस्करण अपडेट और परिवर्तन रिकॉर्ड",
-                                      "href": "/docs/changelog",
+                                      "href": getLocalizedHref("/docs/changelog"),
                                       "external": false
                               }
                       ]
@@ -531,7 +531,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "विकास वातावरण सेटअप",
                                                       "description": "स्थानीय विकास वातावरण और निर्भरताओं को कॉन्फ़िगर करें",
-                                                      "href": "/docs/development-setup",
+                                                      "href": getLocalizedHref("/docs/development-setup"),
                                                       "tags": [
                                                               "वातावरण",
                                                               "निर्भरताएं"
@@ -540,7 +540,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "प्रोजेक्ट संरचना",
                                                       "description": "Gemini CLI कोड संगठन संरचना को समझें",
-                                                      "href": "/docs/project-structure",
+                                                      "href": getLocalizedHref("/docs/project-structure"),
                                                       "tags": [
                                                               "आर्किटेक्चर",
                                                               "संगठन"
@@ -549,7 +549,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "बिल्ड और टेस्ट",
                                                       "description": "स्थानीय बिल्ड, टेस्ट और डिबगिंग वर्कफ़्लो",
-                                                      "href": "/docs/build-and-test",
+                                                      "href": getLocalizedHref("/docs/build-and-test"),
                                                       "tags": [
                                                               "बिल्ड",
                                                               "टेस्टिंग",
@@ -565,27 +565,27 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                       "color": "from-blue-500 to-indigo-600",
                                       "articles": [
                                               {
-                                                      "title": "Core API",
+                                                      "title": "कोर API",
                                                       "description": "मुख्य API इंटरफेस और विधि विवरण",
-                                                      "href": "/docs/core-api",
+                                                      "href": getLocalizedHref("/docs/core-api"),
                                                       "tags": [
                                                               "API",
                                                               "मुख्य"
                                                       ]
                                               },
                                               {
-                                                      "title": "Plugin API",
+                                                      "title": "प्लगइन API",
                                                       "description": "प्लगइन विकास API और एक्सटेंशन इंटरफेस",
-                                                      "href": "/docs/plugin-api",
+                                                      "href": getLocalizedHref("/docs/plugin-api"),
                                                       "tags": [
                                                               "प्लगइन",
                                                               "एक्सटेंशन"
                                                       ]
                                               },
                                               {
-                                                      "title": "Configuration API",
+                                                      "title": "कॉन्फ़िगरेशन API",
                                                       "description": "कॉन्फ़िगरेशन प्रबंधन API और विकल्प विवरण",
-                                                      "href": "/docs/config-api",
+                                                      "href": getLocalizedHref("/docs/config-api"),
                                                       "tags": [
                                                               "कॉन्फ़िग",
                                                               "सेटिंग्स"
@@ -602,7 +602,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "MCP प्रोटोकॉल परिचय",
                                                       "description": "Model Context Protocol की बुनियादी अवधारणाएं सीखें",
-                                                      "href": "/docs/mcp-introduction",
+                                                      "href": getLocalizedHref("/docs/mcp-introduction"),
                                                       "tags": [
                                                               "MCP",
                                                               "प्रोटोकॉल"
@@ -611,7 +611,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "MCP सर्वर का कार्यान्वयन",
                                                       "description": "कस्टम MCP सर्वर बनाने के लिए पूर्ण गाइड",
-                                                      "href": "/docs/mcp-server",
+                                                      "href": getLocalizedHref("/docs/mcp-server"),
                                                       "tags": [
                                                               "MCP",
                                                               "सर्वर",
@@ -621,7 +621,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "MCP क्लाइंट एकीकरण",
                                                       "description": "एप्लिकेशन में MCP क्लाइंट कार्यक्षमता को एकीकृत करें",
-                                                      "href": "/docs/mcp-client",
+                                                      "href": getLocalizedHref("/docs/mcp-client"),
                                                       "tags": [
                                                               "MCP",
                                                               "क्लाइंट",
@@ -631,7 +631,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "माइग्रेशन गाइड",
                                                       "description": "पुराने संस्करणों से अपग्रेड करने के लिए पूर्ण गाइड",
-                                                      "href": "/docs/migration-guide",
+                                                      "href": getLocalizedHref("/docs/migration-guide"),
                                                       "tags": [
                                                               "माइग्रेशन",
                                                               "अपग्रेड"
@@ -648,7 +648,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "एक्सटेंशन आर्किटेक्चर",
                                                       "description": "एक्सटेंशन सिस्टम डिज़ाइन और आर्किटेक्चर को समझें",
-                                                      "href": "/docs/extension-architecture",
+                                                      "href": getLocalizedHref("/docs/extension-architecture"),
                                                       "tags": [
                                                               "एक्सटेंशन",
                                                               "आर्किटेक्चर"
@@ -657,7 +657,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "अपना पहला एक्सटेंशन बनाना",
                                                       "description": "शुरुआत से कस्टम एक्सटेंशन बनाएं",
-                                                      "href": "/docs/first-extension",
+                                                      "href": getLocalizedHref("/docs/first-extension"),
                                                       "tags": [
                                                               "एक्सटेंशन",
                                                               "ट्यूटोरियल"
@@ -666,7 +666,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "एक्सटेंशन प्रकाशन गाइड",
                                                       "description": "एक्सटेंशन पैकेजिंग और प्रकाशन के लिए सर्वोत्तम प्रथाएं",
-                                                      "href": "/docs/extension-publishing",
+                                                      "href": getLocalizedHref("/docs/extension-publishing"),
                                                       "tags": [
                                                               "एक्सटेंशन",
                                                               "प्रकाशन"
@@ -683,7 +683,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "योगदान प्रक्रिया",
                                                       "description": "प्रोजेक्ट में योगदान करना सीखें",
-                                                      "href": "/docs/contributing-guide",
+                                                      "href": getLocalizedHref("/docs/contributing-guide"),
                                                       "tags": [
                                                               "योगदान",
                                                               "प्रक्रिया"
@@ -692,7 +692,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "कोडिंग मानक",
                                                       "description": "कोड शैली और गुणवत्ता मानक",
-                                                      "href": "/docs/coding-standards",
+                                                      "href": getLocalizedHref("/docs/coding-standards"),
                                                       "tags": [
                                                               "मानक",
                                                               "गुणवत्ता"
@@ -701,7 +701,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Pull Request गाइड",
                                                       "description": "Pull Request बनाने और सबमिट करने की सर्वोत्तम प्रथाएं",
-                                                      "href": "/docs/pull-request-guide",
+                                                      "href": getLocalizedHref("/docs/pull-request-guide"),
                                                       "tags": [
                                                               "PR",
                                                               "सर्वोत्तम प्रथाएं"
@@ -813,7 +813,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Configuration de l'Environnement de Développement",
                                                       "description": "Configurer l'environnement de développement local et les dépendances",
-                                                      "href": "/docs/development-setup",
+                                                      "href": getLocalizedHref("/docs/development-setup"),
                                                       "tags": [
                                                               "Environnement",
                                                               "Dépendances"
@@ -822,7 +822,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Structure du Projet",
                                                       "description": "Comprendre la structure d'organisation du code Gemini CLI",
-                                                      "href": "/docs/project-structure",
+                                                      "href": getLocalizedHref("/docs/project-structure"),
                                                       "tags": [
                                                               "Architecture",
                                                               "Organisation"
@@ -831,7 +831,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Construction et Test",
                                                       "description": "Flux de travail de construction, test et débogage local",
-                                                      "href": "/docs/build-and-test",
+                                                      "href": getLocalizedHref("/docs/build-and-test"),
                                                       "tags": [
                                                               "Construction",
                                                               "Test",
@@ -847,18 +847,18 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                       "color": "from-blue-500 to-indigo-600",
                                       "articles": [
                                               {
-                                                      "title": "API Core",
+                                                      "title": "API Principale",
                                                       "description": "Interfaces API principales et descriptions de méthodes",
-                                                      "href": "/docs/core-api",
+                                                      "href": getLocalizedHref("/docs/core-api"),
                                                       "tags": [
                                                               "API",
-                                                              "Core"
+                                                              "Principale"
                                                       ]
                                               },
                                               {
-                                                      "title": "API Plugin",
+                                                      "title": "API de Plugin",
                                                       "description": "API de développement de plugin et interfaces d'extension",
-                                                      "href": "/docs/plugin-api",
+                                                      "href": getLocalizedHref("/docs/plugin-api"),
                                                       "tags": [
                                                               "Plugin",
                                                               "Extension"
@@ -867,7 +867,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "API de Configuration",
                                                       "description": "API de gestion de configuration et descriptions d'options",
-                                                      "href": "/docs/config-api",
+                                                      "href": getLocalizedHref("/docs/config-api"),
                                                       "tags": [
                                                               "Config",
                                                               "Paramètres"
@@ -884,7 +884,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Introduction au Protocole MCP",
                                                       "description": "Apprendre les concepts de base du Model Context Protocol",
-                                                      "href": "/docs/mcp-introduction",
+                                                      "href": getLocalizedHref("/docs/mcp-introduction"),
                                                       "tags": [
                                                               "MCP",
                                                               "Protocole"
@@ -893,7 +893,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Implémentation du Serveur MCP",
                                                       "description": "Guide complet pour créer des serveurs MCP personnalisés",
-                                                      "href": "/docs/mcp-server",
+                                                      "href": getLocalizedHref("/docs/mcp-server"),
                                                       "tags": [
                                                               "MCP",
                                                               "Serveur",
@@ -903,7 +903,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Intégration Client MCP",
                                                       "description": "Intégrer la fonctionnalité client MCP dans les applications",
-                                                      "href": "/docs/mcp-client",
+                                                      "href": getLocalizedHref("/docs/mcp-client"),
                                                       "tags": [
                                                               "MCP",
                                                               "Client",
@@ -913,7 +913,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Guide de Migration",
                                                       "description": "Guide complet pour la mise à niveau depuis les anciennes versions",
-                                                      "href": "/docs/migration-guide",
+                                                      "href": getLocalizedHref("/docs/migration-guide"),
                                                       "tags": [
                                                               "Migration",
                                                               "Mise à niveau"
@@ -930,7 +930,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Architecture d'Extension",
                                                       "description": "Comprendre la conception et l'architecture du système d'extension",
-                                                      "href": "/docs/extension-architecture",
+                                                      "href": getLocalizedHref("/docs/extension-architecture"),
                                                       "tags": [
                                                               "Extension",
                                                               "Architecture"
@@ -939,7 +939,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Créer Votre Première Extension",
                                                       "description": "Construire des extensions personnalisées à partir de zéro",
-                                                      "href": "/docs/first-extension",
+                                                      "href": getLocalizedHref("/docs/first-extension"),
                                                       "tags": [
                                                               "Extension",
                                                               "Tutoriel"
@@ -948,7 +948,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Guide de Publication d'Extension",
                                                       "description": "Meilleures pratiques pour empaqueter et publier des extensions",
-                                                      "href": "/docs/extension-publishing",
+                                                      "href": getLocalizedHref("/docs/extension-publishing"),
                                                       "tags": [
                                                               "Extension",
                                                               "Publication"
@@ -965,7 +965,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Processus de Contribution",
                                                       "description": "Apprendre comment contribuer au projet",
-                                                      "href": "/docs/contributing-guide",
+                                                      "href": getLocalizedHref("/docs/contributing-guide"),
                                                       "tags": [
                                                               "Contribution",
                                                               "Processus"
@@ -974,7 +974,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Standards de Codage",
                                                       "description": "Style de code et standards de qualité",
-                                                      "href": "/docs/coding-standards",
+                                                      "href": getLocalizedHref("/docs/coding-standards"),
                                                       "tags": [
                                                               "Standards",
                                                               "Qualité"
@@ -983,7 +983,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Guide Pull Request",
                                                       "description": "Meilleures pratiques pour créer et soumettre des Pull Requests",
-                                                      "href": "/docs/pull-request-guide",
+                                                      "href": getLocalizedHref("/docs/pull-request-guide"),
                                                       "tags": [
                                                               "PR",
                                                               "Meilleures Pratiques"
@@ -1018,19 +1018,19 @@ export default function DocsContent({ locale }: DocsContentProps) {
                               {
                                       "title": "API-Referenz",
                                       "description": "Vollständige API-Dokumentation",
-                                      "href": "/docs/api-reference",
+                                      "href": getLocalizedHref("/docs/api-reference"),
                                       "external": false
                               },
                               {
                                       "title": "Code-Beispiele",
                                       "description": "Praktische Code-Beispiele und Vorlagen",
-                                      "href": "/docs/examples",
+                                      "href": getLocalizedHref("/docs/examples"),
                                       "external": false
                               },
                               {
                                       "title": "Änderungsprotokoll",
                                       "description": "Versionsupdates und Änderungsaufzeichnungen",
-                                      "href": "/docs/changelog",
+                                      "href": getLocalizedHref("/docs/changelog"),
                                       "external": false
                               }
                       ]
@@ -1096,7 +1096,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Entwicklungsumgebung einrichten",
                                                       "description": "Lokale Entwicklungsumgebung und Abhängigkeiten konfigurieren",
-                                                      "href": "/docs/development-setup",
+                                                      "href": getLocalizedHref("/docs/development-setup"),
                                                       "tags": [
                                                               "Umgebung",
                                                               "Abhängigkeiten"
@@ -1105,7 +1105,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Projektstruktur",
                                                       "description": "Verstehen Sie die Code-Organisationsstruktur von Gemini CLI",
-                                                      "href": "/docs/project-structure",
+                                                      "href": getLocalizedHref("/docs/project-structure"),
                                                       "tags": [
                                                               "Architektur",
                                                               "Organisation"
@@ -1114,7 +1114,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Erstellen und Testen",
                                                       "description": "Lokaler Build-, Test- und Debugging-Workflow",
-                                                      "href": "/docs/build-and-test",
+                                                      "href": getLocalizedHref("/docs/build-and-test"),
                                                       "tags": [
                                                               "Build",
                                                               "Testen",
@@ -1130,18 +1130,18 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                       "color": "from-blue-500 to-indigo-600",
                                       "articles": [
                                               {
-                                                      "title": "Core API",
+                                                      "title": "Kern-API",
                                                       "description": "Kern-API-Schnittstellen und Methodenbeschreibungen",
-                                                      "href": "/docs/core-api",
+                                                      "href": getLocalizedHref("/docs/core-api"),
                                                       "tags": [
                                                               "API",
                                                               "Kern"
                                                       ]
                                               },
                                               {
-                                                      "title": "Plugin API",
+                                                      "title": "Plugin-API",
                                                       "description": "Plugin-Entwicklungs-API und Erweiterungsschnittstellen",
-                                                      "href": "/docs/plugin-api",
+                                                      "href": getLocalizedHref("/docs/plugin-api"),
                                                       "tags": [
                                                               "Plugin",
                                                               "Erweiterung"
@@ -1150,7 +1150,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Konfigurations-API",
                                                       "description": "Konfigurationsverwaltungs-API und Optionsbeschreibungen",
-                                                      "href": "/docs/config-api",
+                                                      "href": getLocalizedHref("/docs/config-api"),
                                                       "tags": [
                                                               "Konfiguration",
                                                               "Einstellungen"
@@ -1167,7 +1167,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "MCP-Protokoll-Einführung",
                                                       "description": "Lernen Sie die Grundkonzepte des Model Context Protocol",
-                                                      "href": "/docs/mcp-introduction",
+                                                      "href": getLocalizedHref("/docs/mcp-introduction"),
                                                       "tags": [
                                                               "MCP",
                                                               "Protokoll"
@@ -1176,7 +1176,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "MCP-Server implementieren",
                                                       "description": "Vollständiger Leitfaden zur Erstellung benutzerdefinierter MCP-Server",
-                                                      "href": "/docs/mcp-server",
+                                                      "href": getLocalizedHref("/docs/mcp-server"),
                                                       "tags": [
                                                               "MCP",
                                                               "Server",
@@ -1186,7 +1186,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "MCP-Client-Integration",
                                                       "description": "MCP-Client-Funktionalität in Anwendungen integrieren",
-                                                      "href": "/docs/mcp-client",
+                                                      "href": getLocalizedHref("/docs/mcp-client"),
                                                       "tags": [
                                                               "MCP",
                                                               "Client",
@@ -1196,7 +1196,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Migrationsleitfaden",
                                                       "description": "Vollständiger Leitfaden für das Upgrade von älteren Versionen",
-                                                      "href": "/docs/migration-guide",
+                                                      "href": getLocalizedHref("/docs/migration-guide"),
                                                       "tags": [
                                                               "Migration",
                                                               "Upgrade"
@@ -1213,7 +1213,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Erweiterungsarchitektur",
                                                       "description": "Verstehen Sie das Design und die Architektur des Erweiterungssystems",
-                                                      "href": "/docs/extension-architecture",
+                                                      "href": getLocalizedHref("/docs/extension-architecture"),
                                                       "tags": [
                                                               "Erweiterung",
                                                               "Architektur"
@@ -1222,7 +1222,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Ihre erste Erweiterung erstellen",
                                                       "description": "Benutzerdefinierte Erweiterungen von Grund auf erstellen",
-                                                      "href": "/docs/first-extension",
+                                                      "href": getLocalizedHref("/docs/first-extension"),
                                                       "tags": [
                                                               "Erweiterung",
                                                               "Tutorial"
@@ -1231,7 +1231,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Erweiterungs-Veröffentlichungsleitfaden",
                                                       "description": "Best Practices für das Verpacken und Veröffentlichen von Erweiterungen",
-                                                      "href": "/docs/extension-publishing",
+                                                      "href": getLocalizedHref("/docs/extension-publishing"),
                                                       "tags": [
                                                               "Erweiterung",
                                                               "Veröffentlichung"
@@ -1248,7 +1248,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Beitragsprozess",
                                                       "description": "Lernen Sie, wie Sie zum Projekt beitragen",
-                                                      "href": "/docs/contributing-guide",
+                                                      "href": getLocalizedHref("/docs/contributing-guide"),
                                                       "tags": [
                                                               "Beitrag",
                                                               "Prozess"
@@ -1257,7 +1257,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Coding-Standards",
                                                       "description": "Code-Stil und Qualitätsstandards",
-                                                      "href": "/docs/coding-standards",
+                                                      "href": getLocalizedHref("/docs/coding-standards"),
                                                       "tags": [
                                                               "Standards",
                                                               "Qualität"
@@ -1266,7 +1266,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Pull Request Leitfaden",
                                                       "description": "Best Practices für das Erstellen und Einreichen von Pull Requests",
-                                                      "href": "/docs/pull-request-guide",
+                                                      "href": getLocalizedHref("/docs/pull-request-guide"),
                                                       "tags": [
                                                               "PR",
                                                               "Best Practices"
@@ -1300,19 +1300,19 @@ export default function DocsContent({ locale }: DocsContentProps) {
                               {
                                       "title": "APIリファレンス",
                                       "description": "完全なAPIドキュメント",
-                                      "href": "/docs/api-reference",
+                                      "href": getLocalizedHref("/docs/api-reference"),
                                       "external": false
                               },
                               {
                                       "title": "コード例",
                                       "description": "実用的なコード例とテンプレート",
-                                      "href": "/docs/examples",
+                                      "href": getLocalizedHref("/docs/examples"),
                                       "external": false
                               },
                               {
                                       "title": "変更履歴",
                                       "description": "バージョン更新と変更記録",
-                                      "href": "/docs/changelog",
+                                      "href": getLocalizedHref("/docs/changelog"),
                                       "external": false
                               }
                       ]
@@ -1378,7 +1378,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "開発環境セットアップ",
                                                       "description": "ローカル開発環境と依存関係を設定",
-                                                      "href": "/docs/development-setup",
+                                                      "href": getLocalizedHref("/docs/development-setup"),
                                                       "tags": [
                                                               "環境",
                                                               "依存関係"
@@ -1387,7 +1387,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "プロジェクト構造",
                                                       "description": "Gemini CLIのコード組織構造を理解",
-                                                      "href": "/docs/project-structure",
+                                                      "href": getLocalizedHref("/docs/project-structure"),
                                                       "tags": [
                                                               "アーキテクチャ",
                                                               "組織"
@@ -1396,7 +1396,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "ビルドとテスト",
                                                       "description": "ローカルビルド、テスト、デバッグワークフロー",
-                                                      "href": "/docs/build-and-test",
+                                                      "href": getLocalizedHref("/docs/build-and-test"),
                                                       "tags": [
                                                               "ビルド",
                                                               "テスト",
@@ -1412,27 +1412,27 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                       "color": "from-blue-500 to-indigo-600",
                                       "articles": [
                                               {
-                                                      "title": "Core API",
+                                                      "title": "コアAPI",
                                                       "description": "コアAPIインターフェースとメソッド説明",
-                                                      "href": "/docs/core-api",
+                                                      "href": getLocalizedHref("/docs/core-api"),
                                                       "tags": [
                                                               "API",
                                                               "コア"
                                                       ]
                                               },
                                               {
-                                                      "title": "Plugin API",
+                                                      "title": "プラグインAPI",
                                                       "description": "プラグイン開発APIと拡張インターフェース",
-                                                      "href": "/docs/plugin-api",
+                                                      "href": getLocalizedHref("/docs/plugin-api"),
                                                       "tags": [
                                                               "プラグイン",
                                                               "拡張"
                                                       ]
                                               },
                                               {
-                                                      "title": "Configuration API",
+                                                      "title": "設定API",
                                                       "description": "設定管理APIとオプション説明",
-                                                      "href": "/docs/config-api",
+                                                      "href": getLocalizedHref("/docs/config-api"),
                                                       "tags": [
                                                               "設定",
                                                               "構成"
@@ -1449,7 +1449,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "MCPプロトコル紹介",
                                                       "description": "Model Context Protocolの基本概念を学ぶ",
-                                                      "href": "/docs/mcp-introduction",
+                                                      "href": getLocalizedHref("/docs/mcp-introduction"),
                                                       "tags": [
                                                               "MCP",
                                                               "プロトコル"
@@ -1458,7 +1458,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "MCPサーバー実装",
                                                       "description": "カスタムMCPサーバー作成の完全ガイド",
-                                                      "href": "/docs/mcp-server",
+                                                      "href": getLocalizedHref("/docs/mcp-server"),
                                                       "tags": [
                                                               "MCP",
                                                               "サーバー",
@@ -1468,7 +1468,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "MCPクライアント統合",
                                                       "description": "アプリケーションにMCPクライアント機能を統合",
-                                                      "href": "/docs/mcp-client",
+                                                      "href": getLocalizedHref("/docs/mcp-client"),
                                                       "tags": [
                                                               "MCP",
                                                               "クライアント",
@@ -1478,7 +1478,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "移行ガイド",
                                                       "description": "古いバージョンからのアップグレードのための完全ガイド",
-                                                      "href": "/docs/migration-guide",
+                                                      "href": getLocalizedHref("/docs/migration-guide"),
                                                       "tags": [
                                                               "移行",
                                                               "アップグレード"
@@ -1495,7 +1495,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "拡張アーキテクチャ",
                                                       "description": "拡張システムの設計とアーキテクチャを理解",
-                                                      "href": "/docs/extension-architecture",
+                                                      "href": getLocalizedHref("/docs/extension-architecture"),
                                                       "tags": [
                                                               "拡張",
                                                               "アーキテクチャ"
@@ -1504,7 +1504,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "最初の拡張を作成",
                                                       "description": "ゼロからカスタム拡張を構築",
-                                                      "href": "/docs/first-extension",
+                                                      "href": getLocalizedHref("/docs/first-extension"),
                                                       "tags": [
                                                               "拡張",
                                                               "チュートリアル"
@@ -1513,7 +1513,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "拡張公開ガイド",
                                                       "description": "拡張のパッケージ化と公開のベストプラクティス",
-                                                      "href": "/docs/extension-publishing",
+                                                      "href": getLocalizedHref("/docs/extension-publishing"),
                                                       "tags": [
                                                               "拡張",
                                                               "公開"
@@ -1530,7 +1530,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "貢献プロセス",
                                                       "description": "プロジェクトへの貢献方法を学ぶ",
-                                                      "href": "/docs/contributing-guide",
+                                                      "href": getLocalizedHref("/docs/contributing-guide"),
                                                       "tags": [
                                                               "貢献",
                                                               "プロセス"
@@ -1539,7 +1539,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "コーディング標準",
                                                       "description": "コードスタイルと品質標準",
-                                                      "href": "/docs/coding-standards",
+                                                      "href": getLocalizedHref("/docs/coding-standards"),
                                                       "tags": [
                                                               "標準",
                                                               "品質"
@@ -1548,7 +1548,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Pull Requestガイド",
                                                       "description": "Pull Requestの作成と提出のベストプラクティス",
-                                                      "href": "/docs/pull-request-guide",
+                                                      "href": getLocalizedHref("/docs/pull-request-guide"),
                                                       "tags": [
                                                               "PR",
                                                               "ベストプラクティス"
@@ -1582,19 +1582,19 @@ export default function DocsContent({ locale }: DocsContentProps) {
                               {
                                       "title": "API 참조",
                                       "description": "완전한 API 문서",
-                                      "href": "/docs/api-reference",
+                                      "href": getLocalizedHref("/docs/api-reference"),
                                       "external": false
                               },
                               {
                                       "title": "코드 예제",
                                       "description": "실용적인 코드 예제와 템플릿",
-                                      "href": "/docs/examples",
+                                      "href": getLocalizedHref("/docs/examples"),
                                       "external": false
                               },
                               {
                                       "title": "변경 로그",
                                       "description": "버전 업데이트 및 변경 기록",
-                                      "href": "/docs/changelog",
+                                      "href": getLocalizedHref("/docs/changelog"),
                                       "external": false
                               }
                       ]
@@ -1660,7 +1660,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "개발 환경 설정",
                                                       "description": "로컬 개발 환경 및 종속성 구성",
-                                                      "href": "/docs/development-setup",
+                                                      "href": getLocalizedHref("/docs/development-setup"),
                                                       "tags": [
                                                               "환경",
                                                               "종속성"
@@ -1669,7 +1669,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "프로젝트 구조",
                                                       "description": "Gemini CLI 코드 조직 구조 이해",
-                                                      "href": "/docs/project-structure",
+                                                      "href": getLocalizedHref("/docs/project-structure"),
                                                       "tags": [
                                                               "아키텍처",
                                                               "조직"
@@ -1678,7 +1678,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "빌드 및 테스트",
                                                       "description": "로컬 빌드, 테스트 및 디버깅 워크플로우",
-                                                      "href": "/docs/build-and-test",
+                                                      "href": getLocalizedHref("/docs/build-and-test"),
                                                       "tags": [
                                                               "빌드",
                                                               "테스트",
@@ -1694,27 +1694,27 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                       "color": "from-blue-500 to-indigo-600",
                                       "articles": [
                                               {
-                                                      "title": "Core API",
+                                                      "title": "핵심 API",
                                                       "description": "핵심 API 인터페이스 및 메서드 설명",
-                                                      "href": "/docs/core-api",
+                                                      "href": getLocalizedHref("/docs/core-api"),
                                                       "tags": [
                                                               "API",
                                                               "핵심"
                                                       ]
                                               },
                                               {
-                                                      "title": "Plugin API",
+                                                      "title": "플러그인 API",
                                                       "description": "플러그인 개발 API 및 확장 인터페이스",
-                                                      "href": "/docs/plugin-api",
+                                                      "href": getLocalizedHref("/docs/plugin-api"),
                                                       "tags": [
                                                               "플러그인",
                                                               "확장"
                                                       ]
                                               },
                                               {
-                                                      "title": "Configuration API",
+                                                      "title": "구성 API",
                                                       "description": "구성 관리 API 및 옵션 설명",
-                                                      "href": "/docs/config-api",
+                                                      "href": getLocalizedHref("/docs/config-api"),
                                                       "tags": [
                                                               "구성",
                                                               "설정"
@@ -1731,7 +1731,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "MCP 프로토콜 소개",
                                                       "description": "Model Context Protocol의 기본 개념 학습",
-                                                      "href": "/docs/mcp-introduction",
+                                                      "href": getLocalizedHref("/docs/mcp-introduction"),
                                                       "tags": [
                                                               "MCP",
                                                               "프로토콜"
@@ -1740,7 +1740,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "MCP 서버 구현",
                                                       "description": "사용자 정의 MCP 서버 생성을 위한 완전한 가이드",
-                                                      "href": "/docs/mcp-server",
+                                                      "href": getLocalizedHref("/docs/mcp-server"),
                                                       "tags": [
                                                               "MCP",
                                                               "서버",
@@ -1750,7 +1750,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "MCP 클라이언트 통합",
                                                       "description": "애플리케이션에 MCP 클라이언트 기능 통합",
-                                                      "href": "/docs/mcp-client",
+                                                      "href": getLocalizedHref("/docs/mcp-client"),
                                                       "tags": [
                                                               "MCP",
                                                               "클라이언트",
@@ -1760,7 +1760,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "마이그레이션 가이드",
                                                       "description": "이전 버전에서 업그레이드하기 위한 완전한 가이드",
-                                                      "href": "/docs/migration-guide",
+                                                      "href": getLocalizedHref("/docs/migration-guide"),
                                                       "tags": [
                                                               "마이그레이션",
                                                               "업그레이드"
@@ -1777,7 +1777,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "확장 아키텍처",
                                                       "description": "확장 시스템 설계 및 아키텍처 이해",
-                                                      "href": "/docs/extension-architecture",
+                                                      "href": getLocalizedHref("/docs/extension-architecture"),
                                                       "tags": [
                                                               "확장",
                                                               "아키텍처"
@@ -1786,7 +1786,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "첫 번째 확장 만들기",
                                                       "description": "처음부터 사용자 정의 확장 구축",
-                                                      "href": "/docs/first-extension",
+                                                      "href": getLocalizedHref("/docs/first-extension"),
                                                       "tags": [
                                                               "확장",
                                                               "튜토리얼"
@@ -1795,7 +1795,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "확장 게시 가이드",
                                                       "description": "확장 패키징 및 게시를 위한 모범 사례",
-                                                      "href": "/docs/extension-publishing",
+                                                      "href": getLocalizedHref("/docs/extension-publishing"),
                                                       "tags": [
                                                               "확장",
                                                               "게시"
@@ -1812,7 +1812,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "기여 프로세스",
                                                       "description": "프로젝트에 기여하는 방법 학습",
-                                                      "href": "/docs/contributing-guide",
+                                                      "href": getLocalizedHref("/docs/contributing-guide"),
                                                       "tags": [
                                                               "기여",
                                                               "프로세스"
@@ -1821,7 +1821,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "코딩 표준",
                                                       "description": "코드 스타일 및 품질 표준",
-                                                      "href": "/docs/coding-standards",
+                                                      "href": getLocalizedHref("/docs/coding-standards"),
                                                       "tags": [
                                                               "표준",
                                                               "품질"
@@ -1830,7 +1830,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Pull Request 가이드",
                                                       "description": "Pull Request 생성 및 제출을 위한 모범 사례",
-                                                      "href": "/docs/pull-request-guide",
+                                                      "href": getLocalizedHref("/docs/pull-request-guide"),
                                                       "tags": [
                                                               "PR",
                                                               "모범 사례"
@@ -1865,19 +1865,19 @@ export default function DocsContent({ locale }: DocsContentProps) {
                               {
                                       "title": "Referencia API",
                                       "description": "Documentación API completa",
-                                      "href": "/docs/api-reference",
+                                      "href": getLocalizedHref("/docs/api-reference"),
                                       "external": false
                               },
                               {
                                       "title": "Ejemplos de Código",
                                       "description": "Ejemplos de código prácticos y plantillas",
-                                      "href": "/docs/examples",
+                                      "href": getLocalizedHref("/docs/examples"),
                                       "external": false
                               },
                               {
                                       "title": "Registro de Cambios",
                                       "description": "Actualizaciones de versión y registros de cambios",
-                                      "href": "/docs/changelog",
+                                      "href": getLocalizedHref("/docs/changelog"),
                                       "external": false
                               }
                       ]
@@ -1943,7 +1943,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Configuración del Entorno de Desarrollo",
                                                       "description": "Configurar entorno de desarrollo local y dependencias",
-                                                      "href": "/docs/development-setup",
+                                                      "href": getLocalizedHref("/docs/development-setup"),
                                                       "tags": [
                                                               "Entorno",
                                                               "Dependencias"
@@ -1952,7 +1952,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Estructura del Proyecto",
                                                       "description": "Entender la estructura de organización del código de Gemini CLI",
-                                                      "href": "/docs/project-structure",
+                                                      "href": getLocalizedHref("/docs/project-structure"),
                                                       "tags": [
                                                               "Arquitectura",
                                                               "Organización"
@@ -1961,7 +1961,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Construcción y Pruebas",
                                                       "description": "Flujo de trabajo de construcción, pruebas y depuración local",
-                                                      "href": "/docs/build-and-test",
+                                                      "href": getLocalizedHref("/docs/build-and-test"),
                                                       "tags": [
                                                               "Construcción",
                                                               "Pruebas",
@@ -1977,18 +1977,18 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                       "color": "from-blue-500 to-indigo-600",
                                       "articles": [
                                               {
-                                                      "title": "API Core",
+                                                      "title": "API Principal",
                                                       "description": "Interfaces API principales y descripciones de métodos",
-                                                      "href": "/docs/core-api",
+                                                      "href": getLocalizedHref("/docs/core-api"),
                                                       "tags": [
                                                               "API",
-                                                              "Core"
+                                                              "Principal"
                                                       ]
                                               },
                                               {
-                                                      "title": "API Plugin",
+                                                      "title": "API de Plugin",
                                                       "description": "API de desarrollo de plugins e interfaces de extensión",
-                                                      "href": "/docs/plugin-api",
+                                                      "href": getLocalizedHref("/docs/plugin-api"),
                                                       "tags": [
                                                               "Plugin",
                                                               "Extensión"
@@ -1997,7 +1997,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "API de Configuración",
                                                       "description": "API de gestión de configuración y descripciones de opciones",
-                                                      "href": "/docs/config-api",
+                                                      "href": getLocalizedHref("/docs/config-api"),
                                                       "tags": [
                                                               "Configuración",
                                                               "Ajustes"
@@ -2014,7 +2014,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Introducción al Protocolo MCP",
                                                       "description": "Aprender los conceptos básicos del Model Context Protocol",
-                                                      "href": "/docs/mcp-introduction",
+                                                      "href": getLocalizedHref("/docs/mcp-introduction"),
                                                       "tags": [
                                                               "MCP",
                                                               "Protocolo"
@@ -2023,7 +2023,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Implementación del Servidor MCP",
                                                       "description": "Guía completa para crear servidores MCP personalizados",
-                                                      "href": "/docs/mcp-server",
+                                                      "href": getLocalizedHref("/docs/mcp-server"),
                                                       "tags": [
                                                               "MCP",
                                                               "Servidor",
@@ -2033,7 +2033,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Integración del Cliente MCP",
                                                       "description": "Integrar funcionalidad del cliente MCP en aplicaciones",
-                                                      "href": "/docs/mcp-client",
+                                                      "href": getLocalizedHref("/docs/mcp-client"),
                                                       "tags": [
                                                               "MCP",
                                                               "Cliente",
@@ -2043,7 +2043,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Guía de Migración",
                                                       "description": "Guía completa para actualizar desde versiones anteriores",
-                                                      "href": "/docs/migration-guide",
+                                                      "href": getLocalizedHref("/docs/migration-guide"),
                                                       "tags": [
                                                               "Migración",
                                                               "Actualización"
@@ -2060,7 +2060,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Arquitectura de Extensiones",
                                                       "description": "Entender el diseño y arquitectura del sistema de extensiones",
-                                                      "href": "/docs/extension-architecture",
+                                                      "href": getLocalizedHref("/docs/extension-architecture"),
                                                       "tags": [
                                                               "Extensión",
                                                               "Arquitectura"
@@ -2069,7 +2069,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Creando Tu Primera Extensión",
                                                       "description": "Construir extensiones personalizadas desde cero",
-                                                      "href": "/docs/first-extension",
+                                                      "href": getLocalizedHref("/docs/first-extension"),
                                                       "tags": [
                                                               "Extensión",
                                                               "Tutorial"
@@ -2078,7 +2078,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Guía de Publicación de Extensiones",
                                                       "description": "Mejores prácticas para empaquetar y publicar extensiones",
-                                                      "href": "/docs/extension-publishing",
+                                                      "href": getLocalizedHref("/docs/extension-publishing"),
                                                       "tags": [
                                                               "Extensión",
                                                               "Publicación"
@@ -2095,7 +2095,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Proceso de Contribución",
                                                       "description": "Aprender cómo contribuir al proyecto",
-                                                      "href": "/docs/contributing-guide",
+                                                      "href": getLocalizedHref("/docs/contributing-guide"),
                                                       "tags": [
                                                               "Contribución",
                                                               "Proceso"
@@ -2104,7 +2104,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Estándares de Codificación",
                                                       "description": "Estilo de código y estándares de calidad",
-                                                      "href": "/docs/coding-standards",
+                                                      "href": getLocalizedHref("/docs/coding-standards"),
                                                       "tags": [
                                                               "Estándares",
                                                               "Calidad"
@@ -2113,7 +2113,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Guía de Pull Request",
                                                       "description": "Mejores prácticas para crear y enviar Pull Requests",
-                                                      "href": "/docs/pull-request-guide",
+                                                      "href": getLocalizedHref("/docs/pull-request-guide"),
                                                       "tags": [
                                                               "PR",
                                                               "Mejores Prácticas"
@@ -2147,19 +2147,19 @@ export default function DocsContent({ locale }: DocsContentProps) {
                               {
                                       "title": "Справочник API",
                                       "description": "Полная документация API",
-                                      "href": "/docs/api-reference",
+                                      "href": getLocalizedHref("/docs/api-reference"),
                                       "external": false
                               },
                               {
                                       "title": "Примеры Кода",
                                       "description": "Практические примеры кода и шаблоны",
-                                      "href": "/docs/examples",
+                                      "href": getLocalizedHref("/docs/examples"),
                                       "external": false
                               },
                               {
                                       "title": "Журнал Изменений",
                                       "description": "Обновления версий и записи изменений",
-                                      "href": "/docs/changelog",
+                                      "href": getLocalizedHref("/docs/changelog"),
                                       "external": false
                               }
                       ]
@@ -2225,7 +2225,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Настройка Среды Разработки",
                                                       "description": "Настройка локальной среды разработки и зависимостей",
-                                                      "href": "/docs/development-setup",
+                                                      "href": getLocalizedHref("/docs/development-setup"),
                                                       "tags": [
                                                               "Среда",
                                                               "Зависимости"
@@ -2234,7 +2234,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Структура Проекта",
                                                       "description": "Понимание структуры организации кода Gemini CLI",
-                                                      "href": "/docs/project-structure",
+                                                      "href": getLocalizedHref("/docs/project-structure"),
                                                       "tags": [
                                                               "Архитектура",
                                                               "Организация"
@@ -2243,7 +2243,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Сборка и Тестирование",
                                                       "description": "Рабочий процесс локальной сборки, тестирования и отладки",
-                                                      "href": "/docs/build-and-test",
+                                                      "href": getLocalizedHref("/docs/build-and-test"),
                                                       "tags": [
                                                               "Сборка",
                                                               "Тестирование",
@@ -2259,27 +2259,27 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                       "color": "from-blue-500 to-indigo-600",
                                       "articles": [
                                               {
-                                                      "title": "Core API",
+                                                      "title": "Основной API",
                                                       "description": "Основные интерфейсы API и описания методов",
-                                                      "href": "/docs/core-api",
+                                                      "href": getLocalizedHref("/docs/core-api"),
                                                       "tags": [
                                                               "API",
                                                               "Ядро"
                                                       ]
                                               },
                                               {
-                                                      "title": "Plugin API",
+                                                      "title": "API Плагинов",
                                                       "description": "API разработки плагинов и интерфейсы расширений",
-                                                      "href": "/docs/plugin-api",
+                                                      "href": getLocalizedHref("/docs/plugin-api"),
                                                       "tags": [
                                                               "Плагин",
                                                               "Расширение"
                                                       ]
                                               },
                                               {
-                                                      "title": "Configuration API",
+                                                      "title": "API Конфигурации",
                                                       "description": "API управления конфигурацией и описания опций",
-                                                      "href": "/docs/config-api",
+                                                      "href": getLocalizedHref("/docs/config-api"),
                                                       "tags": [
                                                               "Конфигурация",
                                                               "Настройки"
@@ -2296,7 +2296,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Введение в Протокол MCP",
                                                       "description": "Изучение основных концепций Model Context Protocol",
-                                                      "href": "/docs/mcp-introduction",
+                                                      "href": getLocalizedHref("/docs/mcp-introduction"),
                                                       "tags": [
                                                               "MCP",
                                                               "Протокол"
@@ -2305,7 +2305,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Реализация MCP Сервера",
                                                       "description": "Полное руководство по созданию пользовательских MCP серверов",
-                                                      "href": "/docs/mcp-server",
+                                                      "href": getLocalizedHref("/docs/mcp-server"),
                                                       "tags": [
                                                               "MCP",
                                                               "Сервер",
@@ -2315,7 +2315,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Интеграция MCP Клиента",
                                                       "description": "Интеграция функциональности MCP клиента в приложения",
-                                                      "href": "/docs/mcp-client",
+                                                      "href": getLocalizedHref("/docs/mcp-client"),
                                                       "tags": [
                                                               "MCP",
                                                               "Клиент",
@@ -2325,7 +2325,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Руководство по Миграции",
                                                       "description": "Полное руководство по обновлению со старых версий",
-                                                      "href": "/docs/migration-guide",
+                                                      "href": getLocalizedHref("/docs/migration-guide"),
                                                       "tags": [
                                                               "Миграция",
                                                               "Обновление"
@@ -2342,7 +2342,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Архитектура Расширений",
                                                       "description": "Понимание дизайна и архитектуры системы расширений",
-                                                      "href": "/docs/extension-architecture",
+                                                      "href": getLocalizedHref("/docs/extension-architecture"),
                                                       "tags": [
                                                               "Расширение",
                                                               "Архитектура"
@@ -2351,7 +2351,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Создание Первого Расширения",
                                                       "description": "Построение пользовательских расширений с нуля",
-                                                      "href": "/docs/first-extension",
+                                                      "href": getLocalizedHref("/docs/first-extension"),
                                                       "tags": [
                                                               "Расширение",
                                                               "Учебник"
@@ -2360,7 +2360,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Руководство по Публикации Расширений",
                                                       "description": "Лучшие практики упаковки и публикации расширений",
-                                                      "href": "/docs/extension-publishing",
+                                                      "href": getLocalizedHref("/docs/extension-publishing"),
                                                       "tags": [
                                                               "Расширение",
                                                               "Публикация"
@@ -2377,7 +2377,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Процесс Вклада",
                                                       "description": "Изучение того, как внести вклад в проект",
-                                                      "href": "/docs/contributing-guide",
+                                                      "href": getLocalizedHref("/docs/contributing-guide"),
                                                       "tags": [
                                                               "Вклад",
                                                               "Процесс"
@@ -2386,7 +2386,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Стандарты Кодирования",
                                                       "description": "Стиль кода и стандарты качества",
-                                                      "href": "/docs/coding-standards",
+                                                      "href": getLocalizedHref("/docs/coding-standards"),
                                                       "tags": [
                                                               "Стандарты",
                                                               "Качество"
@@ -2395,7 +2395,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                                               {
                                                       "title": "Руководство по Pull Request",
                                                       "description": "Лучшие практики создания и отправки Pull Requests",
-                                                      "href": "/docs/pull-request-guide",
+                                                      "href": getLocalizedHref("/docs/pull-request-guide"),
                                                       "tags": [
                                                               "PR",
                                                               "Лучшие Практики"
@@ -2417,7 +2417,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
     return translations[locale as keyof typeof translations] || translations.en
   }
 
-  const t = getTranslations(locale)
+  const t = getTranslations(locale, getLocalizedHref)
 
   const sectionIcons = {
     'getting-started': RocketLaunchIcon,
@@ -2592,7 +2592,7 @@ export default function DocsContent({ locale }: DocsContentProps) {
                 {t.community.reportIssue}
               </Link>
               <Link
-                href="/docs/contributing-guide"
+                href={getLocalizedHref("/docs/contributing-guide")}
                 className="rounded-lg border border-gray-300 px-6 py-3 text-base font-semibold text-gray-700 hover:bg-gray-50 transition-colors"
               >
                 {t.community.contribute}

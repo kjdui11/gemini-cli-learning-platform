@@ -428,19 +428,19 @@ export default function EnhancedCommandsContent({ locale }: EnhancedCommandsCont
                     <div className="space-y-2">
                       <div className="flex justify-between items-center py-2 px-3 bg-white rounded-lg">
                         <code className="text-sm font-mono text-blue-600">gemini chat</code>
-                        <span className="text-sm text-gray-600">Interactive AI session</span>
+                        <span className="text-sm text-gray-600">{t.interactiveAISession}</span>
                       </div>
                       <div className="flex justify-between items-center py-2 px-3 bg-white rounded-lg">
                         <code className="text-sm font-mono text-blue-600">gemini ask "question"</code>
-                        <span className="text-sm text-gray-600">Quick question</span>
+                        <span className="text-sm text-gray-600">{t.quickQuestion}</span>
                       </div>
                       <div className="flex justify-between items-center py-2 px-3 bg-white rounded-lg">
                         <code className="text-sm font-mono text-blue-600">gemini analyze file</code>
-                        <span className="text-sm text-gray-600">Analyze code</span>
+                        <span className="text-sm text-gray-600">{t.analyzeCode}</span>
                       </div>
                       <div className="flex justify-between items-center py-2 px-3 bg-white rounded-lg">
                         <code className="text-sm font-mono text-blue-600">gemini auth</code>
-                        <span className="text-sm text-gray-600">Authenticate</span>
+                        <span className="text-sm text-gray-600">{t.authenticate}</span>
                       </div>
                     </div>
                   </div>
@@ -453,19 +453,19 @@ export default function EnhancedCommandsContent({ locale }: EnhancedCommandsCont
                     <div className="space-y-2">
                       <div className="flex justify-between items-center py-2 px-3 bg-white rounded-lg">
                         <code className="text-sm font-mono text-purple-600">/model name</code>
-                        <span className="text-sm text-gray-600">Switch AI model</span>
+                        <span className="text-sm text-gray-600">{t.switchAIModel}</span>
                       </div>
                       <div className="flex justify-between items-center py-2 px-3 bg-white rounded-lg">
                         <code className="text-sm font-mono text-purple-600">/load file</code>
-                        <span className="text-sm text-gray-600">Load file context</span>
+                        <span className="text-sm text-gray-600">{t.loadFileContext}</span>
                       </div>
                       <div className="flex justify-between items-center py-2 px-3 bg-white rounded-lg">
                         <code className="text-sm font-mono text-purple-600">/save file</code>
-                        <span className="text-sm text-gray-600">Save conversation</span>
+                        <span className="text-sm text-gray-600">{t.saveConversation}</span>
                       </div>
                       <div className="flex justify-between items-center py-2 px-3 bg-white rounded-lg">
                         <code className="text-sm font-mono text-purple-600">/clear</code>
-                        <span className="text-sm text-gray-600">Clear history</span>
+                        <span className="text-sm text-gray-600">{t.clearHistory}</span>
                       </div>
                     </div>
                   </div>

@@ -247,7 +247,6 @@
     },
     "developmentSetup": "开发环境设置",
     "projectStructure": "项目结构",
-    "buildAndTest": "构建和测试",
     "coreApi": "核心 API",
     "pluginApi": "插件 API",
     "configApi": "配置 API",
@@ -399,6 +398,226 @@
       "main": "© 2025 Gemini CLI 学习平台. 本站为非官方学习资源网站，致力于推广 AI 编程技术。",
       "basedOn": "基于 Google 官方开源项目",
       "license": "构建 | Apache 2.0 开源协议"
+    }
+  },
+  "migrationGuide": {
+    "metadata": {
+      "title": "迁移指南 - Gemini CLI 文档",
+      "description": "从旧版本升级到最新 Gemini CLI 的完整迁移指南，包括重大变更、配置更新和最佳实践。"
+    },
+    "title": "迁移指南",
+    "subtitle": "从旧版本升级到最新的 Gemini CLI",
+    "overview": {
+      "title": "迁移概述",
+      "description": "本指南帮助您从旧版本的 Gemini CLI 迁移到最新版本。我们将涵盖重大变更、配置更新，并提供逐步说明以确保平稳过渡。",
+      "currentVersionLabel": "当前版本",
+      "currentVersion": "2.0.0",
+      "supportedMigrationsLabel": "支持的迁移",
+      "supportedVersions": "本指南涵盖从 1.x 版本到 2.0.0 的迁移"
+    },
+    "versionMatrix": {
+      "title": "版本兼容性矩阵",
+      "subtitle": "检查哪个迁移路径适用于您当前的版本",
+      "breakingChangesLabel": "重大变更",
+      "versions": [
+        {
+          "from": "1.0.x - 1.2.x",
+          "to": "2.0.0",
+          "difficulty": "重大",
+          "estimatedTime": "30-60 分钟",
+          "breakingChanges": "高"
+        },
+        {
+          "from": "1.3.x - 1.5.x",
+          "to": "2.0.0",
+          "difficulty": "中等",
+          "estimatedTime": "15-30 分钟",
+          "breakingChanges": "中等"
+        },
+        {
+          "from": "1.6.x - 1.9.x",
+          "to": "2.0.0",
+          "difficulty": "轻微",
+          "estimatedTime": "5-15 分钟",
+          "breakingChanges": "低"
+        }
+      ]
+    },
+    "breakingChanges": {
+      "title": "v2.0.0 中的重大变更",
+      "subtitle": "可能影响您现有设置的重要变更",
+      "impactLabel": "影响级别",
+      "migrationLabel": "迁移方法",
+      "changes": [
+        {
+          "category": "配置",
+          "title": "配置文件格式",
+          "description": "配置文件格式已从 JSON 更改为 YAML，以获得更好的可读性和注释支持。",
+          "impact": "高",
+          "migration": "使用内置迁移工具：gemini config migrate",
+          "beforeLabel": "之前 (v1.x)",
+          "afterLabel": "之后 (v2.0)",
+          "beforeCode": "{\n  \"api_key\": \"your-key\",\n  \"model\": \"gemini-pro\"\n}",
+          "afterCode": "api_key: your-key\nmodel: gemini-pro\n# 现在支持注释！"
+        },
+        {
+          "category": "命令",
+          "title": "命令结构变更",
+          "description": "为了保持一致性，一些命令已被重命名或重构。",
+          "impact": "中",
+          "migration": "更新您的脚本和别名",
+          "commandChangesLabel": "命令变更",
+          "commandChanges": [
+            { "old": "gemini chat", "new": "gemini ask" },
+            { "old": "gemini generate", "new": "gemini create" },
+            { "old": "gemini config show", "new": "gemini config list" }
+          ]
+        },
+        {
+          "category": "API",
+          "title": "API 密钥管理",
+          "description": "API 密钥现在以更安全的加密格式存储。",
+          "impact": "低",
+          "migration": "重新运行：gemini config set api-key YOUR_KEY",
+          "note": "您现有的 API 密钥将在首次运行时自动迁移"
+        }
+      ]
+    },
+    "migrationSteps": {
+      "title": "逐步迁移",
+      "subtitle": "按照这些步骤迁移到 Gemini CLI v2.0.0",
+      "commandsLabel": "命令：",
+      "verificationLabel": "验证：",
+      "steps": [
+        {
+          "title": "备份您的配置",
+          "description": "在开始迁移之前，创建当前配置的备份。",
+          "commands": [
+            "gemini config list > gemini-config-backup.txt",
+            "cp ~/.gemini/config.json ~/.gemini/config.json.backup"
+          ],
+          "note": "这确保您可以在需要时恢复设置。"
+        },
+        {
+          "title": "更新 Gemini CLI",
+          "description": "安装最新版本的 Gemini CLI。",
+          "commands": [
+            "npm update -g @google/generative-ai-cli"
+          ],
+          "verification": "gemini --version"
+        },
+        {
+          "title": "运行迁移工具",
+          "description": "使用内置迁移工具更新您的配置。",
+          "commands": [
+            "gemini config migrate"
+          ],
+          "note": "这将自动将您的配置转换为新格式。"
+        },
+        {
+          "title": "验证配置",
+          "description": "检查您的配置是否已正确迁移。",
+          "commands": [
+            "gemini config list",
+            "gemini ask \"你好，测试迁移\""
+          ],
+          "note": "确保所有设置都已保留，CLI 按预期工作。"
+        },
+        {
+          "title": "更新脚本和别名",
+          "description": "更新使用旧命令语法的任何脚本或别名。",
+          "note": "请参考上面的命令变更部分了解需要的具体更新。"
+        }
+      ]
+    },
+    "troubleshooting": {
+      "title": "迁移故障排除",
+      "subtitle": "常见问题及其解决方案",
+      "symptomsLabel": "症状：",
+      "solutionsLabel": "解决方案：",
+      "issues": [
+        {
+          "problem": "配置迁移失败",
+          "symptoms": [
+            "错误：无法迁移配置",
+            "找不到配置文件"
+          ],
+          "solutions": [
+            "确保您对 ~/.gemini 目录有写权限",
+            "检查旧配置文件是否存在：ls ~/.gemini/",
+            "尝试强制迁移：gemini config migrate --force"
+          ]
+        },
+        {
+          "problem": "迁移后命令无法工作",
+          "symptoms": [
+            "找不到命令错误",
+            "意外行为"
+          ],
+          "solutions": [
+            "清除 shell 缓存：hash -r",
+            "重启终端会话",
+            "查看文档中的新命令语法"
+          ]
+        },
+        {
+          "problem": "API 密钥无法工作",
+          "symptoms": [
+            "身份验证错误",
+            "无效 API 密钥消息"
+          ],
+          "solutions": [
+            "重新设置 API 密钥：gemini config set api-key YOUR_KEY",
+            "验证密钥是否正确：gemini config get api-key",
+            "检查 Google AI Studio 中的 API 密钥权限"
+          ]
+        }
+      ]
+    },
+    "rollback": {
+      "title": "回滚说明",
+      "subtitle": "如需要，如何恢复到之前的版本",
+      "warning": "仅在遇到阻止正常操作的关键问题时使用回滚。",
+      "steps": [
+        "卸载当前版本：npm uninstall -g @google/generative-ai-cli",
+        "安装之前版本：npm install -g @google/generative-ai-cli@1.9.0",
+        "恢复配置：cp ~/.gemini/config.json.backup ~/.gemini/config.json",
+        "验证回滚：gemini --version"
+      ]
+    },
+    "postMigration": {
+      "title": "迁移后步骤",
+      "subtitle": "成功迁移后的推荐操作",
+      "learnMoreLabel": "了解更多",
+      "recommendations": [
+        {
+          "title": "更新文档",
+          "description": "更新任何内部文档或团队指南以反映新的命令语法。",
+          "priority": "中"
+        },
+        {
+          "title": "测试自动化脚本",
+          "description": "运行您的自动化脚本和 CI/CD 流水线，确保它们与新版本兼容。",
+          "priority": "高"
+        },
+        {
+          "title": "探索新功能",
+          "description": "查看 v2.0.0 中的新功能和改进。",
+          "priority": "低",
+          "link": "/docs/changelog"
+        },
+        {
+          "title": "清理备份",
+          "description": "确认一切正常工作后，您可以删除备份文件。",
+          "priority": "低"
+        }
+      ]
+    },
+    "footer": {
+      "title": "需要迁移帮助？",
+      "description": "如果您在迁移过程中遇到任何问题，我们的社区随时为您提供帮助。",
+      "getSupportButton": "获取支持",
+      "troubleshootingButton": "查看故障排除指南"
     }
   },
   "meta": {

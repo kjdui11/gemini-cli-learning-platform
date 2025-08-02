@@ -1151,7 +1151,7 @@ export default async function ProjectManagementPage({ params }: PageProps) {
                  'Development Setup'}
               </Link>
               <Link
-                href={`/${locale}/docs/build-and-test`}
+                href="/docs/build-and-test"
                 className="rounded-lg border border-gray-300 px-6 py-3 text-base font-semibold text-gray-700 hover:bg-gray-50 transition-colors"
               >
                 {locale === 'zh' ? '构建和测试' :

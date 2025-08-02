@@ -634,7 +634,7 @@ const getContent = (locale: string) => {
             es: 'Construcción y Pruebas',
             ru: 'Сборка и тестирование'
           }[locale] || 'Build and Test',
-          href: 'build-and-test',
+          href: '/docs/build-and-test',
           primary: false
         },
         {

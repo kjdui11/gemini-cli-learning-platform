@@ -1,9 +1,6 @@
 // Commands translations for all supported languages
-// English content remains unchanged, other languages are fully translated
-
 export interface CommandTranslations {
   [locale: string]: {
-    // Page content
     title: string
     subtitle: string
     searchPlaceholder: string
@@ -13,8 +10,6 @@ export interface CommandTranslations {
     commands: string
     noCommandsFound: string
     noCommandsDesc: string
-    
-    // Quick start guide
     quickStartTitle: string
     quickStartSubtitle: string
     step1Title: string
@@ -23,8 +18,7 @@ export interface CommandTranslations {
     step2Desc: string
     step3Title: string
     step3Desc: string
-    
-    // Command details
+    syntax: string
     options: string
     examples: string
     notes: string
@@ -32,14 +26,18 @@ export interface CommandTranslations {
     required: string
     default: string
     output: string
-    
-    // Cheat sheet
     cheatSheetTitle: string
     essentialCommands: string
     chatCommands: string
     tip: string
-    
-    // Categories
+    interactiveAISession: string
+    quickQuestion: string
+    analyzeCode: string
+    authenticate: string
+    switchAIModel: string
+    loadFileContext: string
+    saveConversation: string
+    clearHistory: string
     categories: {
       core: { name: string; description: string }
       auth: { name: string; description: string }
@@ -47,23 +45,17 @@ export interface CommandTranslations {
       analysis: { name: string; description: string }
       advanced: { name: string; description: string }
     }
-    
-    // Command descriptions (only for non-English)
     commandDescriptions?: {
       [commandId: string]: {
         description: string
-        examples: Array<{
-          description: string
-          command: string
-        }>
-        notes?: string[]
+        examples: Array<{ description: string; command: string }>
+        notes: string[]
       }
     }
   }
 }
 
 export const commandsTranslations: CommandTranslations = {
-  // English (keep original)
   en: {
     title: 'Command Reference',
     subtitle: 'Complete reference for all Gemini CLI commands with syntax, options, and practical examples',
@@ -74,7 +66,6 @@ export const commandsTranslations: CommandTranslations = {
     commands: 'commands',
     noCommandsFound: 'No commands found',
     noCommandsDesc: 'Try adjusting your search terms or browse different categories',
-    
     quickStartTitle: 'Quick Start Guide',
     quickStartSubtitle: 'Get started with Gemini CLI in just a few commands',
     step1Title: 'Install & Authenticate',
@@ -83,7 +74,7 @@ export const commandsTranslations: CommandTranslations = {
     step2Desc: 'Start an interactive session or ask quick questions',
     step3Title: 'Analyze Code',
     step3Desc: 'Analyze files and projects for insights and improvements',
-    
+    syntax: 'Syntax',
     options: 'Options',
     examples: 'Examples',
     notes: 'Notes',
@@ -91,12 +82,18 @@ export const commandsTranslations: CommandTranslations = {
     required: 'required',
     default: 'Default',
     output: 'Output',
-    
     cheatSheetTitle: 'Command Cheat Sheet',
     essentialCommands: 'Essential Commands',
     chatCommands: 'Chat Commands',
     tip: 'Tip: Use',
-    
+    interactiveAISession: 'Interactive AI session',
+    quickQuestion: 'Quick question',
+    analyzeCode: 'Analyze code',
+    authenticate: 'Authenticate',
+    switchAIModel: 'Switch AI model',
+    loadFileContext: 'Load file context',
+    saveConversation: 'Save conversation',
+    clearHistory: 'Clear history',
     categories: {
       core: { name: 'Core Commands', description: 'Essential commands for daily AI-assisted development' },
       auth: { name: 'Authentication', description: 'Commands for managing authentication and API access' },
@@ -105,8 +102,6 @@ export const commandsTranslations: CommandTranslations = {
       advanced: { name: 'Advanced Features', description: 'Advanced commands for power users and automation' }
     }
   },
-
-  // Chinese
   zh: {
     title: '命令参考',
     subtitle: '完整的 Gemini CLI 命令参考，包含语法、选项和实用示例',
@@ -117,7 +112,6 @@ export const commandsTranslations: CommandTranslations = {
     commands: '个命令',
     noCommandsFound: '未找到命令',
     noCommandsDesc: '尝试调整搜索条件或浏览不同分类',
-    
     quickStartTitle: '快速入门指南',
     quickStartSubtitle: '通过几个简单命令快速上手 Gemini CLI',
     step1Title: '安装和认证',
@@ -126,7 +120,7 @@ export const commandsTranslations: CommandTranslations = {
     step2Desc: '启动交互式会话或快速提问',
     step3Title: '分析代码',
     step3Desc: '分析文件和项目，获取洞察和改进建议',
-    
+    syntax: '语法',
     options: '选项',
     examples: '示例',
     notes: '注意事项',
@@ -134,12 +128,18 @@ export const commandsTranslations: CommandTranslations = {
     required: '必需',
     default: '默认值',
     output: '输出',
-    
     cheatSheetTitle: '命令速查表',
     essentialCommands: '基础命令',
     chatCommands: '聊天命令',
     tip: '提示：使用',
-    
+    interactiveAISession: '交互式 AI 会话',
+    quickQuestion: '快速提问',
+    analyzeCode: '分析代码',
+    authenticate: '身份认证',
+    switchAIModel: '切换 AI 模型',
+    loadFileContext: '加载文件上下文',
+    saveConversation: '保存对话',
+    clearHistory: '清除历史记录',
     categories: {
       core: { name: '核心命令', description: '日常 AI 辅助开发的基础命令' },
       auth: { name: '身份认证', description: '管理身份认证和 API 访问的命令' },
@@ -147,17 +147,16 @@ export const commandsTranslations: CommandTranslations = {
       analysis: { name: '代码分析', description: '分析和理解代码的命令' },
       advanced: { name: '高级功能', description: '面向高级用户和自动化的命令' }
     },
-    
     commandDescriptions: {
       chat: {
-        description: '启动与 Gemini AI 的交互式对话',
+        description: '与 Gemini AI 开始交互式对话',
         examples: [
-          { description: '启动基本聊天会话', command: 'gemini chat' },
-          { description: '使用特定模型启动聊天', command: 'gemini chat --model gemini-pro' },
-          { description: '启动聊天并保存对话', command: 'gemini chat --save my-session.md' }
+          { description: '开始基础聊天会话', command: 'gemini chat' },
+          { description: '使用特定模型开始聊天', command: 'gemini chat --model gemini-pro' },
+          { description: '开始聊天并保存对话', command: 'gemini chat --save my-session.md' }
         ],
         notes: [
-          '聊天模式在整个会话中保持上下文',
+          '聊天模式在整个会话期间保持上下文',
           '使用 Ctrl+C 或输入 "exit" 结束会话',
           '您可以将文件拖放到聊天中进行分析'
         ]
@@ -166,13 +165,13 @@ export const commandsTranslations: CommandTranslations = {
         description: '向 Gemini AI 提出单个问题',
         examples: [
           { description: '提出简单问题', command: 'gemini ask "如何安装 Node.js？"' },
-          { description: '询问代码并保存回答', command: 'gemini ask "解释这个函数" --output explanation.md' },
-          { description: '结合文件内容提问', command: 'gemini ask "检查这段代码的错误" < app.js' }
+          { description: '询问代码并保存答案', command: 'gemini ask "解释这个函数" --output explanation.md' },
+          { description: '使用文件内容提问', command: 'gemini ask "检查这段代码的错误" < app.js' }
         ],
         notes: [
-          '每个 ask 命令都是独立的，不保留上下文',
+          '每个 ask 命令都是独立的，不保持上下文',
           '最适合一次性问题和快速查询',
-          '可以通过管道传入文件内容或命令输出'
+          '可以通过管道传输文件内容或命令输出'
         ]
       },
       analyze: {
@@ -180,7 +179,7 @@ export const commandsTranslations: CommandTranslations = {
         examples: [
           { description: '分析单个文件', command: 'gemini analyze app.js' },
           { description: '分析整个项目目录', command: 'gemini analyze . --recursive' },
-          { description: '执行安全分析', command: 'gemini analyze src/ --type security' },
+          { description: '进行安全分析', command: 'gemini analyze src/ --type security' },
           { description: '分析并保存报告', command: 'gemini analyze package.json --output analysis-report.md' }
         ],
         notes: [
@@ -190,15 +189,15 @@ export const commandsTranslations: CommandTranslations = {
         ]
       },
       auth: {
-        description: '使用 Google 账户进行身份认证',
+        description: '使用 Google 账户进行身份验证',
         examples: [
-          { description: '开始认证过程', command: 'gemini auth' },
-          { description: '检查认证状态', command: 'gemini auth status' },
+          { description: '开始身份验证过程', command: 'gemini auth' },
+          { description: '检查身份验证状态', command: 'gemini auth status' },
           { description: '从当前账户注销', command: 'gemini auth logout' }
         ],
         notes: [
-          '打开浏览器进行 OAuth 认证',
-          '凭据安全存储在本地',
+          '为 OAuth 身份验证打开浏览器',
+          '凭据安全地存储在本地',
           '访问 Gemini API 所必需'
         ]
       },
@@ -213,14 +212,91 @@ export const commandsTranslations: CommandTranslations = {
         ],
         notes: [
           '配置按用户存储',
-          'API 密钥设置绕过 OAuth 认证',
+          'API 密钥设置绕过 OAuth 身份验证',
           '使用 reset 恢复默认设置'
+        ]
+      },
+      version: {
+        description: '显示版本信息',
+        examples: [
+          { description: '显示当前版本', command: 'gemini version' },
+          { description: '显示详细版本信息', command: 'gemini version --verbose' },
+          { description: '检查更新', command: 'gemini version --check-updates' }
+        ],
+        notes: [
+          '显示 CLI 和相关组件的版本',
+          '可以检查是否有可用更新',
+          '包含构建信息和依赖版本'
+        ]
+      },
+      help: {
+        description: '显示命令帮助信息',
+        examples: [
+          { description: '显示一般帮助', command: 'gemini help' },
+          { description: '显示特定命令帮助', command: 'gemini help chat' },
+          { description: '显示所有可用命令', command: 'gemini help --all' }
+        ],
+        notes: [
+          '提供详细的命令使用说明',
+          '包含选项和示例',
+          '可以获取特定命令的详细帮助'
+        ]
+      },
+      init: {
+        description: '在新项目中初始化 Gemini CLI',
+        examples: [
+          { description: '在当前目录初始化', command: 'gemini init' },
+          { description: '使用特定模板初始化', command: 'gemini init --template typescript' },
+          { description: '初始化并设置配置', command: 'gemini init --config' }
+        ],
+        notes: [
+          '创建项目配置文件',
+          '设置项目特定的设置',
+          '可以选择不同的项目模板'
+        ]
+      },
+      slash: {
+        description: '聊天会话中可用的交互式命令',
+        examples: [
+          { description: '切换 AI 模型', command: '/model gemini-pro' },
+          { description: '加载文件上下文', command: '/load app.js' },
+          { description: '保存对话', command: '/save conversation.md' },
+          { description: '清除历史记录', command: '/clear' }
+        ],
+        notes: [
+          '仅在聊天模式中可用',
+          '提供会话内的快速操作',
+          '不需要退出聊天即可执行'
+        ]
+      },
+      diff: {
+        description: '比较文件或分析变更',
+        examples: [
+          { description: '比较两个文件', command: 'gemini diff file1.js file2.js' },
+          { description: '分析 Git 变更', command: 'gemini diff --git' },
+          { description: '比较目录', command: 'gemini diff dir1/ dir2/' }
+        ],
+        notes: [
+          '支持文件和目录比较',
+          '可以集成 Git 变更分析',
+          '提供智能差异分析'
+        ]
+      },
+      status: {
+        description: '显示项目状态和健康检查',
+        examples: [
+          { description: '检查项目状态', command: 'gemini status' },
+          { description: '详细状态报告', command: 'gemini status --verbose' },
+          { description: '检查特定组件', command: 'gemini status --component auth' }
+        ],
+        notes: [
+          '显示项目健康状况',
+          '检查配置和依赖',
+          '提供故障排除信息'
         ]
       }
     }
   },
-
-  // Hindi
   hi: {
     title: 'कमांड संदर्भ',
     subtitle: 'सिंटैक्स, विकल्प और व्यावहारिक उदाहरणों के साथ सभी Gemini CLI कमांड का पूरा संदर्भ',
@@ -231,7 +307,6 @@ export const commandsTranslations: CommandTranslations = {
     commands: 'कमांड',
     noCommandsFound: 'कोई कमांड नहीं मिला',
     noCommandsDesc: 'अपने खोज शब्दों को समायोजित करने या विभिन्न श्रेणियों को ब्राउज़ करने का प्रयास करें',
-    
     quickStartTitle: 'त्वरित प्रारंभ गाइड',
     quickStartSubtitle: 'कुछ ही कमांड में Gemini CLI के साथ शुरुआत करें',
     step1Title: 'इंस्टॉल और प्रमाणीकरण',
@@ -240,7 +315,7 @@ export const commandsTranslations: CommandTranslations = {
     step2Desc: 'एक इंटरैक्टिव सत्र शुरू करें या त्वरित प्रश्न पूछें',
     step3Title: 'कोड का विश्लेषण करें',
     step3Desc: 'अंतर्दृष्टि और सुधार के लिए फ़ाइलों और परियोजनाओं का विश्लेषण करें',
-    
+    syntax: 'सिंटैक्स',
     options: 'विकल्प',
     examples: 'उदाहरण',
     notes: 'नोट्स',
@@ -248,276 +323,173 @@ export const commandsTranslations: CommandTranslations = {
     required: 'आवश्यक',
     default: 'डिफ़ॉल्ट',
     output: 'आउटपुट',
-    
     cheatSheetTitle: 'कमांड चीट शीट',
     essentialCommands: 'आवश्यक कमांड',
     chatCommands: 'चैट कमांड',
     tip: 'सुझाव: उपयोग करें',
-    
+    interactiveAISession: 'इंटरैक्टिव AI सत्र',
+    quickQuestion: 'त्वरित प्रश्न',
+    analyzeCode: 'कोड का विश्लेषण',
+    authenticate: 'प्रमाणीकरण',
+    switchAIModel: 'AI मॉडल स्विच करें',
+    loadFileContext: 'फ़ाइल संदर्भ लोड करें',
+    saveConversation: 'बातचीत सहेजें',
+    clearHistory: 'इतिहास साफ़ करें',
     categories: {
       core: { name: 'मुख्य कमांड', description: 'दैनिक AI-सहायक विकास के लिए आवश्यक कमांड' },
       auth: { name: 'प्रमाणीकरण', description: 'प्रमाणीकरण और API पहुंच प्रबंधन के लिए कमांड' },
       config: { name: 'कॉन्फ़िगरेशन', description: 'CLI सेटिंग्स और प्राथमिकताओं को कॉन्फ़िगर करने के लिए कमांड' },
       analysis: { name: 'कोड विश्लेषण', description: 'कोड का विश्लेषण और समझने के लिए कमांड' },
       advanced: { name: 'उन्नत सुविधाएं', description: 'पावर उपयोगकर्ताओं और स्वचालन के लिए उन्नत कमांड' }
-    }
-  },
-
-  // French
-  fr: {
-    title: 'Référence des Commandes',
-    subtitle: 'Référence complète pour toutes les commandes Gemini CLI avec syntaxe, options et exemples pratiques',
-    searchPlaceholder: 'Rechercher des commandes...',
-    allCommands: 'Toutes les Commandes',
-    commandsFound: 'commandes trouvées',
-    command: 'commande',
-    commands: 'commandes',
-    noCommandsFound: 'Aucune commande trouvée',
-    noCommandsDesc: 'Essayez d\'ajuster vos termes de recherche ou parcourez différentes catégories',
-
-    quickStartTitle: 'Guide de Démarrage Rapide',
-    quickStartSubtitle: 'Commencez avec Gemini CLI en quelques commandes seulement',
-    step1Title: 'Installer et Authentifier',
-    step1Desc: 'Installez le CLI et authentifiez-vous avec votre compte Google',
-    step2Title: 'Commencer à Discuter',
-    step2Desc: 'Démarrez une session interactive ou posez des questions rapides',
-    step3Title: 'Analyser le Code',
-    step3Desc: 'Analysez les fichiers et projets pour obtenir des insights et améliorations',
-
-    options: 'Options',
-    examples: 'Exemples',
-    notes: 'Notes',
-    relatedCommands: 'Commandes Associées',
-    required: 'requis',
-    default: 'Par défaut',
-    output: 'Sortie',
-
-    cheatSheetTitle: 'Aide-Mémoire des Commandes',
-    essentialCommands: 'Commandes Essentielles',
-    chatCommands: 'Commandes de Chat',
-    tip: 'Astuce : Utilisez',
-
-    categories: {
-      core: { name: 'Commandes Principales', description: 'Commandes essentielles pour le développement quotidien assisté par IA' },
-      auth: { name: 'Authentification', description: 'Commandes pour gérer l\'authentification et l\'accès API' },
-      config: { name: 'Configuration', description: 'Commandes pour configurer les paramètres et préférences du CLI' },
-      analysis: { name: 'Analyse de Code', description: 'Commandes pour analyser et comprendre le code' },
-      advanced: { name: 'Fonctionnalités Avancées', description: 'Commandes avancées pour utilisateurs expérimentés et automatisation' }
-    }
-  },
-
-  // German
-  de: {
-    title: 'Befehlsreferenz',
-    subtitle: 'Vollständige Referenz für alle Gemini CLI-Befehle mit Syntax, Optionen und praktischen Beispielen',
-    searchPlaceholder: 'Befehle suchen...',
-    allCommands: 'Alle Befehle',
-    commandsFound: 'Befehle gefunden',
-    command: 'Befehl',
-    commands: 'Befehle',
-    noCommandsFound: 'Keine Befehle gefunden',
-    noCommandsDesc: 'Versuchen Sie, Ihre Suchbegriffe anzupassen oder verschiedene Kategorien zu durchsuchen',
-
-    quickStartTitle: 'Schnellstart-Anleitung',
-    quickStartSubtitle: 'Beginnen Sie mit Gemini CLI in nur wenigen Befehlen',
-    step1Title: 'Installieren & Authentifizieren',
-    step1Desc: 'Installieren Sie die CLI und authentifizieren Sie sich mit Ihrem Google-Konto',
-    step2Title: 'Chat Starten',
-    step2Desc: 'Starten Sie eine interaktive Sitzung oder stellen Sie schnelle Fragen',
-    step3Title: 'Code Analysieren',
-    step3Desc: 'Analysieren Sie Dateien und Projekte für Einblicke und Verbesserungen',
-
-    options: 'Optionen',
-    examples: 'Beispiele',
-    notes: 'Hinweise',
-    relatedCommands: 'Verwandte Befehle',
-    required: 'erforderlich',
-    default: 'Standard',
-    output: 'Ausgabe',
-
-    cheatSheetTitle: 'Befehl-Spickzettel',
-    essentialCommands: 'Wesentliche Befehle',
-    chatCommands: 'Chat-Befehle',
-    tip: 'Tipp: Verwenden Sie',
-
-    categories: {
-      core: { name: 'Kernbefehle', description: 'Wesentliche Befehle für die tägliche KI-unterstützte Entwicklung' },
-      auth: { name: 'Authentifizierung', description: 'Befehle zur Verwaltung von Authentifizierung und API-Zugriff' },
-      config: { name: 'Konfiguration', description: 'Befehle zur Konfiguration von CLI-Einstellungen und -Präferenzen' },
-      analysis: { name: 'Code-Analyse', description: 'Befehle zur Analyse und zum Verständnis von Code' },
-      advanced: { name: 'Erweiterte Funktionen', description: 'Erweiterte Befehle für Power-User und Automatisierung' }
-    }
-  },
-
-  // Japanese
-  ja: {
-    title: 'コマンドリファレンス',
-    subtitle: '構文、オプション、実用的な例を含むすべてのGemini CLIコマンドの完全なリファレンス',
-    searchPlaceholder: 'コマンドを検索...',
-    allCommands: 'すべてのコマンド',
-    commandsFound: 'コマンドが見つかりました',
-    command: 'コマンド',
-    commands: 'コマンド',
-    noCommandsFound: 'コマンドが見つかりません',
-    noCommandsDesc: '検索用語を調整するか、異なるカテゴリを参照してください',
-
-    quickStartTitle: 'クイックスタートガイド',
-    quickStartSubtitle: 'わずか数コマンドでGemini CLIを始めましょう',
-    step1Title: 'インストールと認証',
-    step1Desc: 'CLIをインストールし、Googleアカウントで認証します',
-    step2Title: 'チャットを開始',
-    step2Desc: 'インタラクティブセッションを開始するか、素早く質問します',
-    step3Title: 'コードを分析',
-    step3Desc: 'ファイルやプロジェクトを分析して洞察と改善を得ます',
-
-    options: 'オプション',
-    examples: '例',
-    notes: '注意事項',
-    relatedCommands: '関連コマンド',
-    required: '必須',
-    default: 'デフォルト',
-    output: '出力',
-
-    cheatSheetTitle: 'コマンドチートシート',
-    essentialCommands: '基本コマンド',
-    chatCommands: 'チャットコマンド',
-    tip: 'ヒント：使用してください',
-
-    categories: {
-      core: { name: 'コアコマンド', description: '日常のAI支援開発に必要な基本コマンド' },
-      auth: { name: '認証', description: '認証とAPIアクセス管理のためのコマンド' },
-      config: { name: '設定', description: 'CLI設定と設定を構成するためのコマンド' },
-      analysis: { name: 'コード分析', description: 'コードを分析し理解するためのコマンド' },
-      advanced: { name: '高度な機能', description: 'パワーユーザーと自動化のための高度なコマンド' }
-    }
-  },
-
-  // Korean
-  ko: {
-    title: '명령어 참조',
-    subtitle: '구문, 옵션 및 실용적인 예제가 포함된 모든 Gemini CLI 명령어의 완전한 참조',
-    searchPlaceholder: '명령어 검색...',
-    allCommands: '모든 명령어',
-    commandsFound: '개의 명령어를 찾았습니다',
-    command: '개 명령어',
-    commands: '개 명령어',
-    noCommandsFound: '명령어를 찾을 수 없습니다',
-    noCommandsDesc: '검색어를 조정하거나 다른 카테고리를 탐색해보세요',
-
-    quickStartTitle: '빠른 시작 가이드',
-    quickStartSubtitle: '몇 개의 명령어로 Gemini CLI를 시작하세요',
-    step1Title: '설치 및 인증',
-    step1Desc: 'CLI를 설치하고 Google 계정으로 인증하세요',
-    step2Title: '채팅 시작',
-    step2Desc: '대화형 세션을 시작하거나 빠른 질문을 하세요',
-    step3Title: '코드 분석',
-    step3Desc: '파일과 프로젝트를 분석하여 통찰력과 개선사항을 얻으세요',
-
-    options: '옵션',
-    examples: '예제',
-    notes: '참고사항',
-    relatedCommands: '관련 명령어',
-    required: '필수',
-    default: '기본값',
-    output: '출력',
-
-    cheatSheetTitle: '명령어 치트 시트',
-    essentialCommands: '필수 명령어',
-    chatCommands: '채팅 명령어',
-    tip: '팁: 사용하세요',
-
-    categories: {
-      core: { name: '핵심 명령어', description: '일상적인 AI 지원 개발을 위한 필수 명령어' },
-      auth: { name: '인증', description: '인증 및 API 액세스 관리를 위한 명령어' },
-      config: { name: '구성', description: 'CLI 설정 및 기본 설정을 구성하는 명령어' },
-      analysis: { name: '코드 분석', description: '코드를 분석하고 이해하기 위한 명령어' },
-      advanced: { name: '고급 기능', description: '파워 유저 및 자동화를 위한 고급 명령어' }
-    }
-  },
-
-  // Spanish
-  es: {
-    title: 'Referencia de Comandos',
-    subtitle: 'Referencia completa para todos los comandos de Gemini CLI con sintaxis, opciones y ejemplos prácticos',
-    searchPlaceholder: 'Buscar comandos...',
-    allCommands: 'Todos los Comandos',
-    commandsFound: 'comandos encontrados',
-    command: 'comando',
-    commands: 'comandos',
-    noCommandsFound: 'No se encontraron comandos',
-    noCommandsDesc: 'Intenta ajustar tus términos de búsqueda o navega por diferentes categorías',
-
-    quickStartTitle: 'Guía de Inicio Rápido',
-    quickStartSubtitle: 'Comienza con Gemini CLI en solo unos pocos comandos',
-    step1Title: 'Instalar y Autenticar',
-    step1Desc: 'Instala el CLI y autentícate con tu cuenta de Google',
-    step2Title: 'Comenzar a Chatear',
-    step2Desc: 'Inicia una sesión interactiva o haz preguntas rápidas',
-    step3Title: 'Analizar Código',
-    step3Desc: 'Analiza archivos y proyectos para obtener insights y mejoras',
-
-    options: 'Opciones',
-    examples: 'Ejemplos',
-    notes: 'Notas',
-    relatedCommands: 'Comandos Relacionados',
-    required: 'requerido',
-    default: 'Por defecto',
-    output: 'Salida',
-
-    cheatSheetTitle: 'Hoja de Referencia de Comandos',
-    essentialCommands: 'Comandos Esenciales',
-    chatCommands: 'Comandos de Chat',
-    tip: 'Consejo: Usa',
-
-    categories: {
-      core: { name: 'Comandos Principales', description: 'Comandos esenciales para el desarrollo diario asistido por IA' },
-      auth: { name: 'Autenticación', description: 'Comandos para gestionar la autenticación y el acceso a la API' },
-      config: { name: 'Configuración', description: 'Comandos para configurar ajustes y preferencias del CLI' },
-      analysis: { name: 'Análisis de Código', description: 'Comandos para analizar y entender el código' },
-      advanced: { name: 'Características Avanzadas', description: 'Comandos avanzados para usuarios expertos y automatización' }
-    }
-  },
-
-  // Russian
-  ru: {
-    title: 'Справочник Команд',
-    subtitle: 'Полный справочник по всем командам Gemini CLI с синтаксисом, опциями и практическими примерами',
-    searchPlaceholder: 'Поиск команд...',
-    allCommands: 'Все Команды',
-    commandsFound: 'команд найдено',
-    command: 'команда',
-    commands: 'команд',
-    noCommandsFound: 'Команды не найдены',
-    noCommandsDesc: 'Попробуйте изменить поисковые термины или просмотрите другие категории',
-
-    quickStartTitle: 'Руководство по Быстрому Старту',
-    quickStartSubtitle: 'Начните работу с Gemini CLI всего за несколько команд',
-    step1Title: 'Установка и Аутентификация',
-    step1Desc: 'Установите CLI и аутентифицируйтесь с помощью вашего аккаунта Google',
-    step2Title: 'Начать Чат',
-    step2Desc: 'Запустите интерактивную сессию или задайте быстрые вопросы',
-    step3Title: 'Анализ Кода',
-    step3Desc: 'Анализируйте файлы и проекты для получения инсайтов и улучшений',
-
-    options: 'Опции',
-    examples: 'Примеры',
-    notes: 'Заметки',
-    relatedCommands: 'Связанные Команды',
-    required: 'обязательно',
-    default: 'По умолчанию',
-    output: 'Вывод',
-
-    cheatSheetTitle: 'Шпаргалка по Командам',
-    essentialCommands: 'Основные Команды',
-    chatCommands: 'Команды Чата',
-    tip: 'Совет: Используйте',
-
-    categories: {
-      core: { name: 'Основные Команды', description: 'Основные команды для ежедневной разработки с помощью ИИ' },
-      auth: { name: 'Аутентификация', description: 'Команды для управления аутентификацией и доступом к API' },
-      config: { name: 'Конфигурация', description: 'Команды для настройки параметров и предпочтений CLI' },
-      analysis: { name: 'Анализ Кода', description: 'Команды для анализа и понимания кода' },
-      advanced: { name: 'Продвинутые Функции', description: 'Продвинутые команды для опытных пользователей и автоматизации' }
+    },
+    commandDescriptions: {
+      chat: {
+        description: 'Gemini AI के साथ इंटरैक्टिव बातचीत शुरू करें',
+        examples: [
+          { description: 'बुनियादी चैट सत्र शुरू करें', command: 'gemini chat' },
+          { description: 'विशिष्ट मॉडल के साथ चैट शुरू करें', command: 'gemini chat --model gemini-pro' },
+          { description: 'चैट शुरू करें और बातचीत सहेजें', command: 'gemini chat --save my-session.md' }
+        ],
+        notes: [
+          'चैट मोड पूरे सत्र में संदर्भ बनाए रखता है',
+          'सत्र समाप्त करने के लिए Ctrl+C या "exit" टाइप करें',
+          'आप विश्लेषण के लिए चैट में फ़ाइलें खींच और छोड़ सकते हैं'
+        ]
+      },
+      ask: {
+        description: 'Gemini AI से एक प्रश्न पूछें',
+        examples: [
+          { description: 'सरल प्रश्न पूछें', command: 'gemini ask "Node.js कैसे इंस्टॉल करें?"' },
+          { description: 'कोड के बारे में पूछें और उत्तर सहेजें', command: 'gemini ask "इस फ़ंक्शन की व्याख्या करें" --output explanation.md' },
+          { description: 'फ़ाइल सामग्री के साथ प्रश्न पूछें', command: 'gemini ask "इस कोड में त्रुटियों की जांच करें" < app.js' }
+        ],
+        notes: [
+          'प्रत्येक ask कमांड स्वतंत्र है, संदर्भ बनाए नहीं रखता',
+          'एक बार के प्रश्न और त्वरित क्वेरी के लिए सबसे अच्छा',
+          'फ़ाइल सामग्री या कमांड आउटपुट को पाइप कर सकते हैं'
+        ]
+      },
+      analyze: {
+        description: 'अंतर्दृष्टि के लिए फ़ाइलों, निर्देशिकाओं या कोड का विश्लेषण करें',
+        examples: [
+          { description: 'एकल फ़ाइल का विश्लेषण करें', command: 'gemini analyze app.js' },
+          { description: 'पूरी प्रोजेक्ट निर्देशिका का विश्लेषण करें', command: 'gemini analyze . --recursive' },
+          { description: 'सुरक्षा विश्लेषण करें', command: 'gemini analyze src/ --type security' },
+          { description: 'विश्लेषण करें और रिपोर्ट सहेजें', command: 'gemini analyze package.json --output analysis-report.md' }
+        ],
+        notes: [
+          'अधिकांश टेक्स्ट-आधारित फ़ाइल प्रारूपों का समर्थन करता है',
+          'कोड गुणवत्ता, सुरक्षा और प्रदर्शन का विश्लेषण कर सकता है',
+          'बाइनरी फ़ाइलों का समर्थन नहीं करता'
+        ]
+      },
+      auth: {
+        description: 'Google खाते के साथ प्रमाणीकरण करें',
+        examples: [
+          { description: 'प्रमाणीकरण प्रक्रिया शुरू करें', command: 'gemini auth' },
+          { description: 'प्रमाणीकरण स्थिति जांचें', command: 'gemini auth status' },
+          { description: 'वर्तमान खाते से लॉग आउट करें', command: 'gemini auth logout' }
+        ],
+        notes: [
+          'OAuth प्रमाणीकरण के लिए ब्राउज़र खोलता है',
+          'क्रेडेंशियल स्थानीय रूप से सुरक्षित रूप से संग्रहीत होते हैं',
+          'Gemini API तक पहुंच के लिए आवश्यक'
+        ]
+      },
+      config: {
+        description: 'CLI कॉन्फ़िगरेशन सेटिंग्स प्रबंधित करें',
+        examples: [
+          { description: 'सभी कॉन्फ़िगरेशन सेटिंग्स सूचीबद्ध करें', command: 'gemini config list' },
+          { description: 'विशिष्ट सेटिंग प्राप्त करें', command: 'gemini config get model' },
+          { description: 'कॉन्फ़िगरेशन मान सेट करें', command: 'gemini config set model gemini-pro' },
+          { description: 'स्वचालन के लिए API कुंजी सेट करें', command: 'gemini config set api-key YOUR_API_KEY' },
+          { description: 'डिफ़ॉल्ट सेटिंग्स पर रीसेट करें', command: 'gemini config reset' }
+        ],
+        notes: [
+          'कॉन्फ़िगरेशन प्रति उपयोगकर्ता संग्रहीत होती है',
+          'API कुंजी सेटिंग OAuth प्रमाणीकरण को बायपास करती है',
+          'डिफ़ॉल्ट सेटिंग्स को पुनर्स्थापित करने के लिए reset का उपयोग करें'
+        ]
+      },
+      version: {
+        description: 'संस्करण जानकारी प्रदर्शित करें',
+        examples: [
+          { description: 'वर्तमान संस्करण दिखाएं', command: 'gemini version' },
+          { description: 'विस्तृत संस्करण जानकारी दिखाएं', command: 'gemini version --verbose' },
+          { description: 'अपडेट की जांच करें', command: 'gemini version --check-updates' }
+        ],
+        notes: [
+          'CLI और संबंधित घटकों का संस्करण दिखाता है',
+          'उपलब्ध अपडेट की जांच कर सकता है',
+          'बिल्ड जानकारी और निर्भरता संस्करण शामिल करता है'
+        ]
+      },
+      help: {
+        description: 'कमांड के लिए सहायता जानकारी प्रदर्शित करें',
+        examples: [
+          { description: 'सामान्य सहायता दिखाएं', command: 'gemini help' },
+          { description: 'विशिष्ट कमांड सहायता दिखाएं', command: 'gemini help chat' },
+          { description: 'सभी उपलब्ध कमांड दिखाएं', command: 'gemini help --all' }
+        ],
+        notes: [
+          'कमांड उपयोग के लिए विस्तृत निर्देश प्रदान करता है',
+          'विकल्प और उदाहरण शामिल करता है',
+          'विशिष्ट कमांड के लिए विस्तृत सहायता प्राप्त कर सकते हैं'
+        ]
+      },
+      init: {
+        description: 'नई परियोजना में Gemini CLI को प्रारंभ करें',
+        examples: [
+          { description: 'वर्तमान निर्देशिका में प्रारंभ करें', command: 'gemini init' },
+          { description: 'विशिष्ट टेम्प्लेट के साथ प्रारंभ करें', command: 'gemini init --template typescript' },
+          { description: 'प्रारंभ करें और कॉन्फ़िगरेशन सेट करें', command: 'gemini init --config' }
+        ],
+        notes: [
+          'परियोजना कॉन्फ़िगरेशन फ़ाइल बनाता है',
+          'परियोजना-विशिष्ट सेटिंग्स सेट करता है',
+          'विभिन्न परियोजना टेम्प्लेट चुन सकते हैं'
+        ]
+      },
+      slash: {
+        description: 'चैट सत्र के भीतर उपलब्ध इंटरैक्टिव कमांड',
+        examples: [
+          { description: 'AI मॉडल स्विच करें', command: '/model gemini-pro' },
+          { description: 'फ़ाइल संदर्भ लोड करें', command: '/load app.js' },
+          { description: 'बातचीत सहेजें', command: '/save conversation.md' },
+          { description: 'इतिहास साफ़ करें', command: '/clear' }
+        ],
+        notes: [
+          'केवल चैट मोड में उपलब्ध',
+          'सत्र के भीतर त्वरित संचालन प्रदान करता है',
+          'चैट से बाहर निकले बिना निष्पादित कर सकते हैं'
+        ]
+      },
+      diff: {
+        description: 'फ़ाइलों की तुलना करें या परिवर्तनों का विश्लेषण करें',
+        examples: [
+          { description: 'दो फ़ाइलों की तुलना करें', command: 'gemini diff file1.js file2.js' },
+          { description: 'Git परिवर्तनों का विश्लेषण करें', command: 'gemini diff --git' },
+          { description: 'निर्देशिकाओं की तुलना करें', command: 'gemini diff dir1/ dir2/' }
+        ],
+        notes: [
+          'फ़ाइल और निर्देशिका तुलना का समर्थन करता है',
+          'Git परिवर्तन विश्लेषण को एकीकृत कर सकता है',
+          'बुद्धिमान अंतर विश्लेषण प्रदान करता है'
+        ]
+      },
+      status: {
+        description: 'परियोजना स्थिति और स्वास्थ्य जांच दिखाएं',
+        examples: [
+          { description: 'परियोजना स्थिति जांचें', command: 'gemini status' },
+          { description: 'विस्तृत स्थिति रिपोर्ट', command: 'gemini status --verbose' },
+          { description: 'विशिष्ट घटक जांचें', command: 'gemini status --component auth' }
+        ],
+        notes: [
+          'परियोजना स्वास्थ्य स्थिति दिखाता है',
+          'कॉन्फ़िगरेशन और निर्भरताओं की जांच करता है',
+          'समस्या निवारण जानकारी प्रदान करता है'
+        ]
+      }
     }
   }
 }

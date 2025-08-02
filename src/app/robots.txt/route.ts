@@ -8,26 +8,30 @@ export const revalidate = false
 export async function GET() {
   const robotsTxt = `User-agent: *
 Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /_next/
-Disallow: /private/
-Disallow: *.json
-Disallow: *.xml
 
-User-agent: Googlebot
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-
-User-agent: Bingbot
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-
+# Sitemap
 Sitemap: ${siteConfig.url}/sitemap.xml
+
+# Disallow crawling of API routes and internal files
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: *.json$
+
+# Allow crawling of all language versions
+Allow: /zh/
+Allow: /hi/
+Allow: /fr/
+Allow: /de/
+Allow: /ja/
+Allow: /ko/
+Allow: /es/
+Allow: /ru/
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Host
 Host: ${siteConfig.url}
 `
 

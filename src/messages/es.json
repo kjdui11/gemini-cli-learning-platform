@@ -270,7 +270,6 @@
     },
     "developmentSetup": "Configuración de desarrollo",
     "projectStructure": "Estructura del proyecto",
-    "buildAndTest": "Construcción y pruebas",
     "coreApi": "API principal",
     "pluginApi": "API de plugins",
     "configApi": "API de configuración",

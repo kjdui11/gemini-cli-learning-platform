@@ -270,7 +270,6 @@
     },
     "developmentSetup": "विकास सेटअप",
     "projectStructure": "प्रोजेक्ट संरचना",
-    "buildAndTest": "बिल्ड और टेस्ट",
     "coreApi": "कोर API",
     "pluginApi": "प्लगइन API",
     "configApi": "कॉन्फ़िग API",
