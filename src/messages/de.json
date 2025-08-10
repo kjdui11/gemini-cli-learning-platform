@@ -40,24 +40,35 @@
   },
   "hero": {
     "title": {
-      "part1": "Gemini",
-      "part2": "CLI"
+      "part1": "Meistern Sie",
+      "part2": "Gemini CLI"
     },
-    "subtitle": "Ein Open-Source-KI-Agent, der die Macht von Gemini direkt in Ihr Terminal bringt",
-    "description": "Ein Kommandozeilen-KI-Workflow-Tool, das sich mit Ihren Tools verbindet, Ihren Code versteht und Ihre Arbeitsabläufe beschleunigt. Abfragen und Bearbeiten großer Codebasen im 1-Millionen-Token-Kontextfenster von Gemini und darüber hinaus, Generieren neuer Apps aus PDFs oder Skizzen und Automatisieren operativer Aufgaben.",
-    "getStarted": "Loslegen",
-    "learnMore": "Mehr erfahren",
+    "subtitle": "Das KI-gestützte Befehlszeilen-Tool, das die Art und Weise verändert, wie Entwickler arbeiten",
+    "description": "Schluss mit dem Wechseln zwischen Tools. Gemini CLI bringt Googles fortschrittlichste KI direkt in Ihr Terminal - analysieren Sie massive Codebasen, generieren Sie Code aus Skizzen, automatisieren Sie Arbeitsabläufe und beschleunigen Sie die Entwicklung mit 1M+ Token-Kontextfenstern.",
+    "problemStatement": "Müde vom Kontextwechsel zwischen IDE, Browser und KI-Tools?",
+    "solutionStatement": "Ein Terminal. Unbegrenzte KI-Power. Vollständige Workflow-Automatisierung.",
+    "getStarted": "Kostenlos starten",
+    "learnMore": "Dokumentation anzeigen",
     "watchDemo": "Demo ansehen",
     "githubStars": "GitHub Sterne",
-    "freeToUse": "Kostenlos nutzbar",
+    "freeToUse": "Kostenlos zu verwenden",
     "openSource": "Open Source",
     "activeUsers": "Aktive Benutzer",
     "badge": {
-      "text": "Open-Source-KI-Agent",
+      "text": "🚀 Googles offizieller Open-Source-KI-Agent",
       "link": "https://github.com/google-gemini/gemini-cli"
     },
     "video": {
       "fallback": "Ihr Browser unterstützt keine Videowiedergabe."
+    },
+    "useCases": {
+      "title": "Perfekt für Entwickler, die folgendes benötigen:",
+      "cases": [
+        "Große Codebasen schnell analysieren",
+        "Code aus PDFs oder Skizzen generieren",
+        "Repetitive Entwicklungsaufgaben automatisieren",
+        "KI-Unterstützung ohne das Terminal zu verlassen"
+      ]
     }
   },
   "features": {
@@ -338,8 +349,12 @@
   },
   "meta": {
     "defaultTitle": "Gemini CLI Lernplattform",
-    "defaultDescription": "Meistern Sie die leistungsstarke KI-Befehlszeile mit umfassenden Tutorials, Anleitungen und Dokumentation.",
-    "keywords": "Gemini CLI, KI, Befehlszeile, Tutorial, Dokumentation, Anleitung"
+    "defaultDescription": "Meistern Sie die leistungsstarke KI-Befehlszeilenschnittstelle mit umfassenden Tutorials, Anleitungen und Dokumentation.",
+    "keywords": "Gemini CLI, KI, Befehlszeile, Tutorial, Dokumentation, Anleitung",
+    "ogTitle": "Gemini CLI Lernplattform - KI-gestütztes Entwicklungstool",
+    "ogDescription": "Professionelle Gemini CLI Lernplattform mit umfassenden KI-Programmier-Tutorials, praktischen Fällen und bewährten Praktiken. Lernen Sie Googles neuestes Open-Source-KI-Befehlszeilentool.",
+    "twitterTitle": "Gemini CLI Lernplattform",
+    "twitterDescription": "Meistern Sie KI-gestützte Entwicklung mit umfassenden Gemini CLI Tutorials und Anleitungen."
   },
   "errors": {
     "pageNotFound": "Seite nicht gefunden",
@@ -384,6 +399,11 @@
       "unit": "Open-Source-Code",
       "title": "Offen und erweiterbar",
       "description": "Unterstützt Model Context Protocol (MCP) und benutzerdefinierte Tools, einfach konfigurierbar in verschiedenen Entwicklungstools und Workflows."
+    },
+    "trustSignals": {
+      "title": "Vertraut von Entwicklern weltweit",
+      "subtitle": "Schließen Sie sich Tausenden von Entwicklern an, die bereits Gemini CLI verwenden",
+      "cta": "Kostenlos loslegen - keine Anmeldung erforderlich"
     }
   },
   "heroShowcase": {

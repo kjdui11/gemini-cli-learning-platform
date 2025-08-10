@@ -40,24 +40,35 @@
   },
   "hero": {
     "title": {
-      "part1": "Gemini",
-      "part2": "CLI"
+      "part1": "マスターする",
+      "part2": "Gemini CLI"
     },
-    "subtitle": "Geminiの力を直接ターミナルに持ち込むオープンソースAIエージェント",
-    "description": "ツールに接続し、コードを理解し、ワークフローを加速するコマンドラインAIワークフローツール。Geminiの100万トークンコンテキストウィンドウ内外で大規模なコードベースをクエリ・編集し、PDFやスケッチから新しいアプリを生成し、運用タスクを自動化します。",
-    "getStarted": "始める",
-    "learnMore": "詳細を見る",
+    "subtitle": "開発者の働き方を変革するAI駆動のコマンドラインツール",
+    "description": "ツール間の切り替えをやめましょう。Gemini CLIはGoogleの最先端AIを直接ターミナルに導入 - 大規模なコードベースを分析し、スケッチからコードを生成し、ワークフローを自動化し、1M+トークンコンテキストウィンドウで開発を加速します。",
+    "problemStatement": "IDE、ブラウザ、AIツール間のコンテキスト切り替えに疲れましたか？",
+    "solutionStatement": "一つのターミナル。無制限のAIパワー。完全なワークフロー自動化。",
+    "getStarted": "無料で始める",
+    "learnMore": "ドキュメントを見る",
     "watchDemo": "デモを見る",
     "githubStars": "GitHub スター",
     "freeToUse": "無料で使用",
     "openSource": "オープンソース",
     "activeUsers": "アクティブユーザー",
     "badge": {
-      "text": "オープンソースAIエージェント",
+      "text": "🚀 Googleの公式オープンソースAIエージェント",
       "link": "https://github.com/google-gemini/gemini-cli"
     },
     "video": {
       "fallback": "お使いのブラウザは動画再生をサポートしていません。"
+    },
+    "useCases": {
+      "title": "以下が必要な開発者に最適：",
+      "cases": [
+        "大規模なコードベースを迅速に分析",
+        "PDFやスケッチからコードを生成",
+        "反復的な開発タスクを自動化",
+        "ターミナルを離れることなくAIサポートを取得"
+      ]
     }
   },
   "features": {
@@ -339,7 +350,11 @@
   "meta": {
     "defaultTitle": "Gemini CLI 学習プラットフォーム",
     "defaultDescription": "包括的なチュートリアル、ガイド、ドキュメントで強力なAIコマンドラインインターフェースをマスターしましょう。",
-    "keywords": "Gemini CLI, AI, コマンドライン, チュートリアル, ドキュメント, ガイド"
+    "keywords": "Gemini CLI, AI, コマンドライン, チュートリアル, ドキュメント, ガイド",
+    "ogTitle": "Gemini CLI 学習プラットフォーム - AI駆動開発ツール",
+    "ogDescription": "包括的なAIプログラミングチュートリアル、実践的なケース、ベストプラクティスを提供するプロフェッショナルなGemini CLI学習プラットフォーム。Googleの最新オープンソースAIコマンドラインツールを学びましょう。",
+    "twitterTitle": "Gemini CLI 学習プラットフォーム",
+    "twitterDescription": "包括的なGemini CLIチュートリアルとガイドでAI駆動開発をマスターしましょう。"
   },
   "errors": {
     "pageNotFound": "ページが見つかりません",
@@ -384,6 +399,11 @@
       "unit": "オープンソースコード",
       "title": "オープンで拡張可能",
       "description": "Model Context Protocol (MCP)とカスタムツールをサポートし、さまざまな開発ツールとワークフローで簡単に設定できます。"
+    },
+    "trustSignals": {
+      "title": "世界中の開発者に信頼されています",
+      "subtitle": "すでにGemini CLIを使用している数千人の開発者に参加しましょう",
+      "cta": "無料で始める - サインアップ不要"
     }
   },
   "heroShowcase": {

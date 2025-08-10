@@ -57,11 +57,19 @@ export default function FeaturesStatsSection() {
           </div>
         </div>
 
-        {/* 底部按钮 */}
+        {/* 信任信号和CTA */}
         <div className="mt-16 text-center">
+          <div className="mb-6">
+            <h3 className="text-xl font-semibold text-white mb-2">
+              {t('featuresStats.trustSignals.title')}
+            </h3>
+            <p className="text-gray-300">
+              {t('featuresStats.trustSignals.subtitle')}
+            </p>
+          </div>
           <div className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-4 text-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
             <span className="bg-gradient-to-r from-blue-100 to-purple-100 bg-clip-text text-transparent">
-              Available free-of-charge
+              {t('featuresStats.trustSignals.cta')}
             </span>
           </div>
         </div>

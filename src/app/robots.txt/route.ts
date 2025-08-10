@@ -12,13 +12,14 @@ Allow: /
 # Sitemap
 Sitemap: ${siteConfig.url}/sitemap.xml
 
-# Disallow crawling of API routes and internal files
-Disallow: /api/
+# Disallow crawling of technical files (won't affect page indexing)
 Disallow: /_next/
+Disallow: /api/
 Disallow: /admin/
-Disallow: *.json$
+Disallow: /*.json$
+Disallow: /*.map$
 
-# Allow crawling of all language versions
+# Explicitly allow important content paths
 Allow: /zh/
 Allow: /hi/
 Allow: /fr/
@@ -27,12 +28,44 @@ Allow: /ja/
 Allow: /ko/
 Allow: /es/
 Allow: /ru/
+Allow: /commands/
+Allow: /installation/
+Allow: /guides/
+Allow: /docs/
+Allow: /faq/
+Allow: /about/
+Allow: /contact/
+Allow: /privacy/
+Allow: /terms/
+
+# Allow important SEO files
+Allow: /sitemap.xml
+Allow: /robots.txt
+Allow: /favicon.ico
+Allow: /manifest.json
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
 
 # Host
 Host: ${siteConfig.url}
+
+# Optimized settings for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
 `
 
   return new NextResponse(robotsTxt, {

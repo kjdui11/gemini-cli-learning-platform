@@ -83,7 +83,7 @@ export default function HeroShowcaseSection() {
         {/* CTA 按钮 */}
         <div className="mt-16 flex justify-center">
           <Link
-            href="/tutorials"
+            href="/guides"
             className="group inline-flex items-center gap-x-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 transition-colors"
           >
             立即开始学习

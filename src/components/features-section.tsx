@@ -121,7 +121,7 @@ export default function FeaturesSection() {
                 {t('features.cta.getStarted')}
               </a>
               <Link
-                href="/tutorials"
+                href="/guides"
                 className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-6 py-3 text-base font-semibold text-white hover:bg-white/10 transition-colors duration-200"
               >
                 {t('features.cta.viewTutorials')}

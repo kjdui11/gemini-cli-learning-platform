@@ -40,24 +40,35 @@
   },
   "hero": {
     "title": {
-      "part1": "Gemini",
-      "part2": "CLI"
+      "part1": "Maîtrisez",
+      "part2": "Gemini CLI"
     },
-    "subtitle": "Un agent IA open source qui apporte la puissance de Gemini directement dans votre terminal",
-    "description": "Un outil de flux de travail IA en ligne de commande qui se connecte à vos outils, comprend votre code et accélère vos flux de travail. Interrogez et modifiez de grandes bases de code dans la fenêtre de contexte de 1 million de tokens de Gemini et au-delà, générez de nouvelles applications à partir de PDF ou d'esquisses et automatisez les tâches opérationnelles.",
-    "getStarted": "Commencer",
-    "learnMore": "En savoir plus",
+    "subtitle": "L'outil de ligne de commande alimenté par l'IA qui transforme la façon dont les développeurs travaillent",
+    "description": "Arrêtez de basculer entre les outils. Gemini CLI apporte l'IA la plus avancée de Google directement dans votre terminal - analysez des bases de code massives, générez du code à partir d'esquisses, automatisez les flux de travail et accélérez le développement avec des fenêtres de contexte de 1M+ tokens.",
+    "problemStatement": "Fatigué de basculer entre IDE, navigateur et outils IA ?",
+    "solutionStatement": "Un terminal. Puissance IA illimitée. Automatisation complète des flux de travail.",
+    "getStarted": "Commencer gratuitement",
+    "learnMore": "Voir la documentation",
     "watchDemo": "Voir la démo",
     "githubStars": "Étoiles GitHub",
     "freeToUse": "Gratuit à utiliser",
     "openSource": "Open Source",
     "activeUsers": "Utilisateurs actifs",
     "badge": {
-      "text": "Agent IA open source",
+      "text": "🚀 Agent IA open source officiel de Google",
       "link": "https://github.com/google-gemini/gemini-cli"
     },
     "video": {
       "fallback": "Votre navigateur ne prend pas en charge la lecture vidéo."
+    },
+    "useCases": {
+      "title": "Parfait pour les développeurs qui ont besoin de :",
+      "cases": [
+        "Analyser rapidement de grandes bases de code",
+        "Générer du code à partir de PDF ou d'esquisses",
+        "Automatiser les tâches de développement répétitives",
+        "Obtenir une assistance IA sans quitter le terminal"
+      ]
     }
   },
   "features": {
@@ -338,8 +349,12 @@
   },
   "meta": {
     "defaultTitle": "Plateforme d'apprentissage Gemini CLI",
-    "defaultDescription": "Maîtrisez l'interface en ligne de commande IA puissante avec des tutoriels complets, des guides et de la documentation.",
-    "keywords": "Gemini CLI, IA, ligne de commande, tutoriel, documentation, guide"
+    "defaultDescription": "Maîtrisez l'interface de ligne de commande IA puissante avec des tutoriels, guides et documentation complets.",
+    "keywords": "Gemini CLI, IA, ligne de commande, tutoriel, documentation, guide",
+    "ogTitle": "Plateforme d'apprentissage Gemini CLI - Outil de développement alimenté par l'IA",
+    "ogDescription": "Plateforme d'apprentissage professionnelle Gemini CLI offrant des tutoriels de programmation IA complets, des cas pratiques et les meilleures pratiques. Apprenez l'outil de ligne de commande IA open-source le plus récent de Google.",
+    "twitterTitle": "Plateforme d'apprentissage Gemini CLI",
+    "twitterDescription": "Maîtrisez le développement alimenté par l'IA avec des tutoriels et guides Gemini CLI complets."
   },
   "errors": {
     "pageNotFound": "Page non trouvée",
@@ -384,6 +399,11 @@
       "unit": "Code open source",
       "title": "Ouvert et extensible",
       "description": "Prend en charge le Model Context Protocol (MCP) et les outils personnalisés, facilement configurable dans divers outils de développement et flux de travail."
+    },
+    "trustSignals": {
+      "title": "Approuvé par les développeurs du monde entier",
+      "subtitle": "Rejoignez des milliers de développeurs qui utilisent déjà Gemini CLI",
+      "cta": "Commencer gratuitement - aucune inscription requise"
     }
   },
   "heroShowcase": {

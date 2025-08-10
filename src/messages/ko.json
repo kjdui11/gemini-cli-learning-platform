@@ -40,24 +40,35 @@
   },
   "hero": {
     "title": {
-      "part1": "Gemini",
-      "part2": "CLI"
+      "part1": "마스터하세요",
+      "part2": "Gemini CLI"
     },
-    "subtitle": "Gemini의 힘을 터미널에 직접 가져다주는 오픈소스 AI 에이전트",
-    "description": "도구에 연결하고, 코드를 이해하며, 워크플로우를 가속화하는 명령줄 AI 워크플로우 도구입니다. Gemini의 100만 토큰 컨텍스트 윈도우 내외에서 대규모 코드베이스를 쿼리하고 편집하며, PDF나 스케치에서 새로운 앱을 생성하고, 운영 작업을 자동화합니다.",
-    "getStarted": "시작하기",
-    "learnMore": "더 알아보기",
+    "subtitle": "개발자의 작업 방식을 변화시키는 AI 기반 명령줄 도구",
+    "description": "도구 간 전환을 멈추세요. Gemini CLI는 Google의 가장 진보된 AI를 터미널에 직접 제공합니다 - 대규모 코드베이스를 분석하고, 스케치에서 코드를 생성하며, 워크플로를 자동화하고, 1M+ 토큰 컨텍스트 창으로 개발을 가속화합니다.",
+    "problemStatement": "IDE, 브라우저, AI 도구 간의 컨텍스트 전환에 지치셨나요?",
+    "solutionStatement": "하나의 터미널. 무제한 AI 파워. 완전한 워크플로 자동화.",
+    "getStarted": "무료로 시작",
+    "learnMore": "문서 보기",
     "watchDemo": "데모 보기",
     "githubStars": "GitHub 스타",
     "freeToUse": "무료 사용",
     "openSource": "오픈 소스",
     "activeUsers": "활성 사용자",
     "badge": {
-      "text": "오픈소스 AI 에이전트",
+      "text": "🚀 Google의 공식 오픈소스 AI 에이전트",
       "link": "https://github.com/google-gemini/gemini-cli"
     },
     "video": {
       "fallback": "브라우저가 비디오 재생을 지원하지 않습니다."
+    },
+    "useCases": {
+      "title": "다음이 필요한 개발자에게 완벽:",
+      "cases": [
+        "대규모 코드베이스를 빠르게 분석",
+        "PDF나 스케치에서 코드 생성",
+        "반복적인 개발 작업 자동화",
+        "터미널을 떠나지 않고 AI 지원 받기"
+      ]
     }
   },
   "features": {
@@ -338,8 +349,12 @@
   },
   "meta": {
     "defaultTitle": "Gemini CLI 학습 플랫폼",
-    "defaultDescription": "포괄적인 튜토리얼, 가이드, 문서를 통해 강력한 AI 명령줄 인터페이스를 마스터하세요.",
-    "keywords": "Gemini CLI, AI, 명령줄, 튜토리얼, 문서, 가이드"
+    "defaultDescription": "포괄적인 튜토리얼, 가이드 및 문서로 강력한 AI 명령줄 인터페이스를 마스터하세요.",
+    "keywords": "Gemini CLI, AI, 명령줄, 튜토리얼, 문서, 가이드",
+    "ogTitle": "Gemini CLI 학습 플랫폼 - AI 기반 개발 도구",
+    "ogDescription": "포괄적인 AI 프로그래밍 튜토리얼, 실용적인 사례 및 모범 사례를 제공하는 전문 Gemini CLI 학습 플랫폼. Google의 최신 오픈소스 AI 명령줄 도구를 배우세요.",
+    "twitterTitle": "Gemini CLI 학습 플랫폼",
+    "twitterDescription": "포괄적인 Gemini CLI 튜토리얼과 가이드로 AI 기반 개발을 마스터하세요."
   },
   "errors": {
     "pageNotFound": "페이지를 찾을 수 없습니다",
@@ -384,6 +399,11 @@
       "unit": "오픈 소스 코드",
       "title": "개방적이고 확장 가능",
       "description": "Model Context Protocol (MCP)과 사용자 정의 도구를 지원하며, 다양한 개발 도구와 워크플로에서 쉽게 구성할 수 있습니다."
+    },
+    "trustSignals": {
+      "title": "전 세계 개발자들의 신뢰",
+      "subtitle": "이미 Gemini CLI를 사용하고 있는 수천 명의 개발자와 함께하세요",
+      "cta": "무료로 시작 - 가입 불필요"
     }
   },
   "heroShowcase": {

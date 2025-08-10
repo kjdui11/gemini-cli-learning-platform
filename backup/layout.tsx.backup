@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
-import { generateMetadata as generateSEOMetadata, structuredData, organizationStructuredData, softwareApplicationStructuredData } from "@/lib/seo";
+import { generateMetadata as generateSEOMetadata, structuredData, organizationStructuredData } from "@/lib/seo";
 import LanguageDetector from '@/components/LanguageDetector';
 
 const geistSans = Geist({
@@ -57,12 +57,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(organizationStructuredData),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(softwareApplicationStructuredData),
           }}
         />
         <LanguageDetector>

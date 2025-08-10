@@ -1,40 +1,35 @@
 import { Metadata } from 'next'
 
 export const siteConfig = {
-  name: 'Gemini CLI Learning Platform',
-  description: 'Master Google\'s Gemini CLI - the open-source AI agent that brings powerful AI workflows directly to your terminal. Learn installation, commands, and advanced usage with comprehensive tutorials, examples, and documentation.',
+  name: 'Gemini CLI 学习平台',
+  description: '专为新手开发者打造的 Gemini CLI 学习平台，提供详细教程、常见问题解答、视频指南和最新产品动态，帮助您快速掌握这个强大的 AI 命令行工具。',
   url: 'https://www.geminicli.cloud',
   ogImage: '/next.svg', // 临时使用现有图片
   keywords: [
     'Gemini CLI',
-    'Google Gemini CLI',
-    'AI command line tool',
-    'AI CLI agent',
+    'AI 命令行工具',
     'Google AI',
-    'developer tools',
-    'artificial intelligence',
-    'command line interface',
-    'CLI tutorial',
-    'AI workflow automation',
-    'code generation CLI',
-    'terminal AI assistant',
-    'Gemini CLI guide',
-    'AI development tools',
-    'machine learning CLI',
-    'Google Gemini tutorial',
-    'AI agent CLI',
-    'command line AI',
-    'developer productivity',
-    'AI coding assistant'
+    '开发者工具',
+    '人工智能',
+    '编程教程',
+    '命令行界面',
+    'CLI 工具',
+    '机器学习',
+    '代码生成',
+    '开发效率',
+    'Google Gemini',
+    'AI 助手',
+    '编程学习',
+    '开发指南'
   ],
   authors: [
     {
-      name: 'Gemini CLI Learning Platform',
+      name: 'Gemini CLI 学习平台',
       url: 'https://www.geminicli.cloud',
     },
   ],
-  creator: 'Gemini CLI Learning Platform',
-  publisher: 'Gemini CLI Learning Platform',
+  creator: 'Gemini CLI 学习平台',
+  publisher: 'Gemini CLI 学习平台',
   category: 'Technology',
 }
 
@@ -64,7 +59,7 @@ export function generateMetadata({
     metadataBase: new URL(siteConfig.url),
     openGraph: {
       type: 'website',
-      locale: 'en_US',
+      locale: 'zh_CN',
       url: siteConfig.url,
       title: metaTitle,
       description: metaDescription,
@@ -128,31 +123,6 @@ export const structuredData = {
       url: `${siteConfig.url}/next.svg`, // 临时使用现有图片
     },
   },
-}
-
-// 软件应用结构化数据
-export const softwareApplicationStructuredData = {
-  '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: 'Gemini CLI',
-  description: 'An open-source AI agent that brings the power of Gemini directly into your terminal for AI-powered workflows and code generation.',
-  url: 'https://github.com/google-gemini/gemini-cli',
-  applicationCategory: 'DeveloperApplication',
-  operatingSystem: ['Windows', 'macOS', 'Linux'],
-  programmingLanguage: 'Python',
-  author: {
-    '@type': 'Organization',
-    name: 'Google',
-    url: 'https://google.com'
-  },
-  offers: {
-    '@type': 'Offer',
-    price: '0',
-    priceCurrency: 'USD'
-  },
-  downloadUrl: 'https://github.com/google-gemini/gemini-cli',
-  softwareVersion: 'Latest',
-  releaseNotes: 'https://github.com/google-gemini/gemini-cli/releases'
 }
 
 export const organizationStructuredData = {

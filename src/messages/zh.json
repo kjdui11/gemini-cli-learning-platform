@@ -43,9 +43,11 @@
       "part1": "掌握",
       "part2": "开启 AI 开发新时代"
     },
-    "subtitle": "掌握强大的 AI 命令行界面",
-    "description": "专为新手开发者打造的 Gemini CLI 学习平台。通过详细教程、实战案例和视频指南，快速掌握 Google 最新的开源 AI 命令行工具，让 AI 成为您开发工作流程中的得力助手。",
-    "getStarted": "开始使用",
+    "subtitle": "专为新手开发者打造的 Gemini CLI 学习平台",
+    "description": "通过详细教程、实战案例和视频指南，快速掌握 Google 最新的开源 AI 命令行工具，让 AI 成为您开发工作流程中的得力助手。",
+    "problemStatement": "厌倦了在IDE、浏览器和AI工具之间切换？",
+    "solutionStatement": "一个终端。无限AI能力。完整工作流自动化。",
+    "getStarted": "开始使用 →",
     "learnMore": "了解更多",
     "watchDemo": "观看演示",
     "githubStars": "GitHub 星标",
@@ -53,11 +55,20 @@
     "openSource": "开源项目",
     "activeUsers": "活跃用户",
     "badge": {
-      "text": "Google 官方开源 AI 命令行工具",
+      "text": "⭐ Google 官方开源 AI 命令行工具",
       "link": "查看源码"
     },
     "video": {
       "fallback": "您的浏览器不支持视频播放。"
+    },
+    "useCases": {
+      "title": "完美适合需要以下功能的开发者：",
+      "cases": [
+        "快速分析大型代码库",
+        "从PDF或草图生成代码",
+        "自动化重复性开发任务",
+        "在不离开终端的情况下获得AI协助"
+      ]
     }
   },
   "features": {
@@ -623,7 +634,11 @@
   "meta": {
     "defaultTitle": "Gemini CLI 学习平台",
     "defaultDescription": "通过全面的教程、指南和文档掌握强大的 AI 命令行界面。",
-    "keywords": "Gemini CLI, AI, 命令行, 教程, 文档, 指南"
+    "keywords": "Gemini CLI, AI, 命令行, 教程, 文档, 指南",
+    "ogTitle": "Gemini CLI 学习平台 - AI 驱动的开发工具",
+    "ogDescription": "专业的 Gemini CLI 中文学习平台，提供全面的 AI 编程教程、实战案例和最佳实践。学习 Google 最新的开源 AI 命令行工具。",
+    "twitterTitle": "Gemini CLI 学习平台",
+    "twitterDescription": "通过全面的 Gemini CLI 教程和指南掌握 AI 驱动的开发。"
   },
   "errors": {
     "pageNotFound": "页面未找到",
@@ -652,6 +667,11 @@
       "unit": "开源代码",
       "title": "开放可扩展",
       "description": "支持 Model Context Protocol (MCP) 和自定义工具，可以轻松配置多种开发工具和流程中。"
+    },
+    "trustSignals": {
+      "title": "全球开发者的信赖之选",
+      "subtitle": "加入已经在使用 Gemini CLI 的数千名开发者",
+      "cta": "免费开始使用 - 无需注册"
     }
   },
   "heroShowcase": {

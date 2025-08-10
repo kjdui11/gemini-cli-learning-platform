@@ -40,24 +40,35 @@
   },
   "hero": {
     "title": {
-      "part1": "Gemini",
-      "part2": "CLI"
+      "part1": "Master",
+      "part2": "Gemini CLI"
     },
-    "subtitle": "An open-source AI agent that brings the power of Gemini directly into your terminal",
-    "description": "A command-line AI workflow tool that connects to your tools, understands your code and accelerates your workflows. Query and edit large codebases in and beyond Gemini's 1M token context window, generate new apps from PDFs or sketches, and automate operational tasks.",
-    "getStarted": "Get Started",
-    "learnMore": "Learn More",
+    "subtitle": "The AI-powered command line tool that transforms how developers work",
+    "description": "Stop switching between tools. Gemini CLI brings Google's most advanced AI directly to your terminal - analyze massive codebases, generate code from sketches, automate workflows, and accelerate development with 1M+ token context windows.",
+    "problemStatement": "Tired of context switching between IDE, browser, and AI tools?",
+    "solutionStatement": "One terminal. Unlimited AI power. Complete workflow automation.",
+    "getStarted": "Start Free",
+    "learnMore": "View Documentation",
     "watchDemo": "Watch Demo",
     "githubStars": "GitHub Stars",
     "freeToUse": "Free to Use",
     "openSource": "Open Source",
     "activeUsers": "Active Users",
     "badge": {
-      "text": "Open Source AI Agent",
+      "text": "🚀 Google's Official Open Source AI Agent",
       "link": "https://github.com/google-gemini/gemini-cli"
     },
     "video": {
       "fallback": "Your browser does not support video playback."
+    },
+    "useCases": {
+      "title": "Perfect for developers who need to:",
+      "cases": [
+        "Analyze large codebases quickly",
+        "Generate code from PDFs or sketches",
+        "Automate repetitive development tasks",
+        "Get AI assistance without leaving terminal"
+      ]
     }
   },
   "features": {
@@ -404,7 +415,11 @@
   "meta": {
     "defaultTitle": "Gemini CLI Learning Platform",
     "defaultDescription": "Master the powerful AI command-line interface with comprehensive tutorials, guides, and documentation.",
-    "keywords": "Gemini CLI, AI, command line, tutorial, documentation, guide"
+    "keywords": "Gemini CLI, AI, command line, tutorial, documentation, guide",
+    "ogTitle": "Gemini CLI Learning Platform - AI-Powered Development Tool",
+    "ogDescription": "Professional Gemini CLI learning platform providing comprehensive AI programming tutorials, practical cases, and best practices. Learn Google's latest open-source AI command-line tool.",
+    "twitterTitle": "Gemini CLI Learning Platform",
+    "twitterDescription": "Master AI-powered development with comprehensive Gemini CLI tutorials and guides."
   },
   "errors": {
     "pageNotFound": "Page Not Found",
@@ -420,19 +435,24 @@
   },
   "featuresStats": {
     "freeExperience": {
-      "unit": "minutes of free development experience",
-      "title": "Unmatched usage limits",
-      "description": "Personal Google accounts get 60 model requests per minute and 1000 requests per day for an exceptional free experience."
+      "unit": "requests/minute",
+      "title": "Generous Free Tier",
+      "description": "60 requests per minute, 1000 per day. No credit card required. Start building immediately with Google's most advanced AI model."
     },
     "tokenContext": {
       "unit": "Token Context",
-      "title": "Powerful model capabilities",
-      "description": "Based on Gemini 2.5 Pro model with 1 million token large context window, supporting real code analysis and generation."
+      "title": "Massive Context Window",
+      "description": "Analyze entire codebases at once. 1M+ tokens means you can process large projects, documentation, and complex workflows in a single conversation."
     },
     "openSource": {
-      "unit": "Open Source Code",
-      "title": "Open and Extensible",
-      "description": "Supports Model Context Protocol (MCP) and custom tools, easily configurable in various development tools and workflows."
+      "unit": "Open Source",
+      "title": "Fully Transparent",
+      "description": "Inspect every line of code. Extend with MCP protocol. No vendor lock-in. Built by Google, owned by the community."
+    },
+    "trustSignals": {
+      "title": "Trusted by developers worldwide",
+      "subtitle": "Join thousands of developers already using Gemini CLI",
+      "cta": "Start building for free - no signup required"
     }
   },
   "heroShowcase": {

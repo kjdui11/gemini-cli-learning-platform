@@ -82,7 +82,7 @@ const session = await cli.chat({
       ],
       resources: [
         { title: 'Code-Beispiele', description: 'Praktische Beispiele und Vorlagen', href: '/docs/examples' },
-        { title: 'Tutorials', description: 'Schritt-für-Schritt-Anleitungen und Tutorials', href: '/docs/tutorials' },
+        { title: 'Anleitungen', description: 'Schritt-für-Schritt-Anleitungen und Tutorials', href: '/guides' },
         { title: 'GitHub', description: 'Quellcode und Beiträge', href: 'https://github.com/google-gemini/gemini-cli', external: true }
       ]
     },
@@ -157,7 +157,7 @@ const session = await cli.chat({
       ],
       resources: [
         { title: 'コード例', description: '実用的な例とテンプレート', href: '/docs/examples' },
-        { title: 'チュートリアル', description: 'ステップバイステップガイドとチュートリアル', href: '/docs/tutorials' },
+        { title: 'ガイド', description: 'ステップバイステップガイドとチュートリアル', href: '/guides' },
         { title: 'GitHub', description: 'ソースコードと貢献', href: 'https://github.com/google-gemini/gemini-cli', external: true }
       ]
     },
@@ -232,7 +232,7 @@ const session = await cli.chat({
       ],
       resources: [
         { title: '코드 예제', description: '실용적인 예제와 템플릿', href: '/docs/examples' },
-        { title: '튜토리얼', description: '단계별 가이드와 튜토리얼', href: '/docs/tutorials' },
+        { title: '가이드', description: '단계별 가이드와 튜토리얼', href: '/guides' },
         { title: 'GitHub', description: '소스 코드와 기여', href: 'https://github.com/google-gemini/gemini-cli', external: true }
       ]
     },
@@ -307,7 +307,7 @@ const session = await cli.chat({
       ],
       resources: [
         { title: 'Ejemplos de Código', description: 'Ejemplos prácticos y plantillas', href: '/docs/examples' },
-        { title: 'Tutoriales', description: 'Guías paso a paso y tutoriales', href: '/docs/tutorials' },
+        { title: 'Guías', description: 'Guías paso a paso y tutoriales', href: '/guides' },
         { title: 'GitHub', description: 'Código fuente y contribuciones', href: 'https://github.com/google-gemini/gemini-cli', external: true }
       ]
     },
@@ -382,7 +382,7 @@ const session = await cli.chat({
       ],
       resources: [
         { title: 'Примеры Кода', description: 'Практические примеры и шаблоны', href: '/docs/examples' },
-        { title: 'Учебники', description: 'Пошаговые руководства и учебники', href: '/docs/tutorials' },
+        { title: 'Руководства', description: 'Пошаговые руководства и учебники', href: '/guides' },
         { title: 'GitHub', description: 'Исходный код и вклады', href: 'https://github.com/google-gemini/gemini-cli', external: true }
       ]`;
 
